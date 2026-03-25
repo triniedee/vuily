@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuily | Adult Fun in San Francisco</title>
+    <meta
+      name="description"
+      content="Discover joyful adults-only events in San Francisco. Swipe to reserve, add to calendar, and earn points."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
+    <div class="bg-shape bg-shape-c"></div>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">Vuily</a>
+        <div class="stat-chip">Mood: Curious + Adventurous</div>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <p class="eyebrow">San Francisco Adults-Only Event Explorer</p>
+          <h1>Swipe into your next fun night.</h1>
+          <p class="hero-text">
+            Explore cultural, arts, music, and outdoors activities. Swipe left
+            to pass, swipe right to reserve, then add plans to your calendar.
+          </p>
+        </section>
+
+        <section class="dashboard">
+          <article class="panel score-panel">
+            <h2>Game Board</h2>
+            <div class="score-grid">
+              <div>
+                <span class="score-label">Points</span>
+                <p id="points" class="score-value">0</p>
+              </div>
+              <div>
+                <span class="score-label">Streak</span>
+                <p id="streak" class="score-value">0</p>
+              </div>
+              <div>
+                <span class="score-label">Level</span>
+                <p id="level" class="score-value">Explorer</p>
+              </div>
+            </div>
+            <p id="badge" class="badge">Badge: Newcomer</p>
+          </article>
+
+          <article class="panel filter-panel">
+            <h2>Pick Your Vibe</h2>
+            <div class="filter-row">
+              <label for="categoryFilter">Category</label>
+              <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Arts">Arts</option>
+                <option value="Music">Music</option>
+                <option value="Outdoors">Outdoors</option>
+              </select>
+            </div>
+            <div class="filter-row">
+              <label for="costFilter">Cost</label>
+              <select id="costFilter">
+                <option value="all">Any Price</option>
+                <option value="Free">Free</option>
+                <option value="Budget">$ Budget</option>
+                <option value="Moderate">$$ Moderate</option>
+                <option value="Premium">$$$ Premium</option>
+              </select>
+            </div>
+          </article>
+        </section>
+
+        <section class="cards-area">
+          <article class="panel swipe-panel">
+            <h2>Event Deck</h2>
+            <p class="swipe-help">
+              Swipe left to pass. Swipe right to reserve your spot.
+            </p>
+            <div class="deck-wrap">
+              <div id="cardDeck" class="card-deck" aria-live="polite"></div>
+            </div>
+            <div class="actions">
+              <button id="skipBtn" class="action-btn action-pass" type="button">
+                Skip Left
+              </button>
+              <button id="reserveBtn" class="action-btn action-like" type="button">
+                Reserve Right
+              </button>
+            </div>
+          </article>
+
+          <article class="panel saved-panel">
+            <h2>Reserved Plans</h2>
+            <p class="panel-note">
+              Add events to your calendar and rate them after you go.
+            </p>
+            <div id="savedEvents" class="saved-events"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
