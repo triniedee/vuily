@@ -1,0 +1,303 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "vuily_screen",
+      "x": 80,
+      "y": 80,
+      "name": "Vuily SF Events • Synced 2026-04-08T01:52:52.617Z",
+      "width": 1360,
+      "height": 980,
+      "fill": "#FFF7DE",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 16,
+      "padding": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "top_row",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "brand",
+              "fill": "#1F2240",
+              "content": "Vuily",
+              "fontFamily": "Baloo 2",
+              "fontSize": 44,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "mood_chip",
+              "fill": "#2BA2E8",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mood_text",
+                  "fill": "#FFFFFF",
+                  "content": "Mood: Curious + Adventurous",
+                  "fontFamily": "Nunito",
+                  "fontSize": 18,
+                  "fontWeight": "800"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hero",
+          "width": "fill_container",
+          "fill": "#FFFFFFCC",
+          "cornerRadius": 20,
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "eyebrow",
+              "fill": "#0E9E92",
+              "content": "San Francisco Adults-Only Event Explorer",
+              "fontFamily": "Nunito",
+              "fontSize": 13,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "hero_title",
+              "fill": "#1F2240",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Swipe into your next fun night.",
+              "lineHeight": 0.95,
+              "fontFamily": "Baloo 2",
+              "fontSize": 54,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "hero_desc",
+              "fill": "#596087",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Explore cultural, arts, music, and outdoors activities. Swipe left to pass, swipe right to reserve, then add plans to your calendar.",
+              "lineHeight": 1.35,
+              "fontFamily": "Nunito",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "last_updated",
+              "fill": "#4F5C92",
+              "content": "Last updated: waiting for live feed...",
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dashboard",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "score_panel",
+              "width": "fill_container",
+              "fill": "#FFFFFFE0",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "score_title",
+                  "fill": "#1F2240",
+                  "content": "Game Board",
+                  "fontFamily": "Baloo 2",
+                  "fontSize": 32,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "score_fields",
+                  "fill": "#596087",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Points: 0   •   Streak: 0   •   Level: Explorer",
+                  "fontFamily": "Nunito",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "badge_text",
+                  "fill": "#FFFFFF",
+                  "content": "Badge: Newcomer",
+                  "fontFamily": "Nunito",
+                  "fontSize": 15,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "filter_panel",
+              "width": "fill_container",
+              "fill": "#FFFFFFE0",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "filter_title",
+                  "fill": "#1F2240",
+                  "content": "Pick Your Vibe",
+                  "fontFamily": "Baloo 2",
+                  "fontSize": 32,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "filter_fields",
+                  "fill": "#596087",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Category: All   •   Cost: Any Price",
+                  "fontFamily": "Nunito",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "swipe_panel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#FFFFFFE0",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "swipe_title",
+                  "fill": "#1F2240",
+                  "content": "Event Deck",
+                  "fontFamily": "Baloo 2",
+                  "fontSize": 32,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "swipe_note",
+                  "fill": "#596087",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Swipe left to pass. Swipe right to reserve your spot.",
+                  "fontFamily": "Nunito",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "swipe_buttons",
+                  "fill": "#20486D",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Skip Left  |  Reserve Right",
+                  "fontFamily": "Nunito",
+                  "fontSize": 16,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "saved_panel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#FFFFFFE0",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "saved_title",
+                  "fill": "#1F2240",
+                  "content": "Reserved Plans",
+                  "fontFamily": "Baloo 2",
+                  "fontSize": 32,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "saved_note",
+                  "fill": "#596087",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Add events to your calendar and rate them after you go.",
+                  "fontFamily": "Nunito",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "saved_controls",
+                  "fill": "#596087",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Search: Search reserved plans  •  Category: All Categories",
+                  "fontFamily": "Nunito",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "saved_placeholder",
+                  "fill": "#596087",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Reserved event cards render here (5 per page with pagination).",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

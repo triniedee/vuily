@@ -1,0 +1,507 @@
+{
+  "alameda": {
+    "name": "Alameda",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "albany": {
+    "name": "Albany",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "american canyon": {
+    "name": "American Canyon",
+    "urbanClassification": "City",
+    "county": "Napa"
+  },
+  "antioch": {
+    "name": "Antioch",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "atherton": {
+    "name": "Atherton",
+    "urbanClassification": "Town",
+    "county": "San Mateo"
+  },
+  "belmont": {
+    "name": "Belmont",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "belvedere": {
+    "name": "Belvedere",
+    "urbanClassification": "City",
+    "county": "Marin"
+  },
+  "benicia": {
+    "name": "Benicia",
+    "urbanClassification": "City",
+    "county": "Solano"
+  },
+  "berkeley": {
+    "name": "Berkeley",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "brentwood": {
+    "name": "Brentwood",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "brisbane": {
+    "name": "Brisbane",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "burlingame": {
+    "name": "Burlingame",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "calistoga": {
+    "name": "Calistoga",
+    "urbanClassification": "City",
+    "county": "Napa"
+  },
+  "campbell": {
+    "name": "Campbell",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "clayton": {
+    "name": "Clayton",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "cloverdale": {
+    "name": "Cloverdale",
+    "urbanClassification": "City",
+    "county": "Sonoma"
+  },
+  "colma": {
+    "name": "Colma",
+    "urbanClassification": "Town",
+    "county": "San Mateo"
+  },
+  "concord": {
+    "name": "Concord",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "corte madera": {
+    "name": "Corte Madera",
+    "urbanClassification": "Town",
+    "county": "Marin"
+  },
+  "cotati": {
+    "name": "Cotati",
+    "urbanClassification": "City",
+    "county": "Sonoma"
+  },
+  "cupertino": {
+    "name": "Cupertino",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "daly city": {
+    "name": "Daly City",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "danville": {
+    "name": "Danville",
+    "urbanClassification": "Town",
+    "county": "Contra Costa"
+  },
+  "dixon": {
+    "name": "Dixon",
+    "urbanClassification": "City",
+    "county": "Solano"
+  },
+  "dublin": {
+    "name": "Dublin",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "east palo alto": {
+    "name": "East Palo Alto",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "el cerrito": {
+    "name": "El Cerrito",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "emeryville": {
+    "name": "Emeryville",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "fairfax": {
+    "name": "Fairfax",
+    "urbanClassification": "Town",
+    "county": "Marin"
+  },
+  "fairfield": {
+    "name": "Fairfield",
+    "urbanClassification": "City",
+    "county": "Solano"
+  },
+  "foster city": {
+    "name": "Foster City",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "fremont": {
+    "name": "Fremont",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "gilroy": {
+    "name": "Gilroy",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "half moon bay": {
+    "name": "Half Moon Bay",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "hayward": {
+    "name": "Hayward",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "healdsburg": {
+    "name": "Healdsburg",
+    "urbanClassification": "City",
+    "county": "Sonoma"
+  },
+  "hercules": {
+    "name": "Hercules",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "hillsborough": {
+    "name": "Hillsborough",
+    "urbanClassification": "Town",
+    "county": "San Mateo"
+  },
+  "lafayette": {
+    "name": "Lafayette",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "larkspur": {
+    "name": "Larkspur",
+    "urbanClassification": "City",
+    "county": "Marin"
+  },
+  "livermore": {
+    "name": "Livermore",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "los altos": {
+    "name": "Los Altos",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "los altos hills": {
+    "name": "Los Altos Hills",
+    "urbanClassification": "Town",
+    "county": "Santa Clara"
+  },
+  "los gatos": {
+    "name": "Los Gatos",
+    "urbanClassification": "Town",
+    "county": "Santa Clara"
+  },
+  "martinez": {
+    "name": "Martinez",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "menlo park": {
+    "name": "Menlo Park",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "mill valley": {
+    "name": "Mill Valley",
+    "urbanClassification": "City",
+    "county": "Marin"
+  },
+  "millbrae": {
+    "name": "Millbrae",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "milpitas": {
+    "name": "Milpitas",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "monte sereno": {
+    "name": "Monte Sereno",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "moraga": {
+    "name": "Moraga",
+    "urbanClassification": "Town",
+    "county": "Contra Costa"
+  },
+  "morgan hill": {
+    "name": "Morgan Hill",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "mountain view": {
+    "name": "Mountain View",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "napa": {
+    "name": "Napa",
+    "urbanClassification": "City",
+    "county": "Napa"
+  },
+  "newark": {
+    "name": "Newark",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "novato": {
+    "name": "Novato",
+    "urbanClassification": "City",
+    "county": "Marin"
+  },
+  "oakland": {
+    "name": "Oakland",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "oakley": {
+    "name": "Oakley",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "orinda": {
+    "name": "Orinda",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "pacifica": {
+    "name": "Pacifica",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "palo alto": {
+    "name": "Palo Alto",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "petaluma": {
+    "name": "Petaluma",
+    "urbanClassification": "City",
+    "county": "Sonoma"
+  },
+  "piedmont": {
+    "name": "Piedmont",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "pinole": {
+    "name": "Pinole",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "pittsburg": {
+    "name": "Pittsburg",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "pleasant hill": {
+    "name": "Pleasant Hill",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "pleasanton": {
+    "name": "Pleasanton",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "portola valley": {
+    "name": "Portola Valley",
+    "urbanClassification": "Town",
+    "county": "San Mateo"
+  },
+  "redwood city": {
+    "name": "Redwood City",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "richmond": {
+    "name": "Richmond",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "rio vista": {
+    "name": "Rio Vista",
+    "urbanClassification": "City",
+    "county": "Solano"
+  },
+  "rohnert park": {
+    "name": "Rohnert Park",
+    "urbanClassification": "City",
+    "county": "Sonoma"
+  },
+  "ross": {
+    "name": "Ross",
+    "urbanClassification": "Town",
+    "county": "Marin"
+  },
+  "st. helena": {
+    "name": "St. Helena",
+    "urbanClassification": "City",
+    "county": "Napa"
+  },
+  "san anselmo": {
+    "name": "San Anselmo",
+    "urbanClassification": "Town",
+    "county": "Marin"
+  },
+  "san bruno": {
+    "name": "San Bruno",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "san carlos": {
+    "name": "San Carlos",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "san francisco": {
+    "name": "San Francisco",
+    "urbanClassification": "City and county",
+    "county": "San Francisco"
+  },
+  "san jose": {
+    "name": "San Jose",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "san leandro": {
+    "name": "San Leandro",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "san mateo": {
+    "name": "San Mateo",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "san pablo": {
+    "name": "San Pablo",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "san rafael": {
+    "name": "San Rafael",
+    "urbanClassification": "City",
+    "county": "Marin"
+  },
+  "san ramon": {
+    "name": "San Ramon",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "santa clara": {
+    "name": "Santa Clara",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "santa rosa": {
+    "name": "Santa Rosa",
+    "urbanClassification": "City",
+    "county": "Sonoma"
+  },
+  "saratoga": {
+    "name": "Saratoga",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "sausalito": {
+    "name": "Sausalito",
+    "urbanClassification": "City",
+    "county": "Marin"
+  },
+  "sebastopol": {
+    "name": "Sebastopol",
+    "urbanClassification": "City",
+    "county": "Sonoma"
+  },
+  "sonoma": {
+    "name": "Sonoma",
+    "urbanClassification": "City",
+    "county": "Sonoma"
+  },
+  "south san francisco": {
+    "name": "South San Francisco",
+    "urbanClassification": "City",
+    "county": "San Mateo"
+  },
+  "suisun city": {
+    "name": "Suisun City",
+    "urbanClassification": "City",
+    "county": "Solano"
+  },
+  "sunnyvale": {
+    "name": "Sunnyvale",
+    "urbanClassification": "City",
+    "county": "Santa Clara"
+  },
+  "tiburon": {
+    "name": "Tiburon",
+    "urbanClassification": "Town",
+    "county": "Marin"
+  },
+  "union city": {
+    "name": "Union City",
+    "urbanClassification": "City",
+    "county": "Alameda"
+  },
+  "vacaville": {
+    "name": "Vacaville",
+    "urbanClassification": "City",
+    "county": "Solano"
+  },
+  "vallejo": {
+    "name": "Vallejo",
+    "urbanClassification": "City",
+    "county": "Solano"
+  },
+  "walnut creek": {
+    "name": "Walnut Creek",
+    "urbanClassification": "City",
+    "county": "Contra Costa"
+  },
+  "windsor": {
+    "name": "Windsor",
+    "urbanClassification": "Town",
+    "county": "Sonoma"
+  },
+  "woodside": {
+    "name": "Woodside",
+    "urbanClassification": "Town",
+    "county": "San Mateo"
+  },
+  "yountville": {
+    "name": "Yountville",
+    "urbanClassification": "Town",
+    "county": "Napa"
+  }
+}
