@@ -332,6 +332,14 @@
       .result-meta span { display: flex; align-items: baseline; gap: 0.4rem; }
       .result-meta .meta-icon { font-size: 0.9rem; }
 
+      .result-why {
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--teal);
+        margin-bottom: 1rem;
+        min-height: 1.2em;
+      }
+
       .result-desc {
         font-size: 0.84rem;
         color: var(--muted);
@@ -626,6 +634,7 @@
             <div class="result-pills" id="resultPills"></div>
             <div class="result-meta" id="resultMeta"></div>
             <p class="result-desc" id="resultDesc"></p>
+            <p class="result-why" id="resultWhy"></p>
             <div class="result-actions">
               <a class="btn-attend" id="resultLink" href="#" target="_blank" rel="noopener noreferrer">See details</a>
               <button class="btn-next" id="nextBtn">Try another</button>
@@ -750,6 +759,11 @@
           `;
 
           document.getElementById("resultDesc").textContent = event.description || "";
+
+          // Why this event was picked
+          const whyEl = document.getElementById("resultWhy");
+          const reasons = event._reasons || [];
+          whyEl.textContent = reasons.length ? `✦ ${reasons.join(" · ")}` : "";
 
           const link = document.getElementById("resultLink");
           if (url) {
@@ -927,7 +941,13 @@
         else if (profile.weatherBias === "foggy") tags.push("🌫 Foggy");
         else if (profile.weatherBias === "clear") tags.push("✨ Clear");
 
-        if (Object.keys(profile.userOverrides).length > 0) tags.push("✦ Vibe tuned");
+        const ov = profile.userOverrides;
+        const socialLabel = { solo: "Just me", duo: "With someone", small_group: "Small group" };
+        const energyLabel = { calm: "Chill", moderate: "Balanced", high: "Let's go" };
+        const weirdLabel = { familiar: "Familiar", weird: "Weird me out" };
+        if (ov.social) tags.push(`👥 ${socialLabel[ov.social] || ov.social}`);
+        if (ov.energy) tags.push(`⚡ ${energyLabel[ov.energy] || ov.energy}`);
+        if (ov.weird) tags.push(`🎲 ${weirdLabel[ov.weird] || ov.weird}`);
 
         bar.innerHTML = tags.map(t => `<span class="moment-tag">${t}</span>`).join("");
       }
@@ -935,64 +955,91 @@
       // ─── Scoring engine ───────────────────────────────────────────────────────
       function scoreEvent(event, profile) {
         const sig = event.signature;
-        if (!sig) return 0.1 + Math.random() * 0.1; // no signature = low base score
+        if (!sig) return { score: 0.1 + Math.random() * 0.1, reasons: [] };
 
         let resonance = 0;
+        const reasons = [];
+        const hasOverrides = Object.keys(profile.userOverrides).length > 0;
 
         // Energy match
         const energyMap = { calm: 0, moderate: 1, high: 2 };
+        const energyLabels = { calm: "chill vibe", moderate: "balanced energy", high: "high energy" };
         const wantedEnergy = profile.userOverrides.energy || profile.energyHint || "moderate";
         const eventEnergy = sig.energy || "moderate";
         const energyDiff = Math.abs((energyMap[wantedEnergy] ?? 1) - (energyMap[eventEnergy] ?? 1));
-        resonance += (1 - energyDiff / 2) * 0.3;
+        const energyScore = (1 - energyDiff / 2) * 0.3;
+        resonance += energyScore;
+        if (energyDiff === 0 && (hasOverrides || energyScore > 0.25)) {
+          reasons.push(energyLabels[wantedEnergy] || wantedEnergy);
+        }
 
         // Social shape match
+        const socialLabels = { solo: "great solo", duo: "perfect for two", small_group: "small group friendly" };
         const wantedSocial = profile.userOverrides.social || null;
-        if (wantedSocial && sig.social_shape === wantedSocial) resonance += 0.2;
-        else if (!wantedSocial) resonance += 0.1; // neutral
+        if (wantedSocial && sig.social_shape === wantedSocial) {
+          resonance += 0.2;
+          reasons.push(socialLabels[wantedSocial] || wantedSocial);
+        } else if (!wantedSocial) {
+          resonance += 0.1;
+        }
 
         // Weather bias
         if (profile.weatherBias === "rainy" || profile.weatherBias === "foggy") {
-          // Rainy day → prefer indoor vibes
-          if (sig.vibe?.includes("cozy") || sig.vibe?.includes("intellectual")) resonance += 0.15;
+          if (sig.vibe?.includes("cozy") || sig.vibe?.includes("intellectual")) {
+            resonance += 0.15;
+            reasons.push("good for a rainy day");
+          }
         } else if (profile.weatherBias === "clear") {
-          if (sig.vibe?.includes("adventurous") || sig.social_shape === "crowd") resonance += 0.1;
+          if (sig.vibe?.includes("adventurous") || sig.social_shape === "crowd") {
+            resonance += 0.1;
+            reasons.push("perfect in this weather");
+          }
         }
 
         // Vibe history match
         if (profile.vibeHistory.length > 0 && sig.vibe) {
           const overlap = sig.vibe.filter(v => profile.vibeHistory.includes(v)).length;
-          resonance += (overlap / sig.vibe.length) * 0.2;
+          if (overlap > 0) {
+            resonance += (overlap / sig.vibe.length) * 0.2;
+            reasons.push("matches your taste");
+          }
         }
 
         // Weekend bias
-        if (profile.isWeekend) {
-          if (sig.social_shape === "crowd" || sig.energy === "high") resonance += 0.05;
+        if (profile.isWeekend && (sig.social_shape === "crowd" || sig.energy === "high")) {
+          resonance += 0.05;
         }
 
         // Weirdness override
         if (profile.userOverrides.weird === "weird") {
           resonance += (sig.uniqueness || 0) * 0.2;
+          if ((sig.uniqueness || 0) > 0.6) reasons.push("off the beaten path");
         } else if (profile.userOverrides.weird === "familiar") {
           resonance += (1 - (sig.uniqueness || 0)) * 0.1;
+          if ((sig.uniqueness || 0) < 0.4) reasons.push("familiar territory");
         }
 
-        // Final: resonance × 0.6 + uniqueness × 0.3 + random × 0.1
+        // With overrides: be more decisive — less randomness, pick from top 3
         const uniqueness = sig.uniqueness || 0.5;
-        const random = Math.random();
-        return resonance * 0.6 + uniqueness * 0.3 + random * 0.1;
+        const randomWeight = hasOverrides ? 0.05 : 0.1;
+        const score = resonance * 0.6 + uniqueness * 0.3 + Math.random() * randomWeight;
+        return { score, reasons };
       }
 
       function pickBestEvent(profile) {
         if (!eventPool.length) return FALLBACK_EVENTS[Math.floor(Math.random() * FALLBACK_EVENTS.length)];
 
-        // Score all events, pick from top 5 to keep some surprise
+        const hasOverrides = Object.keys(profile.userOverrides).length > 0;
+        const topN = hasOverrides ? 3 : 5; // more decisive with overrides
+
         const scored = eventPool
-          .map(e => ({ event: e, score: scoreEvent(e, profile) }))
+          .map(e => { const { score, reasons } = scoreEvent(e, profile); return { event: e, score, reasons }; })
           .sort((a, b) => b.score - a.score);
 
-        const topN = scored.slice(0, 5);
-        const pick = topN[Math.floor(Math.random() * topN.length)];
+        const pick = scored.slice(0, topN)[Math.floor(Math.random() * topN)];
+
+        // Attach reasons to event for rendering
+        pick.event._reasons = pick.reasons;
 
         // Track as viewed
         try {
