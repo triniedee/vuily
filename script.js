@@ -3127,18 +3127,22 @@ const APIFY_DATASET_LUMA = "z7sA6wzx3DF8w6Zhx";
 const APIFY_DATASET_GOOGLE = "5XkgHAs8QoMP4sUe6";
 
 function mapApifyEventbriteItem(item, index) {
-  const title = decodeHtmlEntities((item.name || "").trim());
+  // Two Eventbrite dataset shapes: new scraper uses title+startDate(string)+startTime; old uses name+startDate.local
+  const title = decodeHtmlEntities((item.title || item.name || "").trim());
   if (!title) return null;
-  const startDate = item.startDate?.local || item.startDate?.utc || item.startDate;
-  if (!startDate) return null;
-  const date = new Date(startDate);
+  let dateStr;
+  if (item.startDate && typeof item.startDate === "object") {
+    dateStr = item.startDate.local || item.startDate.utc;
+  } else {
+    dateStr = item.startDate ? `${item.startDate}T${item.startTime || "00:00:00"}` : null;
+  }
+  if (!dateStr) return null;
+  const date = new Date(dateStr);
   if (Number.isNaN(date.getTime())) return null;
-  if (item.isOnline) return null;
-  const addrLines = item.venue?.address?.localizedMultiLineAddressDisplay || [];
-  const venue = [item.venue?.name, ...addrLines].filter(Boolean).join(", ");
+  const venue = item.venue?.fullAddress || [item.venue?.name, item.venue?.streetAddress, item.venue?.city, item.venue?.state].filter(Boolean).join(", ");
   const url = item.url || "";
-  const description = decodeHtmlEntities(stripHtml(item.summary || ""));
-  const isFree = item.isFree === true;
+  const description = decodeHtmlEntities(stripHtml(item.description || item.summary || ""));
+  const isFree = item.pricing?.isFree === true || item.isFree === true;
   return {
     id: `apify-eventbrite-${item.id || (url || title).toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${index}`,
     title,
@@ -3198,6 +3202,11 @@ async function fetchApifyLumaEvents() {
   const items = await fetchApifyDataset(APIFY_DATASET_LUMA);
   console.info("[apify-luma] items", items.length);
   return items.map((item, i) => mapApifyLumaItem(item, i)).filter(Boolean);
+}
+
+// No Meetup dataset in Apify account yet — returns empty until one is added
+async function fetchApifyMeetupEvents() {
+  return [];
 }
 
 function mapApifyGoogleEventsItem(event, index) {
