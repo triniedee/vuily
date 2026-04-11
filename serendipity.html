@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Serendipity Engine — Vuily</title>
+    <meta name="description" content="Vuily's serendipity engine hands you the next unexpected thing you're going to love doing in SF." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --hot-pink: #ff4f8b;
+        --sun: #ffb800;
+        --teal: #0eb8a8;
+        --sky: #4d8dff;
+        --lime: #8bcf3d;
+        --text: #1f2240;
+        --muted: #5f6388;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: "Nunito", sans-serif;
+        color: var(--text);
+        min-height: 100dvh;
+        overflow-x: hidden;
+        background:
+          radial-gradient(circle at 10% 0%, rgba(255, 79, 139, 0.3), transparent 32%),
+          radial-gradient(circle at 90% 5%, rgba(77, 141, 255, 0.25), transparent 30%),
+          radial-gradient(circle at 50% 90%, rgba(14, 184, 168, 0.2), transparent 35%),
+          linear-gradient(160deg, #fff7e1 0%, #ebf8ff 48%, #f7ebff 100%);
+      }
+
+      .blob {
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(28px);
+        pointer-events: none;
+        z-index: 0;
+      }
+      .blob-a { width: 260px; height: 260px; top: 60%; left: -80px; background: rgba(14, 184, 168, 0.28); }
+      .blob-b { width: 300px; height: 300px; right: -100px; top: 25%; background: rgba(255, 184, 0, 0.3); }
+      .blob-c { width: 200px; height: 200px; right: 18%; top: 70%; background: rgba(255, 79, 139, 0.22); }
+
+      .shell {
+        position: relative;
+        z-index: 1;
+        width: min(760px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+      }
+
+      /* Nav */
+      .top-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+      }
+
+      .brand {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: var(--text);
+        text-decoration: none;
+        letter-spacing: -0.5px;
+      }
+
+      .nav-pill {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--muted);
+        background: rgba(255,255,255,0.7);
+        border: 1.5px solid rgba(31,34,64,0.12);
+        border-radius: 999px;
+        padding: 0.35rem 0.85rem;
+        text-decoration: none;
+        transition: border-color 0.18s, color 0.18s;
+      }
+      .nav-pill:hover { color: var(--text); border-color: rgba(31,34,64,0.3); }
+
+      /* Hero */
+      .eyebrow {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--hot-pink);
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: clamp(2.2rem, 6.5vw, 3.8rem);
+        line-height: 1.08;
+        letter-spacing: -1px;
+        color: var(--text);
+        margin-bottom: 1.2rem;
+      }
+
+      h1 .accent {
+        background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .sub {
+        font-size: clamp(1rem, 2.5vw, 1.15rem);
+        color: var(--muted);
+        line-height: 1.65;
+        max-width: 500px;
+        margin-bottom: 3.5rem;
+        font-weight: 500;
+      }
+
+      /* How it works */
+      .how-section {
+        width: 100%;
+        margin-bottom: 4rem;
+      }
+
+      .section-label {
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        width: 100%;
+      }
+
+      .step {
+        background: rgba(255,255,255,0.75);
+        border: 1.5px solid rgba(31,34,64,0.08);
+        border-radius: 18px;
+        padding: 1.4rem 1.1rem;
+        text-align: left;
+        position: relative;
+      }
+
+      .step-num {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+        color: var(--hot-pink);
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+
+      .step-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
+        display: block;
+      }
+
+      .step h3 {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+        color: var(--text);
+      }
+
+      .step p {
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.55;
+        font-weight: 500;
+      }
+
+      /* Divider */
+      .divider {
+        width: 100%;
+        height: 1px;
+        background: rgba(31,34,64,0.08);
+        margin-bottom: 4rem;
+      }
+
+      /* Demo section */
+      .demo-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .demo-label {
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 1rem;
+      }
+
+      .demo-question {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.4rem, 4vw, 2rem);
+        color: var(--text);
+        margin-bottom: 2rem;
+        letter-spacing: -0.5px;
+      }
+
+      .surprise-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+        color: #fff;
+        border: none;
+        border-radius: 999px;
+        padding: 0.85rem 2rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.05rem;
+        font-weight: 800;
+        cursor: pointer;
+        box-shadow: 0 8px 24px rgba(255, 79, 139, 0.28);
+        transition: opacity 0.18s, transform 0.14s, box-shadow 0.18s;
+        margin-bottom: 2.5rem;
+      }
+      .surprise-btn:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255, 79, 139, 0.35); }
+      .surprise-btn:active { transform: translateY(0); }
+      .surprise-btn .btn-icon { font-size: 1.15rem; }
+      .surprise-btn.loading { opacity: 0.7; pointer-events: none; }
+
+      /* Result card */
+      .result-area {
+        width: 100%;
+        max-width: 520px;
+        min-height: 20px;
+      }
+
+      .result-card {
+        background: rgba(255,255,255,0.92);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1.5px solid rgba(31,34,64,0.1);
+        border-radius: 20px;
+        padding: 1.8rem 1.8rem 1.6rem;
+        text-align: left;
+        box-shadow: 0 16px 48px rgba(64, 53, 131, 0.12);
+        opacity: 0;
+        transform: translateY(16px) scale(0.98);
+        transition: opacity 0.35s ease, transform 0.35s ease;
+      }
+
+      .result-card.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      .result-source {
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.6rem;
+      }
+
+      .result-title {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 1.25rem;
+        color: var(--text);
+        line-height: 1.2;
+        margin-bottom: 0.8rem;
+        letter-spacing: -0.3px;
+      }
+
+      .result-title a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .result-title a:hover { text-decoration: underline; }
+
+      .result-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-bottom: 1rem;
+      }
+
+      .result-pill {
+        font-size: 0.75rem;
+        font-weight: 800;
+        padding: 0.28rem 0.7rem;
+        border-radius: 999px;
+      }
+
+      .pill-category { background: #ffe0ee; color: var(--hot-pink); }
+      .pill-category.cat-music { background: #ffe0ee; color: var(--hot-pink); }
+      .pill-category.cat-arts { background: #fff4cc; color: #b07d00; }
+      .pill-category.cat-food { background: #ffeedd; color: #c05a00; }
+      .pill-category.cat-tech { background: #dce9ff; color: #2a63cc; }
+      .pill-category.cat-networking { background: #dce9ff; color: #2a63cc; }
+      .pill-category.cat-outdoors { background: #eaffd3; color: #4e8a10; }
+      .pill-category.cat-wellness { background: #d6f5f2; color: #0a8a7c; }
+      .pill-category.cat-social { background: #f3e8ff; color: #7c3aed; }
+      .pill-cost { background: rgba(31,34,64,0.07); color: var(--muted); }
+
+      .result-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        font-size: 0.86rem;
+        color: var(--muted);
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+      }
+
+      .result-meta span { display: flex; align-items: baseline; gap: 0.4rem; }
+      .result-meta .meta-icon { font-size: 0.9rem; }
+
+      .result-desc {
+        font-size: 0.84rem;
+        color: var(--muted);
+        line-height: 1.6;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .result-actions {
+        display: flex;
+        gap: 0.6rem;
+        flex-wrap: wrap;
+      }
+
+      .btn-attend {
+        background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 0.6rem 1.2rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 800;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: opacity 0.18s, transform 0.14s;
+      }
+      .btn-attend:hover { opacity: 0.88; transform: translateY(-1px); }
+
+      .btn-next {
+        background: rgba(31,34,64,0.06);
+        color: var(--text);
+        border: 1.5px solid rgba(31,34,64,0.12);
+        border-radius: 10px;
+        padding: 0.6rem 1.2rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: background 0.18s, border-color 0.18s;
+      }
+      .btn-next:hover { background: rgba(31,34,64,0.1); border-color: rgba(31,34,64,0.2); }
+
+      /* Loading state */
+      .loading-dots {
+        display: none;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+      }
+      .loading-dots.visible { display: flex; }
+      .loading-dots span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--hot-pink);
+        animation: bounce 0.6s ease-in-out infinite alternate;
+      }
+      .loading-dots span:nth-child(2) { background: var(--sky); animation-delay: 0.15s; }
+      .loading-dots span:nth-child(3) { background: var(--teal); animation-delay: 0.3s; }
+      @keyframes bounce { from { transform: translateY(0); opacity: 0.5; } to { transform: translateY(-8px); opacity: 1; } }
+
+      /* Footer */
+      .footer {
+        font-size: 0.78rem;
+        color: #aab0c8;
+        font-weight: 600;
+        margin-top: 4rem;
+      }
+      .footer a { color: var(--sky); text-decoration: none; }
+      .footer a:hover { text-decoration: underline; }
+
+      /* Mobile */
+      @media (max-width: 600px) {
+        .steps { grid-template-columns: 1fr; }
+        .top-bar { margin-bottom: 2.5rem; }
+        h1 { font-size: 2rem; }
+        .blob-a { width: 160px; height: 160px; top: auto; bottom: -40px; }
+        .blob-b { width: 180px; height: 180px; top: 10%; }
+        .blob-c { display: none; }
+        .shell { padding-bottom: 3rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+
+    <div class="shell">
+      <div class="top-bar">
+        <a class="brand" href="./index.html">Vuily</a>
+        <a class="nav-pill" href="./index.html">Home</a>
+      </div>
+
+      <!-- Hero -->
+      <p class="eyebrow">The Serendipity Engine</p>
+      <h1>Stop deciding.<br>Start <span class="accent">experiencing.</span></h1>
+      <p class="sub">
+        Most apps give you a list and make you choose. Vuily does the opposite — it reads what lights you up, then hands you one perfect unexpected thing. No scrolling. No FOMO. Just go.
+      </p>
+
+      <!-- How it works -->
+      <div class="how-section">
+        <p class="section-label">How it works</p>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">01</span>
+            <span class="step-icon">🧠</span>
+            <h3>It learns you</h3>
+            <p>Every swipe teaches Vuily what excites you — live music, weird art, outdoor adventures, or spontaneous dinners.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <span class="step-icon">✨</span>
+            <h3>It curates for you</h3>
+            <p>Instead of 500 options, you get one — chosen from everything happening in SF, matched to your taste and mood.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <span class="step-icon">🚀</span>
+            <h3>You just go</h3>
+            <p>Tap to confirm. Add to your calendar. That's it. Vuily handles the discovery so you can spend your energy on the experience.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Interactive demo -->
+      <div class="demo-section">
+        <p class="demo-label">Try it now</p>
+        <p class="demo-question">What should I do in SF?</p>
+
+        <button class="surprise-btn" id="surpriseBtn">
+          <span class="btn-icon">🎲</span>
+          Surprise me
+        </button>
+
+        <div class="result-area">
+          <div class="loading-dots" id="loadingDots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="result-card" id="resultCard">
+            <p class="result-source" id="resultSource"></p>
+            <h2 class="result-title" id="resultTitle"></h2>
+            <div class="result-pills" id="resultPills"></div>
+            <div class="result-meta" id="resultMeta"></div>
+            <p class="result-desc" id="resultDesc"></p>
+            <div class="result-actions">
+              <a class="btn-attend" id="resultLink" href="#" target="_blank" rel="noopener noreferrer">See details</a>
+              <button class="btn-next" id="nextBtn">Try another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer">Made with curiosity in San Francisco &mdash; <a href="./index.html">vuily.fun</a></p>
+    </div>
+
+    <script>
+      // ─── Fallback events (used when Apify datasets are unavailable) ───────────
+      const FALLBACK_EVENTS = [
+        { title: "Live Jazz at the Sunset District", category: "Music", cost: "Free", date: "This Friday, 7 PM", location: "The Riptide, 3639 Taraval St", source: "Vuily", url: "" },
+        { title: "SF Ferry Building Farmers Market", category: "Food & Drink", cost: "Free", date: "This Saturday, 8 AM", location: "Ferry Building Marketplace", source: "Vuily", url: "" },
+        { title: "Golden Gate Park Slow Roll Bike Ride", category: "Outdoors", cost: "Free", date: "Sunday, 10 AM", location: "Golden Gate Park, JFK Dr", source: "Vuily", url: "" },
+        { title: "Rooftop Cinema Club: Classic Films", category: "Arts & Culture", cost: "Under $20", date: "Saturday, 8 PM", location: "YBCA, 701 Mission St", source: "Vuily", url: "" },
+        { title: "Mission District Mural Walking Tour", category: "Arts & Culture", cost: "Free", date: "Saturday, 11 AM", location: "Clarion Alley, Mission District", source: "Vuily", url: "" },
+        { title: "SF Startup Mixer & Demo Night", category: "Networking", cost: "Free", date: "Thursday, 6:30 PM", location: "Pier 48, San Francisco", source: "Vuily", url: "" },
+        { title: "Sound Bath & Meditation at Fort Mason", category: "Wellness", cost: "Under $20", date: "Sunday, 5 PM", location: "Fort Mason Center", source: "Vuily", url: "" },
+        { title: "Salsa Dancing Under the Stars", category: "Social", cost: "Free", date: "Friday, 8 PM", location: "Dolores Park", source: "Vuily", url: "" },
+      ];
+
+      // ─── Category → CSS slug ─────────────────────────────────────────────────
+      function catSlug(cat) {
+        const c = String(cat || "").toLowerCase();
+        if (c.includes("music")) return "cat-music";
+        if (c.includes("art") || c.includes("cultur") || c.includes("film") || c.includes("comedy")) return "cat-arts";
+        if (c.includes("food") || c.includes("drink") || c.includes("dining")) return "cat-food";
+        if (c.includes("tech") || c.includes("ai") || c.includes("science")) return "cat-tech";
+        if (c.includes("network") || c.includes("startup") || c.includes("founder")) return "cat-networking";
+        if (c.includes("outdoor") || c.includes("sport") || c.includes("hike") || c.includes("bike")) return "cat-outdoors";
+        if (c.includes("wellness") || c.includes("yoga") || c.includes("mindful")) return "cat-wellness";
+        if (c.includes("social") || c.includes("dance") || c.includes("party")) return "cat-social";
+        return "";
+      }
+
+      // ─── Format date ──────────────────────────────────────────────────────────
+      function formatWhen(dateStr) {
+        if (!dateStr || !dateStr.includes("-")) return dateStr || "Coming up";
+        const d = new Date(dateStr);
+        if (isNaN(d.getTime())) return dateStr;
+        const now = new Date();
+        const diff = d - now;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const dayLabel = days === 0 ? "Today" : days === 1 ? "Tomorrow" : days < 7 ? `This ${d.toLocaleDateString("en-US", { weekday: "long" })}` : d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+        const timeStr = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+        return `${dayLabel} at ${timeStr}`;
+      }
+
+      // ─── Normalize cost label ─────────────────────────────────────────────────
+      function costLabel(cost) {
+        const c = String(cost || "").toLowerCase();
+        if (c === "free") return "Free";
+        if (c.includes("under") || c.includes("$20")) return "Under $20";
+        if (c.includes("$50")) return "$20–$50";
+        if (c.includes("$50+") || c.includes("premium")) return "$50+";
+        return cost || "Check site";
+      }
+
+      // ─── Render a result event card ───────────────────────────────────────────
+      function renderEvent(event) {
+        const card = document.getElementById("resultCard");
+        card.classList.remove("visible");
+
+        setTimeout(() => {
+          document.getElementById("resultSource").textContent = event.source || "Vuily";
+          const titleEl = document.getElementById("resultTitle");
+          const url = event.url || event.inviteUrl || event.sourceUrl || "";
+          titleEl.innerHTML = url
+            ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${event.title}</a>`
+            : event.title;
+
+          const pills = document.getElementById("resultPills");
+          const slug = catSlug(event.category);
+          pills.innerHTML = `
+            <span class="result-pill pill-category ${slug}">${event.category || "Experience"}</span>
+            <span class="result-pill pill-cost">${costLabel(event.cost)}</span>
+          `;
+
+          const meta = document.getElementById("resultMeta");
+          const when = typeof event.date === "string" && event.date.includes("-") ? formatWhen(event.date) : (event.date || "");
+          const where = event.location || "";
+          meta.innerHTML = `
+            ${when ? `<span><span class="meta-icon">📅</span> ${when}</span>` : ""}
+            ${where ? `<span><span class="meta-icon">📍</span> ${where}</span>` : ""}
+          `;
+
+          document.getElementById("resultDesc").textContent = event.description || "";
+
+          const link = document.getElementById("resultLink");
+          if (url) {
+            link.href = url;
+            link.style.display = "inline-block";
+          } else {
+            link.style.display = "none";
+          }
+
+          card.classList.add("visible");
+        }, 80);
+      }
+
+      // ─── Pick a random event from a pool, avoiding repeats ───────────────────
+      let eventPool = [];
+      let lastIndex = -1;
+
+      function pickRandom() {
+        if (!eventPool.length) return FALLBACK_EVENTS[Math.floor(Math.random() * FALLBACK_EVENTS.length)];
+        let idx;
+        do { idx = Math.floor(Math.random() * eventPool.length); } while (eventPool.length > 1 && idx === lastIndex);
+        lastIndex = idx;
+        return eventPool[idx];
+      }
+
+      // ─── Mappers ─────────────────────────────────────────────────────────────
+      function normalizeCategory(text) {
+        const t = String(text).toLowerCase();
+        if (t.includes("music") || t.includes("concert") || t.includes("jazz") || t.includes("band") || t.includes("dj") || t.includes("festival")) return "Music";
+        if (t.includes("art") || t.includes("gallery") || t.includes("museum") || t.includes("mural") || t.includes("comedy") || t.includes("film") || t.includes("improv")) return "Arts & Culture";
+        if (t.includes("food") || t.includes("drink") || t.includes("wine") || t.includes("beer") || t.includes("dining") || t.includes("culinary") || t.includes("chef") || t.includes("market")) return "Food & Drink";
+        if (t.includes("networking") || t.includes("mixer") || t.includes("startup") || t.includes("founder") || t.includes("hackathon") || t.includes("demo") || t.includes("pitch") || t.includes("conference") || t.includes("summit")) return "Networking";
+        if (t.includes("tech") || t.includes(" ai ") || t.includes("ai,") || t.includes("artificial") || t.includes("software") || t.includes("developer") || t.includes("product")) return "Tech";
+        if (t.includes("outdoor") || t.includes("hike") || t.includes("bike") || t.includes("run") || t.includes("sport") || t.includes("yoga") || t.includes("park")) return "Outdoors";
+        if (t.includes("wellness") || t.includes("meditat") || t.includes("mindful") || t.includes("sound bath") || t.includes("healing")) return "Wellness";
+        if (t.includes("dance") || t.includes("party") || t.includes("social") || t.includes("salsa") || t.includes("swing")) return "Social";
+        return "Experience";
+      }
+
+      function mapEventbriteItem(item) {
+        const title = (item.title || item.name || "").trim();
+        if (!title) return null;
+        let dateStr;
+        if (item.startDate && typeof item.startDate === "object") {
+          dateStr = item.startDate.local || item.startDate.utc;
+        } else {
+          dateStr = item.startDate ? `${item.startDate}T${item.startTime || "00:00:00"}` : null;
+        }
+        if (!dateStr) return null;
+        const date = new Date(dateStr);
+        if (isNaN(date.getTime()) || date < new Date()) return null;
+        const venue = item.venue?.fullAddress || [item.venue?.name, item.venue?.streetAddress, item.venue?.city, item.venue?.state].filter(Boolean).join(", ");
+        const desc = (item.description || item.summary || "").replace(/<[^>]*>/g, "").trim();
+        return { title, category: normalizeCategory(`${title} ${desc} ${venue}`), cost: (item.pricing?.isFree || item.isFree) ? "Free" : "Check site", date: date.toISOString(), location: venue || "San Francisco", source: "Eventbrite", url: item.url || "", description: desc };
+      }
+
+      function mapLumaItem(item) {
+        const title = (item.name || "").trim();
+        if (!title) return null;
+        if (!item.startAt) return null;
+        const date = new Date(item.startAt);
+        if (isNaN(date.getTime()) || date < new Date()) return null;
+        if (item.location?.locationType === "online") return null;
+        const venue = item.location?.fullAddress || item.location?.address || [item.location?.city, item.location?.region].filter(Boolean).join(", ") || "San Francisco";
+        const desc = (item.description || "").replace(/<[^>]*>/g, "").trim();
+        return { title, category: normalizeCategory(`${title} ${desc} ${item.category || ""} ${venue}`), cost: item.ticketing?.isFree ? "Free" : item.ticketing?.priceCents ? `$${(item.ticketing.priceCents / 100).toFixed(0)}` : "Check site", date: date.toISOString(), location: venue, source: "Luma", url: item.lumaUrl || "", description: desc };
+      }
+
+      function mapGoogleItem(event) {
+        const title = (event.title || "").trim();
+        if (!title) return null;
+        const startDateStr = event.date?.start_date;
+        if (!startDateStr) return null;
+        let date = new Date(`${startDateStr}, ${new Date().getFullYear()}`);
+        const when = event.date?.when || "";
+        const timeMatch = when.match(/(\d+(?::\d+)?)\s*(AM|PM)/i);
+        if (timeMatch && !isNaN(date.getTime())) {
+          let [, timePart, ampm] = timeMatch;
+          let [hours, mins] = timePart.split(":").map(Number);
+          if (ampm.toUpperCase() === "PM" && hours !== 12) hours += 12;
+          if (ampm.toUpperCase() === "AM" && hours === 12) hours = 0;
+          date.setHours(hours, mins || 0, 0, 0);
+        }
+        if (isNaN(date.getTime()) || date < new Date()) return null;
+        const address = Array.isArray(event.address) ? event.address.join(", ") : (event.address || "San Francisco");
+        const desc = (event.description || "").replace(/<[^>]*>/g, "").trim();
+        return { title, category: normalizeCategory(`${title} ${desc} ${address}`), cost: "Check site", date: date.toISOString(), location: address, source: "Google Events", url: event.link || "", description: desc };
+      }
+
+      // ─── Fetch datasets ───────────────────────────────────────────────────────
+      async function loadEventPool() {
+        const datasets = [
+          { id: "cFEcLNFCjkaNd0Dci", map: mapEventbriteItem },
+          { id: "rF4QswDVxXtzbuVPl", map: mapEventbriteItem },
+          { id: "z7sA6wzx3DF8w6Zhx", map: mapLumaItem },
+        ];
+
+        const results = await Promise.allSettled(
+          datasets.map(({ id, map }) =>
+            fetch(`/apify-dataset?id=${id}`, { cache: "no-store" })
+              .then(r => r.ok ? r.json() : [])
+              .then(items => items.map(map).filter(Boolean))
+              .catch(() => [])
+          )
+        );
+
+        // Google events: nested in pages
+        let googleEvents = [];
+        try {
+          const pages = await fetch("/apify-dataset?id=5XkgHAs8QoMP4sUe6", { cache: "no-store" }).then(r => r.ok ? r.json() : []);
+          googleEvents = pages.flatMap(p => (p.events || []).map(mapGoogleItem).filter(Boolean));
+        } catch {}
+
+        const all = [
+          ...results.flatMap(r => r.status === "fulfilled" ? r.value : []),
+          ...googleEvents,
+        ];
+
+        // Keep only future events, shuffle
+        const future = all.filter(e => e && e.date && new Date(e.date) > new Date());
+        for (let i = future.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [future[i], future[j]] = [future[j], future[i]];
+        }
+        return future;
+      }
+
+      // ─── Boot ─────────────────────────────────────────────────────────────────
+      const btn = document.getElementById("surpriseBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const loadingDots = document.getElementById("loadingDots");
+      let poolLoaded = false;
+      let poolLoading = false;
+
+      async function ensurePool() {
+        if (poolLoaded) return;
+        if (poolLoading) return;
+        poolLoading = true;
+        try {
+          const events = await loadEventPool();
+          if (events.length > 0) eventPool = events;
+        } catch {}
+        poolLoaded = true;
+        poolLoading = false;
+      }
+
+      async function handleSurprise() {
+        btn.classList.add("loading");
+        loadingDots.classList.add("visible");
+        document.getElementById("resultCard").classList.remove("visible");
+
+        await ensurePool();
+
+        loadingDots.classList.remove("visible");
+        btn.classList.remove("loading");
+        btn.innerHTML = '<span class="btn-icon">🎲</span> Another one';
+
+        renderEvent(pickRandom());
+      }
+
+      btn.addEventListener("click", handleSurprise);
+      nextBtn.addEventListener("click", () => renderEvent(pickRandom()));
+
+      // Pre-load pool in background on page load
+      ensurePool();
+    </script>
+  </body>
+</html>

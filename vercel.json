@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/apify-dataset", "destination": "/api/apify-dataset" },
+    { "source": "/apify", "destination": "/api/apify" },
+    { "source": "/proxy", "destination": "/api/proxy" }
+  ]
+}
