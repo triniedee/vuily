@@ -311,7 +311,6 @@
     <div class="shell">
       <div class="top-bar">
         <a class="brand" href="./tease.html">Vuily</a>
-        <a class="nav-link" href="./index.html">Explore Events →</a>
       </div>
 
       <p class="eyebrow">Coming Soon to San Francisco</p>
@@ -372,10 +371,7 @@
         </div>
       </div>
 
-      <p class="footer">
-        Made with curiosity in San Francisco &nbsp;·&nbsp;
-        <a href="./index.html">Explore events now</a>
-      </p>
+      <p class="footer">Made with curiosity in San Francisco</p>
     </div>
 
     <script>
@@ -384,9 +380,9 @@
       const success = document.getElementById("waitlistSuccess");
       const error = document.getElementById("waitlistError");
 
-      const WAITLIST_KEY = "vuily-waitlist-v1";
+      const SHEETS_URL = "https://script.google.com/macros/s/AKfycbyuTg6VKXU0sx1kjf4Uvn35WBxzREr2H65pcG8g5E7rOiioxjwYTV64qOjwQQFLoYlo/exec";
 
-      form.addEventListener("submit", (e) => {
+      form.addEventListener("submit", async (e) => {
         e.preventDefault();
         error.style.display = "none";
         success.style.display = "none";
@@ -397,10 +393,15 @@
           return;
         }
 
-        const existing = JSON.parse(localStorage.getItem(WAITLIST_KEY) || "[]");
-        if (!existing.includes(email)) {
-          existing.push(email);
-          localStorage.setItem(WAITLIST_KEY, JSON.stringify(existing));
+        try {
+          await fetch(SHEETS_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email }),
+          });
+        } catch (_) {
+          // no-cors means we can't read the response, but the request goes through
         }
 
         emailInput.value = "";
