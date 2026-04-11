@@ -763,16 +763,10 @@
         }, 80);
       }
 
-      // ─── Pick a random event from a pool, avoiding repeats ───────────────────
-      let eventPool = [];
-      let lastIndex = -1;
-
+      // ─── Pick a random event (legacy fallback, kept for safety) ─────────────
       function pickRandom() {
         if (!eventPool.length) return FALLBACK_EVENTS[Math.floor(Math.random() * FALLBACK_EVENTS.length)];
-        let idx;
-        do { idx = Math.floor(Math.random() * eventPool.length); } while (eventPool.length > 1 && idx === lastIndex);
-        lastIndex = idx;
-        return eventPool[idx];
+        return eventPool[Math.floor(Math.random() * eventPool.length)];
       }
 
       // ─── Mappers ─────────────────────────────────────────────────────────────
