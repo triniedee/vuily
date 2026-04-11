@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 7</title>
+  <desc id="desc">Compass ring mark with directional V needle and warm/cool accents.</desc>
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eaf8ff"/>
+      <stop offset="100%" stop-color="#fff5e8"/>
+    </linearGradient>
+    <linearGradient id="ring7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2ec6ff"/>
+      <stop offset="100%" stop-color="#f35fa9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" rx="72" fill="url(#bg7)"/>
+  <circle cx="280" cy="360" r="170" fill="#ffffff" stroke="url(#ring7)" stroke-width="22"/>
+  <circle cx="280" cy="360" r="120" fill="#f4fbff" stroke="#d9e7f7" stroke-width="8"/>
+  <path d="M280 246L328 392L280 366L232 392Z" fill="#1d5f96"/>
+  <path d="M280 472L252 380L280 396L308 380Z" fill="#f35fa9"/>
+  <circle cx="280" cy="360" r="14" fill="#1d5f96"/>
+  <path d="M173 360H387M280 253V467" stroke="#c9d9ec" stroke-width="6" stroke-linecap="round"/>
+  <text x="500" y="405" font-size="188" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#1f2240">Vuily</text>
+  <text x="508" y="482" font-size="52" font-family="Nunito, Arial, sans-serif" font-weight="800" letter-spacing="5" fill="#4d7ca5">YOUR FUN COMPASS</text>
+</svg>

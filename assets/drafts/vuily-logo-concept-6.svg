@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 6</title>
+  <desc id="desc">Retro badge logo with stacked typography and star accent.</desc>
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c1249"/>
+      <stop offset="100%" stop-color="#0f264a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" rx="72" fill="#f0efe9"/>
+  <rect x="120" y="110" width="1160" height="680" rx="66" fill="url(#bg6)"/>
+
+  <rect x="210" y="230" width="980" height="440" rx="44" fill="none" stroke="#f5eec9" stroke-width="10"/>
+  <path d="M250 275H1150" stroke="#2ec6ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M250 630H1150" stroke="#f35fa9" stroke-width="10" stroke-linecap="round"/>
+
+  <text x="700" y="425" text-anchor="middle" font-size="210" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#f5eec9">VUILY</text>
+  <text x="700" y="500" text-anchor="middle" font-size="54" font-family="Nunito, Arial, sans-serif" font-weight="800" letter-spacing="8" fill="#a9dfff">NIGHT MODE ON</text>
+
+  <path d="M364 364L382 404L425 408L392 436L402 478L364 457L326 478L336 436L303 408L346 404Z" fill="#f3ca44"/>
+  <path d="M1036 364L1054 404L1097 408L1064 436L1074 478L1036 457L998 478L1008 436L975 408L1018 404Z" fill="#2ec6ff"/>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Honey Badger Drawing v2 Cute</title>
+  <desc id="desc">Cute chibi honey badger mascot sheet with happy and curious expressions.</desc>
+
+  <rect width="1200" height="800" fill="#f4f2ef"/>
+
+  <defs>
+    <style>
+      .line { stroke: #2b2729; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .fur { fill: #3a373d; }
+      .fur2 { fill: #2e2a30; }
+      .stripe { fill: #d8d2ca; }
+      .blush { fill: #f19b9d; }
+      .nose { fill: #252124; }
+      .claw { fill: #ece4d9; }
+    </style>
+  </defs>
+
+  <g transform="translate(220 110)">
+    <path class="stripe" d="M90 85C110 38 155 14 220 14C286 14 331 38 350 85L315 128C288 103 255 92 220 92C184 92 152 103 125 128Z"/>
+    <ellipse class="fur line" cx="220" cy="290" rx="170" ry="180"/>
+    <ellipse class="fur2" cx="220" cy="352" rx="52" ry="90"/>
+    <ellipse class="fur line" cx="130" cy="96" rx="30" ry="30"/>
+    <ellipse class="fur line" cx="310" cy="96" rx="30" ry="30"/>
+    <ellipse class="blush" cx="130" cy="100" rx="15" ry="15"/>
+    <ellipse class="blush" cx="310" cy="100" rx="15" ry="15"/>
+    <path class="line" d="M150 210C172 194 200 194 222 210" fill="none"/>
+    <path class="line" d="M218 210C240 194 268 194 290 210" fill="none"/>
+    <ellipse class="nose" cx="220" cy="250" rx="28" ry="20"/>
+    <path class="line" d="M220 268V292"/>
+    <path class="line" d="M220 292C203 308 183 308 166 295" fill="none"/>
+    <path class="line" d="M220 292C237 308 257 308 274 295" fill="none"/>
+    <ellipse class="blush" cx="122" cy="272" rx="16" ry="14"/>
+    <ellipse class="blush" cx="318" cy="272" rx="16" ry="14"/>
+
+    <ellipse class="fur line" cx="116" cy="470" rx="74" ry="66"/>
+    <ellipse class="fur line" cx="324" cy="470" rx="74" ry="66"/>
+    <ellipse class="fur line" cx="78" cy="430" rx="30" ry="42"/>
+    <ellipse class="fur line" cx="362" cy="430" rx="30" ry="42"/>
+    <path class="claw line" d="M48 452L60 434L66 456Z"/>
+    <path class="claw line" d="M70 460L84 442L90 465Z"/>
+    <path class="claw line" d="M348 465L356 442L372 460Z"/>
+    <path class="claw line" d="M370 456L378 434L392 452Z"/>
+    <path class="claw line" d="M82 522L102 502L108 530Z"/>
+    <path class="claw line" d="M108 530L124 508L132 536Z"/>
+    <path class="claw line" d="M308 536L316 508L332 530Z"/>
+    <path class="claw line" d="M332 530L338 502L358 522Z"/>
+    <path class="stripe line" d="M322 420C368 430 406 456 420 492C427 510 418 524 400 525C370 526 336 509 309 480Z"/>
+  </g>
+
+  <g transform="translate(640 110)">
+    <path class="stripe" d="M90 85C110 38 155 14 220 14C286 14 331 38 350 85L315 128C288 103 255 92 220 92C184 92 152 103 125 128Z"/>
+    <ellipse class="fur line" cx="220" cy="290" rx="170" ry="180"/>
+    <ellipse class="fur2" cx="220" cy="352" rx="52" ry="90"/>
+    <ellipse class="fur line" cx="130" cy="96" rx="30" ry="30"/>
+    <ellipse class="fur line" cx="310" cy="96" rx="30" ry="30"/>
+    <ellipse class="blush" cx="130" cy="100" rx="15" ry="15"/>
+    <ellipse class="blush" cx="310" cy="100" rx="15" ry="15"/>
+
+    <ellipse class="line" cx="165" cy="210" rx="40" ry="48" fill="#19171a"/>
+    <ellipse class="line" cx="274" cy="210" rx="40" ry="48" fill="#19171a"/>
+    <ellipse cx="178" cy="198" rx="10" ry="12" fill="#ffffff"/>
+    <ellipse cx="287" cy="198" rx="10" ry="12" fill="#ffffff"/>
+    <ellipse cx="170" cy="225" rx="12" ry="16" fill="#2f2a2c"/>
+    <ellipse cx="279" cy="225" rx="12" ry="16" fill="#2f2a2c"/>
+
+    <ellipse class="nose" cx="220" cy="250" rx="28" ry="20"/>
+    <path class="line" d="M220 268V292"/>
+    <path class="line" d="M220 292C202 310 183 311 165 297" fill="none"/>
+    <path class="line" d="M220 292C238 310 257 311 275 297" fill="none"/>
+    <ellipse class="blush" cx="122" cy="272" rx="16" ry="14"/>
+    <ellipse class="blush" cx="318" cy="272" rx="16" ry="14"/>
+
+    <ellipse class="fur line" cx="116" cy="470" rx="74" ry="66"/>
+    <ellipse class="fur line" cx="324" cy="470" rx="74" ry="66"/>
+    <ellipse class="fur line" cx="78" cy="430" rx="30" ry="42"/>
+    <ellipse class="fur line" cx="362" cy="430" rx="30" ry="42"/>
+    <path class="claw line" d="M48 452L60 434L66 456Z"/>
+    <path class="claw line" d="M70 460L84 442L90 465Z"/>
+    <path class="claw line" d="M348 465L356 442L372 460Z"/>
+    <path class="claw line" d="M370 456L378 434L392 452Z"/>
+    <path class="claw line" d="M82 522L102 502L108 530Z"/>
+    <path class="claw line" d="M108 530L124 508L132 536Z"/>
+    <path class="claw line" d="M308 536L316 508L332 530Z"/>
+    <path class="claw line" d="M332 530L338 502L358 522Z"/>
+    <path class="stripe line" d="M322 420C368 430 406 456 420 492C427 510 418 524 400 525C370 526 336 509 309 480Z"/>
+  </g>
+</svg>

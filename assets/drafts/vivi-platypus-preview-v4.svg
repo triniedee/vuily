@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Vivi baby platypus preview v4</title>
+  <desc id="desc">Cute chibi baby platypus mascot study with large eyes and soft rounded shapes.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff9ee"/>
+      <stop offset="100%" stop-color="#eef8ff"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8f6d54"/>
+      <stop offset="100%" stop-color="#674d3c"/>
+    </linearGradient>
+    <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8b897"/>
+      <stop offset="100%" stop-color="#bf9878"/>
+    </linearGradient>
+    <linearGradient id="bill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7d868f"/>
+      <stop offset="100%" stop-color="#5f6972"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="640" fill="url(#bg)"/>
+  <ellipse cx="470" cy="555" rx="250" ry="28" fill="#7f8b9a" opacity="0.18"/>
+
+  <ellipse cx="615" cy="456" rx="70" ry="32" fill="#705340"/>
+  <path d="M560 458C525 471 510 514 540 539C564 560 607 560 633 547C652 538 660 518 652 500C640 472 598 444 560 458Z" fill="#705340"/>
+
+  <ellipse cx="460" cy="405" rx="250" ry="165" fill="url(#fur)"/>
+  <ellipse cx="455" cy="430" rx="200" ry="120" fill="url(#belly)"/>
+
+  <ellipse cx="640" cy="355" rx="120" ry="90" fill="url(#fur)"/>
+  <ellipse cx="660" cy="360" rx="55" ry="18" fill="#7a5d49" opacity="0.55"/>
+
+  <ellipse cx="605" cy="330" rx="16" ry="12" fill="#4f3b2f"/>
+  <ellipse cx="665" cy="325" rx="16" ry="12" fill="#4f3b2f"/>
+
+  <ellipse cx="692" cy="364" rx="90" ry="40" fill="url(#bill)"/>
+  <ellipse cx="762" cy="370" rx="18" ry="8" fill="#5a646d"/>
+  <circle cx="748" cy="365" r="4.5" fill="#5a646d"/>
+  <circle cx="758" cy="360" r="4.5" fill="#5a646d"/>
+
+  <circle cx="635" cy="345" r="17" fill="#1f1c19"/>
+  <circle cx="639" cy="340" r="5" fill="#fff"/>
+  <path d="M617 377C622 382 630 385 638 385" stroke="#d19493" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <ellipse cx="540" cy="465" rx="45" ry="34" fill="#6c5849"/>
+  <ellipse cx="500" cy="495" rx="45" ry="34" fill="#6c5849"/>
+  <ellipse cx="650" cy="475" rx="45" ry="34" fill="#6c5849"/>
+  <ellipse cx="615" cy="505" rx="45" ry="34" fill="#6c5849"/>
+
+  <path d="M508 492L490 512L510 507L526 522L529 502L549 499L536 487Z" fill="#3f362f"/>
+  <path d="M624 503L606 523L626 518L642 533L645 513L665 510L652 498Z" fill="#3f362f"/>
+  <path d="M543 462L527 478L544 475L558 488L560 472L578 469L566 459Z" fill="#433931"/>
+  <path d="M654 472L639 489L656 486L670 499L672 482L689 479L678 468Z" fill="#433931"/>
+
+  <ellipse cx="640" cy="560" rx="150" ry="16" fill="#f2b7be" opacity="0.25"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 9</title>
+  <desc id="desc">Compass monogram logo featuring a V-shaped directional mark.</desc>
+  <defs>
+    <linearGradient id="bg9" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6e8"/>
+      <stop offset="100%" stop-color="#ecf8ff"/>
+    </linearGradient>
+    <linearGradient id="mark9" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0eb8a8"/>
+      <stop offset="100%" stop-color="#4d8dff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" rx="72" fill="url(#bg9)"/>
+  <g transform="translate(120 170)">
+    <rect x="0" y="0" width="360" height="360" rx="90" fill="#ffffff" stroke="#d5e5f5" stroke-width="10"/>
+    <circle cx="180" cy="180" r="126" fill="none" stroke="url(#mark9)" stroke-width="16"/>
+    <path d="M180 74V286M74 180H286" stroke="#d7e7f8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M180 86L228 220L180 194L132 220Z" fill="#1f6f9a"/>
+    <path d="M180 270L158 206L180 216L202 206Z" fill="#ff5fa9"/>
+    <path d="M122 232L180 148L238 232" fill="none" stroke="#1f6f9a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="180" cy="180" r="11" fill="#1f6f9a"/>
+  </g>
+  <text x="540" y="396" font-size="190" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#1f2240">Vuily</text>
+  <text x="548" y="472" font-size="50" font-family="Nunito, Arial, sans-serif" font-weight="800" letter-spacing="5" fill="#4d7ca5">YOUR FUN COMPASS</text>
+</svg>

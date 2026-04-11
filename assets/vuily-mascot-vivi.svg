@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Vivi the Vuily platypus mascot</title>
+  <desc id="desc">A cheerful cartoon platypus mascot with a wide duck bill, paddle tail, and webbed feet.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3d9"/>
+      <stop offset="100%" stop-color="#e7f6ff"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8f6248"/>
+      <stop offset="100%" stop-color="#5f3d2d"/>
+    </linearGradient>
+    <linearGradient id="bill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8ce9f"/>
+      <stop offset="100%" stop-color="#e9ad80"/>
+    </linearGradient>
+    <linearGradient id="scarf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#15aabf"/>
+      <stop offset="100%" stop-color="#0b7285"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="360" cy="350" r="288" fill="url(#bg)"/>
+  <ellipse cx="360" cy="624" rx="210" ry="34" fill="#d9c1ab" opacity="0.38"/>
+
+  <ellipse cx="360" cy="420" rx="185" ry="190" fill="url(#fur)"/>
+  <ellipse cx="360" cy="425" rx="142" ry="145" fill="#ab7c61"/>
+
+  <ellipse cx="296" cy="255" rx="18" ry="14" fill="#6e4936"/>
+  <ellipse cx="424" cy="255" rx="18" ry="14" fill="#6e4936"/>
+
+  <ellipse cx="360" cy="280" rx="148" ry="108" fill="url(#fur)"/>
+  <ellipse cx="322" cy="258" rx="10" ry="12" fill="#1d1511"/>
+  <ellipse cx="398" cy="258" rx="10" ry="12" fill="#1d1511"/>
+  <circle cx="325" cy="254" r="3" fill="#fff"/>
+  <circle cx="401" cy="254" r="3" fill="#fff"/>
+
+  <ellipse cx="360" cy="318" rx="126" ry="62" fill="url(#bill)"/>
+  <ellipse cx="330" cy="298" rx="7" ry="5" fill="#b27652"/>
+  <ellipse cx="390" cy="298" rx="7" ry="5" fill="#b27652"/>
+  <path d="M255 322C291 348 429 348 465 322" stroke="#cd8f67" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <path d="M266 372C313 354 405 354 451 372L438 410C394 398 326 398 282 410Z" fill="url(#scarf)"/>
+  <path d="M300 409L350 426L323 472C315 486 299 491 285 484C272 477 267 460 274 447Z" fill="#1098ad"/>
+  <circle cx="319" cy="444" r="10" fill="#ffd43b"/>
+
+  <ellipse cx="256" cy="532" rx="48" ry="33" fill="#704a37"/>
+  <path d="M219 532H293" stroke="#5a3a2b" stroke-width="5"/>
+  <path d="M230 546L246 532L262 546L278 532" stroke="#5a3a2b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <ellipse cx="464" cy="532" rx="48" ry="33" fill="#704a37"/>
+  <path d="M427 532H501" stroke="#5a3a2b" stroke-width="5"/>
+  <path d="M438 546L454 532L470 546L486 532" stroke="#5a3a2b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M292 564C334 541 388 541 428 564C397 586 323 586 292 564Z" fill="#56372a"/>
+
+  <path d="M196 502C156 520 152 575 195 595C228 611 276 603 300 580C314 566 316 544 303 528C281 502 233 486 196 502Z" fill="#7a523c"/>
+  <path d="M196 530C227 517 257 520 283 540" stroke="#5d3d2d" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <path d="M446 438L552 468C569 473 579 491 574 507L567 531C562 548 544 558 527 553L421 523C404 518 394 500 399 483L406 459C411 442 429 433 446 438Z" fill="#fff"/>
+  <path d="M454 454L540 479" stroke="#f3a712" stroke-width="8" stroke-linecap="round"/>
+  <path d="M450 478L536 503" stroke="#15aabf" stroke-width="8" stroke-linecap="round"/>
+  <path d="M446 502L532 527" stroke="#ff6b6b" stroke-width="8" stroke-linecap="round"/>
+
+  <text x="360" y="668" text-anchor="middle" font-size="42" font-family="Baloo 2, Nunito, Arial, sans-serif" fill="#5f3a2b">Vivi</text>
+</svg>

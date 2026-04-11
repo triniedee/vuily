@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuily | Account Access</title>
+    <meta
+      name="description"
+      content="Discover joyful adults-only events in San Francisco. Swipe to reserve, add to calendar, and earn points."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page-account-access">
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
+    <div class="bg-shape bg-shape-c"></div>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./app.html">Vuily</a>
+        <div class="stat-chip">Mood: Curious + Adventurous</div>
+      </header>
+      <nav class="top-menu" aria-label="Primary">
+        <a class="menu-link menu-home" href="./app.html">Home</a>
+        <a class="menu-link menu-game-board" href="./game-board.html">Game Board</a>
+        <a class="menu-link menu-reserved" href="./reserved-plans.html">Reserved Plans</a>
+        <a class="menu-link menu-weekly" href="./weekly-compass.html">Weekly Compass</a>
+      </nav>
+
+      <section class="hero account-access-intro">
+        <p class="eyebrow">Account Access</p>
+        <h1>Log in or create your account.</h1>
+        <p class="hero-text">
+          Sign up with email or phone, log in securely, and set up your profile
+          with a photo and alphanumeric username.
+        </p>
+      </section>
+
+      <main id="top">
+        <section class="dashboard">
+          <article class="panel filter-panel">
+            <h2>Pick Your Vibe</h2>
+            <div class="filter-row">
+              <label>Category</label>
+              <div class="multi-select" id="categoryFilterWrap">
+                <button class="multi-select-trigger" type="button" id="categoryFilterTrigger" aria-haspopup="listbox" aria-expanded="false">All</button>
+                <div class="multi-select-dropdown" id="categoryFilterDropdown" role="listbox" aria-multiselectable="true">
+                  <label class="multi-select-option"><input type="checkbox" value="Cultural"> Cultural</label>
+                  <label class="multi-select-option"><input type="checkbox" value="Arts"> Arts</label>
+                  <label class="multi-select-option"><input type="checkbox" value="Music"> Music</label>
+                  <label class="multi-select-option"><input type="checkbox" value="Outdoors"> Outdoors</label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-row">
+              <label>Cost</label>
+              <div class="multi-select" id="costFilterWrap">
+                <button class="multi-select-trigger" type="button" id="costFilterTrigger" aria-haspopup="listbox" aria-expanded="false">All</button>
+                <div class="multi-select-dropdown" id="costFilterDropdown" role="listbox" aria-multiselectable="true">
+                  <label class="multi-select-option"><input type="checkbox" value="Free"> Free</label>
+                  <label class="multi-select-option"><input type="checkbox" value="Budget"> $ Budget</label>
+                  <label class="multi-select-option"><input type="checkbox" value="Moderate"> $$ Moderate</label>
+                  <label class="multi-select-option"><input type="checkbox" value="Premium"> $$$ Premium</label>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel score-panel">
+            <h2>Game Board</h2>
+            <div class="score-grid">
+              <div>
+                <span class="score-label">Points</span>
+                <p id="points" class="score-value">0</p>
+              </div>
+              <div>
+                <span class="score-label">Streak</span>
+                <p id="streak" class="score-value">0</p>
+              </div>
+              <div>
+                <span class="score-label">Level</span>
+                <p id="level" class="score-value">Explorer</p>
+              </div>
+            </div>
+            <p id="badge" class="badge">Badge: Newcomer</p>
+          </article>
+        </section>
+
+        <section class="cards-area">
+          <article class="panel swipe-panel">
+            <h2>Event Deck</h2>
+            <p class="swipe-help">
+              Swipe left to pass. Swipe right to reserve your spot.
+            </p>
+            <div class="deck-filters">
+              <label for="dateFilter">Date</label>
+              <select id="dateFilter">
+                <option value="today" selected>Today</option>
+                <option value="week">This Week</option>
+                <option value="weekend">This Weekend</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="all">All Dates</option>
+              </select>
+            </div>
+            <div class="deck-wrap">
+              <div id="cardDeck" class="card-deck" aria-live="polite"></div>
+            </div>
+            <div class="actions">
+              <button id="skipBtn" class="action-btn action-pass" type="button">
+                Skip Left
+              </button>
+              <button id="reserveBtn" class="action-btn action-like" type="button">
+                Reserve Right
+              </button>
+            </div>
+          </article>
+
+          <article class="panel saved-panel">
+            <h2>Reserved Plans</h2>
+            <p class="panel-note">
+              Add events to your calendar and rate them after you go.
+            </p>
+            <div class="saved-controls">
+              <input
+                id="savedSearch"
+                class="saved-search-input"
+                type="search"
+                placeholder="Search reserved plans"
+                aria-label="Search reserved plans"
+              />
+              <select id="savedCategoryFilter" aria-label="Filter reserved plans by category">
+                <option value="all">All Categories</option>
+              </select>
+            </div>
+            <div class="saved-toggle">
+              <button id="togglePastPlans" class="tiny-btn" type="button">
+                Show past plans
+              </button>
+            </div>
+            <div id="savedEvents" class="saved-events"></div>
+          </article>
+        </section>
+
+        <section class="week-calendar-wrap" aria-labelledby="weekCalendarTitle">
+          <article class="panel week-calendar-panel">
+            <h2 id="weekCalendarTitle">This Week's Event Compass</h2>
+            <div class="week-calendar-controls">
+              <div class="filter-row">
+                <label>Calendar Categories</label>
+                <div class="multi-select" id="weekCategoryFilterWrap">
+                  <button
+                    class="multi-select-trigger"
+                    type="button"
+                    id="weekCategoryFilterTrigger"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                  >
+                    All
+                  </button>
+                  <div
+                    class="multi-select-dropdown"
+                    id="weekCategoryFilterDropdown"
+                    role="listbox"
+                    aria-multiselectable="true"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <p id="weekCalendarSummary" class="panel-note">
+              Loading this week's events...
+            </p>
+            <div id="weekCalendarGrid" class="week-calendar-grid" aria-live="polite"></div>
+          </article>
+        </section>
+
+      </main>
+    </div>
+
+    <div id="eventModal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-overlay" data-modal-close></div>
+      <div class="modal-content" role="document">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close details">
+          ×
+        </button>
+        <h3 id="modalTitle" class="modal-title"></h3>
+        <p id="modalMeta" class="modal-meta"></p>
+        <p id="modalWhen" class="modal-when"></p>
+        <p id="modalWhere" class="modal-where"></p>
+        <p id="modalDesc" class="modal-desc"></p>
+        <div class="modal-actions">
+          <a id="modalLink" class="tiny-btn" href="#" target="_blank" rel="noopener noreferrer">
+            Open Event Page
+          </a>
+          <button id="modalSkip" class="tiny-btn action-pass" type="button">Skip</button>
+          <button id="modalReserve" class="tiny-btn action-like" type="button">Reserve</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js?v=20260407-2"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Alt 1 Light</title>
+  <desc id="desc">Wordmark logo with playful badge icon optimized for light surfaces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff5ff"/>
+      <stop offset="100%" stop-color="#ffe9f3"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2ec6ff"/>
+      <stop offset="100%" stop-color="#f35fa9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" rx="70" fill="#ffffff"/>
+  <rect x="90" y="120" width="1220" height="660" rx="56" fill="url(#bg)"/>
+  <circle cx="294" cy="355" r="130" fill="url(#accent)"/>
+  <circle cx="294" cy="355" r="98" fill="#ffffff"/>
+  <path d="M244 347L294 408L344 347" fill="none" stroke="#111b4a" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="294" cy="322" r="16" fill="#111b4a"/>
+
+  <text x="460" y="390" font-size="190" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#1f2240">Vuily</text>
+  <text x="466" y="470" font-size="48" font-family="Nunito, Arial, sans-serif" font-weight="700" letter-spacing="5" fill="#3d6d96">YOUR FUN COMPASS</text>
+
+  <path d="M225 560H1170" stroke="#2bc2ff" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+  <path d="M225 600H1170" stroke="#f15aa4" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+  <path d="M225 640H1170" stroke="#f2cc45" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+</svg>

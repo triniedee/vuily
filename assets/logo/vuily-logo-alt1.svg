@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 1</title>
+  <desc id="desc">Wordmark logo with playful badge icon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f215f"/>
+      <stop offset="100%" stop-color="#30135e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2ec6ff"/>
+      <stop offset="100%" stop-color="#f35fa9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" rx="70" fill="#f7f5ef"/>
+  <rect x="90" y="120" width="1220" height="660" rx="56" fill="url(#bg)"/>
+  <circle cx="294" cy="355" r="130" fill="url(#accent)"/>
+  <circle cx="294" cy="355" r="98" fill="#ffffff"/>
+  <path d="M244 347L294 408L344 347" fill="none" stroke="#111b4a" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="294" cy="322" r="16" fill="#111b4a"/>
+
+  <text x="460" y="390" font-size="190" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#f8f1c9">Vuily</text>
+  <text x="466" y="470" font-size="48" font-family="Nunito, Arial, sans-serif" font-weight="700" letter-spacing="5" fill="#9ed9ff">SWIPE YOUR NIGHT</text>
+
+  <path d="M225 560H1170" stroke="#2bc2ff" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+  <path d="M225 600H1170" stroke="#f15aa4" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+  <path d="M225 640H1170" stroke="#f2cc45" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+</svg>

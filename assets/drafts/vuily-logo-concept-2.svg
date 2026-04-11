@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 2</title>
+  <desc id="desc">Minimal rounded icon plus bold geometric wordmark.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9f8ff"/>
+      <stop offset="100%" stop-color="#fff3df"/>
+    </linearGradient>
+    <linearGradient id="mark2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0eb8a8"/>
+      <stop offset="100%" stop-color="#4d8dff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" rx="70" fill="url(#bg2)"/>
+  <rect x="140" y="210" width="300" height="300" rx="82" fill="url(#mark2)"/>
+  <rect x="192" y="266" width="196" height="188" rx="60" fill="#ffffff"/>
+  <path d="M232 336L292 394L352 336" fill="none" stroke="#11708a" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="292" cy="306" r="12" fill="#11708a"/>
+
+  <text x="500" y="405" font-size="196" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#1f2240">Vuily</text>
+  <text x="506" y="482" font-size="50" font-family="Nunito, Arial, sans-serif" font-weight="800" letter-spacing="4" fill="#4f5c92">SAN FRANCISCO EVENTS</text>
+
+  <circle cx="1110" cy="290" r="22" fill="#ff4f8b"/>
+  <circle cx="1160" cy="335" r="14" fill="#ffb800"/>
+  <circle cx="1090" cy="350" r="10" fill="#0eb8a8"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Vivi minimal platypus mascot</title>
+  <desc id="desc">A geometric platypus mascot with strong duck bill and paddle tail silhouette.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4e8"/>
+      <stop offset="100%" stop-color="#eaf7ff"/>
+    </linearGradient>
+    <linearGradient id="bill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8c89c"/>
+      <stop offset="100%" stop-color="#e9aa7f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="720" rx="180" fill="url(#bg)"/>
+  <ellipse cx="360" cy="392" rx="198" ry="186" fill="#7e4c35"/>
+  <ellipse cx="360" cy="284" rx="156" ry="108" fill="#7e4c35"/>
+  <ellipse cx="360" cy="318" rx="132" ry="60" fill="url(#bill)"/>
+  <ellipse cx="320" cy="260" rx="10" ry="11" fill="#2c1b13"/>
+  <ellipse cx="400" cy="260" rx="10" ry="11" fill="#2c1b13"/>
+  <path d="M250 323C286 349 434 349 470 323" stroke="#cf8f67" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M258 404H462L434 452C420 476 394 493 364 493H356C326 493 300 476 286 452Z" fill="#12a6ba"/>
+  <ellipse cx="252" cy="535" rx="48" ry="31" fill="#704a37"/>
+  <ellipse cx="468" cy="535" rx="48" ry="31" fill="#704a37"/>
+  <path d="M300 566C332 545 388 545 420 566C389 586 331 586 300 566Z" fill="#603b2b"/>
+  <path d="M198 506C159 522 156 572 196 592C227 607 270 600 293 580C307 568 309 548 298 532C278 507 235 492 198 506Z" fill="#6b402f"/>
+  <rect x="462" y="430" width="118" height="95" rx="16" fill="#fff"/>
+  <path d="M474 458H566" stroke="#f3a712" stroke-width="8" stroke-linecap="round"/>
+  <path d="M474 482H566" stroke="#0eb8a8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M474 506H566" stroke="#ff4f8b" stroke-width="8" stroke-linecap="round"/>
+  <text x="360" y="620" text-anchor="middle" font-size="56" font-family="Baloo 2, Nunito, Arial, sans-serif" fill="#5e3828">Vivi</text>
+</svg>

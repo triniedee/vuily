@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 3</title>
+  <desc id="desc">Elegant night-life logo with crescent and motion trail accent.</desc>
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101a45"/>
+      <stop offset="100%" stop-color="#2f1158"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe9a8"/>
+      <stop offset="100%" stop-color="#f4c96c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" rx="70" fill="#0f1330"/>
+  <rect x="100" y="120" width="1200" height="660" rx="60" fill="url(#bg3)"/>
+
+  <circle cx="275" cy="340" r="102" fill="url(#gold)"/>
+  <circle cx="315" cy="326" r="92" fill="#1c1a46"/>
+  <path d="M190 500C270 442 338 448 428 500" fill="none" stroke="#2ec6ff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M208 548C292 488 362 496 452 550" fill="none" stroke="#f35fa9" stroke-width="14" stroke-linecap="round"/>
+
+  <text x="480" y="416" font-size="188" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#f8f0cc">Vuily</text>
+  <text x="488" y="488" font-size="46" font-family="Nunito, Arial, sans-serif" font-weight="700" letter-spacing="7" fill="#9ed9ff">AFTER DARK</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 8</title>
+  <desc id="desc">Night compass emblem with cardinal points and glowing needle.</desc>
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101f52"/>
+      <stop offset="100%" stop-color="#2d125d"/>
+    </linearGradient>
+    <linearGradient id="needle8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2ec6ff"/>
+      <stop offset="100%" stop-color="#f35fa9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" rx="72" fill="#f1efe8"/>
+  <rect x="90" y="110" width="1220" height="680" rx="60" fill="url(#bg8)"/>
+  <circle cx="300" cy="360" r="168" fill="none" stroke="#f6efc8" stroke-width="14"/>
+  <circle cx="300" cy="360" r="118" fill="none" stroke="#6b7fb8" stroke-width="8"/>
+  <path d="M300 218L320 258L280 258Z" fill="#f6efc8"/>
+  <path d="M300 502L320 462L280 462Z" fill="#f6efc8"/>
+  <path d="M158 360L198 340L198 380Z" fill="#f6efc8"/>
+  <path d="M442 360L402 340L402 380Z" fill="#f6efc8"/>
+  <path d="M300 258L338 372L300 352L262 372Z" fill="url(#needle8)"/>
+  <path d="M300 462L278 388L300 400L322 388Z" fill="#f3ca44"/>
+  <circle cx="300" cy="360" r="13" fill="#f6efc8"/>
+  <text x="500" y="410" font-size="188" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#f6efc8">Vuily</text>
+  <text x="508" y="486" font-size="50" font-family="Nunito, Arial, sans-serif" font-weight="800" letter-spacing="6" fill="#9ed9ff">YOUR FUN COMPASS</text>
+</svg>

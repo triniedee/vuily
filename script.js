@@ -441,6 +441,7 @@ const state = {
   savedCategory: "all",
   isAnimatingSwipe: false,
   showPastPlans: false,
+  calendarCategories: [],
 };
 
 const cardDeck = document.getElementById("cardDeck");
@@ -448,6 +449,8 @@ const categoryFilterTrigger = document.getElementById("categoryFilterTrigger");
 const categoryFilterDropdown = document.getElementById("categoryFilterDropdown");
 const costFilterTrigger = document.getElementById("costFilterTrigger");
 const costFilterDropdown = document.getElementById("costFilterDropdown");
+const weekCategoryFilterTrigger = document.getElementById("weekCategoryFilterTrigger");
+const weekCategoryFilterDropdown = document.getElementById("weekCategoryFilterDropdown");
 const skipBtn = document.getElementById("skipBtn");
 const reserveBtn = document.getElementById("reserveBtn");
 const savedEvents = document.getElementById("savedEvents");
@@ -460,6 +463,8 @@ const streakEl = document.getElementById("streak");
 const levelEl = document.getElementById("level");
 const badgeEl = document.getElementById("badge");
 const lastUpdatedEl = document.getElementById("lastUpdated");
+const weekCalendarSummaryEl = document.getElementById("weekCalendarSummary");
+const weekCalendarGridEl = document.getElementById("weekCalendarGrid");
 const eventModal = document.getElementById("eventModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalMeta = document.getElementById("modalMeta");
@@ -471,6 +476,671 @@ const modalSkip = document.getElementById("modalSkip");
 const modalReserve = document.getElementById("modalReserve");
 let modalEventId = null;
 let lastFocusedElement = null;
+const AUTH_USERS_STORAGE_KEY = "vuily-auth-users-v1";
+const AUTH_SESSION_STORAGE_KEY = "vuily-auth-session-v1";
+const MAX_PROFILE_PHOTO_BYTES = 1_500_000;
+const authState = {
+  users: [],
+  currentUserKey: "",
+  pendingPhotoDataUrl: "",
+  formMode: "signup",
+  els: {},
+};
+
+function parseJsonStorage(value, fallback) {
+  if (!value) {
+    return fallback;
+  }
+  try {
+    return JSON.parse(value);
+  } catch (error) {
+    return fallback;
+  }
+}
+
+function saveAuthUsers() {
+  localStorage.setItem(AUTH_USERS_STORAGE_KEY, JSON.stringify(authState.users));
+}
+
+function saveAuthSession() {
+  if (!authState.currentUserKey) {
+    localStorage.removeItem(AUTH_SESSION_STORAGE_KEY);
+    return;
+  }
+  localStorage.setItem(AUTH_SESSION_STORAGE_KEY, authState.currentUserKey);
+}
+
+function getUserByKey(userKey) {
+  return authState.users.find((user) => user.userKey === userKey) || null;
+}
+
+function getCurrentUser() {
+  return getUserByKey(authState.currentUserKey);
+}
+
+function setAuthMessage(message, tone = "error") {
+  const authMessageEl = authState.els.authMessageEl;
+  if (!authMessageEl) {
+    return;
+  }
+  authMessageEl.textContent = message || "";
+  authMessageEl.className = "auth-message";
+  if (message) {
+    authMessageEl.classList.add(tone === "success" ? "success" : "error");
+  }
+}
+
+function clearAuthMessage() {
+  setAuthMessage("");
+}
+
+function isValidEmail(value) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || ""));
+}
+
+function normalizePhoneNumber(value) {
+  return String(value || "").replace(/\D/g, "");
+}
+
+function parseIdentifier(rawValue) {
+  const value = String(rawValue || "").trim();
+  if (!value) {
+    return null;
+  }
+
+  if (isValidEmail(value)) {
+    const normalized = value.toLowerCase();
+    return {
+      type: "email",
+      normalized,
+      userKey: `email:${normalized}`,
+      label: normalized,
+    };
+  }
+
+  const digits = normalizePhoneNumber(value);
+  if (digits.length >= 10 && digits.length <= 15 && !/[a-z]/i.test(value)) {
+    return {
+      type: "phone",
+      normalized: digits,
+      userKey: `phone:${digits}`,
+      label: digits,
+    };
+  }
+
+  return null;
+}
+
+function evaluatePasswordRules(password) {
+  const value = String(password || "");
+  return {
+    length: value.length >= 8,
+    uppercase: /[A-Z]/.test(value),
+    number: /\d/.test(value),
+    special: /[^A-Za-z0-9]/.test(value),
+  };
+}
+
+function isPasswordValid(password) {
+  const checks = evaluatePasswordRules(password);
+  return checks.length && checks.uppercase && checks.number && checks.special;
+}
+
+function isUsernameValid(username) {
+  return /^[A-Za-z0-9]+$/.test(String(username || "").trim());
+}
+
+function readImageFileAsDataUrl(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(String(reader.result || ""));
+    reader.onerror = () => reject(new Error("Unable to read image file."));
+    reader.readAsDataURL(file);
+  });
+}
+
+function updatePasswordChecklist(password) {
+  const checks = evaluatePasswordRules(password);
+  const { passwordRuleLength, passwordRuleUppercase, passwordRuleNumber, passwordRuleSpecial } =
+    authState.els;
+  if (passwordRuleLength) {
+    passwordRuleLength.classList.toggle("met", checks.length);
+  }
+  if (passwordRuleUppercase) {
+    passwordRuleUppercase.classList.toggle("met", checks.uppercase);
+  }
+  if (passwordRuleNumber) {
+    passwordRuleNumber.classList.toggle("met", checks.number);
+  }
+  if (passwordRuleSpecial) {
+    passwordRuleSpecial.classList.toggle("met", checks.special);
+  }
+}
+
+function renderProfilePreview(photoDataUrl) {
+  const { authPhotoPreview } = authState.els;
+  if (!authPhotoPreview) {
+    return;
+  }
+  if (photoDataUrl) {
+    authPhotoPreview.src = photoDataUrl;
+    authPhotoPreview.classList.remove("is-hidden");
+  } else {
+    authPhotoPreview.src = "";
+    authPhotoPreview.classList.add("is-hidden");
+  }
+}
+
+function ensureHeaderUserChip() {
+  const siteHeader = document.querySelector(".site-header");
+  if (!siteHeader || document.getElementById("headerUserChip")) {
+    return;
+  }
+
+  const chip = document.createElement("div");
+  chip.id = "headerUserChip";
+  chip.className = "header-user-chip is-hidden";
+  chip.innerHTML = `
+    <img id="headerUserAvatar" class="header-user-avatar" alt="" />
+    <span id="headerUserName" class="header-user-name"></span>
+  `;
+  siteHeader.appendChild(chip);
+}
+
+function ensureHeaderAccountActions() {
+  const siteHeader = document.querySelector(".site-header");
+  if (!siteHeader || document.getElementById("headerAccountActions")) {
+    return;
+  }
+
+  const actions = document.createElement("div");
+  actions.id = "headerAccountActions";
+  actions.className = "header-account-actions";
+  actions.innerHTML = `
+    <div id="headerAccountLoggedOut" class="header-account-logged-out">
+      <a href="./account-access.html#login" class="header-account-link">Log In</a>
+      <a href="./account-access.html#signup" class="header-account-link primary">Create Account</a>
+    </div>
+    <a id="headerAccountManage" href="./account-access.html#profile" class="header-account-link is-hidden">
+      Account Access
+    </a>
+  `;
+  siteHeader.appendChild(actions);
+}
+
+function renderHeaderAccountActions(user) {
+  const loggedOutWrap = document.getElementById("headerAccountLoggedOut");
+  const manageLink = document.getElementById("headerAccountManage");
+  if (!loggedOutWrap || !manageLink) {
+    return;
+  }
+  const loggedIn = Boolean(user);
+  loggedOutWrap.classList.toggle("is-hidden", loggedIn);
+  manageLink.classList.toggle("is-hidden", !loggedIn);
+}
+
+function setAuthFormMode(mode) {
+  const nextMode = mode === "login" ? "login" : "signup";
+  authState.formMode = nextMode;
+  const { signUpForm, logInForm, authModeLoginBtn, authModeSignupBtn } = authState.els;
+  if (!signUpForm || !logInForm || !authModeLoginBtn || !authModeSignupBtn) {
+    return;
+  }
+
+  const isLogin = nextMode === "login";
+  logInForm.classList.toggle("is-hidden", !isLogin);
+  signUpForm.classList.toggle("is-hidden", isLogin);
+  authModeLoginBtn.classList.toggle("active", isLogin);
+  authModeSignupBtn.classList.toggle("active", !isLogin);
+}
+
+function renderHeaderUserChip(user) {
+  const chip = document.getElementById("headerUserChip");
+  const avatar = document.getElementById("headerUserAvatar");
+  const name = document.getElementById("headerUserName");
+  if (!chip || !avatar || !name) {
+    return;
+  }
+
+  if (!user) {
+    chip.classList.add("is-hidden");
+    avatar.removeAttribute("src");
+    name.textContent = "";
+    return;
+  }
+
+  const profile = user.profile || {};
+  const displayName = profile.username || user.identifier;
+  const initial = String(displayName || "U").charAt(0).toUpperCase();
+  if (profile.photoDataUrl) {
+    avatar.src = profile.photoDataUrl;
+    avatar.alt = `${displayName} profile photo`;
+  } else {
+    avatar.removeAttribute("src");
+    avatar.alt = "";
+  }
+  avatar.setAttribute("data-initial", initial);
+  name.textContent = displayName;
+  chip.classList.remove("is-hidden");
+}
+
+function renderAuthView() {
+  const user = getCurrentUser();
+  const {
+    authLoggedOutView,
+    authLoggedInView,
+    authWelcome,
+    authIdentifierLabel,
+    profileUsername,
+  } = authState.els;
+
+  renderHeaderAccountActions(user);
+
+  if (!authLoggedOutView || !authLoggedInView) {
+    renderHeaderUserChip(user);
+    return;
+  }
+
+  const loggedIn = Boolean(user);
+  authLoggedOutView.classList.toggle("is-hidden", loggedIn);
+  authLoggedInView.classList.toggle("is-hidden", !loggedIn);
+
+  if (!loggedIn) {
+    authState.pendingPhotoDataUrl = "";
+    renderProfilePreview("");
+    renderHeaderUserChip(null);
+    setAuthFormMode(authState.formMode);
+    return;
+  }
+
+  const profile = user.profile || {};
+  const displayName = profile.username || user.identifier;
+  if (authWelcome) {
+    authWelcome.textContent = `Welcome, ${displayName}!`;
+  }
+  if (authIdentifierLabel) {
+    authIdentifierLabel.textContent = user.identifierType === "email" ? "Email" : "Phone";
+  }
+  if (profileUsername) {
+    profileUsername.value = profile.username || "";
+  }
+  authState.pendingPhotoDataUrl = profile.photoDataUrl || "";
+  renderProfilePreview(profile.photoDataUrl || "");
+  renderHeaderUserChip(user);
+}
+
+function ensureAuthUi() {
+  const main = document.querySelector("main#top");
+  const pageShell = document.querySelector(".page-shell");
+  if (!main || !pageShell || document.getElementById("authPanel")) {
+    return;
+  }
+
+  const authPanel = document.createElement("section");
+  authPanel.className = "panel auth-panel";
+  authPanel.id = "authPanel";
+  authPanel.innerHTML = `
+    <div class="auth-panel-head">
+      <h2>Account Access</h2>
+      <p class="panel-note">Sign up with email or phone, then create your profile.</p>
+    </div>
+
+    <p id="authMessage" class="auth-message" aria-live="polite"></p>
+
+    <div id="authLoggedOutView" class="auth-forms-grid">
+      <div class="auth-mode-toggle" role="tablist" aria-label="Account Access Mode">
+        <button id="authModeLoginBtn" class="tiny-btn auth-mode-btn" type="button">Log In</button>
+        <button id="authModeSignupBtn" class="tiny-btn auth-mode-btn" type="button">Create Account</button>
+      </div>
+      <form id="signUpForm" class="auth-form">
+        <h3>Create Account</h3>
+        <label for="signUpIdentifier">Email or Phone Number</label>
+        <input id="signUpIdentifier" type="text" autocomplete="username" placeholder="name@example.com or 4155551212" required />
+
+        <label for="signUpPassword">Password</label>
+        <input id="signUpPassword" type="password" autocomplete="new-password" placeholder="Create password" required />
+        <ul class="password-rules">
+          <li id="passwordRuleLength">At least 8 characters</li>
+          <li id="passwordRuleUppercase">One capital letter</li>
+          <li id="passwordRuleNumber">One number</li>
+          <li id="passwordRuleSpecial">One special character</li>
+        </ul>
+
+        <label for="signUpPasswordConfirm">Confirm Password</label>
+        <input id="signUpPasswordConfirm" type="password" autocomplete="new-password" placeholder="Confirm password" required />
+        <button type="submit" class="tiny-btn auth-btn">Sign Up</button>
+      </form>
+
+      <form id="logInForm" class="auth-form">
+        <h3>Log In</h3>
+        <label for="logInIdentifier">Email or Phone Number</label>
+        <input id="logInIdentifier" type="text" autocomplete="username" placeholder="name@example.com or 4155551212" required />
+        <label for="logInPassword">Password</label>
+        <input id="logInPassword" type="password" autocomplete="current-password" placeholder="Enter password" required />
+        <button type="submit" class="tiny-btn auth-btn">Enter</button>
+      </form>
+    </div>
+
+    <div id="authLoggedInView" class="auth-logged-in is-hidden">
+      <div class="auth-logged-head">
+        <p id="authWelcome" class="auth-welcome"></p>
+        <button id="authLogoutBtn" type="button" class="tiny-btn">Log Out</button>
+      </div>
+
+      <form id="profileForm" class="auth-form profile-form">
+        <h3>Create Your Profile</h3>
+        <label for="profileUsername">Username (alphanumeric)</label>
+        <input id="profileUsername" type="text" inputmode="text" autocomplete="nickname" placeholder="Username" required />
+        <label for="profilePhoto">Profile Photo (optional)</label>
+        <input id="profilePhoto" type="file" accept="image/*" />
+        <img id="authPhotoPreview" class="auth-photo-preview is-hidden" alt="Profile photo preview" />
+        <button type="submit" class="tiny-btn auth-btn">Save Profile</button>
+      </form>
+
+      <p class="auth-account-meta">
+        Signed in with <span id="authIdentifierLabel"></span>.
+      </p>
+    </div>
+  `;
+
+  pageShell.insertBefore(authPanel, main);
+}
+
+function loadAuthState() {
+  const users = parseJsonStorage(localStorage.getItem(AUTH_USERS_STORAGE_KEY), []);
+  authState.users = Array.isArray(users) ? users : [];
+  authState.currentUserKey = localStorage.getItem(AUTH_SESSION_STORAGE_KEY) || "";
+  if (!getCurrentUser()) {
+    authState.currentUserKey = "";
+    saveAuthSession();
+  }
+}
+
+function handleSignUpSubmit(event) {
+  event.preventDefault();
+  clearAuthMessage();
+
+  const { signUpIdentifier, signUpPassword, signUpPasswordConfirm } = authState.els;
+  const identifier = parseIdentifier(signUpIdentifier?.value);
+  if (!identifier) {
+    setAuthMessage("Use a valid email or phone number.");
+    return;
+  }
+
+  const password = String(signUpPassword?.value || "");
+  if (!isPasswordValid(password)) {
+    setAuthMessage(
+      "Password must have at least 8 characters, one capital letter, one number, and one special character."
+    );
+    return;
+  }
+
+  const confirmPassword = String(signUpPasswordConfirm?.value || "");
+  if (password !== confirmPassword) {
+    setAuthMessage("Password and confirm password do not match.");
+    return;
+  }
+
+  const exists = authState.users.some((user) => user.userKey === identifier.userKey);
+  if (exists) {
+    setAuthMessage("An account already exists for this email/phone.");
+    return;
+  }
+
+  const newUser = {
+    userKey: identifier.userKey,
+    identifierType: identifier.type,
+    identifier: identifier.normalized,
+    password,
+    profile: {
+      username: "",
+      photoDataUrl: "",
+    },
+    createdAt: new Date().toISOString(),
+  };
+  authState.users.push(newUser);
+  authState.currentUserKey = newUser.userKey;
+  saveAuthUsers();
+  saveAuthSession();
+  if (signUpPassword) {
+    signUpPassword.value = "";
+  }
+  if (signUpPasswordConfirm) {
+    signUpPasswordConfirm.value = "";
+  }
+  updatePasswordChecklist("");
+  renderAuthView();
+  setAuthMessage("Account created. You are now logged in. Create your profile next.", "success");
+}
+
+function handleLogInSubmit(event) {
+  event.preventDefault();
+  clearAuthMessage();
+
+  const { logInIdentifier, logInPassword } = authState.els;
+  const identifier = parseIdentifier(logInIdentifier?.value);
+  if (!identifier) {
+    setAuthMessage("Use the email or phone number linked to your account.");
+    return;
+  }
+
+  const user = authState.users.find((entry) => entry.userKey === identifier.userKey);
+  if (!user || user.password !== String(logInPassword?.value || "")) {
+    setAuthMessage("Invalid login. Check your email/phone and password.");
+    return;
+  }
+
+  authState.currentUserKey = user.userKey;
+  saveAuthSession();
+  renderAuthView();
+  setAuthMessage("Logged in successfully.", "success");
+}
+
+function isUsernameTaken(username, currentUserKey) {
+  const normalized = String(username || "").toLowerCase();
+  return authState.users.some((user) => {
+    if (user.userKey === currentUserKey) {
+      return false;
+    }
+    const candidate = String(user.profile?.username || "").toLowerCase();
+    return candidate && candidate === normalized;
+  });
+}
+
+async function handleProfilePhotoChange(event) {
+  const fileInput = event.target;
+  if (!(fileInput instanceof HTMLInputElement) || !fileInput.files || !fileInput.files[0]) {
+    return;
+  }
+
+  const file = fileInput.files[0];
+  if (file.size > MAX_PROFILE_PHOTO_BYTES) {
+    setAuthMessage("Profile photo is too large. Please upload an image under 1.5MB.");
+    fileInput.value = "";
+    return;
+  }
+
+  try {
+    const dataUrl = await readImageFileAsDataUrl(file);
+    authState.pendingPhotoDataUrl = dataUrl;
+    renderProfilePreview(dataUrl);
+    clearAuthMessage();
+  } catch (error) {
+    setAuthMessage("Could not load that image. Please try another file.");
+  }
+}
+
+function handleProfileSave(event) {
+  event.preventDefault();
+  clearAuthMessage();
+
+  const user = getCurrentUser();
+  if (!user) {
+    setAuthMessage("Please log in before editing your profile.");
+    return;
+  }
+
+  const username = String(authState.els.profileUsername?.value || "").trim();
+  if (!username) {
+    setAuthMessage("Username is required.");
+    return;
+  }
+  if (!isUsernameValid(username)) {
+    setAuthMessage("Username must be alphanumeric only.");
+    return;
+  }
+  if (isUsernameTaken(username, user.userKey)) {
+    setAuthMessage("That username is already taken. Try another one.");
+    return;
+  }
+
+  user.profile = {
+    username,
+    photoDataUrl: authState.pendingPhotoDataUrl || user.profile?.photoDataUrl || "",
+  };
+  saveAuthUsers();
+  renderAuthView();
+  setAuthMessage("Profile saved.", "success");
+}
+
+function handleLogout() {
+  authState.currentUserKey = "";
+  authState.pendingPhotoDataUrl = "";
+  saveAuthSession();
+  renderAuthView();
+  setAuthMessage("You have been logged out.", "success");
+}
+
+function bindAuthEvents() {
+  const signUpForm = document.getElementById("signUpForm");
+  const logInForm = document.getElementById("logInForm");
+  const profileForm = document.getElementById("profileForm");
+  const signUpIdentifier = document.getElementById("signUpIdentifier");
+  const signUpPassword = document.getElementById("signUpPassword");
+  const signUpPasswordConfirm = document.getElementById("signUpPasswordConfirm");
+  const logInIdentifier = document.getElementById("logInIdentifier");
+  const logInPassword = document.getElementById("logInPassword");
+  const profileUsername = document.getElementById("profileUsername");
+  const profilePhoto = document.getElementById("profilePhoto");
+  const authLogoutBtn = document.getElementById("authLogoutBtn");
+  const authLoggedOutView = document.getElementById("authLoggedOutView");
+  const authLoggedInView = document.getElementById("authLoggedInView");
+  const authWelcome = document.getElementById("authWelcome");
+  const authIdentifierLabel = document.getElementById("authIdentifierLabel");
+  const authPhotoPreview = document.getElementById("authPhotoPreview");
+  const authMessageEl = document.getElementById("authMessage");
+  const authModeLoginBtn = document.getElementById("authModeLoginBtn");
+  const authModeSignupBtn = document.getElementById("authModeSignupBtn");
+  const passwordRuleLength = document.getElementById("passwordRuleLength");
+  const passwordRuleUppercase = document.getElementById("passwordRuleUppercase");
+  const passwordRuleNumber = document.getElementById("passwordRuleNumber");
+  const passwordRuleSpecial = document.getElementById("passwordRuleSpecial");
+
+  authState.els = {
+    signUpForm,
+    logInForm,
+    profileForm,
+    signUpIdentifier,
+    signUpPassword,
+    signUpPasswordConfirm,
+    logInIdentifier,
+    logInPassword,
+    profileUsername,
+    profilePhoto,
+    authLogoutBtn,
+    authLoggedOutView,
+    authLoggedInView,
+    authWelcome,
+    authIdentifierLabel,
+    authPhotoPreview,
+    authMessageEl,
+    authModeLoginBtn,
+    authModeSignupBtn,
+    passwordRuleLength,
+    passwordRuleUppercase,
+    passwordRuleNumber,
+    passwordRuleSpecial,
+  };
+
+  if (signUpForm) {
+    signUpForm.addEventListener("submit", handleSignUpSubmit);
+  }
+  if (logInForm) {
+    logInForm.addEventListener("submit", handleLogInSubmit);
+  }
+  if (profileForm) {
+    profileForm.addEventListener("submit", handleProfileSave);
+  }
+  if (authLogoutBtn) {
+    authLogoutBtn.addEventListener("click", handleLogout);
+  }
+  if (profilePhoto) {
+    profilePhoto.addEventListener("change", handleProfilePhotoChange);
+  }
+  if (signUpPassword) {
+    signUpPassword.addEventListener("input", () => {
+      updatePasswordChecklist(signUpPassword.value);
+    });
+  }
+  if (authModeLoginBtn) {
+    authModeLoginBtn.addEventListener("click", () => {
+      clearAuthMessage();
+      setAuthFormMode("login");
+      authState.els.logInIdentifier?.focus();
+    });
+  }
+  if (authModeSignupBtn) {
+    authModeSignupBtn.addEventListener("click", () => {
+      clearAuthMessage();
+      setAuthFormMode("signup");
+      authState.els.signUpIdentifier?.focus();
+    });
+  }
+}
+
+function applyAuthHashRoute() {
+  const hash = String(window.location.hash || "").toLowerCase();
+  if (!hash) {
+    return;
+  }
+  const user = getCurrentUser();
+  if (hash === "#login") {
+    setAuthFormMode("login");
+    authState.els.logInIdentifier?.focus();
+    return;
+  }
+  if (hash === "#signup") {
+    setAuthFormMode("signup");
+    authState.els.signUpIdentifier?.focus();
+    return;
+  }
+  if (hash === "#profile") {
+    if (user) {
+      authState.els.profileUsername?.focus();
+    } else {
+      authState.els.logInIdentifier?.focus();
+      setAuthMessage("Please log in first, then complete your profile.");
+    }
+  }
+}
+
+function initAuthFeature() {
+  const isAccountAccessPage = document.body.classList.contains("page-account-access");
+  ensureHeaderAccountActions();
+  ensureHeaderUserChip();
+  if (isAccountAccessPage) {
+    ensureAuthUi();
+    bindAuthEvents();
+  }
+  loadAuthState();
+  if (isAccountAccessPage) {
+    updatePasswordChecklist("");
+  }
+  renderAuthView();
+  if (isAccountAccessPage) {
+    applyAuthHashRoute();
+  }
+}
 
 function getCheckedValues(dropdown) {
   return Array.from(dropdown.querySelectorAll("input[type=checkbox]:checked")).map((cb) => cb.value);
@@ -511,6 +1181,18 @@ costFilterDropdown.addEventListener("change", () => {
   updateTriggerLabel(costFilterTrigger, state.cost);
   refreshQueue();
 });
+
+if (weekCategoryFilterTrigger && weekCategoryFilterDropdown) {
+  weekCategoryFilterTrigger.addEventListener("click", () => {
+    toggleMultiSelect(weekCategoryFilterTrigger, weekCategoryFilterDropdown);
+  });
+
+  weekCategoryFilterDropdown.addEventListener("change", () => {
+    state.calendarCategories = getCheckedValues(weekCategoryFilterDropdown);
+    updateTriggerLabel(weekCategoryFilterTrigger, state.calendarCategories);
+    renderWeeklyCalendar();
+  });
+}
 
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".multi-select")) {
@@ -1287,6 +1969,212 @@ function updateLastUpdated(date = new Date(), suffix = "") {
   lastUpdatedEl.textContent = `Last updated: ${label}${suffix}`;
 }
 
+function startOfDay(value) {
+  const date = new Date(value);
+  date.setHours(0, 0, 0, 0);
+  return date;
+}
+
+function formatCalendarDayLabel(date) {
+  return date.toLocaleDateString("en-US", {
+    weekday: "short",
+  });
+}
+
+function formatCalendarDateLabel(date) {
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+  });
+}
+
+function syncWeekCalendarCategoryOptions() {
+  if (!weekCategoryFilterDropdown || !weekCategoryFilterTrigger) {
+    return;
+  }
+
+  const categories = [...new Set(
+    (state.allEvents || [])
+      .map((event) => String(event?.category || "").trim())
+      .filter(Boolean)
+  )].sort((a, b) => a.localeCompare(b));
+
+  const validSelections = state.calendarCategories.filter((category) =>
+    categories.includes(category)
+  );
+  state.calendarCategories = validSelections;
+  weekCategoryFilterDropdown.innerHTML = "";
+
+  categories.forEach((category) => {
+    const option = document.createElement("label");
+    option.className = "multi-select-option";
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = category;
+    checkbox.checked = state.calendarCategories.includes(category);
+    option.appendChild(checkbox);
+    option.append(` ${category}`);
+    weekCategoryFilterDropdown.appendChild(option);
+  });
+
+  updateTriggerLabel(weekCategoryFilterTrigger, state.calendarCategories);
+}
+
+function formatCalendarTimeLabel(date) {
+  return date.toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
+}
+
+function createWeekEventListItem(event) {
+  const item = document.createElement("li");
+  const link = document.createElement("a");
+  const href = event.sourceUrl || event.inviteUrl || "";
+  link.className = "week-day-event-link";
+  link.textContent = event.title || "Untitled event";
+  if (href) {
+    link.href = href;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  } else {
+    link.href = "#";
+    link.addEventListener("click", (e) => e.preventDefault());
+  }
+
+  const timeLabel = document.createElement("span");
+  timeLabel.textContent = ` (${formatCalendarTimeLabel(event._date)})`;
+
+  item.append(link, timeLabel);
+  return item;
+}
+
+function renderWeeklyCalendar() {
+  if (!weekCalendarGridEl || !weekCalendarSummaryEl) {
+    return;
+  }
+
+  syncWeekCalendarCategoryOptions();
+  weekCalendarGridEl.innerHTML = "";
+
+  const today = startOfDay(new Date());
+  const weekDays = Array.from({ length: 7 }, (_, index) => {
+    const date = new Date(today);
+    date.setDate(today.getDate() + index);
+    return date;
+  });
+
+  const validEvents = state.allEvents
+    .map((event) => {
+      const date = new Date(event?.date || "");
+      return Number.isNaN(date.getTime()) ? null : { ...event, _date: date };
+    })
+    .filter(Boolean);
+
+  const weekEndExclusive = new Date(today);
+  weekEndExclusive.setDate(weekEndExclusive.getDate() + 7);
+  const weekEvents = validEvents.filter((event) => {
+    const inWeek = event._date >= today && event._date < weekEndExclusive;
+    const categoryMatch =
+      state.calendarCategories.length === 0 ||
+      state.calendarCategories.includes(event.category);
+    return inWeek && categoryMatch;
+  });
+  weekCalendarSummaryEl.textContent = `Showing ${weekEvents.length} event${
+    weekEvents.length === 1 ? "" : "s"
+  } from live sources over the next 7 days.`;
+
+  weekDays.forEach((dayDate, dayIndex) => {
+    const dayStart = startOfDay(dayDate);
+    const dayEnd = new Date(dayStart);
+    dayEnd.setDate(dayEnd.getDate() + 1);
+    const dayEvents = weekEvents
+      .filter((event) => event._date >= dayStart && event._date < dayEnd)
+      .sort((a, b) => a._date.getTime() - b._date.getTime());
+
+    const dayCard = document.createElement("article");
+    dayCard.className = "week-day-card";
+    dayCard.style.setProperty("--day-stagger", String(dayIndex));
+    if (dayStart.getTime() === today.getTime()) {
+      dayCard.classList.add("today");
+    }
+
+    const head = document.createElement("div");
+    head.className = "week-day-head";
+    const dayName = document.createElement("h3");
+    dayName.className = "week-day-name";
+    dayName.textContent = formatCalendarDayLabel(dayStart);
+    const dayDateText = document.createElement("p");
+    dayDateText.className = "week-day-date";
+    dayDateText.textContent = formatCalendarDateLabel(dayStart);
+    head.append(dayName, dayDateText);
+
+    const count = document.createElement("p");
+    count.className = "week-day-count";
+    count.textContent = `${dayEvents.length} event${dayEvents.length === 1 ? "" : "s"}`;
+
+    dayCard.append(head, count);
+
+    if (!dayEvents.length) {
+      const empty = document.createElement("p");
+      empty.className = "week-day-empty";
+      empty.textContent = "No events loaded for this day yet.";
+      dayCard.appendChild(empty);
+      weekCalendarGridEl.appendChild(dayCard);
+      return;
+    }
+
+    const categoryCounts = new Map();
+    dayEvents.forEach((event) => {
+      const category = event.category || "Uncategorized";
+      categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
+    });
+
+    const categoryWrap = document.createElement("div");
+    categoryWrap.className = "week-day-categories";
+    [...categoryCounts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .forEach(([category, count]) => {
+        const chip = document.createElement("span");
+        chip.className = "week-day-category-chip";
+        chip.textContent = `${category} ${count}`;
+        categoryWrap.appendChild(chip);
+      });
+    dayCard.appendChild(categoryWrap);
+
+    const list = document.createElement("ul");
+    list.className = "week-day-list";
+    dayEvents.slice(0, 4).forEach((event) => {
+      list.appendChild(createWeekEventListItem(event));
+    });
+    dayCard.appendChild(list);
+
+    if (dayEvents.length > 4) {
+      const expandable = document.createElement("details");
+      expandable.className = "week-day-expand";
+
+      const summary = document.createElement("summary");
+      const remaining = dayEvents.length - 4;
+      summary.textContent = `Show ${remaining} more event${
+        remaining === 1 ? "" : "s"
+      }`;
+      expandable.appendChild(summary);
+
+      const fullList = document.createElement("ul");
+      fullList.className = "week-day-list";
+      dayEvents.slice(4).forEach((event) => {
+        fullList.appendChild(createWeekEventListItem(event));
+      });
+      expandable.appendChild(fullList);
+      dayCard.appendChild(expandable);
+    }
+
+    weekCalendarGridEl.appendChild(dayCard);
+  });
+}
+
 function normalizeCategory(rawText) {
   const text = rawText.toLowerCase();
   const nineteenHzTags = [
@@ -1346,6 +2234,34 @@ function normalizeCategory(rawText) {
     text.includes("bike")
   ) {
     return "Outdoors";
+  }
+  if (
+    text.includes("networking") ||
+    text.includes("network event") ||
+    text.includes("meetup") ||
+    text.includes("mixer") ||
+    text.includes("happy hour") ||
+    text.includes("startup") ||
+    text.includes("founder") ||
+    text.includes("entrepreneur") ||
+    text.includes("pitch") ||
+    text.includes("demo day") ||
+    text.includes("demo night") ||
+    text.includes("hackathon") ||
+    text.includes("career fair") ||
+    text.includes("job fair") ||
+    text.includes("tech talk") ||
+    text.includes("panel") ||
+    text.includes("workshop") ||
+    text.includes("speaker") ||
+    text.includes("fireside") ||
+    text.includes("community") ||
+    text.includes("builders") ||
+    text.includes("connect") ||
+    text.includes("conference") ||
+    text.includes("summit")
+  ) {
+    return "Networking";
   }
   return "Cultural";
 }
@@ -2198,6 +3114,139 @@ async function fetchFuncheapListings() {
   return items;
 }
 
+async function fetchApifyDataset(datasetId) {
+  const res = await fetch(`/apify-dataset?id=${encodeURIComponent(datasetId)}`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Apify dataset ${datasetId} failed (${res.status})`);
+  return res.json();
+}
+
+// Dataset IDs from your Apify account
+const APIFY_DATASET_EVENTBRITE = "cFEcLNFCjkaNd0Dci";
+const APIFY_DATASET_EVENTBRITE_ONLINE = "rF4QswDVxXtzbuVPl";
+const APIFY_DATASET_LUMA = "z7sA6wzx3DF8w6Zhx";
+const APIFY_DATASET_GOOGLE = "5XkgHAs8QoMP4sUe6";
+
+function mapApifyEventbriteItem(item, index) {
+  const title = decodeHtmlEntities((item.name || "").trim());
+  if (!title) return null;
+  const startDate = item.startDate?.local || item.startDate?.utc || item.startDate;
+  if (!startDate) return null;
+  const date = new Date(startDate);
+  if (Number.isNaN(date.getTime())) return null;
+  if (item.isOnline) return null;
+  const addrLines = item.venue?.address?.localizedMultiLineAddressDisplay || [];
+  const venue = [item.venue?.name, ...addrLines].filter(Boolean).join(", ");
+  const url = item.url || "";
+  const description = decodeHtmlEntities(stripHtml(item.summary || ""));
+  const isFree = item.isFree === true;
+  return {
+    id: `apify-eventbrite-${item.id || (url || title).toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${index}`,
+    title,
+    inviteUrl: url,
+    sourceUrl: url,
+    category: normalizeCategory(`${title} ${description} ${venue}`),
+    cost: isFree ? "Free" : normalizeCost(`${title} ${description}`),
+    date: date.toISOString(),
+    location: venue || "San Francisco",
+    source: "Eventbrite",
+    dateSource: "apify-eventbrite",
+    description,
+  };
+}
+
+async function fetchApifyEventbriteEvents() {
+  const [items1, items2] = await Promise.all([
+    fetchApifyDataset(APIFY_DATASET_EVENTBRITE),
+    fetchApifyDataset(APIFY_DATASET_EVENTBRITE_ONLINE),
+  ]);
+  const items = [...items1, ...items2];
+  console.info("[apify-eventbrite] items", items.length);
+  return items.map((item, i) => mapApifyEventbriteItem(item, i)).filter(Boolean);
+}
+
+function mapApifyLumaItem(item, index) {
+  const title = decodeHtmlEntities((item.name || "").trim());
+  if (!title) return null;
+  const startDate = item.startAt;
+  if (!startDate) return null;
+  const date = new Date(startDate);
+  if (Number.isNaN(date.getTime())) return null;
+  if (item.location?.locationType === "online") return null;
+  const venue = item.location?.fullAddress || item.location?.address ||
+    [item.location?.city, item.location?.region].filter(Boolean).join(", ") || "San Francisco";
+  const url = item.lumaUrl || "";
+  const description = decodeHtmlEntities(stripHtml(item.description || ""));
+  const isFree = item.ticketing?.isFree === true;
+  const priceCents = item.ticketing?.priceCents;
+  const costText = isFree ? "Free" : priceCents ? normalizeCost(`$${(priceCents / 100).toFixed(0)}`) : normalizeCost(`${title} ${description}`);
+  return {
+    id: `apify-luma-${item.id || (url || title).toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${index}`,
+    title,
+    inviteUrl: url,
+    sourceUrl: url,
+    category: normalizeCategory(`${title} ${description} ${item.category || ""} ${venue}`),
+    cost: costText,
+    date: date.toISOString(),
+    location: venue,
+    source: "Luma",
+    dateSource: "apify-luma",
+    description,
+  };
+}
+
+async function fetchApifyLumaEvents() {
+  const items = await fetchApifyDataset(APIFY_DATASET_LUMA);
+  console.info("[apify-luma] items", items.length);
+  return items.map((item, i) => mapApifyLumaItem(item, i)).filter(Boolean);
+}
+
+function mapApifyGoogleEventsItem(event, index) {
+  const title = decodeHtmlEntities((event.title || "").trim());
+  if (!title) return null;
+  // date.when is like "Sat, Apr 11, 1 – 4 PM"
+  const when = event.date?.when || "";
+  const startDateStr = event.date?.start_date;
+  let date;
+  if (startDateStr) {
+    // "Apr 11" — add current year
+    date = new Date(`${startDateStr}, ${new Date().getFullYear()}`);
+    // extract time from when string if possible
+    const timeMatch = when.match(/(\d+(?::\d+)?)\s*(AM|PM)/i);
+    if (timeMatch && !Number.isNaN(date.getTime())) {
+      let [, timePart, ampm] = timeMatch;
+      let [hours, mins] = timePart.split(":").map(Number);
+      if (ampm.toUpperCase() === "PM" && hours !== 12) hours += 12;
+      if (ampm.toUpperCase() === "AM" && hours === 12) hours = 0;
+      date.setHours(hours, mins || 0, 0, 0);
+    }
+  }
+  if (!date || Number.isNaN(date.getTime())) return null;
+  const address = Array.isArray(event.address) ? event.address.join(", ") : (event.address || "San Francisco");
+  const url = event.link || "";
+  const description = decodeHtmlEntities(stripHtml(event.description || ""));
+  return {
+    id: `apify-google-${(url || title).toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${index}`,
+    title,
+    inviteUrl: url,
+    sourceUrl: url,
+    category: normalizeCategory(`${title} ${description} ${address}`),
+    cost: normalizeCost(`${title} ${description}`),
+    date: date.toISOString(),
+    location: address,
+    source: "Google Events",
+    dateSource: "apify-google",
+    description,
+  };
+}
+
+async function fetchApifyGoogleEvents() {
+  const pages = await fetchApifyDataset(APIFY_DATASET_GOOGLE);
+  // Each item in this dataset is a page result containing an events array
+  const events = pages.flatMap((page) => page.events || []);
+  console.info("[apify-google] events", events.length);
+  return events.map((item, i) => mapApifyGoogleEventsItem(item, i)).filter(Boolean);
+}
+
 async function fetchEventPageData(url) {
   const htmlText = await fetchTextWithProxyFallback(url, "Event page request");
   const doc = new DOMParser().parseFromString(htmlText, "text/html");
@@ -2458,7 +3507,51 @@ async function loadEvents() {
       console.warn("[timeout] error", timeoutError);
     }
 
-    let mapped = [...listingMapped, ...feedMapped, ...nineteenHzMapped, ...poshMapped, ...meetupMapped, ...eventbriteMapped, ...timeoutMapped];
+    let apifyEventbriteMapped = [];
+    try {
+      apifyEventbriteMapped = await Promise.race([
+        fetchApifyEventbriteEvents(),
+        new Promise((_, reject) => setTimeout(() => reject(new Error("Apify Eventbrite timed out")), 30000)),
+      ]);
+      console.warn("[apify-eventbrite] mapped", apifyEventbriteMapped.length);
+    } catch (err) {
+      console.warn("[apify-eventbrite] error", err);
+    }
+
+    let apifyMeetupMapped = [];
+    try {
+      apifyMeetupMapped = await Promise.race([
+        fetchApifyMeetupEvents(),
+        new Promise((_, reject) => setTimeout(() => reject(new Error("Apify Meetup timed out")), 30000)),
+      ]);
+      console.warn("[apify-meetup] mapped", apifyMeetupMapped.length);
+    } catch (err) {
+      console.warn("[apify-meetup] error", err);
+    }
+
+    let apifyLumaMapped = [];
+    try {
+      apifyLumaMapped = await Promise.race([
+        fetchApifyLumaEvents(),
+        new Promise((_, reject) => setTimeout(() => reject(new Error("Apify Luma timed out")), 30000)),
+      ]);
+      console.warn("[apify-luma] mapped", apifyLumaMapped.length);
+    } catch (err) {
+      console.warn("[apify-luma] error", err);
+    }
+
+    let apifyGoogleMapped = [];
+    try {
+      apifyGoogleMapped = await Promise.race([
+        fetchApifyGoogleEvents(),
+        new Promise((_, reject) => setTimeout(() => reject(new Error("Apify Google timed out")), 30000)),
+      ]);
+      console.warn("[apify-google] mapped", apifyGoogleMapped.length);
+    } catch (err) {
+      console.warn("[apify-google] error", err);
+    }
+
+    let mapped = [...listingMapped, ...feedMapped, ...nineteenHzMapped, ...poshMapped, ...meetupMapped, ...eventbriteMapped, ...timeoutMapped, ...apifyEventbriteMapped, ...apifyMeetupMapped, ...apifyLumaMapped, ...apifyGoogleMapped];
     mapped = await enrichFuncheapDates(mapped);
     mapped = enrichEventsWithCityLookup(mapped);
 
@@ -2481,7 +3574,7 @@ async function loadEvents() {
       state.deckMessage =
         "Live sources are temporarily unavailable. Showing sample events for now.";
     }
-    const countSuffix = ` (SF Funcheap ${feedMapped.length + listingMapped.length}, 19hz ${nineteenHzMapped.length}, Posh ${poshMapped.length}, Meetup ${meetupMapped.length}, Eventbrite ${eventbriteMapped.length}, Timeout SF ${timeoutMapped.length})`;
+    const countSuffix = ` (SF Funcheap ${feedMapped.length + listingMapped.length}, 19hz ${nineteenHzMapped.length}, Posh ${poshMapped.length}, Meetup ${meetupMapped.length + apifyMeetupMapped.length}, Eventbrite ${eventbriteMapped.length + apifyEventbriteMapped.length}, Luma ${apifyLumaMapped.length}, Google ${apifyGoogleMapped.length}, Timeout SF ${timeoutMapped.length})`;
     updateLastUpdated(
       Number.isNaN(feedStamp.getTime()) ? new Date() : feedStamp,
       countSuffix
@@ -2495,6 +3588,7 @@ async function loadEvents() {
   }
 
   refreshQueue();
+  renderWeeklyCalendar();
 }
 
 function downloadICS(event) {
@@ -2554,6 +3648,7 @@ function downloadICS(event) {
   setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
 }
 
+initAuthFeature();
 loadEvents();
 renderSavedEvents();
 updateScoreBoard();

@@ -51,6 +51,25 @@ function extractPanelTitle(html, panelClass) {
   );
 }
 
+function extractTopMenuItems(html) {
+  const navMatch = html.match(
+    /<nav[^>]*class="[^"]*\btop-menu\b[^"]*"[^>]*>([\s\S]*?)<\/nav>/i
+  );
+  if (!navMatch) {
+    return [];
+  }
+  const labels = [];
+  const anchorRegex = /<a[^>]*class="[^"]*\bmenu-link\b[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
+  let match = null;
+  while ((match = anchorRegex.exec(navMatch[1])) !== null) {
+    const label = normalizeText(match[1]);
+    if (label) {
+      labels.push(label);
+    }
+  }
+  return labels;
+}
+
 function extractButtonTextById(html, buttonId) {
   return extractMatch(html, new RegExp(`<button[^>]*id="${buttonId}"[^>]*>([\\s\\S]*?)<\\/button>`, "i"));
 }
@@ -72,7 +91,7 @@ function buildPenModel(values) {
         y: 80,
         name: `Vuily SF Events • Synced ${nowIso}`,
         width: 1360,
-        height: 980,
+        height: 1220,
         fill: "#FFF7DE",
         cornerRadius: 24,
         layout: "vertical",
@@ -173,6 +192,33 @@ function buildPenModel(values) {
           },
           {
             type: "frame",
+            id: "top_menu",
+            width: "fill_container",
+            gap: 10,
+            children: (values.menuItems?.length ? values.menuItems : ["Game Board", "Reserved Plans", "Weekly Compass"]).map(
+              (item, index) => ({
+                type: "frame",
+                id: `menu_item_${index + 1}`,
+                fill: index === 0 ? "#4D8DFF" : "#FFFFFF",
+                stroke: index === 0 ? undefined : "#D7DFEF",
+                cornerRadius: 999,
+                padding: [8, 14],
+                children: [
+                  {
+                    type: "text",
+                    id: `menu_label_${index + 1}`,
+                    fill: index === 0 ? "#FFFFFF" : "#1F2240",
+                    content: item,
+                    fontFamily: "Nunito",
+                    fontSize: 14,
+                    fontWeight: "800",
+                  },
+                ],
+              })
+            ),
+          },
+          {
+            type: "frame",
             id: "dashboard",
             width: "fill_container",
             gap: 16,
@@ -256,14 +302,12 @@ function buildPenModel(values) {
             type: "frame",
             id: "content",
             width: "fill_container",
-            height: "fill_container",
             gap: 16,
             children: [
               {
                 type: "frame",
                 id: "swipe_panel",
                 width: "fill_container",
-                height: "fill_container",
                 fill: "#FFFFFFE0",
                 cornerRadius: 18,
                 layout: "vertical",
@@ -307,7 +351,6 @@ function buildPenModel(values) {
                 type: "frame",
                 id: "saved_panel",
                 width: "fill_container",
-                height: "fill_container",
                 fill: "#FFFFFFE0",
                 cornerRadius: 18,
                 layout: "vertical",
@@ -362,6 +405,51 @@ function buildPenModel(values) {
               },
             ],
           },
+          {
+            type: "frame",
+            id: "weekly_compass_panel",
+            width: "fill_container",
+            fill: "#FFFFFFE0",
+            cornerRadius: 18,
+            layout: "vertical",
+            gap: 10,
+            padding: 16,
+            children: [
+              {
+                type: "text",
+                id: "weekly_title",
+                fill: "#1F2240",
+                content: values.weeklyTitle || "This Week's Event Compass",
+                fontFamily: "Baloo 2",
+                fontSize: 32,
+                fontWeight: "800",
+              },
+              {
+                type: "text",
+                id: "weekly_filter",
+                fill: "#596087",
+                textGrowth: "fixed-width",
+                width: "fill_container",
+                content: values.weeklyFilter || "Calendar Categories: All (multi-select)",
+                fontFamily: "Nunito",
+                fontSize: 15,
+                fontWeight: "700",
+              },
+              {
+                type: "text",
+                id: "weekly_note",
+                fill: "#596087",
+                textGrowth: "fixed-width",
+                width: "fill_container",
+                content:
+                  values.weeklySummary ||
+                  "A 7-day calendar appears here with event links, categories, and expandable day sections.",
+                fontFamily: "Nunito",
+                fontSize: 14,
+                fontWeight: "700",
+              },
+            ],
+          },
         ],
       },
     ],
@@ -392,6 +480,12 @@ function syncPen() {
     reserveButton: extractButtonTextById(html, "reserveBtn"),
     savedSearchPlaceholder: extractInputPlaceholderById(html, "savedSearch"),
     savedCategoryDefault,
+    menuItems: extractTopMenuItems(html),
+    weeklyTitle: extractMatch(html, /<h2[^>]*id="weekCalendarTitle"[^>]*>([\s\S]*?)<\/h2>/i),
+    weeklySummary: extractMatch(html, /<p[^>]*id="weekCalendarSummary"[^>]*>([\s\S]*?)<\/p>/i),
+    weeklyFilter: extractMatch(html, /<label>\s*Calendar Categories\s*<\/label>/i)
+      ? "Calendar Categories: All (multi-select)"
+      : "",
   };
 
   const pen = buildPenModel(values);

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Honey Badger Drawing v1</title>
+  <desc id="desc">A stylized side-view drawing of a honey badger.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6f5f1"/>
+      <stop offset="100%" stop-color="#eceae4"/>
+    </linearGradient>
+    <linearGradient id="furDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f323c"/>
+      <stop offset="100%" stop-color="#171a22"/>
+    </linearGradient>
+    <linearGradient id="furLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0f0ed"/>
+      <stop offset="100%" stop-color="#d6d6d2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <ellipse cx="640" cy="708" rx="430" ry="48" fill="#b7b5ad" opacity="0.35"/>
+
+  <g stroke="#0f1219" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="700" cy="430" rx="360" ry="220" fill="url(#furDark)"/>
+    <path d="M390 378C450 254 592 193 763 205C889 214 988 278 1040 372C995 390 933 402 857 406C822 326 749 287 664 291C578 296 489 340 432 404C405 404 392 395 390 378Z" fill="url(#furLight)"/>
+
+    <ellipse cx="430" cy="430" rx="150" ry="120" fill="url(#furDark)"/>
+    <ellipse cx="414" cy="448" rx="120" ry="84" fill="#232733"/>
+    <ellipse cx="392" cy="410" rx="16" ry="20" fill="#eef0ed"/>
+    <ellipse cx="456" cy="408" rx="16" ry="20" fill="#eef0ed"/>
+    <circle cx="396" cy="414" r="9" fill="#12161e"/>
+    <circle cx="460" cy="412" r="9" fill="#12161e"/>
+    <circle cx="400" cy="410" r="3.5" fill="#fff"/>
+    <circle cx="464" cy="408" r="3.5" fill="#fff"/>
+    <ellipse cx="420" cy="452" rx="26" ry="16" fill="#2d323d"/>
+    <ellipse cx="410" cy="450" rx="3.5" ry="5" fill="#10131a"/>
+    <ellipse cx="430" cy="452" rx="3.5" ry="5" fill="#10131a"/>
+
+    <path d="M792 650C764 696 709 735 660 745C634 751 613 741 611 719C608 695 625 669 660 636C698 599 742 570 780 568C806 567 814 609 792 650Z" fill="#1f242f"/>
+    <path d="M679 738L637 786L690 777L725 816L736 766L791 758L753 724Z" fill="#121720"/>
+
+    <path d="M994 575C968 617 918 651 873 661C848 667 829 659 825 640C821 616 836 592 867 564C903 530 943 505 978 503C1002 501 1013 536 994 575Z" fill="#1f242f"/>
+    <path d="M893 653L855 697L904 689L938 726L947 680L999 672L964 640Z" fill="#121720"/>
+
+    <path d="M560 572C536 611 489 643 447 654C424 660 407 652 403 636C399 615 413 594 441 569C473 538 510 516 542 514C564 513 573 541 560 572Z" fill="#282d38"/>
+    <path d="M465 646L430 687L475 680L507 714L515 673L562 666L530 636Z" fill="#181d27"/>
+
+    <path d="M333 560C312 596 272 625 236 635C216 641 201 635 197 620C193 603 205 584 230 561C258 534 292 515 320 513C340 512 349 535 333 560Z" fill="#323844"/>
+    <path d="M252 627L221 663L262 657L292 689L300 651L342 644L313 616Z" fill="#1f2630"/>
+  </g>
+</svg>

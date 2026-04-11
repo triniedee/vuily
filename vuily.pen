@@ -6,9 +6,9 @@
       "id": "vuily_screen",
       "x": 80,
       "y": 80,
-      "name": "Vuily SF Events • Synced 2026-04-08T01:52:52.617Z",
+      "name": "Vuily SF Events • Synced 2026-04-08T06:11:03.141Z",
       "width": 1360,
-      "height": 980,
+      "height": 1220,
       "fill": "#FFF7DE",
       "cornerRadius": 24,
       "layout": "vertical",
@@ -110,6 +110,101 @@
         },
         {
           "type": "frame",
+          "id": "top_menu",
+          "width": "fill_container",
+          "gap": 10,
+          "children": [
+            {
+              "type": "frame",
+              "id": "menu_item_1",
+              "fill": "#4D8DFF",
+              "cornerRadius": 999,
+              "padding": [
+                8,
+                14
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "menu_label_1",
+                  "fill": "#FFFFFF",
+                  "content": "Home",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "menu_item_2",
+              "fill": "#FFFFFF",
+              "stroke": "#D7DFEF",
+              "cornerRadius": 999,
+              "padding": [
+                8,
+                14
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "menu_label_2",
+                  "fill": "#1F2240",
+                  "content": "Game Board",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "menu_item_3",
+              "fill": "#FFFFFF",
+              "stroke": "#D7DFEF",
+              "cornerRadius": 999,
+              "padding": [
+                8,
+                14
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "menu_label_3",
+                  "fill": "#1F2240",
+                  "content": "Reserved Plans",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "menu_item_4",
+              "fill": "#FFFFFF",
+              "stroke": "#D7DFEF",
+              "cornerRadius": 999,
+              "padding": [
+                8,
+                14
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "menu_label_4",
+                  "fill": "#1F2240",
+                  "content": "Weekly Compass",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "800"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
           "id": "dashboard",
           "width": "fill_container",
           "gap": 16,
@@ -193,14 +288,12 @@
           "type": "frame",
           "id": "content",
           "width": "fill_container",
-          "height": "fill_container",
           "gap": 16,
           "children": [
             {
               "type": "frame",
               "id": "swipe_panel",
               "width": "fill_container",
-              "height": "fill_container",
               "fill": "#FFFFFFE0",
               "cornerRadius": 18,
               "layout": "vertical",
@@ -244,7 +337,6 @@
               "type": "frame",
               "id": "saved_panel",
               "width": "fill_container",
-              "height": "fill_container",
               "fill": "#FFFFFFE0",
               "cornerRadius": 18,
               "layout": "vertical",
@@ -294,6 +386,49 @@
                   "fontWeight": "700"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "weekly_compass_panel",
+          "width": "fill_container",
+          "fill": "#FFFFFFE0",
+          "cornerRadius": 18,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "weekly_title",
+              "fill": "#1F2240",
+              "content": "This Week's Event Compass",
+              "fontFamily": "Baloo 2",
+              "fontSize": 32,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "weekly_filter",
+              "fill": "#596087",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Calendar Categories: All (multi-select)",
+              "fontFamily": "Nunito",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "weekly_note",
+              "fill": "#596087",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Loading this week's events...",
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "700"
             }
           ]
         }

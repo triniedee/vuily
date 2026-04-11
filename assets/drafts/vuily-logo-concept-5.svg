@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 5</title>
+  <desc id="desc">Soft rounded emblem with swirl V mark and clean wordmark.</desc>
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6e7"/>
+      <stop offset="100%" stop-color="#eaf8ff"/>
+    </linearGradient>
+    <linearGradient id="mark5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0eb8a8"/>
+      <stop offset="100%" stop-color="#4d8dff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" rx="72" fill="url(#bg5)"/>
+
+  <circle cx="280" cy="360" r="170" fill="url(#mark5)"/>
+  <circle cx="280" cy="360" r="108" fill="#ffffff"/>
+  <path d="M216 332C240 292 289 285 329 307C356 322 372 351 370 381C368 419 341 452 300 460C263 467 232 453 211 426" fill="none" stroke="#1f5f96" stroke-width="22" stroke-linecap="round"/>
+  <path d="M218 430L282 360L352 430" fill="none" stroke="#1f5f96" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="500" y="410" font-size="186" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#1f2240">Vuily</text>
+  <text x="510" y="486" font-size="46" font-family="Nunito, Arial, sans-serif" font-weight="800" letter-spacing="5" fill="#4d7ca5">YOUR FUN COMPASS</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Honey Badger Concept 1</title>
+  <desc id="desc">A bold honey badger mascot named Riff for Vuily, styled as a fearless nightlife guide.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f215f"/>
+      <stop offset="55%" stop-color="#27135f"/>
+      <stop offset="100%" stop-color="#101b46"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d2f3a"/>
+      <stop offset="100%" stop-color="#151821"/>
+    </linearGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f4f4f0"/>
+      <stop offset="100%" stop-color="#d9d9d6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1200" rx="210" fill="url(#bg)"/>
+  <circle cx="184" cy="202" r="72" fill="#2ec6ff" opacity="0.22"/>
+  <circle cx="986" cy="226" r="84" fill="#f0549f" opacity="0.22"/>
+  <circle cx="956" cy="952" r="118" fill="#ffd24f" opacity="0.2"/>
+
+  <ellipse cx="600" cy="1030" rx="360" ry="62" fill="#101633" opacity="0.9"/>
+
+  <g stroke="#0b0e14" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="600" cy="658" rx="286" ry="304" fill="url(#body)"/>
+    <path d="M358 568C377 475 472 398 600 398C726 398 819 472 842 563" fill="none"/>
+    <path d="M392 502C450 460 526 438 606 438C684 438 755 458 810 498" fill="none" opacity="0.35"/>
+    <path d="M346 530C389 409 493 338 618 334C740 330 842 402 878 522C852 534 818 544 780 550C746 465 674 422 600 422C526 422 454 469 420 554C389 550 362 542 346 530Z" fill="url(#stripe)"/>
+
+    <ellipse cx="600" cy="502" rx="228" ry="182" fill="url(#body)"/>
+    <ellipse cx="600" cy="548" rx="158" ry="118" fill="#20242f"/>
+    <ellipse cx="536" cy="510" rx="24" ry="28" fill="#f8f8f5"/>
+    <ellipse cx="662" cy="510" rx="24" ry="28" fill="#f8f8f5"/>
+    <circle cx="542" cy="516" r="12" fill="#12161f"/>
+    <circle cx="668" cy="516" r="12" fill="#12161f"/>
+    <circle cx="546" cy="512" r="4" fill="#ffffff"/>
+    <circle cx="672" cy="512" r="4" fill="#ffffff"/>
+    <path d="M563 568C583 586 617 586 637 568" fill="none" stroke="#838892"/>
+    <ellipse cx="600" cy="548" rx="38" ry="24" fill="#2b303a"/>
+    <ellipse cx="584" cy="546" rx="4" ry="6" fill="#0f1118"/>
+    <ellipse cx="616" cy="546" rx="4" ry="6" fill="#0f1118"/>
+
+    <path d="M720 706L860 746C888 754 905 783 897 811L885 846C877 874 848 891 820 883L680 843C652 835 635 806 643 778L655 743C663 715 692 698 720 706Z" fill="#f3f4f7"/>
+    <path d="M732 728H860" stroke="#28bdf5" stroke-width="16"/>
+    <path d="M724 766H852" stroke="#f15aa4" stroke-width="16"/>
+    <path d="M716 804H844" stroke="#f2ca43" stroke-width="16"/>
+
+    <ellipse cx="430" cy="866" rx="122" ry="88" fill="#1b1f29"/>
+    <ellipse cx="760" cy="850" rx="116" ry="82" fill="#1b1f29"/>
+    <path d="M324 882L286 924L332 914L364 948L372 904L420 896L388 868Z" fill="#11151e"/>
+    <path d="M680 864L644 904L688 895L720 926L728 886L772 878L742 850Z" fill="#11151e"/>
+  </g>
+
+  <text x="600" y="1120" text-anchor="middle" font-size="84" font-family="Baloo 2, Nunito, Arial, sans-serif" fill="#f5f0c8">Riff The Honey Badger</text>
+</svg>

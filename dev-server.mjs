@@ -9,6 +9,23 @@ const __dirname = path.dirname(__filename);
 const root = __dirname;
 const port = Number(process.env.PORT || 8000);
 
+// Load .env file
+const envPath = path.join(__dirname, ".env");
+if (fs.existsSync(envPath)) {
+  const envLines = fs.readFileSync(envPath, "utf8").split("\n");
+  for (const line of envLines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const eqIdx = trimmed.indexOf("=");
+    if (eqIdx === -1) continue;
+    const key = trimmed.slice(0, eqIdx).trim();
+    const value = trimmed.slice(eqIdx + 1).trim();
+    if (key && !(key in process.env)) process.env[key] = value;
+  }
+}
+
+const APIFY_TOKEN = process.env.APIFY_TOKEN || "";
+
 const MIME_TYPES = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -73,6 +90,72 @@ function fetchUrl(targetUrl, redirects = 0) {
 
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
+
+  if (url.pathname === "/apify-dataset") {
+    if (!APIFY_TOKEN) {
+      return send(res, 500, { "Content-Type": "application/json" }, JSON.stringify({ error: "APIFY_TOKEN not configured" }));
+    }
+    const datasetId = url.searchParams.get("id");
+    if (!datasetId || !/^[a-zA-Z0-9]+$/.test(datasetId)) {
+      return send(res, 400, { "Content-Type": "application/json" }, JSON.stringify({ error: "Invalid dataset id" }));
+    }
+    const datasetUrl = `https://api.apify.com/v2/datasets/${datasetId}/items?token=${APIFY_TOKEN}&format=json&clean=true&limit=1000`;
+    try {
+      const response = await fetchUrl(datasetUrl);
+      return send(res, response.status, {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store",
+      }, response.body);
+    } catch (err) {
+      return send(res, 502, { "Content-Type": "application/json" }, JSON.stringify({ error: "Apify dataset fetch failed", detail: err.message }));
+    }
+  }
+
+  if (url.pathname === "/apify") {
+    if (!APIFY_TOKEN) {
+      return send(res, 500, { "Content-Type": "application/json" }, JSON.stringify({ error: "APIFY_TOKEN not configured" }));
+    }
+    const actor = url.searchParams.get("actor");
+    const input = url.searchParams.get("input");
+    if (!actor) {
+      return send(res, 400, { "Content-Type": "application/json" }, JSON.stringify({ error: "Missing actor param" }));
+    }
+    let inputObj = {};
+    try {
+      if (input) inputObj = JSON.parse(input);
+    } catch {
+      return send(res, 400, { "Content-Type": "application/json" }, JSON.stringify({ error: "Invalid input JSON" }));
+    }
+    const actorSlug = actor.replace("/", "~");
+    const apifyUrl = `https://api.apify.com/v2/acts/${actorSlug}/run-sync-get-dataset-items?token=${APIFY_TOKEN}&format=json&clean=true`;
+    try {
+      const apifyRes = await new Promise((resolve, reject) => {
+        const body = JSON.stringify(inputObj);
+        const reqOpts = new URL(apifyUrl);
+        const apReq = https.request(
+          { hostname: reqOpts.hostname, path: reqOpts.pathname + reqOpts.search, method: "POST",
+            headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(body) } },
+          (resp) => {
+            let data = "";
+            resp.setEncoding("utf8");
+            resp.on("data", (chunk) => { data += chunk; });
+            resp.on("end", () => resolve({ status: resp.statusCode, body: data }));
+          }
+        );
+        apReq.on("error", reject);
+        apReq.write(body);
+        apReq.end();
+      });
+      return send(res, apifyRes.status, {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store",
+      }, apifyRes.body);
+    } catch (err) {
+      return send(res, 502, { "Content-Type": "application/json" }, JSON.stringify({ error: "Apify request failed", detail: err.message }));
+    }
+  }
 
   if (url.pathname === "/proxy") {
     const target = url.searchParams.get("url");

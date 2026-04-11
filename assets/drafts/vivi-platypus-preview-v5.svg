@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Vivi After Dark style preview v5</title>
+  <desc id="desc">Flat rounded platypus mascot in a night gradient badge style.</desc>
+
+  <defs>
+    <linearGradient id="nightBg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2d1768"/>
+      <stop offset="100%" stop-color="#111f56"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#946248"/>
+      <stop offset="100%" stop-color="#7a4b36"/>
+    </linearGradient>
+    <linearGradient id="furDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7f4d37"/>
+      <stop offset="100%" stop-color="#69402f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" rx="210" fill="url(#nightBg)"/>
+  <circle cx="212" cy="170" r="58" fill="#1f4d82"/>
+  <circle cx="860" cy="226" r="74" fill="#6d2b7e"/>
+  <circle cx="780" cy="838" r="94" fill="#5f5668" opacity="0.66"/>
+
+  <ellipse cx="512" cy="870" rx="264" ry="44" fill="#1b203f"/>
+
+  <ellipse cx="512" cy="560" rx="282" ry="266" fill="url(#fur)"/>
+  <ellipse cx="512" cy="392" rx="222" ry="142" fill="url(#fur)"/>
+
+  <ellipse cx="512" cy="452" rx="188" ry="86" fill="#e2b389"/>
+  <path d="M355 460C396 496 628 496 669 460" stroke="#d19162" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <circle cx="458" cy="372" r="16" fill="#23130c"/>
+  <circle cx="566" cy="372" r="16" fill="#23130c"/>
+
+  <path d="M368 583H658L638 646C622 703 575 742 512 750C449 742 402 703 386 646Z" fill="#22b5ad"/>
+  <path d="M406 616H618" stroke="#2ab8e8" stroke-width="12"/>
+  <path d="M394 652H630" stroke="#ef5e9f" stroke-width="12"/>
+  <path d="M384 688H640" stroke="#f2ca42" stroke-width="12"/>
+
+  <rect x="634" y="598" width="214" height="154" rx="30" fill="#ebebeb"/>
+  <path d="M678 644H824" stroke="#2ab8e8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M678 684H824" stroke="#ef5e9f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M678 724H824" stroke="#f2ca42" stroke-width="14" stroke-linecap="round"/>
+
+  <ellipse cx="334" cy="780" rx="88" ry="66" fill="url(#furDark)"/>
+  <ellipse cx="684" cy="762" rx="82" ry="54" fill="url(#furDark)"/>
+  <ellipse cx="512" cy="806" rx="94" ry="24" fill="#6a3f2f"/>
+
+  <path d="M302 776C248 770 196 802 200 840C203 869 238 886 284 878C318 872 349 852 360 830C372 807 354 781 302 776Z" fill="#7a4c37"/>
+
+  <ellipse cx="512" cy="930" rx="300" ry="54" fill="#171c38"/>
+  <text x="512" y="936" text-anchor="middle" font-size="74" font-family="Georgia, 'Times New Roman', serif" fill="#f4efc8">Vivi After Dark</text>
+</svg>

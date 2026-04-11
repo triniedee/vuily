@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Vivi platypus preview v6</title>
+  <desc id="desc">Playful, bold mascot-style baby platypus with expressive shapes and bright palette.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2b7a"/>
+      <stop offset="100%" stop-color="#1e0f53"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5f46"/>
+      <stop offset="100%" stop-color="#6e4735"/>
+    </linearGradient>
+    <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eac099"/>
+      <stop offset="100%" stop-color="#d8a97f"/>
+    </linearGradient>
+    <linearGradient id="bill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#85909b"/>
+      <stop offset="100%" stop-color="#697580"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" rx="220" fill="url(#bg)"/>
+  <circle cx="176" cy="200" r="52" fill="#2bc0ff" opacity="0.28"/>
+  <circle cx="860" cy="190" r="66" fill="#ff57a8" opacity="0.28"/>
+  <circle cx="810" cy="806" r="94" fill="#ffd447" opacity="0.18"/>
+
+  <ellipse cx="512" cy="860" rx="284" ry="58" fill="#121835" opacity="0.9"/>
+
+  <ellipse cx="512" cy="560" rx="288" ry="260" fill="url(#fur)"/>
+  <ellipse cx="512" cy="595" rx="210" ry="170" fill="url(#belly)"/>
+
+  <ellipse cx="512" cy="430" rx="230" ry="168" fill="url(#fur)"/>
+  <ellipse cx="512" cy="500" rx="186" ry="104" fill="#e8bd94"/>
+
+  <ellipse cx="406" cy="690" rx="92" ry="74" fill="#764c38"/>
+  <ellipse cx="640" cy="678" rx="86" ry="64" fill="#764c38"/>
+  <ellipse cx="512" cy="770" rx="112" ry="32" fill="#663f2f"/>
+
+  <path d="M334 768C286 765 238 797 242 833C246 864 281 883 324 878C359 873 390 853 401 829C411 806 389 773 334 768Z" fill="#7a4f3a"/>
+
+  <ellipse cx="512" cy="420" rx="132" ry="50" fill="url(#bill)"/>
+  <ellipse cx="630" cy="428" rx="18" ry="8" fill="#5a6470"/>
+  <circle cx="620" cy="421" r="4.5" fill="#5a6470"/>
+  <circle cx="632" cy="417" r="4.5" fill="#5a6470"/>
+
+  <circle cx="462" cy="392" r="19" fill="#1f1510"/>
+  <circle cx="560" cy="392" r="19" fill="#1f1510"/>
+  <circle cx="468" cy="386" r="5" fill="#ffffff"/>
+  <circle cx="566" cy="386" r="5" fill="#ffffff"/>
+  <path d="M430 458C456 479 568 479 594 458" stroke="#cf8f62" stroke-width="11" fill="none" stroke-linecap="round"/>
+
+  <path d="M362 608H662L638 676C620 726 578 758 512 768C446 758 404 726 386 676Z" fill="#22b8b0"/>
+  <path d="M402 638H622" stroke="#2ebdff" stroke-width="12"/>
+  <path d="M392 674H632" stroke="#ff5ea5" stroke-width="12"/>
+  <path d="M384 710H640" stroke="#f4ce47" stroke-width="12"/>
+
+  <rect x="648" y="622" width="208" height="152" rx="30" fill="#f1f1f1"/>
+  <path d="M688 666H832" stroke="#2ebdff" stroke-width="14" stroke-linecap="round"/>
+  <path d="M688 706H832" stroke="#ff5ea5" stroke-width="14" stroke-linecap="round"/>
+  <path d="M688 746H832" stroke="#f4ce47" stroke-width="14" stroke-linecap="round"/>
+
+  <text x="512" y="936" text-anchor="middle" font-size="78" font-family="Baloo 2, Nunito, Arial, sans-serif" fill="#f4efc8">Vivi</text>
+</svg>

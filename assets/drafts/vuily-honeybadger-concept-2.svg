@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Honey Badger Concept 2</title>
+  <desc id="desc">Dynamic side-profile honey badger mascot sprinting into adventure.</desc>
+
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101f52"/>
+      <stop offset="100%" stop-color="#30135b"/>
+    </linearGradient>
+    <linearGradient id="fur2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#303340"/>
+      <stop offset="100%" stop-color="#171b25"/>
+    </linearGradient>
+    <linearGradient id="stripe2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ecece7"/>
+      <stop offset="100%" stop-color="#d2d2cf"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1200" rx="210" fill="url(#bg2)"/>
+  <path d="M186 914H1036" stroke="#1a2148" stroke-width="30" stroke-linecap="round"/>
+  <path d="M210 972H1010" stroke="#101531" stroke-width="38" stroke-linecap="round"/>
+  <circle cx="186" cy="194" r="68" fill="#2bc1ff" opacity="0.22"/>
+  <circle cx="956" cy="218" r="78" fill="#f452a3" opacity="0.22"/>
+
+  <g transform="translate(120 130) rotate(-5 480 470)" stroke="#0c0f16" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="560" cy="520" rx="330" ry="220" fill="url(#fur2)"/>
+    <path d="M296 470C352 324 518 244 708 262C822 272 904 322 938 401C890 426 822 440 746 442C713 374 641 340 560 344C477 348 396 390 354 452C327 458 308 463 296 470Z" fill="url(#stripe2)"/>
+
+    <ellipse cx="380" cy="486" rx="132" ry="116" fill="url(#fur2)"/>
+    <ellipse cx="360" cy="510" rx="116" ry="74" fill="#232833"/>
+    <ellipse cx="338" cy="470" rx="14" ry="18" fill="#eff0ee"/>
+    <ellipse cx="396" cy="470" rx="14" ry="18" fill="#eff0ee"/>
+    <circle cx="342" cy="474" r="8" fill="#10141d"/>
+    <circle cx="400" cy="474" r="8" fill="#10141d"/>
+    <ellipse cx="352" cy="516" rx="6" ry="8" fill="#0f1219"/>
+    <ellipse cx="380" cy="520" rx="6" ry="8" fill="#0f1219"/>
+    <path d="M326 542C344 556 373 560 401 550" fill="none" stroke="#80858f"/>
+
+    <path d="M660 756C636 796 590 830 548 838C527 842 510 834 508 818C505 797 519 776 548 748C580 718 616 696 646 694C668 692 675 724 660 756Z" fill="#202530"/>
+    <path d="M566 830L528 874L576 864L608 900L618 854L668 844L634 812Z" fill="#131821"/>
+
+    <path d="M860 694C836 731 793 760 755 768C734 772 718 765 715 751C711 732 724 713 750 688C780 660 814 641 842 639C863 637 872 664 860 694Z" fill="#202530"/>
+    <path d="M774 758L740 798L784 790L814 822L822 780L866 772L838 744Z" fill="#131821"/>
+
+    <path d="M430 692C409 726 369 754 333 763C314 768 300 762 297 749C294 732 305 715 328 692C355 666 385 648 411 646C430 645 438 668 430 692Z" fill="#282e3a"/>
+    <path d="M350 754L320 789L360 782L388 810L396 772L436 764L410 738Z" fill="#171d26"/>
+  </g>
+
+  <text x="600" y="1116" text-anchor="middle" font-size="82" font-family="Baloo 2, Nunito, Arial, sans-serif" fill="#f6f0ca">Riff On The Move</text>
+</svg>

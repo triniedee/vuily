@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vuily Logo Concept 4</title>
+  <desc id="desc">Neon ticket icon with punchy bold wordmark.</desc>
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1642"/>
+      <stop offset="100%" stop-color="#2c0f55"/>
+    </linearGradient>
+    <linearGradient id="neon4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20d3ff"/>
+      <stop offset="100%" stop-color="#ff5fa9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" rx="72" fill="#eef2f8"/>
+  <rect x="80" y="110" width="1240" height="680" rx="58" fill="url(#bg4)"/>
+
+  <rect x="190" y="268" width="250" height="250" rx="42" fill="none" stroke="url(#neon4)" stroke-width="22"/>
+  <circle cx="188" cy="392" r="24" fill="url(#bg4)"/>
+  <circle cx="442" cy="392" r="24" fill="url(#bg4)"/>
+  <path d="M245 392H385" stroke="#f7f1cf" stroke-width="16" stroke-linecap="round"/>
+  <path d="M245 434H385" stroke="#2ec5ff" stroke-width="12" stroke-linecap="round"/>
+
+  <text x="500" y="430" font-size="182" font-family="Baloo 2, Nunito, Arial, sans-serif" font-weight="800" fill="#f7f1cf">Vuily</text>
+  <text x="508" y="500" font-size="44" font-family="Nunito, Arial, sans-serif" font-weight="800" letter-spacing="5" fill="#b3ddff">EVENTS THAT POP</text>
+
+  <path d="M200 585H1190" stroke="#2ec5ff" stroke-width="14" stroke-linecap="round"/>
+  <path d="M200 620H1190" stroke="#ff5fa9" stroke-width="14" stroke-linecap="round"/>
+  <path d="M200 655H1190" stroke="#f3cb44" stroke-width="14" stroke-linecap="round"/>
+</svg>
