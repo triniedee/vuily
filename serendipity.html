@@ -400,6 +400,141 @@
       .loading-dots span:nth-child(3) { background: var(--teal); animation-delay: 0.3s; }
       @keyframes bounce { from { transform: translateY(0); opacity: 0.5; } to { transform: translateY(-8px); opacity: 1; } }
 
+      /* Moment context bar */
+      .moment-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .moment-tag {
+        background: rgba(255,255,255,0.7);
+        border: 1.5px solid rgba(31,34,64,0.1);
+        border-radius: 999px;
+        padding: 0.25rem 0.65rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+
+      /* Refine vibe button */
+      .refine-btn {
+        background: none;
+        border: 1.5px solid rgba(31,34,64,0.15);
+        border-radius: 999px;
+        padding: 0.3rem 0.8rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--muted);
+        cursor: pointer;
+        margin-bottom: 2rem;
+        transition: border-color 0.18s, color 0.18s;
+      }
+      .refine-btn:hover { border-color: var(--sky); color: var(--sky); }
+
+      /* Refine overlay */
+      .refine-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(31,34,64,0.45);
+        backdrop-filter: blur(4px);
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .refine-overlay.visible { display: flex; }
+
+      .refine-card {
+        background: #fff;
+        border-radius: 24px;
+        padding: 2rem;
+        width: min(420px, 100%);
+        box-shadow: 0 24px 64px rgba(31,34,64,0.18);
+      }
+
+      .refine-card h3 {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        color: var(--text);
+      }
+
+      .refine-group {
+        margin-bottom: 1.2rem;
+      }
+
+      .refine-group label {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .refine-options {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .refine-opt {
+        padding: 0.45rem 0.9rem;
+        border-radius: 999px;
+        border: 1.5px solid rgba(31,34,64,0.15);
+        background: #fff;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--muted);
+        cursor: pointer;
+        transition: all 0.15s;
+      }
+      .refine-opt:hover { border-color: var(--sky); color: var(--sky); }
+      .refine-opt.selected { background: var(--sky); border-color: var(--sky); color: #fff; }
+
+      .refine-actions {
+        display: flex;
+        gap: 0.6rem;
+        margin-top: 1.5rem;
+      }
+
+      .refine-apply {
+        flex: 1;
+        background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 0.65rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: opacity 0.18s;
+      }
+      .refine-apply:hover { opacity: 0.88; }
+
+      .refine-cancel {
+        background: rgba(31,34,64,0.06);
+        border: 1.5px solid rgba(31,34,64,0.12);
+        border-radius: 10px;
+        padding: 0.65rem 1rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--muted);
+        cursor: pointer;
+      }
+
       /* Footer */
       .footer {
         font-size: 0.78rem;
@@ -472,10 +607,14 @@
         <p class="demo-label">Try it now</p>
         <p class="demo-question">What should I do in SF?</p>
 
+        <div class="moment-bar" id="momentBar"></div>
+
         <button class="surprise-btn" id="surpriseBtn">
           <span class="btn-icon">🎲</span>
           Surprise me
         </button>
+
+        <button class="refine-btn" id="refineBtn">✦ Refine the vibe</button>
 
         <div class="result-area">
           <div class="loading-dots" id="loadingDots">
@@ -498,8 +637,42 @@
       <p class="footer">Made with curiosity in San Francisco &mdash; <a href="./index.html">vuily.fun</a></p>
     </div>
 
+    <!-- Refine the vibe overlay -->
+    <div class="refine-overlay" id="refineOverlay">
+      <div class="refine-card">
+        <h3>Refine the vibe ✨</h3>
+        <div class="refine-group">
+          <label>Who's coming?</label>
+          <div class="refine-options">
+            <button class="refine-opt" data-group="social" data-value="solo">Just me</button>
+            <button class="refine-opt" data-group="social" data-value="duo">With someone</button>
+            <button class="refine-opt" data-group="social" data-value="small_group">Small group</button>
+          </div>
+        </div>
+        <div class="refine-group">
+          <label>Tonight's energy?</label>
+          <div class="refine-options">
+            <button class="refine-opt" data-group="energy" data-value="calm">Chill</button>
+            <button class="refine-opt" data-group="energy" data-value="moderate">Somewhere in between</button>
+            <button class="refine-opt" data-group="energy" data-value="high">Let's go</button>
+          </div>
+        </div>
+        <div class="refine-group">
+          <label>How adventurous?</label>
+          <div class="refine-options">
+            <button class="refine-opt" data-group="weird" data-value="familiar">Keep it familiar</button>
+            <button class="refine-opt" data-group="weird" data-value="weird">Surprise me weird</button>
+          </div>
+        </div>
+        <div class="refine-actions">
+          <button class="refine-cancel" id="refineCancel">Cancel</button>
+          <button class="refine-apply" id="refineApply">Apply & surprise me</button>
+        </div>
+      </div>
+    </div>
+
     <script>
-      // ─── Fallback events (used when Apify datasets are unavailable) ───────────
+      // ─── Fallback events ──────────────────────────────────────────────────────
       const FALLBACK_EVENTS = [
         { title: "Live Jazz at the Sunset District", category: "Music", cost: "Free", date: "This Friday, 7 PM", location: "The Riptide, 3639 Taraval St", source: "Vuily", url: "" },
         { title: "SF Ferry Building Farmers Market", category: "Food & Drink", cost: "Free", date: "This Saturday, 8 AM", location: "Ferry Building Marketplace", source: "Vuily", url: "" },
@@ -666,61 +839,206 @@
         return { title, category: normalizeCategory(`${title} ${desc} ${address}`), cost: "Check site", date: date.toISOString(), location: address, source: "Google Events", url: event.link || "", description: desc };
       }
 
-      // ─── Fetch datasets ───────────────────────────────────────────────────────
+      // ─── Load enriched events from pre-computed JSON ─────────────────────────
       async function loadEventPool() {
-        const datasets = [
-          { id: "cFEcLNFCjkaNd0Dci", map: mapEventbriteItem },
-          { id: "rF4QswDVxXtzbuVPl", map: mapEventbriteItem },
-          { id: "z7sA6wzx3DF8w6Zhx", map: mapLumaItem },
-        ];
-
-        const results = await Promise.allSettled(
-          datasets.map(({ id, map }) =>
-            fetch(`/apify-dataset?id=${id}`, { cache: "no-store" })
-              .then(r => r.ok ? r.json() : [])
-              .then(items => items.map(map).filter(Boolean))
-              .catch(() => [])
-          )
-        );
-
-        // Google events: nested in pages
-        let googleEvents = [];
         try {
-          const pages = await fetch("/apify-dataset?id=5XkgHAs8QoMP4sUe6", { cache: "no-store" }).then(r => r.ok ? r.json() : []);
-          googleEvents = pages.flatMap(p => (p.events || []).map(mapGoogleItem).filter(Boolean));
+          const res = await fetch("/data/enriched-events.json", { cache: "no-store" });
+          if (!res.ok) throw new Error("enriched-events.json not found");
+          const all = await res.json();
+          const now = new Date();
+          return all.filter(e => e && e.date && new Date(e.date) > now);
+        } catch {
+          return FALLBACK_EVENTS;
+        }
+      }
+
+      // ─── Moment profile ───────────────────────────────────────────────────────
+      let momentProfile = {
+        hour: new Date().getHours(),
+        dayOfWeek: new Date().getDay(), // 0=Sun, 6=Sat
+        weather: null,       // fetched async: "clear" | "cloudy" | "rainy" | "foggy"
+        energyHint: null,    // inferred from time of day
+        socialHint: null,    // from localStorage history
+        vibeHistory: [],     // vibes of past events user interacted with
+        userOverrides: {},   // from "refine the vibe" panel
+      };
+
+      function inferEnergyFromTime(hour) {
+        if (hour >= 6 && hour < 11) return "moderate";   // morning
+        if (hour >= 11 && hour < 17) return "moderate";  // afternoon
+        if (hour >= 17 && hour < 21) return "high";      // evening
+        if (hour >= 21 || hour < 2) return "high";       // night
+        return "calm";                                    // late night/early AM
+      }
+
+      function inferFromHistory() {
+        try {
+          const saved = JSON.parse(localStorage.getItem("vuily_saved") || "[]");
+          const viewed = JSON.parse(localStorage.getItem("vuily_viewed") || "[]");
+          return [...saved, ...viewed];
+        } catch { return []; }
+      }
+
+      async function fetchWeather() {
+        try {
+          // Open-Meteo — free, no API key, SF coordinates
+          const res = await fetch("https://api.open-meteo.com/v1/forecast?latitude=37.7749&longitude=-122.4194&current=weathercode&timezone=America/Los_Angeles");
+          if (!res.ok) return null;
+          const data = await res.json();
+          const code = data.current?.weathercode ?? 0;
+          if (code === 0) return "clear";
+          if (code <= 3) return "cloudy";
+          if (code <= 67) return "rainy";
+          if (code <= 77) return "foggy";
+          return "clear";
+        } catch { return null; }
+      }
+
+      function buildMomentProfile(history) {
+        const hour = new Date().getHours();
+        const day = new Date().getDay();
+        const isWeekend = day === 0 || day === 6;
+
+        // Infer vibes from history
+        const vibeHistory = [];
+        history.forEach(id => {
+          const event = eventPool.find(e => e.id === id);
+          if (event?.signature?.vibe) vibeHistory.push(...event.signature.vibe);
+        });
+
+        return {
+          hour,
+          dayOfWeek: day,
+          isWeekend,
+          energyHint: inferEnergyFromTime(hour),
+          vibeHistory,
+          weatherBias: momentProfile.weather,
+          userOverrides: momentProfile.userOverrides,
+        };
+      }
+
+      function renderMomentBar(profile) {
+        const bar = document.getElementById("momentBar");
+        const tags = [];
+        const hour = profile.hour;
+        if (hour >= 5 && hour < 12) tags.push("🌅 Morning");
+        else if (hour >= 12 && hour < 17) tags.push("☀️ Afternoon");
+        else if (hour >= 17 && hour < 21) tags.push("🌆 Evening");
+        else tags.push("🌙 Night");
+
+        if (profile.isWeekend) tags.push("📅 Weekend");
+        else tags.push("📅 Weekday");
+
+        if (profile.weatherBias === "rainy") tags.push("🌧 Rainy");
+        else if (profile.weatherBias === "foggy") tags.push("🌫 Foggy");
+        else if (profile.weatherBias === "clear") tags.push("✨ Clear");
+
+        if (Object.keys(profile.userOverrides).length > 0) tags.push("✦ Vibe tuned");
+
+        bar.innerHTML = tags.map(t => `<span class="moment-tag">${t}</span>`).join("");
+      }
+
+      // ─── Scoring engine ───────────────────────────────────────────────────────
+      function scoreEvent(event, profile) {
+        const sig = event.signature;
+        if (!sig) return 0.1 + Math.random() * 0.1; // no signature = low base score
+
+        let resonance = 0;
+
+        // Energy match
+        const energyMap = { calm: 0, moderate: 1, high: 2 };
+        const wantedEnergy = profile.userOverrides.energy || profile.energyHint || "moderate";
+        const eventEnergy = sig.energy || "moderate";
+        const energyDiff = Math.abs((energyMap[wantedEnergy] ?? 1) - (energyMap[eventEnergy] ?? 1));
+        resonance += (1 - energyDiff / 2) * 0.3;
+
+        // Social shape match
+        const wantedSocial = profile.userOverrides.social || null;
+        if (wantedSocial && sig.social_shape === wantedSocial) resonance += 0.2;
+        else if (!wantedSocial) resonance += 0.1; // neutral
+
+        // Weather bias
+        if (profile.weatherBias === "rainy" || profile.weatherBias === "foggy") {
+          // Rainy day → prefer indoor vibes
+          if (sig.vibe?.includes("cozy") || sig.vibe?.includes("intellectual")) resonance += 0.15;
+        } else if (profile.weatherBias === "clear") {
+          if (sig.vibe?.includes("adventurous") || sig.social_shape === "crowd") resonance += 0.1;
+        }
+
+        // Vibe history match
+        if (profile.vibeHistory.length > 0 && sig.vibe) {
+          const overlap = sig.vibe.filter(v => profile.vibeHistory.includes(v)).length;
+          resonance += (overlap / sig.vibe.length) * 0.2;
+        }
+
+        // Weekend bias
+        if (profile.isWeekend) {
+          if (sig.social_shape === "crowd" || sig.energy === "high") resonance += 0.05;
+        }
+
+        // Weirdness override
+        if (profile.userOverrides.weird === "weird") {
+          resonance += (sig.uniqueness || 0) * 0.2;
+        } else if (profile.userOverrides.weird === "familiar") {
+          resonance += (1 - (sig.uniqueness || 0)) * 0.1;
+        }
+
+        // Final: resonance × 0.6 + uniqueness × 0.3 + random × 0.1
+        const uniqueness = sig.uniqueness || 0.5;
+        const random = Math.random();
+        return resonance * 0.6 + uniqueness * 0.3 + random * 0.1;
+      }
+
+      function pickBestEvent(profile) {
+        if (!eventPool.length) return FALLBACK_EVENTS[Math.floor(Math.random() * FALLBACK_EVENTS.length)];
+
+        // Score all events, pick from top 5 to keep some surprise
+        const scored = eventPool
+          .map(e => ({ event: e, score: scoreEvent(e, profile) }))
+          .sort((a, b) => b.score - a.score);
+
+        const topN = scored.slice(0, 5);
+        const pick = topN[Math.floor(Math.random() * topN.length)];
+
+        // Track as viewed
+        try {
+          const viewed = JSON.parse(localStorage.getItem("vuily_viewed") || "[]");
+          if (!viewed.includes(pick.event.id)) {
+            viewed.unshift(pick.event.id);
+            localStorage.setItem("vuily_viewed", JSON.stringify(viewed.slice(0, 50)));
+          }
         } catch {}
 
-        const all = [
-          ...results.flatMap(r => r.status === "fulfilled" ? r.value : []),
-          ...googleEvents,
-        ];
-
-        // Keep only future events, shuffle
-        const future = all.filter(e => e && e.date && new Date(e.date) > new Date());
-        for (let i = future.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [future[i], future[j]] = [future[j], future[i]];
-        }
-        return future;
+        return pick.event;
       }
 
       // ─── Boot ─────────────────────────────────────────────────────────────────
       const btn = document.getElementById("surpriseBtn");
       const nextBtn = document.getElementById("nextBtn");
+      const refineBtn = document.getElementById("refineBtn");
+      const refineOverlay = document.getElementById("refineOverlay");
+      const refineCancel = document.getElementById("refineCancel");
+      const refineApply = document.getElementById("refineApply");
       const loadingDots = document.getElementById("loadingDots");
-      let poolLoaded = false;
-      let poolLoading = false;
 
-      async function ensurePool() {
-        if (poolLoaded) return;
-        if (poolLoading) return;
-        poolLoading = true;
-        try {
-          const events = await loadEventPool();
-          if (events.length > 0) eventPool = events;
-        } catch {}
+      let eventPool = [];
+      let poolLoaded = false;
+      let profile = null;
+
+      async function boot() {
+        // Load events + weather in parallel
+        const [events, weather] = await Promise.all([
+          loadEventPool(),
+          fetchWeather(),
+        ]);
+
+        eventPool = events;
+        momentProfile.weather = weather;
         poolLoaded = true;
-        poolLoading = false;
+
+        const history = inferFromHistory();
+        profile = buildMomentProfile(history);
+        renderMomentBar(profile);
       }
 
       async function handleSurprise() {
@@ -728,20 +1046,58 @@
         loadingDots.classList.add("visible");
         document.getElementById("resultCard").classList.remove("visible");
 
-        await ensurePool();
+        if (!poolLoaded) await boot();
 
         loadingDots.classList.remove("visible");
         btn.classList.remove("loading");
         btn.innerHTML = '<span class="btn-icon">🎲</span> Another one';
 
-        renderEvent(pickRandom());
+        renderEvent(pickBestEvent(profile));
       }
 
-      btn.addEventListener("click", handleSurprise);
-      nextBtn.addEventListener("click", () => renderEvent(pickRandom()));
+      // ─── Refine the vibe overlay ──────────────────────────────────────────────
+      refineBtn.addEventListener("click", () => {
+        refineOverlay.classList.add("visible");
+      });
 
-      // Pre-load pool in background on page load
-      ensurePool();
+      refineCancel.addEventListener("click", () => {
+        refineOverlay.classList.remove("visible");
+      });
+
+      refineOverlay.addEventListener("click", (e) => {
+        if (e.target === refineOverlay) refineOverlay.classList.remove("visible");
+      });
+
+      document.querySelectorAll(".refine-opt").forEach(opt => {
+        opt.addEventListener("click", () => {
+          const group = opt.dataset.group;
+          document.querySelectorAll(`.refine-opt[data-group="${group}"]`).forEach(o => o.classList.remove("selected"));
+          opt.classList.toggle("selected", !opt.classList.contains("selected") || true);
+          opt.classList.add("selected");
+        });
+      });
+
+      refineApply.addEventListener("click", () => {
+        const overrides = {};
+        document.querySelectorAll(".refine-opt.selected").forEach(opt => {
+          overrides[opt.dataset.group] = opt.dataset.value;
+        });
+        momentProfile.userOverrides = overrides;
+        if (profile) {
+          profile.userOverrides = overrides;
+          renderMomentBar(profile);
+        }
+        refineOverlay.classList.remove("visible");
+        handleSurprise();
+      });
+
+      btn.addEventListener("click", handleSurprise);
+      nextBtn.addEventListener("click", () => {
+        if (profile) renderEvent(pickBestEvent(profile));
+      });
+
+      // Boot in background immediately
+      boot();
     </script>
   </body>
 </html>

@@ -4586,7 +4586,17 @@
     "url": "https://lu.ma/b0ee2pbx",
     "source": "Luma",
     "cost": "$15",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-dGRbbm0b1DLp0FR",
@@ -4699,7 +4709,16 @@
     "url": "https://lu.ma/v4mvsy9h",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-3ztZhjo2CPfHTCI",
@@ -4750,7 +4769,17 @@
     "url": "https://lu.ma/i7lny40i",
     "source": "Luma",
     "cost": "$10",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "chill"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-GklPXDwDTec6wwA",
@@ -4842,7 +4871,16 @@
     "url": "https://lu.ma/tklxbykb",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-q01ly7SQxnNMCVT",
@@ -4873,7 +4911,16 @@
     "url": "https://lu.ma/s8e5fs82",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-k761vWmnchGECKK",
@@ -4965,7 +5012,16 @@
     "url": "https://lu.ma/3ui22vum",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-QsxnUa4sILLfHdf",
@@ -4996,7 +5052,16 @@
     "url": "https://lu.ma/3ejyrhvq",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-Ij5Y43UvvTMcavA",
@@ -5129,7 +5194,17 @@
     "url": "https://lu.ma/2jxgjtn1",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-XIG7MaPIneuDtHb",
@@ -5202,7 +5277,16 @@
     "url": "https://lu.ma/3hd90qpm",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-DvSck5rgGfW1lao",
@@ -5233,7 +5317,17 @@
     "url": "https://lu.ma/dhd75mwz",
     "source": "Luma",
     "cost": "$10",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.8
+    }
   },
   {
     "id": "luma-evt-fqHjhtOybJQo8VU",
@@ -5387,7 +5481,16 @@
     "url": "https://lu.ma/7kwlhhki",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-VvG42H9oqsqAiJj",
@@ -5440,7 +5543,16 @@
     "url": "https://lu.ma/p3ireb7l",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-K1iZJrB24Q4PEof",
@@ -5451,7 +5563,16 @@
     "url": "https://lu.ma/nezxawjw",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.55
+    }
   },
   {
     "id": "luma-evt-qN0n7kXcvm1n74l",
@@ -5462,7 +5583,16 @@
     "url": "https://lu.ma/vfmperjh",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-zvGv5HWRfMHOuSO",
@@ -5636,7 +5766,17 @@
     "url": "https://lu.ma/6eichdxc",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-EQhJCBJFx4RgLRe",
@@ -5768,7 +5908,16 @@
     "url": "https://lu.ma/zmkjghz2",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-EWLWYFVbfnCpsiT",
@@ -5800,7 +5949,16 @@
     "url": "https://lu.ma/AutonomyonWheels",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-Ori7F4y6o0i7N8j",
@@ -5873,7 +6031,16 @@
     "url": "https://lu.ma/rasmus-spc",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-HdPL0eS8CU2UWfT",
@@ -5884,7 +6051,16 @@
     "url": "https://lu.ma/haez1x4d",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-HEivXuz188ghZCo",
@@ -5936,7 +6112,17 @@
     "url": "https://lu.ma/w988u1uh",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-XmeZQCASYONMm69",
@@ -5989,7 +6175,17 @@
     "url": "https://lu.ma/v2lnq2w0",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "chill",
+        "electric"
+      ],
+      "uniqueness": 0.3
+    }
   },
   {
     "id": "luma-evt-Gfg80jYVpG3m8C2",
@@ -6184,7 +6380,16 @@
     "url": "https://lu.ma/guk2dehe",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-3F5TFvIsBwM4q5k",
@@ -6315,7 +6520,17 @@
     "url": "https://lu.ma/g468fcrw",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.85
+    }
   },
   {
     "id": "luma-evt-lfWSTILyiWzk1Vo",
@@ -6326,7 +6541,17 @@
     "url": "https://lu.ma/nvwv8iue",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill",
+        "cozy"
+      ],
+      "uniqueness": 0.3
+    }
   },
   {
     "id": "luma-evt-vzwtEilTc38tagD",
@@ -6398,7 +6623,16 @@
     "url": "https://lu.ma/0k1ahzja",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-LgOtidaFtoAJujy",
@@ -6490,7 +6724,16 @@
     "url": "https://lu.ma/o3z5s9xm",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-sXXQNBWBSUGuN7M",
@@ -6522,7 +6765,16 @@
     "url": "https://lu.ma/5nngappj",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-GPz3BTncB2SiEd4",
@@ -6656,7 +6908,16 @@
     "url": "https://lu.ma/vtmouhge",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-cx6aX1OrPrirYCD",
@@ -6688,7 +6949,17 @@
     "url": "https://lu.ma/s9qnk0mr",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.8
+    }
   },
   {
     "id": "luma-evt-UPz5lDzF3H0WsGk",
@@ -6928,7 +7199,16 @@
     "url": "https://lu.ma/cz4mk38a",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-HWWAlsoUOtAnGKI",
@@ -6981,7 +7261,16 @@
     "url": "https://lu.ma/vmdb90o7",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-De03ayDmnWOqxyW",
@@ -7095,7 +7384,17 @@
     "url": "https://lu.ma/zncxb63d",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "chill",
+        "weird"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-tdqTDkeNKaF4EBT",
@@ -7147,7 +7446,17 @@
     "url": "https://lu.ma/i61d6crp",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-P4SmG3tCTzSrjtM",
@@ -7301,7 +7610,17 @@
     "url": "https://lu.ma/i4koqd48",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-t4yMnpo2ChoqobK",
@@ -7312,7 +7631,16 @@
     "url": "https://lu.ma/689e1s88",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-tI5C2XY1b9hGh3L",
@@ -7446,7 +7774,17 @@
     "url": "https://lu.ma/ccwkakbt",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "creative"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-E7dQn7SM97Qctp8",
@@ -7538,7 +7876,16 @@
     "url": "https://lu.ma/angellaunchapril22",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-lM55F92qOp7D1Rl",
@@ -7589,7 +7936,16 @@
     "url": "https://lu.ma/zuaf4ost",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-49H0UFDVM51M8oS",
@@ -8158,7 +8514,16 @@
     "url": "https://lu.ma/2h8y1ad7",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.3
+    }
   },
   {
     "id": "luma-evt-bERAIAoyGtmhDNI",
@@ -8250,7 +8615,16 @@
     "url": "https://lu.ma/gfadaovk",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-QIZ22cA3Ka1J9tZ",
@@ -8302,7 +8676,16 @@
     "url": "https://lu.ma/6f0z4wlc",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-fyZBUmV06vMFKcA",
@@ -8373,7 +8756,16 @@
     "url": "https://lu.ma/alignment-summit-investors-corporate",
     "source": "Luma",
     "cost": "$970",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.3
+    }
   },
   {
     "id": "luma-evt-FlTgYyGz71vHrq4",
@@ -8486,7 +8878,16 @@
     "url": "https://lu.ma/9n5rwk0v",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-tuBjWK5h2J6r8vX",
@@ -8558,7 +8959,16 @@
     "url": "https://lu.ma/s5syhzcc",
     "source": "Luma",
     "cost": "$25",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-99IJfWIeQnDeIGS",
@@ -8569,7 +8979,16 @@
     "url": "https://lu.ma/bmligi19",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-Kel4dtmJmmzP6xv",
@@ -8705,7 +9124,17 @@
     "url": "https://lu.ma/am3uqq68",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "adventurous",
+        "playful"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-hzxoQgYFyNVtKLn",
@@ -8737,7 +9166,16 @@
     "url": "https://lu.ma/tdpjc605",
     "source": "Luma",
     "cost": "$25",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-oYxDko5SgUIpIUc",
@@ -8788,7 +9226,17 @@
     "url": "https://lu.ma/wy7u4ay4",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "electric",
+        "intellectual",
+        "weird"
+      ],
+      "uniqueness": 0.85
+    }
   },
   {
     "id": "luma-evt-icvsBnU2BfJkbZd",
@@ -8840,7 +9288,16 @@
     "url": "https://lu.ma/amit-jain-spc",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "duo",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.85
+    }
   },
   {
     "id": "luma-evt-wYp9KdElzoNKJcY",
@@ -8955,7 +9412,17 @@
     "url": "https://lu.ma/2xbmo7a9",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-XVe4S9Jo7VuHUTV",
@@ -9028,7 +9495,17 @@
     "url": "https://lu.ma/zeg1ipsh",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-MPoGhXlgZnC2R1v",
@@ -9039,7 +9516,17 @@
     "url": "https://lu.ma/shiptoprod",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-oZFSv4rLBe69lON",
@@ -9174,7 +9661,17 @@
     "url": "https://lu.ma/739oxjcc",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.85
+    }
   },
   {
     "id": "luma-evt-FK0pxWP8jtclBcn",
@@ -9246,7 +9743,17 @@
     "url": "https://lu.ma/BETAhackathon",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-P9OZgpk5rTMxNrD",
@@ -9320,7 +9827,16 @@
     "url": "https://lu.ma/0bkgs4jg",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-GGw0V9vS9bIazTV",
@@ -9433,7 +9949,16 @@
     "url": "https://lu.ma/de13q4s9",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-p1GTCw7MQxy6QcQ",
@@ -9506,7 +10031,17 @@
     "url": "https://lu.ma/build-ycs-next-unicorn-apr29-2026",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.85
+    }
   },
   {
     "id": "luma-evt-ZukAWRSDpMuzjJZ",
@@ -9517,7 +10052,16 @@
     "url": "https://lu.ma/ou1d9yuu",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-E3hc9XRSnyBtDhN",
@@ -9589,7 +10133,17 @@
     "url": "https://lu.ma/fqing5r9",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "weird",
+        "electric"
+      ],
+      "uniqueness": 0.8
+    }
   },
   {
     "id": "luma-evt-g83AVUoTnJO4Tdm",
@@ -9642,7 +10196,17 @@
     "url": "https://lu.ma/nexvs8wm",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "adventurous",
+        "playful"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-vpBzn3p7DotNUDm",
@@ -9795,7 +10359,17 @@
     "url": "https://lu.ma/leopard-juicebox-people-talent-leaders-hang-2026",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "chill"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-Hg08ElqIo8PUuEP",
@@ -9909,7 +10483,17 @@
     "url": "https://lu.ma/pb0pkwx1",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "chill"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-j3vNE90hfkpvOmO",
@@ -9920,7 +10504,17 @@
     "url": "https://lu.ma/ezto1ndf",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "adventurous",
+        "electric",
+        "playful"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-gicCjDtTDZK2uFP",
@@ -9971,7 +10565,16 @@
     "url": "https://lu.ma/fieldintelligence",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-p7roQZwQ6whzmq0",
@@ -10064,7 +10667,17 @@
     "url": "https://lu.ma/7yhoj31m",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-xP6yB4AKYHh7bG3",
@@ -10218,7 +10831,17 @@
     "url": "https://lu.ma/nvwama47",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-RhMamsG0wzV2Ilo",
@@ -10229,7 +10852,16 @@
     "url": "https://lu.ma/bltt1mh8",
     "source": "Luma",
     "cost": "$25",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-5AD5wnwHoQyWnqn",
@@ -10321,7 +10953,17 @@
     "url": "https://lu.ma/nc47m6jy",
     "source": "Luma",
     "cost": "$99",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-cD4DkRLL0nWDc2K",
@@ -10353,7 +10995,17 @@
     "url": "https://lu.ma/0o8y6jdb",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "playful"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-5cHOjepysfJceIt",
@@ -10425,7 +11077,17 @@
     "url": "https://lu.ma/000fneuw",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-iin8vucZBw5VL7H",
@@ -10477,7 +11139,16 @@
     "url": "https://lu.ma/fybdx0ra",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-qGmdeGpVbKefeJf",
@@ -10631,7 +11302,16 @@
     "url": "https://lu.ma/n6q6vmi2",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.35
+    }
   },
   {
     "id": "luma-evt-WOUEJGYYW86T0sr",
@@ -10684,7 +11364,16 @@
     "url": "https://lu.ma/frontier-tower-open-day-may-15th",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-9GwVJPEcSpRvQXL",
@@ -10777,7 +11466,17 @@
     "url": "https://lu.ma/devtooldemo5",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-QstSedsLt4iNRwb",
@@ -10849,7 +11548,16 @@
     "url": "https://lu.ma/ArmNV",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-YHXkJIesFGGQ3im",
@@ -10881,7 +11589,16 @@
     "url": "https://lu.ma/gis773o6",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-9DW4K4xn5JJ0zGM",
@@ -10995,7 +11712,16 @@
     "url": "https://lu.ma/8v52b44d",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-pLCnu1KlQbUsI7j",
@@ -11088,7 +11814,16 @@
     "url": "https://lu.ma/gq59qn8r",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "calm",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "adventurous",
+        "chill"
+      ],
+      "uniqueness": 0.3
+    }
   },
   {
     "id": "luma-evt-eCiSgR6DNVlRg5M",
@@ -11119,7 +11854,17 @@
     "url": "https://lu.ma/vently-marina",
     "source": "Luma",
     "cost": "$40",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "exclusive",
+        "chill",
+        "intellectual"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-BFko0qOuuuH39wm",
@@ -11274,7 +12019,16 @@
     "url": "https://lu.ma/ci043tn4",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-sstPj3fnMmJj6r7",
@@ -11367,7 +12121,16 @@
     "url": "https://lu.ma/cc8xgxc3",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-nCEGWXutfkzl4m0",
@@ -11480,7 +12243,16 @@
     "url": "https://lu.ma/z2b0wspc",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.3
+    }
   },
   {
     "id": "luma-evt-2jo27rg0HRIeoXd",
@@ -11532,7 +12304,17 @@
     "url": "https://lu.ma/q7l4a9bz",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-KGqGwDDd5jLSfy3",
@@ -11564,7 +12346,16 @@
     "url": "https://lu.ma/96apw86l",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.4
+    }
   },
   {
     "id": "luma-evt-bZmc4fLLLRmdf3O",
@@ -11719,7 +12510,16 @@
     "url": "https://lu.ma/m58cl2qy",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-OCLr99pr2A5jMe1",
@@ -11751,7 +12551,17 @@
     "url": "https://lu.ma/6rhol5r3",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-QNzoKHzHm7FlJ18",
@@ -11865,7 +12675,17 @@
     "url": "https://lu.ma/c2n2jmml",
     "source": "Luma",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "chill"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "luma-evt-QtAHVfH4AClet5T",
@@ -11876,7 +12696,17 @@
     "url": "https://lu.ma/bx3bciug",
     "source": "Luma",
     "cost": "$15",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "electric",
+        "intellectual",
+        "playful"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-s2IyQazMEZVQN2Y",
@@ -11992,7 +12822,17 @@
     "url": "https://lu.ma/0zlges8c",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-okUTv5qSMFfJUpb",
@@ -12024,7 +12864,17 @@
     "url": "https://lu.ma/6bc9rlg9",
     "source": "Luma",
     "cost": "$150",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-kDC2cZT6mJzz17h",
@@ -12096,7 +12946,16 @@
     "url": "https://lu.ma/ifep44r5",
     "source": "Luma",
     "cost": "$249",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "luma-evt-QrbBoZXd9oPLawz",
@@ -12107,7 +12966,17 @@
     "url": "https://lu.ma/autonomous-alpha-building-the-agentic-tr",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-UQUQ7WEpTZvCl4Y",
@@ -12262,7 +13131,17 @@
     "url": "https://lu.ma/jun-ai-forum",
     "source": "Luma",
     "cost": "Free",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-IEIFiMpdPGjF3hZ",
@@ -12335,7 +13214,16 @@
     "url": "https://lu.ma/AGI-26",
     "source": "Luma",
     "cost": "$349",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "luma-evt-BtskepS93RfYYSN",
@@ -12490,7 +13378,17 @@
     "url": "https://lu.ma/mitai2026",
     "source": "Luma",
     "cost": "$199",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.75
+    }
   },
   {
     "id": "luma-evt-UziG8sRuTKOcGfS",
@@ -12501,7 +13399,17 @@
     "url": "https://lu.ma/dsssf26",
     "source": "Luma",
     "cost": "$25",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
+    }
   },
   {
     "id": "luma-evt-BlDrnwj2cDi790V",
@@ -12553,7 +13461,17 @@
     "url": "https://www.ticketweb.com/event/saturdays-at-your-place-the-independent-tickets/14721293",
     "source": "Google Events",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "electric",
+        "playful",
+        "adventurous"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "google-13",
@@ -12646,7 +13564,17 @@
     "url": "https://open.spotify.com/concert/4e85K5hLAW55gU1IMPmYCj",
     "source": "Google Events",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "chill",
+        "playful",
+        "electric"
+      ],
+      "uniqueness": 0.65
+    }
   },
   {
     "id": "google-23",
@@ -12720,7 +13648,17 @@
     "url": "https://www.visitoakland.com/event/we-them-ones-comedy-tour/34859/",
     "source": "Google Events",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
   },
   {
     "id": "google-37",
@@ -12814,7 +13752,17 @@
     "url": "https://www.viagogo.com/Theater-Tickets/Comedy/Jessica-Kirson-Tickets/E-160135274",
     "source": "Google Events",
     "cost": "Check site",
-    "signature": null
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "electric",
+        "intellectual"
+      ],
+      "uniqueness": 0.7
+    }
   },
   {
     "id": "google-43",
