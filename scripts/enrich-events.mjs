@@ -190,7 +190,7 @@ Return this exact JSON structure:
       "anthropic-version": "2023-06-01",
     },
     body: JSON.stringify({
-      model: "claude-haiku-4-5",
+      model: "claude-haiku-4-5-20251001",
       max_tokens: 150,
       messages: [{ role: "user", content: prompt }],
     }),
@@ -275,7 +275,7 @@ async function main() {
       console.log(`  ${total}/${toEnrich.length} processed (${enriched} enriched, ${failed} failed)...`);
     }
 
-    // Rate limit: 2 concurrent + 1.5s delay = ~80 req/min, under 50/min limit
+    // Rate limit: 2 concurrent + 2.5s delay = ~48 req/min, under 50/min limit
     await new Promise((r) => setTimeout(r, 2500));
   }
 
