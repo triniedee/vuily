@@ -32,11 +32,11 @@ jobs:
 
       - name: Commit updated enriched-events.json
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
+          gh auth setup-git
           git config user.name "vuily-bot"
           git config user.email "bot@vuily.fun"
-          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
           git add data/enriched-events.json
           git diff --cached --quiet || git commit -m "chore: update enriched events [skip ci]"
-          git diff --quiet HEAD origin/main -- data/enriched-events.json || git push origin HEAD:main
+          git push origin HEAD:main
