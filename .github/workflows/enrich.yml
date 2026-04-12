@@ -34,9 +34,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          gh auth setup-git
-          git config user.name "vuily-bot"
-          git config user.email "bot@vuily.fun"
-          git add data/enriched-events.json
-          git diff --cached --quiet || git commit -m "chore: update enriched events [skip ci]"
-          git push origin HEAD:main
+          echo "Token length: ${#GH_TOKEN}"
+          gh auth status
+          SHA=$(gh api /repos/${{ github.repository }}/contents/data/enriched-events.json --jq .sha)
+          CONTENT=$(base64 -w 0 data/enriched-events.json)
+          gh api --method PUT /repos/${{ github.repository }}/contents/data/enriched-events.json \
+            --field message="chore: update enriched events [skip ci]" \
+            --field content="$CONTENT" \
+            --field sha="$SHA" \
+            --field "committer[name]=vuily-bot" \
+            --field "committer[email]=bot@vuily.fun"
