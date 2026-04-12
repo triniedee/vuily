@@ -34,6 +34,7 @@ jobs:
         run: |
           git config user.name "vuily-bot"
           git config user.email "bot@vuily.fun"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git add data/enriched-events.json
           git diff --cached --quiet || git commit -m "chore: update enriched events [skip ci]"
-          git push
+          git push origin HEAD:${{ github.ref_name }}
