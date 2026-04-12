@@ -543,6 +543,110 @@
         cursor: pointer;
       }
 
+      /* Cold-start overlay */
+      .coldstart-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(31,34,64,0.5);
+        backdrop-filter: blur(6px);
+        z-index: 200;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .coldstart-overlay.visible { display: flex; }
+
+      .coldstart-card {
+        background: #fff;
+        border-radius: 24px;
+        padding: 2rem 1.8rem;
+        width: min(440px, 100%);
+        box-shadow: 0 24px 64px rgba(31,34,64,0.2);
+        text-align: center;
+      }
+
+      .coldstart-card .cs-eyebrow {
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--hot-pink);
+        margin-bottom: 0.6rem;
+      }
+
+      .coldstart-card h3 {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 1.3rem;
+        color: var(--text);
+        margin-bottom: 0.4rem;
+        letter-spacing: -0.3px;
+      }
+
+      .coldstart-card .cs-sub {
+        font-size: 0.85rem;
+        color: var(--muted);
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+      }
+
+      .cs-tiles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+        margin-bottom: 1.4rem;
+      }
+
+      .cs-tile {
+        background: rgba(31,34,64,0.04);
+        border: 2px solid rgba(31,34,64,0.1);
+        border-radius: 14px;
+        padding: 0.9rem 0.5rem;
+        cursor: pointer;
+        transition: all 0.15s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+      }
+      .cs-tile:hover { border-color: var(--sky); background: #f0f5ff; }
+      .cs-tile.selected { border-color: var(--hot-pink); background: #fff0f5; }
+      .cs-tile .cs-tile-icon { font-size: 1.5rem; }
+      .cs-tile .cs-tile-label { font-size: 0.75rem; font-weight: 800; color: var(--text); }
+
+      .cs-go {
+        width: 100%;
+        background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        padding: 0.75rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.95rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: opacity 0.18s, transform 0.14s;
+      }
+      .cs-go:hover { opacity: 0.88; transform: translateY(-1px); }
+      .cs-go:disabled { opacity: 0.4; cursor: default; transform: none; }
+
+      .cs-skip {
+        display: block;
+        margin-top: 0.8rem;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--muted);
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-family: "Nunito", sans-serif;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .cs-skip:hover { color: var(--text); }
+
       /* Footer */
       .footer {
         font-size: 0.78rem;
@@ -644,6 +748,43 @@
       </div>
 
       <p class="footer">Made with curiosity in San Francisco &mdash; <a href="./index.html">vuily.fun</a></p>
+    </div>
+
+    <!-- Cold-start: first-time vibe picker -->
+    <div class="coldstart-overlay" id="coldstartOverlay">
+      <div class="coldstart-card">
+        <p class="cs-eyebrow">One quick thing</p>
+        <h3>What sounds good tonight?</h3>
+        <p class="cs-sub">Pick one or more — Vuily will use this to surprise you better.</p>
+        <div class="cs-tiles">
+          <button class="cs-tile" data-vibes="electric,adventurous" data-energy="high">
+            <span class="cs-tile-icon">🎵</span>
+            <span class="cs-tile-label">Music</span>
+          </button>
+          <button class="cs-tile" data-vibes="intellectual,weird" data-energy="calm">
+            <span class="cs-tile-icon">🎨</span>
+            <span class="cs-tile-label">Arts</span>
+          </button>
+          <button class="cs-tile" data-vibes="adventurous,chill" data-energy="moderate">
+            <span class="cs-tile-icon">🌿</span>
+            <span class="cs-tile-label">Outdoors</span>
+          </button>
+          <button class="cs-tile" data-vibes="romantic,cozy" data-energy="calm">
+            <span class="cs-tile-icon">🍷</span>
+            <span class="cs-tile-label">Food & Drink</span>
+          </button>
+          <button class="cs-tile" data-vibes="playful,electric" data-energy="high">
+            <span class="cs-tile-icon">🤝</span>
+            <span class="cs-tile-label">Social</span>
+          </button>
+          <button class="cs-tile" data-vibes="weird,intellectual" data-energy="moderate">
+            <span class="cs-tile-icon">✨</span>
+            <span class="cs-tile-label">Surprise me</span>
+          </button>
+        </div>
+        <button class="cs-go" id="csGo" disabled>Let's go →</button>
+        <button class="cs-skip" id="csSkip">Skip for now</button>
+      </div>
     </div>
 
     <!-- Refine the vibe overlay -->
@@ -1003,6 +1144,28 @@
         return "calm";                                    // late night/early AM
       }
 
+      const COLDSTART_KEY = "vuily_coldstart_vibes";
+      const COLDSTART_DONE_KEY = "vuily_coldstart_done";
+
+      function isNewUser() {
+        try {
+          return !localStorage.getItem(COLDSTART_DONE_KEY);
+        } catch { return false; }
+      }
+
+      function getColdStartVibes() {
+        try {
+          return JSON.parse(localStorage.getItem(COLDSTART_KEY) || "[]");
+        } catch { return []; }
+      }
+
+      function saveColdStartVibes(vibes) {
+        try {
+          localStorage.setItem(COLDSTART_KEY, JSON.stringify(vibes));
+          localStorage.setItem(COLDSTART_DONE_KEY, "1");
+        } catch {}
+      }
+
       function inferFromHistory() {
         try {
           const saved = JSON.parse(localStorage.getItem("vuily_saved") || "[]");
@@ -1031,12 +1194,19 @@
         const day = new Date().getDay();
         const isWeekend = day === 0 || day === 6;
 
-        // Infer vibes from history
-        const vibeHistory = [];
+        // Vibes from event interaction history
+        const interactionVibes = [];
         history.forEach(id => {
           const event = eventPool.find(e => e.id === id);
-          if (event?.signature?.vibe) vibeHistory.push(...event.signature.vibe);
+          if (event?.signature?.vibe) interactionVibes.push(...event.signature.vibe);
         });
+
+        // Vibes from cold-start selection (first-time picker)
+        const coldStartVibes = getColdStartVibes();
+
+        // Combined — interaction history is weighted more (repeated), cold-start fills the gap
+        const vibeHistory = [...interactionVibes, ...coldStartVibes];
+        const hasRealHistory = interactionVibes.length > 0;
 
         return {
           hour,
@@ -1044,6 +1214,8 @@
           isWeekend,
           energyHint: inferEnergyFromTime(hour),
           vibeHistory,
+          hasRealHistory,       // true only if user has interacted with events
+          hasColdStart: coldStartVibes.length > 0,
           weatherBias: momentProfile.weather,
           userOverrides: momentProfile.userOverrides,
         };
@@ -1120,12 +1292,16 @@
           }
         }
 
-        // Vibe history match
+        // Vibe history match — different reason labels based on signal source
         if (profile.vibeHistory.length > 0 && sig.vibe) {
           const overlap = sig.vibe.filter(v => profile.vibeHistory.includes(v)).length;
           if (overlap > 0) {
             resonance += (overlap / sig.vibe.length) * 0.2;
-            reasons.push("matches your taste");
+            if (profile.hasRealHistory) {
+              reasons.push("matches your taste");
+            } else if (profile.hasColdStart) {
+              reasons.push("fits what you're into");
+            }
           }
         }
 
@@ -1185,28 +1361,36 @@
       const refineCancel = document.getElementById("refineCancel");
       const refineApply = document.getElementById("refineApply");
       const loadingDots = document.getElementById("loadingDots");
+      const coldstartOverlay = document.getElementById("coldstartOverlay");
+      const csGo = document.getElementById("csGo");
+      const csSkip = document.getElementById("csSkip");
 
       let eventPool = [];
       let poolLoaded = false;
       let profile = null;
 
       async function boot() {
-        // Load events + weather in parallel
         const [events, weather] = await Promise.all([
           loadEventPool(),
           fetchWeather(),
         ]);
-
         eventPool = events;
         momentProfile.weather = weather;
         poolLoaded = true;
-
         const history = inferFromHistory();
         profile = buildMomentProfile(history);
         renderMomentBar(profile);
       }
 
       async function handleSurprise() {
+        // Show cold-start picker for new users before first surprise
+        if (isNewUser()) {
+          coldstartOverlay.classList.add("visible");
+          // Boot in background while user picks
+          if (!poolLoaded) boot();
+          return;
+        }
+
         btn.classList.add("loading");
         loadingDots.classList.add("visible");
         document.getElementById("resultCard").classList.remove("visible");
@@ -1219,6 +1403,48 @@
 
         renderEvent(pickBestEvent(profile));
       }
+
+      // ─── Cold-start overlay ───────────────────────────────────────────────────
+      document.querySelectorAll(".cs-tile").forEach(tile => {
+        tile.addEventListener("click", () => {
+          tile.classList.toggle("selected");
+          csGo.disabled = document.querySelectorAll(".cs-tile.selected").length === 0;
+        });
+      });
+
+      async function applyColdStart() {
+        const selected = document.querySelectorAll(".cs-tile.selected");
+        const vibes = [];
+        selected.forEach(t => vibes.push(...(t.dataset.vibes || "").split(",")));
+        saveColdStartVibes([...new Set(vibes)]);
+        coldstartOverlay.classList.remove("visible");
+
+        // Rebuild profile with new cold-start vibes
+        btn.classList.add("loading");
+        loadingDots.classList.add("visible");
+        document.getElementById("resultCard").classList.remove("visible");
+
+        if (!poolLoaded) await boot();
+        else {
+          const history = inferFromHistory();
+          profile = buildMomentProfile(history);
+          renderMomentBar(profile);
+        }
+
+        loadingDots.classList.remove("visible");
+        btn.classList.remove("loading");
+        btn.innerHTML = '<span class="btn-icon">🎲</span> Another one';
+        renderEvent(pickBestEvent(profile));
+      }
+
+      csGo.addEventListener("click", applyColdStart);
+
+      csSkip.addEventListener("click", () => {
+        // Mark as done so we don't ask again, but don't save vibes
+        try { localStorage.setItem(COLDSTART_DONE_KEY, "1"); } catch {}
+        coldstartOverlay.classList.remove("visible");
+        handleSurprise();
+      });
 
       // ─── Refine the vibe overlay ──────────────────────────────────────────────
       refineBtn.addEventListener("click", () => {
