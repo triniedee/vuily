@@ -31,9 +31,12 @@ jobs:
         run: node scripts/enrich-events.mjs
 
       - name: Commit updated enriched-events.json
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update enriched events [skip ci]"
-          file_pattern: data/enriched-events.json
-          commit_user_name: vuily-bot
-          commit_user_email: bot@vuily.fun
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git config user.name "vuily-bot"
+          git config user.email "bot@vuily.fun"
+          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
+          git add data/enriched-events.json
+          git diff --cached --quiet || git commit -m "chore: update enriched events [skip ci]"
+          git diff --quiet HEAD origin/main -- data/enriched-events.json || git push origin HEAD:main
