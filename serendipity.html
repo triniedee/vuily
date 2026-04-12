@@ -847,17 +847,141 @@
         return { title, category: normalizeCategory(`${title} ${desc} ${address}`), cost: "Check site", date: date.toISOString(), location: address, source: "Google Events", url: event.link || "", description: desc };
       }
 
-      // ─── Load enriched events from pre-computed JSON ─────────────────────────
+      // ─── Keyword-based signature inference (for live events without Claude enrichment) ───
+      function inferSignature(event) {
+        const t = `${event.title} ${event.description || ""} ${event.location || ""}`.toLowerCase();
+        const energy =
+          t.match(/concert|festival|rave|dance|party|nightclub|dj|live music|high.energy|loud|intense/) ? "high" :
+          t.match(/yoga|meditation|sound bath|reading|talk|lecture|workshop|film|gallery|quiet|calm/) ? "calm" : "moderate";
+        const social_shape =
+          t.match(/solo|alone|yourself|just you|one person/) ? "solo" :
+          t.match(/date|romantic|couples|partner|two/) ? "duo" :
+          t.match(/crowd|festival|large|hundreds|thousands|stadium|arena/) ? "crowd" : "small_group";
+        const spontaneity =
+          t.match(/drop.in|walk.in|no rsvp|free entry|just show up|open to all/) ? "drop-in" : "planned";
+        const vibes = [];
+        if (t.match(/jazz|classical|ambient|acoustic|chill|lounge|slow/)) vibes.push("chill");
+        if (t.match(/art|gallery|museum|film|poetry|creative|culture/)) vibes.push("intellectual");
+        if (t.match(/dance|party|festival|concert|live|dj|electric|energy/)) vibes.push("electric");
+        if (t.match(/comedy|improv|fun|play|game|silly|whimsy/)) vibes.push("playful");
+        if (t.match(/hike|outdoor|nature|park|trail|bike|run|adventure/)) vibes.push("adventurous");
+        if (t.match(/romantic|date|sunset|candlelit|intimate|wine|dinner/)) vibes.push("romantic");
+        if (t.match(/weird|strange|unusual|bizarre|surreal|underground|niche|obscure/)) vibes.push("weird");
+        if (t.match(/cozy|warm|cafe|small|intimate|quiet|neighborhood/)) vibes.push("cozy");
+        const uniqueness = t.match(/secret|underground|hidden|exclusive|rare|unusual|weird|niche|obscure/) ? 0.8 :
+          t.match(/festival|conference|convention|large/) ? 0.2 : 0.5;
+        return { energy, social_shape, spontaneity, vibe: vibes.slice(0, 3), uniqueness, inferred: true };
+      }
+
+      // ─── Simple RSS parser ─────────────────────────────────────────────────────
+      function parseRss(xml) {
+        const items = [];
+        const matches = xml.match(/<item>([\s\S]*?)<\/item>/g) || [];
+        for (const item of matches) {
+          const get = (tag) => {
+            const m = item.match(new RegExp(`<${tag}(?:[^>]*)>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?<\\/${tag}>`, "i"));
+            return m ? m[1].trim() : "";
+          };
+          items.push({ title: get("title"), link: get("link"), pubDate: get("pubDate"), description: get("description") });
+        }
+        return items;
+      }
+
+      // ─── Simple 19hz HTML parser ──────────────────────────────────────────────
+      function parse19hz(html) {
+        const events = [];
+        const rows = html.match(/<tr[^>]*>([\s\S]*?)<\/tr>/gi) || [];
+        for (const row of rows) {
+          const cells = row.match(/<td[^>]*>([\s\S]*?)<\/td>/gi) || [];
+          if (cells.length < 2) continue;
+          const stripTags = s => s.replace(/<[^>]*>/g, "").trim();
+          const title = stripTags(cells[1] || "");
+          if (!title || title.length < 3) continue;
+          const dateCell = stripTags(cells[0] || "");
+          const ymdMatch = row.match(/(\d{4})[/-](\d{2})[/-](\d{2})/);
+          if (!ymdMatch) continue;
+          const date = new Date(`${ymdMatch[1]}-${ymdMatch[2]}-${ymdMatch[3]}`);
+          if (isNaN(date.getTime()) || date < new Date()) continue;
+          const hrefMatch = (cells[1] || "").match(/href=['"]([^'"]+)['"]/i);
+          const url = hrefMatch ? hrefMatch[1] : "";
+          const venueSplit = title.split(" @ ");
+          const venue = venueSplit.length > 1 ? venueSplit.slice(1).join(" @ ").trim() : "San Francisco";
+          const tags = stripTags(cells[2] || "");
+          events.push({ title: venueSplit[0].trim(), location: venue, date: date.toISOString(), url, description: tags, source: "19hz", cost: "Check site", id: `19hz-${url || title}-${date.toISOString()}` });
+        }
+        return events;
+      }
+
+      // ─── Dedupe by title similarity ───────────────────────────────────────────
+      function dedupeByTitle(events, existingIds) {
+        const seen = new Set(existingIds);
+        return events.filter(e => {
+          const key = e.id || e.title?.toLowerCase().replace(/[^a-z0-9]/g, "");
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+      }
+
+      // ─── Load enriched events + live sources ─────────────────────────────────
       async function loadEventPool() {
+        const now = new Date();
+        let enriched = [];
+        let enrichedIds = new Set();
+
+        // Primary: enriched events with Claude signatures
         try {
           const res = await fetch("/data/enriched-events.json", { cache: "no-store" });
-          if (!res.ok) throw new Error("enriched-events.json not found");
-          const all = await res.json();
-          const now = new Date();
-          return all.filter(e => e && e.date && new Date(e.date) > now);
-        } catch {
-          return FALLBACK_EVENTS;
+          if (res.ok) {
+            const all = await res.json();
+            enriched = all.filter(e => e && e.date && new Date(e.date) > now);
+            enrichedIds = new Set(enriched.map(e => e.id));
+            console.log(`[serendipity] enriched events: ${enriched.length}`);
+          }
+        } catch (e) { console.warn("[serendipity] enriched-events.json failed", e); }
+
+        // Live sources: fetch in parallel, infer signatures
+        const liveEvents = [];
+
+        await Promise.allSettled([
+          // Funcheap RSS
+          fetch(`/proxy?url=${encodeURIComponent("https://sf.funcheap.com/feed/")}`, { cache: "no-store" })
+            .then(r => r.ok ? r.text() : "")
+            .then(xml => {
+              const items = parseRss(xml);
+              for (const item of items) {
+                const title = item.title?.replace(/<[^>]*>/g, "").trim();
+                if (!title) continue;
+                const date = item.pubDate ? new Date(item.pubDate) : null;
+                if (!date || isNaN(date.getTime()) || date < now) continue;
+                const id = `funcheap-${(item.link || title).toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+                liveEvents.push({ id, title, date: date.toISOString(), url: item.link || "", location: "San Francisco", source: "SF Funcheap", cost: "Free", description: item.description?.replace(/<[^>]*>/g, "").slice(0, 200) || "" });
+              }
+              console.log(`[serendipity] funcheap: ${items.length} items`);
+            }).catch(e => console.warn("[serendipity] funcheap failed", e)),
+
+          // 19hz
+          fetch(`/proxy?url=${encodeURIComponent("https://19hz.info/eventlisting_BayArea.php")}`, { cache: "no-store" })
+            .then(r => r.ok ? r.text() : "")
+            .then(html => {
+              const items = parse19hz(html);
+              liveEvents.push(...items);
+              console.log(`[serendipity] 19hz: ${items.length} items`);
+            }).catch(e => console.warn("[serendipity] 19hz failed", e)),
+        ]);
+
+        // Dedupe live events against enriched
+        const newLive = dedupeByTitle(liveEvents, enrichedIds);
+
+        // Add inferred signatures to live events
+        for (const e of newLive) {
+          e.signature = inferSignature(e);
         }
+
+        console.log(`[serendipity] total: ${enriched.length} enriched + ${newLive.length} live`);
+
+        const all = [...enriched, ...newLive];
+        return all.length > 0 ? all : FALLBACK_EVENTS;
       }
 
       // ─── Moment profile ───────────────────────────────────────────────────────
