@@ -33,14 +33,7 @@ jobs:
       - name: Commit updated enriched-events.json
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GH_REPO: ${{ github.repository }}
         run: |
-          echo "Token length: ${#GH_TOKEN}"
-          gh auth status
-          SHA=$(gh api /repos/${{ github.repository }}/contents/data/enriched-events.json --jq .sha)
-          CONTENT=$(base64 -w 0 data/enriched-events.json)
-          gh api --method PUT /repos/${{ github.repository }}/contents/data/enriched-events.json \
-            --field message="chore: update enriched events [skip ci]" \
-            --field content="$CONTENT" \
-            --field sha="$SHA" \
-            --field "committer[name]=vuily-bot" \
-            --field "committer[email]=bot@vuily.fun"
+          SHA=$(gh api /repos/${GH_REPO}/contents/data/enriched-events.json --jq .sha)
+          python3 scripts/commit-enriched.py
