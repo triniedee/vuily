@@ -35,5 +35,5 @@ jobs:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          SHA=$(gh api /repos/${GH_REPO}/contents/data/enriched-events.json --jq .sha)
+          export SHA=$(gh api /repos/${GH_REPO}/contents/data/enriched-events.json --jq .sha)
           python3 scripts/commit-enriched.py
