@@ -1064,6 +1064,46 @@
         });
       }
 
+      // ─── JSON-LD parser (Timeout, Meetup, other schema.org sources) ──────────
+      function parseJsonLd(html) {
+        const events = [];
+        const matches = html.match(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi) || [];
+        for (const block of matches) {
+          try {
+            const json = block.replace(/<script[^>]*>|<\/script>/gi, "").trim();
+            const data = JSON.parse(json);
+            const items = Array.isArray(data) ? data : (data["@graph"] ? data["@graph"] : [data]);
+            for (const item of items) {
+              const type = item["@type"];
+              if (type === "Event" || (Array.isArray(type) && type.includes("Event"))) {
+                events.push(item);
+              }
+            }
+          } catch {}
+        }
+        return events;
+      }
+
+      function mapJsonLdEvent(item, source, prefix) {
+        const title = (item.name || "").trim();
+        if (!title) return null;
+        const dateStr = item.startDate;
+        if (!dateStr) return null;
+        const date = new Date(dateStr);
+        if (isNaN(date.getTime()) || date < new Date()) return null;
+        const loc = item.location;
+        const location =
+          typeof loc === "string" ? loc :
+          loc?.address?.streetAddress ? [loc.address.streetAddress, loc.address.addressLocality].filter(Boolean).join(", ") :
+          loc?.name || "San Francisco";
+        const url = item.url || item["@id"] || "";
+        const description = (item.description || "").replace(/<[^>]*>/g, "").slice(0, 200);
+        const price = item.offers?.price ?? item.offers?.[0]?.price;
+        const cost = (price === 0 || price === "0") ? "Free" : price ? `$${price}` : "Check site";
+        const id = `${prefix}-${(url || title).toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 80)}`;
+        return { id, title, date: date.toISOString(), location, url, source, cost, description };
+      }
+
       // ─── Load enriched events + live sources ─────────────────────────────────
       async function loadEventPool() {
         const now = new Date();
@@ -1109,6 +1149,15 @@
               liveEvents.push(...items);
               console.log(`[serendipity] 19hz: ${items.length} items`);
             }).catch(e => console.warn("[serendipity] 19hz failed", e)),
+
+          // Meetup SF
+          fetch(`/proxy?url=${encodeURIComponent("https://www.meetup.com/find/?location=us--ca--san+francisco&source=EVENTS")}`, { cache: "no-store" })
+            .then(r => r.ok ? r.text() : "")
+            .then(html => {
+              const items = parseJsonLd(html).map(e => mapJsonLdEvent(e, "Meetup", "meetup")).filter(Boolean);
+              liveEvents.push(...items);
+              console.log(`[serendipity] meetup: ${items.length} items`);
+            }).catch(e => console.warn("[serendipity] meetup failed", e)),
         ]);
 
         // Dedupe live events against enriched
