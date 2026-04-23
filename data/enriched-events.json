@@ -103,1025 +103,6 @@
     }
   },
   {
-    "id": "luma-evt-48zCwSATFTgG6Ol",
-    "title": "AI Meets Climate Adaptation: Unlocking Resilience Across Assets",
-    "description": "",
-    "date": "2026-04-22T15:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/7kwlhhki",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-VvG42H9oqsqAiJj",
-    "title": "Breakfast & Padel with Tamar Ventures",
-    "description": "",
-    "date": "2026-04-22T15:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/a1wl1yvn",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-AUpe5kv60Jqi9d2",
-    "title": "The Monthly Close: finance co-working & lunch by Runway and Tabs",
-    "description": "",
-    "date": "2026-04-22T15:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/qlw5m31j",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill",
-        "cozy"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-IyGZ10qVke5rBPP",
-    "title": "The Sustainable Data Center Power Stack",
-    "description": "",
-    "date": "2026-04-22T15:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/p3ireb7l",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-K1iZJrB24Q4PEof",
-    "title": "Built to Last: Resilience Tech and the Future of Corporate Buildings & Commercial Real Estate",
-    "description": "",
-    "date": "2026-04-22T16:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/nezxawjw",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.55
-    }
-  },
-  {
-    "id": "luma-evt-qN0n7kXcvm1n74l",
-    "title": "From Carbon to Cabin: Scaling the Next Era of Aviation Fuel",
-    "description": "",
-    "date": "2026-04-22T16:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/vfmperjh",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "luma-evt-zvGv5HWRfMHOuSO",
-    "title": "Bridging the Capital Gap: Blended Finance for Renewable Energy and Critical Minerals",
-    "description": "",
-    "date": "2026-04-22T16:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/1psaopul",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-PJlncgL6kNtL7pE",
-    "title": "Blue Economy Jobs Today and Tomorrow",
-    "description": "",
-    "date": "2026-04-22T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/7nc0kuq0",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-BrH87U7MDRJN4vN",
-    "title": "Live From the Future! A Deep Tech Investor Expo",
-    "description": "",
-    "date": "2026-04-22T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/2rrxqv4e",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-kQEXbUTDa1QQpGt",
-    "title": "Open Energy Hackathon 2.0 - AI, Mesh, and Hardware!",
-    "description": "",
-    "date": "2026-04-22T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/6jvum8on",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-jvvincfUcbJbuPa",
-    "title": "Zero Emission Freight: the next big thing in corporate sustainability leadership",
-    "description": "",
-    "date": "2026-04-22T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/js1azpx7",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-JsrrbEABjMdtoje",
-    "title": "Missing Middle Working Session - Hosted by IFM Investors, Microsoft, Cambridge Consultants, and Node",
-    "description": "",
-    "date": "2026-04-22T18:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/wf7ywdo2",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-bhewxnKF7xBr2dC",
-    "title": "Bay Area Builders & Architects Lunch Happy Hour",
-    "description": "",
-    "date": "2026-04-22T19:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/df1h54sv",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "playful",
-        "chill"
-      ],
-      "uniqueness": 0.4
-    }
-  },
-  {
-    "id": "luma-evt-tcyRxgqC3E8XxdG",
-    "title": "Desert Rising: How New Mexico is Building the Climate Economy (Live Inevitable Podcast + Founder Panel)",
-    "description": "",
-    "date": "2026-04-22T19:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/n4fe13fy",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-MLglPYqHsOul8NA",
-    "title": "Halcyon - Time to Power (SF Climate Week)",
-    "description": "",
-    "date": "2026-04-22T19:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/6eichdxc",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-EQhJCBJFx4RgLRe",
-    "title": "Pillsbury, AAMA & Citi: Leadership, Policy, and Capital in Semiconductors Forum",
-    "description": "",
-    "date": "2026-04-22T19:45:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/yx9quhax",
-    "source": "Luma",
-    "cost": "$149",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-cFRb4jYjRT3l9Zb",
-    "title": "Exploring Energy Solutions for Maritime Innovation",
-    "description": "",
-    "date": "2026-04-22T20:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/eebafypg",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-2wUybpuCoPgnOZ2",
-    "title": "Silicon Valley Healthtech Summit: Biotech, Medtech, Climatetech, Life Sciences",
-    "description": "",
-    "date": "2026-04-22T20:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/1r6jq6uz",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-HCcjnLqUbzZo6Ip",
-    "title": "Founder Summit",
-    "description": "",
-    "date": "2026-04-22T21:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/v6op849f",
-    "source": "Luma",
-    "cost": "$15",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-O1hLxLSeMI8tcUV",
-    "title": "Jewish Climate & Israeli DeserTech Summit",
-    "description": "",
-    "date": "2026-04-22T21:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/ui23lp40",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-qEEryuut620RrWm",
-    "title": "[Official] Family Offices & Investors Summit - SF Climate Week (+LPs/GPs matchmaking)",
-    "description": "",
-    "date": "2026-04-22T21:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/gokqig1q",
-    "source": "Luma",
-    "cost": "$200",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-lWvexyrNsXkZl5k",
-    "title": "WOMEN ON WILDFIRE: Balancing Safety, Reliability, & Affordability for Electric Utilities",
-    "description": "",
-    "date": "2026-04-22T21:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/zmkjghz2",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-EWLWYFVbfnCpsiT",
-    "title": "Building Climate Solutions at Scale: An India–CA Clean Energy & Resilience Dialogue",
-    "description": "",
-    "date": "2026-04-22T22:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/iip5w7ie",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-nhN9oAeoqnO8hlX",
-    "title": "Autonomy on Wheels: Panel & Happy Hour at SFCW",
-    "description": "",
-    "date": "2026-04-22T23:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/AutonomyonWheels",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-Ori7F4y6o0i7N8j",
-    "title": "Can VPPs solve the grid’s capacity crunch?",
-    "description": "",
-    "date": "2026-04-22T23:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/5nafsatm",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-JyU0xCNCENTCEnL",
-    "title": "The Carbon Market Emerging Beneath AI",
-    "description": "",
-    "date": "2026-04-22T23:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/hqjao7i3",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-O3cS7hLCfEDYI0p",
-    "title": "$1 Million Global Innovation Saving Humanity Summit - 2027 Grand Final",
-    "description": "",
-    "date": "2026-04-22T23:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/2w5k30fi",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "luma-evt-IrUocmLozjskwsD",
-    "title": "Design Chat with Rasmus Andersson",
-    "description": "",
-    "date": "2026-04-22T23:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/rasmus-spc",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-HdPL0eS8CU2UWfT",
-    "title": "IP Rescue: A Second Life for Stranded Climate Innovation",
-    "description": "",
-    "date": "2026-04-22T23:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/haez1x4d",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-HEivXuz188ghZCo",
-    "title": "SFCW: Marketing Leaders in Sustainability Happy Hour",
-    "description": "",
-    "date": "2026-04-22T23:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/lzxqpynj",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-olufHYR2k7TDAoO",
-    "title": "Black Flag 100 Exclusive Invite 🏴‍☠️ Black Flag + Astranis - Deep Tech Mixer",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/muzij955",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "luma-evt-U38jKaAWEH2KpGr",
-    "title": "Builders at the Edge",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/w988u1uh",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-XmeZQCASYONMm69",
-    "title": "Climate Founder x Investor Happy Hour",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/bspcmnrq",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-9N9bzac2n1Swro4",
-    "title": "Drinks & Demos : 120V Home Electrification",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/58hi25g4",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric",
-        "chill"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-GAvIGnY8RyDagzr",
-    "title": "E8 Community Happy Hour",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/v2lnq2w0",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "chill",
-        "electric"
-      ],
-      "uniqueness": 0.3
-    }
-  },
-  {
-    "id": "luma-evt-Gfg80jYVpG3m8C2",
-    "title": "SF Climate Week: Climate Tech in the Crosswinds, A Reality Check",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/nacz0xes",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-esTlCTPO10dnzhG",
-    "title": "The Unfair Advantage of Australian Innovation",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/p287piei",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-YVj8zqDq20ipH1z",
-    "title": "Women Inventing What Doesn’t Exist Yet — An Evening with Tara Lemméy",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/z0h0i6jm",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-ALPlqNathiKsaUa",
-    "title": "CEO PRIVATE DINNER",
-    "description": "",
-    "date": "2026-04-23T00:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/ljdthbut",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.3
-    }
-  },
-  {
-    "id": "luma-evt-2EJHzdU6FFut6Lb",
-    "title": "Climate Solutions Showcase",
-    "description": "",
-    "date": "2026-04-23T00:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/mb3u12zv",
-    "source": "Luma",
-    "cost": "$10",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-uPf0aROhkzzlOhr",
-    "title": "Hardware Pitch Night - SF Climate Week Edition",
-    "description": "",
-    "date": "2026-04-23T00:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/kct94i3m",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-mAkaaX2Rb6gGs3E",
-    "title": "SFCW'26 Social: Scaling Critical Climate Tech",
-    "description": "",
-    "date": "2026-04-23T00:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/eb9e9udf",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-LquJjJd7mvvjVSE",
-    "title": "Floor block (immersive build project) - Open Registration",
-    "description": "",
-    "date": "2026-04-23T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/floor-block-immersive-build-project-ce65",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "adventurous",
-        "playful",
-        "intellectual"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-5h0NipzmCyWzOp2",
-    "title": "Priced Out of the Planet: Bridging the Climate Affordability Gap",
-    "description": "",
-    "date": "2026-04-23T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/e6iylwb2",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-t6kDh7tyDdPtQh4",
-    "title": "Runway x GFT Executive Dinner in San Francisco - April 22",
-    "description": "",
-    "date": "2026-04-23T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/guk2dehe",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-3F5TFvIsBwM4q5k",
-    "title": "The Whole Ocean: Systems, Tech & Investment in Nature",
-    "description": "",
-    "date": "2026-04-23T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/wfs3op2w",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "luma-evt-alYWgu0egEcIVPa",
-    "title": "The Table - VC Only After Hours",
-    "description": "",
-    "date": "2026-04-23T01:15:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/dvceh9cv",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-ylI2ShRMwLRXkUj",
-    "title": "CFO Series Dinner: Enhancing Revenue Ops and Business Risk Management",
-    "description": "",
-    "date": "2026-04-23T01:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/uztq0p8v",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.3
-    }
-  },
-  {
-    "id": "luma-evt-n5ipuZLDlrkS8zC",
-    "title": "Latinx MBA CEO Tour | San Francisco",
-    "description": "",
-    "date": "2026-04-23T01:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/lmaatfinix26",
-    "source": "Luma",
-    "cost": "$10",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-qU49dJoUzc1UqHL",
-    "title": "San Jose, CA: Quarterly Dinner Mixer",
-    "description": "",
-    "date": "2026-04-23T02:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/SanJose5",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.3
-    }
-  },
-  {
     "id": "luma-evt-Sx5o1BthrBtagI9",
     "title": "Samarbetsavtal med Kalifornien i teori och praktik",
     "description": "",
@@ -1941,228 +922,6 @@
         "adventurous"
       ],
       "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-E7dQn7SM97Qctp8",
-    "title": "From Hype to Impact: How AI Is Accelerating Climate Solutions",
-    "description": "",
-    "date": "2026-04-22T16:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/uonzqbe3",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-ckEh6ecyUygG3nF",
-    "title": "UNLOCK 2026 - AI Science: Cutting Through the Hype",
-    "description": "",
-    "date": "2026-04-22T16:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/unlock2026",
-    "source": "Luma",
-    "cost": "$99",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "luma-evt-cRtNvgCJasJ5HcH",
-    "title": "Indigenous Leadership at the Frontline: Why Climate Solutions Must Start with Forest Protection",
-    "description": "",
-    "date": "2026-04-22T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/e1t5r48x",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-gh0grYRePcliKG4",
-    "title": "AI for Good: In Climate, Health and Investing",
-    "description": "",
-    "date": "2026-04-22T20:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/3hzitlub",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-vev56dFhvBqr9F2",
-    "title": "Silicon Valley Healthtech Summit-- Biotech, Medtech, Life Sciences, AI, Genomics",
-    "description": "",
-    "date": "2026-04-22T20:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/angellaunchapril22",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-lM55F92qOp7D1Rl",
-    "title": "AI for Climate Adaptation and Disaster Response: Public Sector Pathways to Impact",
-    "description": "",
-    "date": "2026-04-22T20:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/ql5giqf6",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-FubXFB3ynHHXiQy",
-    "title": "BC3 AI Sustainability Summit & Celebration",
-    "description": "",
-    "date": "2026-04-22T21:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/3gwz0nb4",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-YU70Rlf2LtE5W2q",
-    "title": "Earth Day Ocean Intelligence Forum + HH: From Data to Decisions for Marine Protection & Real-Time Ocean Awareness",
-    "description": "",
-    "date": "2026-04-22T22:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/zuaf4ost",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-49H0UFDVM51M8oS",
-    "title": "The AI Frontier: Building Production-Ready AI Faster with Snowflake & Menlo Ventures",
-    "description": "",
-    "date": "2026-04-22T23:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/07x60y0c",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-LCjjzhZN92rTOKJ",
-    "title": "Break My AI",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/2lplib7a",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "intellectual",
-        "playful",
-        "weird"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "luma-evt-2ZBpT657yfyuELx",
-    "title": "From Idea to Product: A Roadmap for Non-Technical Founders",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/p66l8du2",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.4
     }
   },
   {
@@ -3187,151 +1946,6 @@
         "electric"
       ],
       "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-NqQErmbKEFVYfih",
-    "title": "Scale with AI. Lead with taste.",
-    "description": "",
-    "date": "2026-04-23T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/4ehqjrhg",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-vxH9DEPsbH0pG3I",
-    "title": "Built Here. Built for What's Next: College Student & Grads Pitch Night & Industry Insider Panel - 🧠 The AI Collective x Startup Tri-Valley",
-    "description": "",
-    "date": "2026-04-23T00:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/aic-tr-4-22",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-xXfp7xkEV0ylpdj",
-    "title": "San Francisco | Claude Code Para Todos: La Edición Latina",
-    "description": "",
-    "date": "2026-04-23T00:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/claudesanfrancisco",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-MpwPPJCHtYzoeUq",
-    "title": "AI Tech & Startup Night — San Francisco",
-    "description": "",
-    "date": "2026-04-23T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/fdr0ybr5",
-    "source": "Luma",
-    "cost": "$28",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-fDu58NSGZcWMEE0",
-    "title": "Build After Dark 4/22",
-    "description": "",
-    "date": "2026-04-23T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/am3uqq68",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "luma-evt-hzxoQgYFyNVtKLn",
-    "title": "Lightning Talks from Women and Folks in Tech",
-    "description": "",
-    "date": "2026-04-23T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/y0dedwpf",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric",
-        "playful"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-RPBlQnopv5bxDDv",
-    "title": "Women in AI Salon: Lightning Talks Series #1 - Responsible AI",
-    "description": "",
-    "date": "2026-04-23T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/tdpjc605",
-    "source": "Luma",
-    "cost": "$25",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.7
     }
   },
   {
@@ -7672,215 +6286,6 @@
     }
   },
   {
-    "id": "19hz-https-ra-co-events-2403000",
-    "title": "Mostly Cloudy at Soma Nights Block Party: Queenie, felipe d, mymy",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://ra.co/events/2403000",
-    "location": "The Alley @ 1145 Folsom Street (San Francisco)latin club, house, techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-etix-com-ticket-p-92641103-dj-mandy-santa-cruz-the-catalyst",
-    "title": "DJ Mandy",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://www.etix.com/ticket/p/92641103/dj-mandy-santa-cruz-the-catalyst",
-    "location": "The Catalyst (Santa Cruz)house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$29",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2418930",
-    "title": "Quicksand: Alien Transmissions From A Dubwise Planet - Airali, Aepricity, Modyl",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://ra.co/events/2418930",
-    "location": "Public Works Oddjob Loft (San Francisco)dubstep, bass music, uk garage",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$14-20 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "weird",
-        "adventurous"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-innercirclesf-",
-    "title": "Inner Circle",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://www.instagram.com/innercirclesf/",
-    "location": "White Rabbit (San Francisco)house, EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dw16-b6gcbs-img-index-1",
-    "title": "Let Her Cook: DJ Coolaide, Lil Laurie, Baked Bre",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DW16-B6gcBs/?img_index=1",
-    "location": "The Flamingo House (Sacramento)house, uk garage, eurodance, bounce, techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dwp8kjblea6-",
-    "title": "Discoesq",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DWp8KjBleA6/",
-    "location": "Phonobar (San Francisco)disco house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dwronhidxdj-",
-    "title": "erika + femme jatale",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DWrOnhIDxdJ/",
-    "location": "Bar Part Time (San Francisco)electro, bounce, techno, latin",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "weird",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dvjrkdcdtn7-",
-    "title": "Halou, Kallai, Vague Lanes",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DVJrKdCDtN7/",
-    "location": "The Knockout (San Francisco)dreampop, post-punk, darkwave, shoegaze",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$10 | 21+",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "romantic",
-        "weird",
-        "chill"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-aniclover-ticketspice-com-vocaclover-2026",
-    "title": "VocaClover: Unofficial Miku Expo Afterparty (Day 2)",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://aniclover.ticketspice.com/vocaclover-2026",
-    "location": "Fuze Lounge (San Jose)anime, jpop, vocaloid, doujin EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$25-50 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "electric",
-        "weird"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-posh-vip-e-423-eclypse-edm-haus",
-    "title": "Eclypse Edm Haus",
-    "date": "2026-04-23T00:00:00.000Z",
-    "url": "https://posh.vip/e/423-eclypse-edm-haus",
-    "location": "Lock And Key (Sacramento)house, hardstyle, techno, EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free w/rsvp / $20 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
     "id": "19hz-https-ra-co-events-2381985",
     "title": "Swim, Sandra Mane, Alicia Steiman",
     "date": "2026-04-24T00:00:00.000Z",
@@ -8235,6 +6640,27 @@
         "weird"
       ],
       "uniqueness": 0.72
+    }
+  },
+  {
+    "id": "19hz-https-www-instagram-com-p-dwronhidxdj-",
+    "title": "DJ Patrick",
+    "date": "2026-04-24T00:00:00.000Z",
+    "url": "https://www.instagram.com/p/DWrOnhIDxdJ/",
+    "location": "Bar Part Time (San Francisco)deep house, disco",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "weird",
+        "adventurous"
+      ],
+      "uniqueness": 0.75
     }
   },
   {
@@ -9159,6 +7585,27 @@
         "weird"
       ],
       "uniqueness": 0.85
+    }
+  },
+  {
+    "id": "19hz-https-www-instagram-com-p-dwp8kjblea6-",
+    "title": "Chvck",
+    "date": "2026-04-25T00:00:00.000Z",
+    "url": "https://www.instagram.com/p/DWp8KjBleA6/",
+    "location": "Phonobar (San Francisco)deep house, tech house",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "playful",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
     }
   },
   {
@@ -10208,6 +8655,27 @@
         "playful"
       ],
       "uniqueness": 0.75
+    }
+  },
+  {
+    "id": "19hz-https-www-instagram-com-innercirclesf-",
+    "title": "Inner Circle",
+    "date": "2026-04-30T00:00:00.000Z",
+    "url": "https://www.instagram.com/innercirclesf/",
+    "location": "White Rabbit (San Francisco)house, EDM",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "free | 21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "playful",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
     }
   },
   {
@@ -16521,44 +14989,24 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-berkeley-sociale-meetup-group-events-314390940-",
-    "title": "Beginner Friendly Spanish Speaking Night",
-    "date": "2026-04-29T01:30:00.000Z",
-    "location": "3770 Piedmont Avenue, Oakland, CA, Oakland",
-    "url": "https://www.meetup.com/berkeley-sociale-meetup-group/events/314390940/",
+    "id": "meetup-https-www-meetup-com-startup-networking-founder-ecosystem-san-francisco-events-3",
+    "title": "Founders, Investors & Talent Networking Mixer | San Francisco",
+    "date": "2026-05-21T02:00:00.000Z",
+    "location": "2351 Mission St, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/startup-networking-founder-ecosystem-san-francisco/events/314271619/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "Are you a beginner Spanish learner that wants to learn and meet other Spanish learners in a more structured, beginner-friendly setting? Then come out to Beginner’s Night on Tuesday from 6:30-8:30pm, Beginner’s Night will feature a more structured discussion with time to chat and meet others. You can find us at the table with the red balloons 🎈 🎈 Schedule 6:30-6:45pm: Freetime, waiting for late p",
+    "description": "Join founders, investors and tech talent at this curated **startup networking event in San Francisco.** Meet ambitious builders, exchange ideas and discover new opportunities in a dynamic community environment. RSVP: [Use this link](https://www.eventbrite.com/e/founders-investors-talent-networking-mixer-san-francisco-tickets-1984508568550?aff=oddtdtcreator&keep_tld=true) Please note that RSVP is m",
     "signature": {
-      "energy": "calm",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "chill",
-        "intellectual",
-        "cozy"
-      ],
-      "uniqueness": 0.35
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-rladies-remote-events-313908392-",
-    "title": "Working Smarter in R: Tips, Tricks & Real-World Lessons",
-    "date": "2026-04-22T18:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/rladies-remote/events/313908392/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Join us at R-Ladies Remote for an engaging panel discussion on how to *work smarter in R*. Whether you're an early-career user or an experienced practitioner, this session brings together a diverse group of R users to share practical insights from their real-world experience. We’ll explore workflows, tools, lessons learned, and small changes that can make a big difference in your day-to-day work. ",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
+      "energy": "high",
+      "social_shape": "crowd",
       "spontaneity": "planned",
       "vibe": [
         "intellectual",
-        "chill"
+        "electric",
+        "adventurous"
       ],
-      "uniqueness": 0.45
+      "uniqueness": 0.3
     }
   },
   {
@@ -16604,24 +15052,24 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-baysocials-events-314166999-",
-    "title": "🌳 Picnic @ Alamo Square Park, S.F",
-    "date": "2026-05-09T20:30:00.000Z",
-    "location": ", San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/baysocials/events/314166999/",
+    "id": "meetup-https-www-meetup-com-gist-irl-events-314156143-",
+    "title": "20s and 30s Social : Beer Garden + New Friends",
+    "date": "2026-05-04T00:00:00.000Z",
+    "location": "199 Valencia Street, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/gist-irl/events/314156143/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "**Always 100% free for everyone.** No early-bird tiers, no 'later-on' fees. We’re sitting on the grass which may be wet, **so get your picnic blanket, mat, chair or something to sit on.** Feel free to bring your own food, or drinks if you like. We’ll be chilling under a big tree adjacent to the Lady Falcon Coffee truck in **Alamo Square** with a view of the **Painted Ladies**, as shown in the cove",
+    "description": "**RSVP via:** https://app.gistirl.com/event-details/4ZivmTNVI8eeO1CoLkLY **FREE for Early Bird \\| $ Later on** May is here, the days are longer, and the city finally feels alive again—so let’s end the week the way it should be: outside, drink in hand, surrounded by new people who actually feel easy to talk to. This is a space where you show up solo and quickly find yourself laughing, connecting, a",
     "signature": {
-      "energy": "calm",
-      "social_shape": "small_group",
+      "energy": "moderate",
+      "social_shape": "crowd",
       "spontaneity": "drop-in",
       "vibe": [
-        "chill",
         "playful",
-        "cozy"
+        "chill",
+        "adventurous"
       ],
-      "uniqueness": 0.4
+      "uniqueness": 0.35
     }
   },
   {
@@ -16637,6 +15085,27 @@
       "energy": "moderate",
       "social_shape": "small_group",
       "spontaneity": "planned",
+      "vibe": [
+        "chill",
+        "playful",
+        "cozy"
+      ],
+      "uniqueness": 0.4
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-baysocials-events-314166999-",
+    "title": "🌳 Picnic @ Alamo Square Park, S.F",
+    "date": "2026-05-09T20:30:00.000Z",
+    "location": ", San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/baysocials/events/314166999/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "**Always 100% free for everyone.** No early-bird tiers, no 'later-on' fees. We’re sitting on the grass which may be wet, **so get your picnic blanket, mat, chair or something to sit on.** Feel free to bring your own food, or drinks if you like. We’ll be chilling under a big tree adjacent to the Lady Falcon Coffee truck in **Alamo Square** with a view of the **Painted Ladies**, as shown in the cove",
+    "signature": {
+      "energy": "calm",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
       "vibe": [
         "chill",
         "playful",
@@ -16664,27 +15133,6 @@
         "playful"
       ],
       "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-gist-irl-events-314156143-",
-    "title": "20s and 30s Social : Beer Garden + New Friends",
-    "date": "2026-05-04T00:00:00.000Z",
-    "location": "199 Valencia Street, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/gist-irl/events/314156143/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "**RSVP via:** https://app.gistirl.com/event-details/4ZivmTNVI8eeO1CoLkLY **FREE for Early Bird \\| $ Later on** May is here, the days are longer, and the city finally feels alive again—so let’s end the week the way it should be: outside, drink in hand, surrounded by new people who actually feel easy to talk to. This is a space where you show up solo and quickly find yourself laughing, connecting, a",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "chill",
-        "adventurous"
-      ],
-      "uniqueness": 0.35
     }
   },
   {
@@ -16727,6 +15175,27 @@
         "playful"
       ],
       "uniqueness": 0.6
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-314174952-",
+    "title": "Improv Jam Session | Beginner-Friendly Game Day",
+    "date": "2026-05-03T20:00:00.000Z",
+    "location": "William McKinley Monument, San Francisco, CA 94117, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/314174952/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Join us for a fun day of improv games! This is a free, beginner-friendly jam session (not a formal class). It’s our second get-together game day led by the same host Talia - last time we had a blast! Nobody is forced to participate but highly encouraged to jump in and play. **What to expect:** * Improv - short for improvisational theater - is a form of live performance where characters, dialogue, ",
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
     }
   },
   {
