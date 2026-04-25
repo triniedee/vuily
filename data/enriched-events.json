@@ -83,273 +83,6 @@
     }
   },
   {
-    "id": "eventbrite-1979838497241",
-    "title": "Black Girl Book Fair!",
-    "description": "We're a virtual book fair--for adults! Celebrating Black voices in fantasy fiction.",
-    "date": "2026-04-25T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.eventbrite.com/e/black-girl-book-fair-tickets-1979838497241",
-    "source": "Eventbrite",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "cozy"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-Hqh3J4hRSSQIDVg",
-    "title": "Pitching Day: SRI Deep Tech Security Accelerator | For Investors Only",
-    "description": "",
-    "date": "2026-04-24T16:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/vmdb90o7",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "luma-evt-De03ayDmnWOqxyW",
-    "title": "Powerhouse Presents: A Live Recording of Watt It Takes with Alex Honnold - Free Solo Climber & Founder of the Honnold Foundation",
-    "description": "",
-    "date": "2026-04-24T16:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/6ll5hfxc",
-    "source": "Luma",
-    "cost": "$40",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-hFwsr1klZovMimR",
-    "title": "Your Climate Startup's First UX Hire",
-    "description": "",
-    "date": "2026-04-24T18:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/f3gtmmgi",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-ltRdAzK8JdSFrzu",
-    "title": "Global Climate Solutions Summit 2026",
-    "description": "",
-    "date": "2026-04-24T18:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/jvl9bxpe",
-    "source": "Luma",
-    "cost": "$150",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-qW16vresJaMtYqj",
-    "title": "\"Plug-in\" to the Future of Clean Energy --> Building a plug-in solar movement!",
-    "description": "",
-    "date": "2026-04-24T21:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/eu2qrprh",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-qzziZiVgzitdVS3",
-    "title": "The Future of Energy in California",
-    "description": "",
-    "date": "2026-04-24T21:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/qzrd2to0",
-    "source": "Luma",
-    "cost": "$15",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-bxqoYI9AbZGPWGH",
-    "title": "Doom & Bloom (Live @ SF Climate Week)",
-    "description": "",
-    "date": "2026-04-24T21:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/0q1lvg29",
-    "source": "Luma",
-    "cost": "$15",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "intellectual"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-6vo0SZYjZqAsiyR",
-    "title": "Pre-WTD Happy Hour",
-    "description": "",
-    "date": "2026-04-25T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/u4iv3r7w",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "chill"
-      ],
-      "uniqueness": 0.3
-    }
-  },
-  {
-    "id": "luma-evt-rGcX3hxKP6IJfQp",
-    "title": "3rd Annual NorCal Solar Party 🔆 Oakland 😎 - SF Climate Week",
-    "description": "",
-    "date": "2026-04-25T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/s878cpw1",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-UgrqFdOQ6m4rT1r",
-    "title": "SF Devtools Drinkup",
-    "description": "",
-    "date": "2026-04-25T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/drinkup-x26",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "playful",
-        "chill"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "luma-evt-JO4vXiUDawc51wt",
-    "title": "Spirit/Acc Spirit Hacking Event Prep - Open Registration",
-    "description": "",
-    "date": "2026-04-25T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/spiritacc-spirit-hacking-event-prep",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.8
-    }
-  },
-  {
-    "id": "luma-evt-Uxa0YRcGkRqeY3Z",
-    "title": "Laser Tag at Frontier Tower - Open Registration",
-    "description": "",
-    "date": "2026-04-25T02:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/laser-tag-at-frontier-tower",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
     "id": "luma-evt-2IlfDFhdWuhjVNK",
     "title": "SF Minecraft LAN by Ascii.dev",
     "description": "",
@@ -1185,130 +918,6 @@
         "electric"
       ],
       "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-MPoGhXlgZnC2R1v",
-    "title": "Ship to Prod - Agentic Engineering Hackathon",
-    "description": "",
-    "date": "2026-04-24T16:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/shiptoprod",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-oZFSv4rLBe69lON",
-    "title": "Synthetic data - What is it we are adding to our training data, actually? By Heléne Ström and Ericka Johnson of Fair AI Data",
-    "description": "",
-    "date": "2026-04-24T18:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/hnpf52ns",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-nYaRtkRGVuTW49E",
-    "title": "Beyond the Copilot: Why Drug Development Demands Purpose-Built AI",
-    "description": "",
-    "date": "2026-04-24T22:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/byzfdz9g",
-    "source": "Luma",
-    "cost": "$79",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-WFQhlsLnTyZMtQ0",
-    "title": "The Women in AI Pitch Competition",
-    "description": "",
-    "date": "2026-04-24T23:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/je4utge7",
-    "source": "Luma",
-    "cost": "$15",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-SfouOhgCuOFNXt9",
-    "title": "Build-a-Company: Revenue Hackathon",
-    "description": "",
-    "date": "2026-04-25T00:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/buildacompany",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-clpT7PYBBsSZl87",
-    "title": "AIxBio Hackathon 2026 - San Francisco - Apart Research",
-    "description": "",
-    "date": "2026-04-25T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/aixbio-hackathon-2026-sf",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.85
     }
   },
   {
@@ -5195,1308 +4804,6 @@
     }
   },
   {
-    "id": "19hz-https-posh-vip-e-nyx-late-night-clubbing-034-friday-w-surprise-guest",
-    "title": "Late Night Clubbing #034 w/J Little",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://posh.vip/e/nyx-late-night-clubbing-034-friday-w-surprise-guest",
-    "location": "TBA (San Francisco)house, EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dwjpzoakvwe-",
-    "title": "Coffee & Beats: Texture Summit",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DWjpzoakvwE/",
-    "location": "Hedge Coffee (San Francisco)house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "chill",
-        "intellectual",
-        "cozy"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2399724",
-    "title": "Sideshow: The Doctor, Elevener, Go-zania, Leon Cook, Autopsy, Filthyg, Big Maxxx, Dirtybeats, Malaphor & Sophizta, MC Enhale",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://ra.co/events/2399724",
-    "location": "Middle Harbor Shoreline Park (Oakland)drum and bass, dubstep, bass music, house, hardcore, trance, hard dance, neurofunk, uk garage",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.8
-    }
-  },
-  {
-    "id": "19hz-https-posh-vip-e-caravan-day-party-1",
-    "title": "Caravan - Day Party",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://posh.vip/e/caravan-day-party--1",
-    "location": "Avotoasty (San Francisco)tech house, latin house, hip-hop",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$10 pre / $15-20 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "19hz-https-posh-vip-e-the-loud-decks-episode-001-utm-source-ig-utm-medium-social-utm-",
-    "title": "The Loud Decks",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://posh.vip/e/the-loud-decks-episode-001?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnaF47IjHgSrEtytw1rBdIMcn4JWTIjcT30kvroqN8ydHIy-wcZT2xqdo_cpo_aem_zxc8ZrIlne_LePQ-PXRjjg",
-    "location": "TBA (San Francisco)open decks",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-wl-eventim-us-event-chris-avantgarde-681633-afflky-nonplusultra",
-    "title": "Chris Avantgarde",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://wl.eventim.us/event/chris-avantgarde/681633?afflky=NonPlusUltra",
-    "location": "The Historic SF Mint (San Francisco)progressive house, tech house, melodic techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$33-43 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "intellectual"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-tixr-com-groups-midwaysf-events-yung-bae-165839",
-    "title": "Yung Bae, Engelwood",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.tixr.com/groups/midwaysf/events/yung-bae-165839",
-    "location": "The Midway Terrace (San Francisco)funk, disco, future funk",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-get-in-com-en-419547",
-    "title": "Mayan Warrior: Full Art Car Experience",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://get-in.com/en/419547",
-    "location": "Gold Bar Distillery Treasure Island (San Francisco)progressive house, tech house, playa tech",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$121+ | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "adventurous",
-        "electric",
-        "weird"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-posh-vip-e-open-air-sofa-featuring-2deep-techno-tupac",
-    "title": "Open Air SoFa Ft. 2Deep & Techno Tupac",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://posh.vip/e/open-air-sofa-featuring-2deep-techno-tupac",
-    "location": "350 S 1st St (San Jose)tech house, latin EDM, hip-hop",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$12-34 | 18+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-dice-fm-event-k6ge3o-electronica-sacramentos-underground-sound-25th-apr-th",
-    "title": "Electronica - Sacramento's Underground Sound",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://dice.fm/event/k6ge3o-electronica-sacramentos-underground-sound-25th-apr-the-flamingo-house-sacramento-tickets",
-    "location": "The Flamingo House (Sacramento)tech house, deep house, minimal",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free w/rsvp | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "chill"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-posh-vip-f-6295b-t-19hz",
-    "title": "Parked.Vol1",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://posh.vip/f/6295b?t=19hz",
-    "location": "TBA (San Francisco)house, EDM, electronic, tech house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | All Ages",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dxcqrgzkm11-",
-    "title": "SahrFaiyah & Meechie",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXcQRgZkm11/",
-    "location": "Lake Merritt Memorial Bandstand (Oakland)house, afro house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "chill"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-etix-com-ticket-p-87525937-ultra-sunn-sacramento-the-starlet-room",
-    "title": "Ultra Sunn",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.etix.com/ticket/p/87525937/ultra-sunn-sacramento-the-starlet-room",
-    "location": "Harlow's (Sacramento)coldwave, EBM, post-punk",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$24 pre | All ages",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "weird",
-        "adventurous"
-      ],
-      "uniqueness": 0.8
-    }
-  },
-  {
-    "id": "19hz-https-srshlumptour-eventbrite-com-",
-    "title": "Shlump: The Chronicles Of Shlump Tour w/ Secret Recipe, Singe, Laiddbackzach",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://srshlumptour.eventbrite.com/",
-    "location": "Shady Oak Brewing Company (Santa Rosa)dubstep, bass music, hip-hop",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$34 pre",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "weird"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-alchemy-labor-unit-presents-rituals-noise-and-sonik-a",
-    "title": "Rituals, Noise and Sonik Assault Aktions",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/alchemy-labor-unit-presents-rituals-noise-and-sonik-assault-aktions-tickets-1984856071942?lid=wpvg4uugn6v2&utm_source=braze&utm_medium=ebml&utm_campaign=clpo_ceex_lcm_fad_mec_mc_mum_0_0_eventpublished&utm_term=Variant%201_EventPublishedSubFree_HeroSummary_other%20feature%20usage&utm_content=e412e73b-f3c5-463c-af88-9aa6b8e94267__69afb854e3fb49ce00a1fcdaf410d782__b488b60e-4a95-4095-9019-5eba2d105089",
-    "location": "Ugra Deva Loka (Oakland)industrial, black ritual, harsh noise, power electronics",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$20 | All ages",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "weird",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-www-ticketmaster-com-event-1c006430f912b84a",
-    "title": "Said The Sky, Mitis, Shallou, zensei",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.ticketmaster.com/event/1C006430F912B84A",
-    "location": "Fox Theater (Oakland)future bass, trap, pop EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "18+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "19hz-https-www-facebook-com-events-2131757397608307-",
-    "title": "Club Coven - Mesh & Lace Themed  Goth Night Out",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.facebook.com/events/2131757397608307/",
-    "location": "Old Ironsides (Sacramento)goth, dark electro, darkwave, new wave, post-punk, industrial, 80s synthpop",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$10 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "weird",
-        "romantic"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-www-sfballet-org-productions-mere-mortals-",
-    "title": "Floating Points Live: Mere Mortals w/San Francisco Ballet Orchestra, Mozhgan",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.sfballet.org/productions/mere-mortals/",
-    "location": "War Memorial Opera House (San Francisco)classical, ambient",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$35 | 18+",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-www-axs-com-events-1283555-max-styler-tickets-skin-goldenvoice",
-    "title": "Max Styler",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.axs.com/events/1283555/max-styler-tickets?skin=goldenvoice",
-    "location": "The Regency Ballroom (San Francisco)house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "18+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-ticketmaster-com-you-should-be-dancing-a-tribute-san-francisco-califor",
-    "title": "You Should Be Dancing - A Tribute To The Bee Gees",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.ticketmaster.com/you-should-be-dancing-a-tribute-san-francisco-california-04-25-2026/event/1C00642DF5C7F8AE",
-    "location": "August Hall (San Francisco)disco",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$42-61 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2411860",
-    "title": "Demo Derby: CaptHz, Thwack, Goodhousekeeping, Civector",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://ra.co/events/2411860",
-    "location": "Churchill Arms Pub (Folsom)techno, breaks, dubstep, bass music",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2396240",
-    "title": "Afterglow Part II: Lonald J Bandz, Jasthemuse, Xanubis, 40split, honeyd1p",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://ra.co/events/2396240",
-    "location": "The Ruby Room (Oakland)hip-hop, house, funk, breaks",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$20+ | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-cultura-fest-com-events-ravevuelta",
-    "title": "raveVUELTA: Zamythi, Briiza, Michael Chacon",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.cultura-fest.com/events/ravevuelta",
-    "location": "Tanchito's Restaurant (San Jose)global club, latin house, techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$5-20 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dw7mywmkgie-",
-    "title": "April Foo's : Bornsicc, Kyrojay, Vleexxz, Dom Bello, Madeinhell, J3rk Nugg3t",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DW7MYwMkgIe/",
-    "location": "El Catrin Bar (San Jose)house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "electric",
-        "weird"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-dice-fm-partner-tickets-event-8e873v-space-wizard-25th-apr-the-rink-studio",
-    "title": "Space Wizard, Gunpoint, Xhale Ghost",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://dice.fm/partner/tickets/event/8e873v-space-wizard-25th-apr-the-rink-studios-sacramento-tickets",
-    "location": "The Rink Studios (Sacramento)dubstep, bass music, riddim",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$23.8 | 18+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-www-facebook-com-events-1240105317880197-",
-    "title": "Tree-Fitty, Mr. Washington, DJ Porter, Formica",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.facebook.com/events/1240105317880197/",
-    "location": "Cat Club (San Francisco)disco, funk, synthpop, new wave",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$10 b4 10 / $15 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dwronhidxdj-",
-    "title": "Cal-C",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DWrOnhIDxdJ/",
-    "location": "Bar Part Time (San Francisco)house, balearic, disco, downtempo",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "weird",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dwp8kjblea6-",
-    "title": "Chvck",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DWp8KjBleA6/",
-    "location": "Phonobar (San Francisco)deep house, tech house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dxaxs8fd7rj-",
-    "title": "Lost in Sbass: DJ Dougie, Ondo, DJ Dfunkt",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXaXS8fD7rj/",
-    "location": "Cat Alley Street (Santa Cruz)house, uk garage, breaks",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-pandamonium-presents-paradise-found-the-revival-ticke",
-    "title": "Paradise Found The Revival: Black Panda, Booty Juice, Marisun, vRok",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/pandamonium-presents-paradise-found-the-revival-tickets-1984661949316",
-    "location": "El Rio (San Francisco)soulful house, jackin house, disco, afro house, latin house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$7.18-12.51 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "19hz-https-www-facebook-com-events-1702468977585489-",
-    "title": "Bassmint Chico: Galea, Nostalchic",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.facebook.com/events/1702468977585489/",
-    "location": "Argus Bar + Patio (Chico)dubstep, bass music, trap, drum and bass, jungle, glitch-hop, breaks, bass house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$5 b4 930 / $10 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-doorlist-app-e-zudxfq1-s-mvn4n39fg9",
-    "title": "The Tunnel",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://doorlist.app/e/zudxfq1?s=MvN4n39FG9",
-    "location": "2710 Bancroft Way (Berkeley)hip-hop, club",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$7 pre",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-beau-kv-teeth-underground-sf-tickets-1986673241144",
-    "title": "Beau + Kv + *Teeth",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/beau-kv-teeth-underground-sf-tickets-1986673241144",
-    "location": "Underground (San Francisco)progressive house, melodic house, deep house, trance",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$19 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-beyond-stockton-tickets-1986968597563-aff-19hz",
-    "title": "Beyond Stockton",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/beyond-stockton-tickets-1986968597563?aff=19hz",
-    "location": "Paradise Nightclub (Stockton)house, techno, dubstep, bass music, latin EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$20 ga, $25 door | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "19hz-https-partiful-com-e-vlr623zzc2zxzen75wyt",
-    "title": "Droid9 Presents Nick Newman",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://partiful.com/e/VLR623Zzc2ZXZeN75wYt",
-    "location": "Asiento (San Francisco)progressive house, melodic techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "chill"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-www-tixr-com-groups-midwaysf-events-gravagerz-173557",
-    "title": "Gravagerz, Tsu Nami, Yanni",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.tixr.com/groups/midwaysf/events/gravagerz-173557",
-    "location": "888 Garage (San Francisco)house, uk garage, future bass, pop EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$35+ | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2401050",
-    "title": "Grunt- Club Drippy and Jumpr",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://ra.co/events/2401050",
-    "location": "The Stud (San Francisco)darkwave, minimal synth, EBM, club",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$11.50-28.75 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "weird",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2400641",
-    "title": "Hot Box: Ela Mental, Jacki, Euphemia, Lobottomy B2B Martyr Princess",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://ra.co/events/2400641",
-    "location": "Delirium (San Francisco)hard techno, bounce, latincore",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free w/rsvp b4 10:30pm / $5 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2414298",
-    "title": "Maja Blast: Mood Ring, jaag, nofi",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://ra.co/events/2414298",
-    "location": "Mothership Bar (San Francisco)balearic, italo, baile funk, acid, electro, uk funky",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.8
-    }
-  },
-  {
-    "id": "19hz-https-www-tixr-com-groups-publicsf-events-rise-collective-presents-monic-live-in",
-    "title": "Monic, Home By Dawn, Noa Saitoshii, Kuot8tion, Hellen Killa, Petirwyn",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.tixr.com/groups/publicsf/events/rise-collective-presents-monic-live-in-san-francisco-182580",
-    "location": "Public Works Loft (San Francisco)house, progressive house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$26 pre | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-tixr-com-groups-midwaysf-events-somna-presents-pathways-album-release-",
-    "title": "Somna: Pathways - Album Release Party w/Kepik, Rinaly, Casey Cook, Monika Santucci, MIDI Kittyy, Derek Vo, Re:brn",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.tixr.com/groups/midwaysf/events/somna-presents-pathways-album-release-party-176309",
-    "location": "The Midway (San Francisco)trance, progressive house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$20-45 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-posh-vip-f-5efc3-t-19hz",
-    "title": "Morten",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://posh.vip/f/5efc3?t=19hz",
-    "location": "Madarae (San Francisco)big room house, pop EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$10 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2389523",
-    "title": "Mostly Cloudy: Swordes, TSVI, QUEENIE, felipe d, Moonpie, Girls on Deck, 1ycia",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://ra.co/events/2389523",
-    "location": "The Foundry (San Francisco)synthpop, hard house, trance, techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$16.95-37.30 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-tixr-com-groups-publicsf-events-neek-presented-by-public-works-dvality",
-    "title": "Neek, Brto, Egodeath, Riosky, Standez",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.tixr.com/groups/publicsf/events/neek-presented-by-public-works-dvality-180932",
-    "location": "Public Works (San Francisco)hard techno, hard bounce, latincore, big room, EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$48-59 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-facebook-com-events-s-runtime-dnb-april-789508447346521-",
-    "title": "Runtime Dnb April",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://facebook.com/events/s/runtime-dnb-april/789508447346521/",
-    "location": "TBA (Sacramento)drum and bass, jungle",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$10 donation | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2391226",
-    "title": "AC Slater",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://ra.co/events/2391226",
-    "location": "Audio (San Francisco)bass house, electro house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$38-70 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-love-supreme-presents-skin-contact-arcana-tickets-198",
-    "title": "Skin Contact: Travie Bobbito, King Most, Bella D., Gulu, Zuri Alexa",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/love-supreme-presents-skin-contact-arcana-tickets-1986405786179",
-    "location": "Arcana (San Francisco)afrobeats, amapiano, baile funk, dancehall, dembow, house, r&b, reggaeton, hip-hop",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$7 pre | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-dj-garth-good-question-cole-odin-buna-tickets-1985768",
-    "title": "DJ Garth  | Good Question | Cole Odin | Buna",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/dj-garth-good-question-cole-odin-buna-tickets-1985768343571",
-    "location": "Monarch (San Francisco)acid house, deep house, funk, disco",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$11+ | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "19hz-https-www-ticketweb-com-event-desmadre-a-la-vuelta-w-crybaby-tickets-14812503",
-    "title": "Desmadre: A La Vuelta w/ Profesito + Sanlo + Late Bloomer + Quebradita Patio Takeover",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.ticketweb.com/event/desmadre-a-la-vuelta-w-crybaby-tickets/14812503",
-    "location": "Crybaby (Oakland)reggaeton, perreo",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free w/rsvp / $7-13 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-westoakmf-org",
-    "title": "DJ Paypal",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "WESTOAKMF.ORG",
-    "location": "TBA (Oakland)footwork, juke",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-cyber-temple-2-tickets-1987484252902",
-    "title": "Cyber Temple 2",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/cyber-temple-2-tickets-1987484252902",
-    "location": "Vault Nightclub (Modesto)house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free w/rsvp / $10 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "weird",
-        "adventurous"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-hawthorn-feat-clee-bri-bodyheat-gabo-calihertz-ticket",
-    "title": "Hawthorn Feat. Clee + Bri, Bodyheat, Gabo, Calihertz",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/hawthorn-feat-clee-bri-bodyheat-gabo-calihertz-tickets-1986488283932",
-    "location": "Hawthorn (San Francisco)hip-hop, top 40, house, tech house, EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free w/rsvp b4 11pm / $15 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.4
-    }
-  },
-  {
-    "id": "19hz-https-www-tixr-com-groups-templesf-events-illuminaughty-at-temple-sf-183402",
-    "title": "Illuminaughty: N808, Tekfreak, Teego, Sirrock",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.tixr.com/groups/templesf/events/illuminaughty-at-temple-sf-183402",
-    "location": "Temple (San Francisco)tech house, EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$23 pre | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-tixr-com-groups-midwaysf-events-the-midway-basscon-presents-lil-texas-",
-    "title": "Lil Texas",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.tixr.com/groups/midwaysf/events/the-midway-basscon-presents-lil-texas-168395",
-    "location": "The Midway (San Francisco)hardcore",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$25-60 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.8
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-bad-asstronauts-and-plur-pups-present-black-hole-a-te",
-    "title": "Black Hole! A Techno + Dnb Experience",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/bad-asstronauts-and-plur-pups-present-black-hole-a-techno-dnb-experience-tickets-1984524211338",
-    "location": "F8 1192 Folsom (San Francisco)techno, drum and bass",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$17.85-39.19 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dxtaiurlnqa-",
-    "title": "Hyphy Rave: Acid Barbie, Ghettotranny, Plutonium, Estrelita, Noctavia, Ident",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXTaiUrlNQa/",
-    "location": "TBA (Oakland)club, hard dance, bounce, hyperpop, house, hardcore, hard techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "weird"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-dice-fm-event-yoaaoa-paolo-ferrara-25th-apr-halcyon-sf-san-francisco-ticke",
-    "title": "Paolo Ferrara, Drwski, Nova",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://dice.fm/event/yoaaoa-paolo-ferrara-25th-apr-halcyon-sf-san-francisco-tickets",
-    "location": "Halcyon (San Francisco)hard trance, big room hard techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$12 b4 11 / $19-30 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dxlh04rjmlb-",
-    "title": "Emilio b2b Zohan",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXLh04RjMLb/",
-    "location": "Bella (Los Angeles)house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dwzerjyfh58-img-index-2",
-    "title": "La Plaga: Trunxxz, Angel, Ant, Taz",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DWzERJYFH58/?img_index=2",
-    "location": "TBA (Fresno)dubstep, bass music",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-theskee-com-event-details-techno-after-recess",
-    "title": "Techno After Recess - Dani Thorne",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.theskee.com/event-details/techno-after-recess",
-    "location": "TBA (Fresno)techno, hardstyle, hardcore",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$21 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dxw4jsulo7n-img-index-1",
-    "title": "Chino Amobi, Denimontaro, Systemgunner, Prada IRL",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXW4jsUlO7n/?img_index=1",
-    "location": "Ugra Deva Loka (Oakland)witch house, hardcore, techno, bass music, experimental",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "weird",
-        "adventurous"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dxxpxjggd18-",
-    "title": "Nitecap Afters: 2Sixxx, Babamc B2B Merdok, Endx, Elyonnie, Fris, Loko B2B 2Siinz",
-    "date": "2026-04-25T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXXpXjGgd18/",
-    "location": "TBA (San Francisco)hard dance, hardstyle, hard techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
     "id": "19hz-https-posh-vip-e-nyx-late-night-clubbing-035-saturday-w-surprise-guest",
     "title": "Late Night Clubbing #035",
     "date": "2026-04-26T00:00:00.000Z",
@@ -6536,6 +4843,27 @@
         "adventurous"
       ],
       "uniqueness": 0.65
+    }
+  },
+  {
+    "id": "19hz-https-www-instagram-com-p-dwjpzoakvwe-",
+    "title": "Prab K, Booch, Colangelo",
+    "date": "2026-04-26T00:00:00.000Z",
+    "url": "https://www.instagram.com/p/DWjpzoakvwE/",
+    "location": "Hedge Coffee (San Francisco)minimal techno",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "free",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "intellectual",
+        "cozy"
+      ],
+      "uniqueness": 0.7
     }
   },
   {
@@ -6896,6 +5224,27 @@
     }
   },
   {
+    "id": "19hz-https-www-sfballet-org-productions-mere-mortals-",
+    "title": "Floating Points Live: Mere Mortals w/San Francisco Ballet Orchestra, Nooka Jones",
+    "date": "2026-04-28T00:00:00.000Z",
+    "url": "https://www.sfballet.org/productions/mere-mortals/",
+    "location": "War Memorial Opera House (San Francisco)classical, ambient",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "$35 | 18+",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.85
+    }
+  },
+  {
     "id": "19hz-https-ra-co-events-2410782",
     "title": "Interzone Darkwave Tuesdays: Hex, Echoic, Hopelesss",
     "date": "2026-04-28T00:00:00.000Z",
@@ -7102,6 +5451,48 @@
         "adventurous"
       ],
       "uniqueness": 0.6
+    }
+  },
+  {
+    "id": "19hz-https-www-instagram-com-p-dwp8kjblea6-",
+    "title": "Jaage, Femme Electric",
+    "date": "2026-04-30T00:00:00.000Z",
+    "url": "https://www.instagram.com/p/DWp8KjBleA6/",
+    "location": "Phonobar (San Francisco)boogie, funk, disco, cumbia, balearic, breaks",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "playful",
+        "adventurous"
+      ],
+      "uniqueness": 0.6
+    }
+  },
+  {
+    "id": "19hz-https-www-instagram-com-p-dwronhidxdj-",
+    "title": "Late Bloomer",
+    "date": "2026-04-30T00:00:00.000Z",
+    "url": "https://www.instagram.com/p/DWrOnhIDxdJ/",
+    "location": "Bar Part Time (San Francisco)house",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "weird",
+        "adventurous"
+      ],
+      "uniqueness": 0.75
     }
   },
   {
@@ -14108,24 +12499,24 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-san-francisco-grief-summit-events-314042921-",
-    "title": "San Francisco \"Forever Fly Free\" Grief Summit 2026",
-    "date": "2026-04-25T00:00:00.000Z",
-    "location": "3108B Fillmore Street, San Francisco, CA 94123, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/san-francisco-grief-summit/events/314042921/",
+    "id": "meetup-https-www-meetup-com-gist-irl-events-313858591-",
+    "title": "Mixer & Brunch with Hikers & Outdoor Enthusiasts",
+    "date": "2026-04-25T18:00:00.000Z",
+    "location": ", San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/gist-irl/events/313858591/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "Grief can feel isolating, but healing rarely happens alone. Join us on **Friday, April 24**, for the first **San Francisco Grief Summit**, an intimate evening of honest conversation, reflection, and connection with people who understand the many forms grief can take. Hosted by USA Today bestselling author Jenny Brandemuehl, the summit brings together authors, physicians, grief counselors, and comm",
+    "description": "**RSVP via:** https://app.gistirl.com/event-details/QmsI7n5Tzitl5WRHwtM7 **FREE for Early Bird | $ Later on** Most hiking meetups end with swapped trail names and zero follow-up plans. This one ends differently. Spend an hour in genuine one-on-one conversations with hikers and outdoor enthusiasts you have never met. There is no awkward mingling or wondering who to approach next. Instead of swappin",
     "signature": {
-      "energy": "calm",
+      "energy": "moderate",
       "social_shape": "small_group",
       "spontaneity": "planned",
       "vibe": [
-        "intellectual",
+        "adventurous",
         "chill",
-        "cozy"
+        "playful"
       ],
-      "uniqueness": 0.72
+      "uniqueness": 0.75
     }
   },
   {
@@ -14150,47 +12541,6 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-gist-irl-events-313858591-",
-    "title": "Mixer & Brunch with Hikers & Outdoor Enthusiasts",
-    "date": "2026-04-25T18:00:00.000Z",
-    "location": ", San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/gist-irl/events/313858591/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "**RSVP via:** https://app.gistirl.com/event-details/QmsI7n5Tzitl5WRHwtM7 **FREE for Early Bird | $ Later on** Most hiking meetups end with swapped trail names and zero follow-up plans. This one ends differently. Spend an hour in genuine one-on-one conversations with hikers and outdoor enthusiasts you have never met. There is no awkward mingling or wondering who to approach next. Instead of swappin",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "adventurous",
-        "chill",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-stackle-your-career-lab-events-314183285-",
-    "title": "Claude Workshop",
-    "date": "2026-04-25T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/stackle-your-career-lab/events/314183285/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Join us for a straight-to-the-point 2-hour workshop where we'll show you how to unlock Claude for real work — not just quick questions. 🔍 What You'll Walk Away With: • A clear understanding of how Claude actually thinks • Prompting skills that get better results dramatically • A personal toolkit of use cases you can apply the next morning • Hands-on experience, not just theory 💡 Real use cases w",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "playful"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
     "id": "meetup-https-www-meetup-com-gist-irl-events-314156143-",
     "title": "20s and 30s Social : Beer Garden + New Friends",
     "date": "2026-05-04T00:00:00.000Z",
@@ -14198,7 +12548,7 @@
     "url": "https://www.meetup.com/gist-irl/events/314156143/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "**RSVP via:** https://app.gistirl.com/event-details/4ZivmTNVI8eeO1CoLkLY **FREE for Early Bird \\| $ Later on** May is here, the days are longer, and the city finally feels alive again—so let’s end the week the way it should be: outside, drink in hand, surrounded by new people who actually feel easy to talk to. This is a space where you show up solo and quickly find yourself laughing, connecting, a",
+    "description": "**RSVP via:** https://app.gistirl.com/event-details/4ZivmTNVI8eeO1CoLkLY **Early Bird Discounts | More $ Later** May is here, the days are longer, and the city finally feels alive again—so let’s end the week the way it should be: outside, drink in hand, surrounded by new people who actually feel easy to talk to. This is a space where you show up solo and quickly find yourself laughing, connecting,",
     "signature": {
       "energy": "moderate",
       "social_shape": "crowd",
@@ -14209,48 +12559,6 @@
         "adventurous"
       ],
       "uniqueness": 0.35
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-313614039-",
-    "title": "Early dinner at Salesforce Park",
-    "date": "2026-04-30T00:30:00.000Z",
-    "location": "Salesforce Park 4th Level, 425 Mission St, San Francisco, CA 94105, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/313614039/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Join us for a relaxed weeknight dinner and drinks! We’ll be grabbing delicious pies from Joyride Pizza at Barebottle Beer Garden in Salesforce Park. 🍕 🍺 It’s a great chance to meet new people, share good food and drinks, and unwind in a scenic spot in the heart of the city. Hope to see you there! 628-236-9369",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "chill",
-        "playful",
-        "cozy"
-      ],
-      "uniqueness": 0.4
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-calm-the-mind-anxiety-reset-with-hypnosis-nlp-events-314041",
-    "title": "Sleep Anxiety: Why You Can’t Fall Asleep (Even When Exhausted)",
-    "date": "2026-04-25T18:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/calm-the-mind-anxiety-reset-with-hypnosis-nlp/events/314041433/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "You’re exhausted. Your body is tired. But your mind won’t let you fall asleep. If you’ve ever laid in bed feeling wired, restless, or “on edge” — this isn’t random. It’s your nervous system staying in a **state of alert**, even when you want to rest. In this session, you’ll learn: * Why your brain blocks sleep when anxiety is present * How trying to “force sleep” actually makes it worse * What’s h",
-    "signature": {
-      "energy": "calm",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill",
-        "cozy"
-      ],
-      "uniqueness": 0.6
     }
   },
   {
@@ -14266,6 +12574,27 @@
       "energy": "calm",
       "social_shape": "small_group",
       "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "playful",
+        "cozy"
+      ],
+      "uniqueness": 0.4
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-313614039-",
+    "title": "Early dinner at Salesforce Park",
+    "date": "2026-04-30T00:30:00.000Z",
+    "location": "Salesforce Park 4th Level, 425 Mission St, San Francisco, CA 94105, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/313614039/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Join us for a relaxed weeknight dinner and drinks! We’ll be grabbing delicious pies from Joyride Pizza at Barebottle Beer Garden in Salesforce Park. 🍕 🍺 It’s a great chance to meet new people, share good food and drinks, and unwind in a scenic spot in the heart of the city. Hope to see you there! 628-236-9369",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
       "vibe": [
         "chill",
         "playful",
@@ -14317,6 +12646,27 @@
     }
   },
   {
+    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-314174952-",
+    "title": "Improv Jam Session | Beginner-Friendly Game Day",
+    "date": "2026-05-03T20:00:00.000Z",
+    "location": "William McKinley Monument, San Francisco, CA 94117, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/314174952/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Join us for a fun day of improv games! This is a free, beginner-friendly jam session (not a formal class). It’s our second get-together game day led by the same host Talia - last time we had a blast! Nobody is forced to participate but highly encouraged to jump in and play. **What to expect:** * Improv - short for improvisational theater - is a form of live performance where characters, dialogue, ",
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.72
+    }
+  },
+  {
     "id": "meetup-https-www-meetup-com-san-francisco-ai-engineers-events-313345697-",
     "title": "SF AI Engineers: May",
     "date": "2026-05-14T01:00:00.000Z",
@@ -14337,22 +12687,42 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-314174952-",
-    "title": "Improv Jam Session | Beginner-Friendly Game Day",
-    "date": "2026-05-03T20:00:00.000Z",
-    "location": "William McKinley Monument, San Francisco, CA 94117, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/314174952/",
+    "id": "meetup-https-www-meetup-com-calm-the-mind-anxiety-reset-with-hypnosis-nlp-events-314041",
+    "title": "Sleep Anxiety: Why You Can’t Fall Asleep (Even When Exhausted)",
+    "date": "2026-04-25T18:00:00.000Z",
+    "location": "San Francisco",
+    "url": "https://www.meetup.com/calm-the-mind-anxiety-reset-with-hypnosis-nlp/events/314041433/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "Join us for a fun day of improv games! This is a free, beginner-friendly jam session (not a formal class). It’s our second get-together game day led by the same host Talia - last time we had a blast! Nobody is forced to participate but highly encouraged to jump in and play. **What to expect:** * Improv - short for improvisational theater - is a form of live performance where characters, dialogue, ",
+    "description": "You’re exhausted. Your body is tired. But your mind won’t let you fall asleep. If you’ve ever laid in bed feeling wired, restless, or “on edge” — this isn’t random. It’s your nervous system staying in a **state of alert**, even when you want to rest. In this session, you’ll learn: * Why your brain blocks sleep when anxiety is present * How trying to “force sleep” actually makes it worse * What’s h",
     "signature": {
-      "energy": "high",
+      "energy": "calm",
       "social_shape": "small_group",
-      "spontaneity": "drop-in",
+      "spontaneity": "planned",
       "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
+        "intellectual",
+        "chill",
+        "cozy"
+      ],
+      "uniqueness": 0.6
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-renegadephilosophers-events-313134808-",
+    "title": "THE (first) AMERICAN CIVIL WAR",
+    "date": "2026-04-26T00:00:00.000Z",
+    "location": "550 Laguna St, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/renegadephilosophers/events/313134808/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Welcome! This event is going to be a bit different than our usual format. This is a tell-all event about the American Civil War (the first one!), with particular emphasis on Lincoln. I feel compelled to post this in light of recent events. There will be many materials on offer to consult. By the way, I am an unapologetic unionist. William Tecumseh Sherman did nothing wrong! There are too many civi",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "weird"
       ],
       "uniqueness": 0.72
     }
