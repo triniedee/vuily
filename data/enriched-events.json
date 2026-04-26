@@ -83,68 +83,6 @@
     }
   },
   {
-    "id": "luma-evt-2IlfDFhdWuhjVNK",
-    "title": "SF Minecraft LAN by Ascii.dev",
-    "description": "",
-    "date": "2026-04-25T16:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/syvgo5xv",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-hiF3foqB0BKvDHq",
-    "title": "RBR San Francisco",
-    "description": "",
-    "date": "2026-04-25T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/rbr-sanfrancisco",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "luma-evt-wIBXEcN4vUV75FW",
-    "title": "Taiwan Career Day 2026",
-    "description": "",
-    "date": "2026-04-25T19:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/153tme80",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
     "id": "luma-evt-tbNRvNshTXUUxLC",
     "title": "Fremont Tech Week 2026",
     "description": "",
@@ -918,109 +856,6 @@
         "electric"
       ],
       "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-dP2CZe0gA06X2rL",
-    "title": "Small Business Innovation Sprint Hackathon｜ Plug and Play Foundation",
-    "description": "",
-    "date": "2026-04-25T16:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/d6pgy5gp",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-g5Ej8ZI22xldwsW",
-    "title": "Agentic Economy on Arc",
-    "description": "",
-    "date": "2026-04-25T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/739oxjcc",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "luma-evt-FK0pxWP8jtclBcn",
-    "title": "[테이크루트 X WiNG: 마음먹고 날다!] HR 전문가 Alex Hong 초청",
-    "description": "",
-    "date": "2026-04-25T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/npdq5tkr",
-    "source": "Luma",
-    "cost": "$15",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "luma-evt-sFR67OgCKCMAD4n",
-    "title": "AI & Climate: Conversations with Nonprofit Leaders",
-    "description": "",
-    "date": "2026-04-25T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/1trkoiz2",
-    "source": "Luma",
-    "cost": "Check site",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "luma-evt-tUaaaFWKAWcFjyy",
-    "title": "Hackers and Healers Hackathon - Open Registration",
-    "description": "",
-    "date": "2026-04-25T17:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/hackers-and-healers-hackathon",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "intellectual",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.72
     }
   },
   {
@@ -4721,26 +4556,6 @@
     }
   },
   {
-    "id": "google-40",
-    "title": "MORTEN",
-    "description": "Find tickets for morten at Madarae San Francisco in San Francisco on 4/25/2026 at 9:00 PM",
-    "date": "2026-04-25T21:00:00.000Z",
-    "location": "Madarae, 46 Minna St, San Francisco, CA",
-    "url": "https://open.spotify.com/concert/5339CxPyBbR9YOvQn0LP25",
-    "source": "Google Events",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
     "id": "google-42",
     "title": "Jessica Kirson",
     "description": "Ticket listings for Jessica Kirson at Castro Theatre in San Francisco, CA on 04/27/2026",
@@ -4762,27 +4577,6 @@
     }
   },
   {
-    "id": "google-44",
-    "title": "Duncan Dhu at Roccapulco",
-    "description": "Duncan Dhu were a Spanish pop-rock group of the 1980s. The group was founded in San Sebastian by singer Mikel Erentxun, Diego Vasallo, and Juan Ramón Viles, and released a series of well-received...",
-    "date": "2026-04-25T23:00:00.000Z",
-    "location": "Roccapulco, 3140 Mission St, San Francisco, CA",
-    "url": "https://www.sfgate.com/culture-events/?_evDiscoveryPath=/event/1037452307n-duncan-dhu",
-    "source": "Google Events",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
     "id": "google-47",
     "title": "The Hellp",
     "description": "Find tickets for The Hellp at 1015 Folsom in San Francisco on 5/15/2026 at 10:00 PM",
@@ -4799,384 +4593,6 @@
         "electric",
         "weird",
         "adventurous"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-posh-vip-e-nyx-late-night-clubbing-035-saturday-w-surprise-guest",
-    "title": "Late Night Clubbing #035",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://posh.vip/e/nyx-late-night-clubbing-035-saturday-w-surprise-guest",
-    "location": "TBA (San Francisco)house, EDM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-upward-sf-",
-    "title": "Upward",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.instagram.com/upward.sf/",
-    "location": "Monroe (San Francisco)house, tech house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$20 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dwjpzoakvwe-",
-    "title": "Prab K, Booch, Colangelo",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DWjpzoakvwE/",
-    "location": "Hedge Coffee (San Francisco)minimal techno",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "chill",
-        "intellectual",
-        "cozy"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-movement-ecstatic-dance-sf-gabriel-francisco-registra",
-    "title": "Movement Ecstatic Dance SF // Gabriel Francisco",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/movement-ecstatic-dance-sf-gabriel-francisco-registration-1987171862534",
-    "location": "554 Fillmore St (San Francisco)downtempo, hip-hop, dubstep",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$25-55.20 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-sunsetdunes-org-events-ploverfest",
-    "title": "Plover Fest - DJ Sound System Universe",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://sunsetdunes.org/events/ploverfest",
-    "location": "Sunset Dunes Park: Great Highway and Rivera St (San Francisco)tech house, progressive house, melodic house, techno, nu-disco",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | All ages",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dxxtpwfgqxq-img-index-1",
-    "title": "&how, Corrine, Destrukshin, Eklektik, MF Mama, Olly Junglist, Rivs, Unityvybe",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXXTPWfGQXQ/?img_index=1",
-    "location": "TBA (Bay Area)drum and bass, jungle, club, breaks, breakbeat hardcore",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-partiful-com-events-noe3iugwrnpvbsnm1xxs",
-    "title": "Brews Crew Year 2 Season Opener - Free Eastbay Day Party - Kimothy Leary, Head$Tash, Iibarra, Uchiwali, Iggy, Singe",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://partiful.com/events/NOE3iUGwrNPvbSnM1XxS",
-    "location": "The Rake at Admiral Hastings (Alameda)dubstep, drum and bass, uk garage, hip-hop",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | All ages",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-partiful-com-e-7h1i3s2jmuiphwxqdk7g-c-dk1ba3dn-utm-source-ig-utm-medium-so",
-    "title": "Mish Mash Bash",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://partiful.com/e/7h1I3S2JMuIphWxqDK7G?c=dK1Ba3Dn&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnpMf2rNqjM8y8xfLeNAiK60q5eIru9YoV6z-8eYRxJCq-2jCu-l8Y3uk2S14_aem_eqVakWORB4MEPvNGhgU9RA",
-    "location": "5303 Claremont Ave (Oakland)experimental, pop, indie",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | All ages",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "electric",
-        "weird"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-partiful-com-e-hcjcqbghlz8cllv6bzqp-",
-    "title": "Beer Pong Tournament: 4wan5, Amelia, Burner.Bby, DJ Cait, hooCHi, Snoflakez",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://partiful.com/e/hCjcqBghLZ8CLLV6bzqP?",
-    "location": "Mr. Mahjong's (San Francisco)baile funk, reggaeton",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$10 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-studiopetall-com-shop-fpt3p-p-downtown-community-floral-workshop-a8jaa",
-    "title": "Techno & Flowers",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.studiopetall.com/shop-FPT3p/p/downtown-community-floral-workshop-a8jaa",
-    "location": "Studio Petal (San Jose)house, techno, uk garage",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$75-100",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-facebook-com-events-939167918748210-",
-    "title": "Syncopate Sunday: Krakinov / Smthbrn / J.Ob.I. / Leutewelt",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.facebook.com/events/939167918748210/",
-    "location": "Spats (Berkeley)acid, uk garage, electro, breaks, fidget, glitch, downtempo",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.8
-    }
-  },
-  {
-    "id": "19hz-https-posh-vip-e-good-to-be-here-presents-andruss",
-    "title": "Good To Be Here Presents: Andruss",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://posh.vip/e/good-to-be-here-presents-andruss",
-    "location": "20th St & K St (Sacramento)tech house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-ticketmaster-com-event-1c00634ec8f3aef3",
-    "title": "VNV Nation",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.ticketmaster.com/event/1C00634EC8F3AEF3",
-    "location": "August Hall (San Francisco)synthpop, trance, EBM",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$37 | 5+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "weird"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-p-dxew2badkvr-",
-    "title": "Friends w/ Bangers",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXew2BADKvR/",
-    "location": "The Stud (San Francisco)open decks",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$5 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "electric",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-ra-co-events-2392240",
-    "title": "Lets Go Disco w/ Daniel Collas",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://ra.co/events/2392240",
-    "location": "Madrone Art Bar (San Francisco)disco, funk, house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$10 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "19hz-https-partiful-com-e-yqhi9i1anhakoijtr1x8",
-    "title": "Sindustry Sundays: Will Be + Jeff Straw",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://partiful.com/e/yQhi9I1anhAKoIJtr1x8",
-    "location": "Butter (San Francisco)disco, tech house, deep house, live sax",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "playful",
-        "adventurous"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-instagram-com-staminasundays-",
-    "title": "Stamina Sundays",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.instagram.com/Staminasundays/",
-    "location": "F8 1192 Folsom (San Francisco)drum and bass, jungle",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "electric",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-dad-9-year-anniversary-club-6-tickets-1985561379536",
-    "title": "Dad 9 Year Anniversary: Bouffant Bouffant, Five, Kelly Naughton, Ennui Pete, Mondo Nexus, Booty Juice",
-    "date": "2026-04-26T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/dad-9-year-anniversary-club-6-tickets-1985561379536",
-    "location": "Club Six (San Francisco)house, disco",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "$23.18-55.20 | 21+",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "electric",
-        "playful",
-        "weird"
       ],
       "uniqueness": 0.85
     }
@@ -12499,24 +11915,24 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-gist-irl-events-313858591-",
-    "title": "Mixer & Brunch with Hikers & Outdoor Enthusiasts",
-    "date": "2026-04-25T18:00:00.000Z",
-    "location": ", San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/gist-irl/events/313858591/",
+    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-313613952-",
+    "title": "Indoor Bouldering - Get Your Climb On!",
+    "date": "2026-04-26T18:00:00.000Z",
+    "location": "1414 Van Ness Avenue, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/313613952/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "**RSVP via:** https://app.gistirl.com/event-details/QmsI7n5Tzitl5WRHwtM7 **FREE for Early Bird | $ Later on** Most hiking meetups end with swapped trail names and zero follow-up plans. This one ends differently. Spend an hour in genuine one-on-one conversations with hikers and outdoor enthusiasts you have never met. There is no awkward mingling or wondering who to approach next. Instead of swappin",
+    "description": "Join us for a fun and friendly bouldering session! Whether you've been wanting to try bouldering for a while or are casually working on your next project, come hang out and meet fellow climbers. Day passes are $30, with an additional $5 cost for shoes & chalk. **⚠️ Friendly Safety Reminder:** Your safety is important. Please remember that by attending this event, you acknowledge that you are solel",
     "signature": {
       "energy": "moderate",
       "social_shape": "small_group",
-      "spontaneity": "planned",
+      "spontaneity": "drop-in",
       "vibe": [
+        "playful",
         "adventurous",
-        "chill",
-        "playful"
+        "chill"
       ],
-      "uniqueness": 0.75
+      "uniqueness": 0.4
     }
   },
   {
@@ -12562,6 +11978,27 @@
     }
   },
   {
+    "id": "meetup-https-www-meetup-com-glow-girl-social-club-events-314102547-",
+    "title": "Girls Afternoon Tea at the Rotunda 🍵✨",
+    "date": "2026-04-26T20:30:00.000Z",
+    "location": "150 Stockton St, San Franciso, CA, San Franciso",
+    "url": "https://www.meetup.com/glow-girl-social-club/events/314102547/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Tea, but make it a moment 🍵✨💅 We’re closing out the month at the Rotunda for afternoon tea. Come catch up, meet new girls, and settle into a slower, more intentional Sunday. The space is gorgeous, we’ve been looking forward to this one all month. **We’ll be seated at tables of 4. To join a table, head to the WhatsApp group (intro required)** [Glow Girl WhatsApp](https://chat.whatsapp.com/LSf5cS9",
+    "signature": {
+      "energy": "calm",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "chill",
+        "cozy",
+        "playful"
+      ],
+      "uniqueness": 0.6
+    }
+  },
+  {
     "id": "meetup-https-www-meetup-com-baysocials-events-314166999-",
     "title": "🌳 Picnic @ Alamo Square Park, S.F",
     "date": "2026-05-09T20:30:00.000Z",
@@ -12580,6 +12017,27 @@
         "cozy"
       ],
       "uniqueness": 0.4
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-slowrunnerssf-events-313926655-",
+    "title": "Sunday Morning Run",
+    "date": "2026-04-26T17:00:00.000Z",
+    "location": ", San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/slowrunnerssf/events/313926655/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Welcome to the run club that actually goes your pace! 🐌 Join us for our weekly Sunday runs at 10am! Our usual routine is meeting at the Panhandle (corner of Baker & Oak) for a 5K run through Golden Gate Park! 🏃 All paces are welcome — recommended pace range is 10-15:00min/mile. Looking forward to seeing everyone! 🕙 SCHEDULE: Meet at 10am. Warm up at 10:10am. Head out at 10:15am sharp! Coffee ne",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "chill",
+        "adventurous",
+        "playful"
+      ],
+      "uniqueness": 0.3
     }
   },
   {
@@ -12604,45 +12062,43 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-glow-girl-social-club-events-314102547-",
-    "title": "Girls Afternoon Tea at the Rotunda 🍵✨",
-    "date": "2026-04-26T20:30:00.000Z",
-    "location": "150 Stockton St, San Franciso, CA, San Franciso",
-    "url": "https://www.meetup.com/glow-girl-social-club/events/314102547/",
+    "id": "meetup-https-www-meetup-com-la-how-to-start-a-business-with-shopify-and-ai-events-31434",
+    "title": "How ChatGPT Built My Online Business - I’m Sharing the Full Blueprint LIVE",
+    "date": "2026-04-26T20:00:00.000Z",
+    "location": "San Francisco",
+    "url": "https://www.meetup.com/la-how-to-start-a-business-with-shopify-and-ai/events/314347963/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "Tea, but make it a moment 🍵✨💅 We’re closing out the month at the Rotunda for afternoon tea. Come catch up, meet new girls, and settle into a slower, more intentional Sunday. The space is gorgeous, we’ve been looking forward to this one all month. **We’ll be seated at tables of 4. To join a table, head to the WhatsApp group (intro required)** [Glow Girl WhatsApp](https://chat.whatsapp.com/LSf5cS9",
+    "description": "**How to Use Amazon, Shopify & AI to Build a Profitable Online Business: A Practical Blueprint** Ever wondered how people actually generate income with Shopify and AI—not just set up a store? **Join Zahid—a Shopify & Amazon entrepreneur and e-commerce mentor—for this free 1-hour live workshop where we’ll explore proven strategies to grow and automate your online business.** **This is a hands-on, d",
     "signature": {
-      "energy": "calm",
-      "social_shape": "small_group",
+      "energy": "high",
+      "social_shape": "crowd",
       "spontaneity": "planned",
       "vibe": [
-        "chill",
-        "cozy",
-        "playful"
+        "intellectual",
+        "adventurous"
       ],
-      "uniqueness": 0.6
+      "uniqueness": 0.4
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-313613952-",
-    "title": "Indoor Bouldering - Get Your Climb On!",
-    "date": "2026-04-26T18:00:00.000Z",
-    "location": "1414 Van Ness Avenue, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/313613952/",
+    "id": "meetup-https-www-meetup-com-san-francisco-ai-engineers-events-313345697-",
+    "title": "SF AI Engineers: May",
+    "date": "2026-05-14T01:00:00.000Z",
+    "location": "40 Boardman Pl, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/san-francisco-ai-engineers/events/313345697/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "Join us for a fun and friendly bouldering session! Whether you've been wanting to try bouldering for a while or are casually working on your next project, come hang out and meet fellow climbers. Day passes are $30, with an additional $5 cost for shoes & chalk. **⚠️ Friendly Safety Reminder:** Your safety is important. Please remember that by attending this event, you acknowledge that you are solel",
+    "description": "***[RSVP here](https://luma.com/slikak8w)*** Join us for the May edition of the San Francisco AI Engineers Tech Talk, a gathering focused exclusively on AI engineering. Whether you’re a seasoned machine learning engineer or a fullstack dev curious about how to work with LLMs, this is your space to dive deep into real-world projects, technical challenges, and creative solutions. **What to Expect:**",
     "signature": {
       "energy": "moderate",
       "social_shape": "small_group",
-      "spontaneity": "drop-in",
+      "spontaneity": "planned",
       "vibe": [
-        "playful",
-        "adventurous",
-        "chill"
+        "intellectual",
+        "electric"
       ],
-      "uniqueness": 0.4
+      "uniqueness": 0.65
     }
   },
   {
@@ -12667,64 +12123,23 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-san-francisco-ai-engineers-events-313345697-",
-    "title": "SF AI Engineers: May",
-    "date": "2026-05-14T01:00:00.000Z",
-    "location": "40 Boardman Pl, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/san-francisco-ai-engineers/events/313345697/",
+    "id": "meetup-https-www-meetup-com-bay-area-options-and-forex-swing-traders-events-314358873-",
+    "title": "How To Maximize Profits On Option Swing Trades While Reducing Losses",
+    "date": "2026-04-26T19:30:00.000Z",
+    "location": "San Francisco",
+    "url": "https://www.meetup.com/bay-area-options-and-forex-swing-traders/events/314358873/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "***[RSVP here](https://luma.com/slikak8w)*** Join us for the May edition of the San Francisco AI Engineers Tech Talk, a gathering focused exclusively on AI engineering. Whether you’re a seasoned machine learning engineer or a fullstack dev curious about how to work with LLMs, this is your space to dive deep into real-world projects, technical challenges, and creative solutions. **What to Expect:**",
+    "description": "If you are an option trader, then you have probably experienced call and put options expiring worthless, when you just needed a little more time for the trade to have actually made money. During this meetup, we will look at how we have minimized or eliminated losses due to options expiring, and how to really focus your trading for the best and most profitable opportunities. Back testing is great, ",
     "signature": {
       "energy": "moderate",
       "social_shape": "small_group",
       "spontaneity": "planned",
       "vibe": [
         "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.65
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-calm-the-mind-anxiety-reset-with-hypnosis-nlp-events-314041",
-    "title": "Sleep Anxiety: Why You Can’t Fall Asleep (Even When Exhausted)",
-    "date": "2026-04-25T18:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/calm-the-mind-anxiety-reset-with-hypnosis-nlp/events/314041433/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "You’re exhausted. Your body is tired. But your mind won’t let you fall asleep. If you’ve ever laid in bed feeling wired, restless, or “on edge” — this isn’t random. It’s your nervous system staying in a **state of alert**, even when you want to rest. In this session, you’ll learn: * Why your brain blocks sleep when anxiety is present * How trying to “force sleep” actually makes it worse * What’s h",
-    "signature": {
-      "energy": "calm",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill",
-        "cozy"
+        "adventurous"
       ],
       "uniqueness": 0.6
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-renegadephilosophers-events-313134808-",
-    "title": "THE (first) AMERICAN CIVIL WAR",
-    "date": "2026-04-26T00:00:00.000Z",
-    "location": "550 Laguna St, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/renegadephilosophers/events/313134808/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Welcome! This event is going to be a bit different than our usual format. This is a tell-all event about the American Civil War (the first one!), with particular emphasis on Lincoln. I feel compelled to post this in light of recent events. There will be many materials on offer to consult. By the way, I am an unapologetic unionist. William Tecumseh Sherman did nothing wrong! There are too many civi",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "weird"
-      ],
-      "uniqueness": 0.72
     }
   }
 ]
