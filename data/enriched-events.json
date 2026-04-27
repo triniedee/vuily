@@ -859,69 +859,6 @@
     }
   },
   {
-    "id": "luma-evt-HzdHbfzoXG2H92W",
-    "title": "BETA OpenClaw Hackathon - Open Registration",
-    "description": "",
-    "date": "2026-04-26T15:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/BETAhackathon",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous",
-        "electric"
-      ],
-      "uniqueness": 0.72
-    }
-  },
-  {
-    "id": "luma-evt-P9OZgpk5rTMxNrD",
-    "title": "Community Day at Hidden Currencies: Art, Music & Screen-Printing activation",
-    "description": "",
-    "date": "2026-04-26T19:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/q9uvx8r7",
-    "source": "Luma",
-    "cost": "Free",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "creative",
-        "electric"
-      ],
-      "uniqueness": 0.75
-    }
-  },
-  {
-    "id": "luma-evt-yeqLGkwJ61N5Ea7",
-    "title": "Nostalgic Movie Night Meetup",
-    "description": "",
-    "date": "2026-04-27T01:30:00.000Z",
-    "location": "San Francisco",
-    "url": "https://lu.ma/qnlptni0",
-    "source": "Luma",
-    "cost": "$40",
-    "signature": {
-      "energy": "calm",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "chill",
-        "cozy",
-        "playful"
-      ],
-      "uniqueness": 0.3
-    }
-  },
-  {
     "id": "luma-evt-AKp97ftWF8ZenD8",
     "title": "🍻 AI + Saas Startups: Happy Hour @ Startup Grind",
     "description": "",
@@ -4556,27 +4493,6 @@
     }
   },
   {
-    "id": "google-42",
-    "title": "Jessica Kirson",
-    "description": "Ticket listings for Jessica Kirson at Castro Theatre in San Francisco, CA on 04/27/2026",
-    "date": "2026-04-26T22:30:00.000Z",
-    "location": "The Castro Theatre, 429 Castro St, San Francisco, CA",
-    "url": "https://www.viagogo.com/Theater-Tickets/Comedy/Jessica-Kirson-Tickets/E-160135274",
-    "source": "Google Events",
-    "cost": "Check site",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "electric",
-        "intellectual"
-      ],
-      "uniqueness": 0.7
-    }
-  },
-  {
     "id": "google-47",
     "title": "The Hellp",
     "description": "Find tickets for The Hellp at 1015 Folsom in San Francisco on 5/15/2026 at 10:00 PM",
@@ -4595,27 +4511,6 @@
         "adventurous"
       ],
       "uniqueness": 0.85
-    }
-  },
-  {
-    "id": "19hz-https-www-eventbrite-com-e-so-house-your-evening-so-far-tickets-1158414903159",
-    "title": "So House Your Evening So Far?",
-    "date": "2026-04-27T00:00:00.000Z",
-    "url": "https://www.eventbrite.com/e/so-house-your-evening-so-far-tickets-1158414903159",
-    "location": "The Valencia Room (San Francisco)house",
-    "source": "19hz",
-    "cost": "Check site",
-    "description": "free | 21+",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "chill",
-        "weird"
-      ],
-      "uniqueness": 0.7
     }
   },
   {
@@ -11915,24 +11810,24 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-313613952-",
-    "title": "Indoor Bouldering - Get Your Climb On!",
-    "date": "2026-04-26T18:00:00.000Z",
-    "location": "1414 Van Ness Avenue, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/313613952/",
+    "id": "meetup-https-www-meetup-com-san-francisco-strategy-board-games-meetup-group-events-3141",
+    "title": "CHINESE MAHJONG - EVERY TUESDAY NIGHT - SAN FRANCISCO",
+    "date": "2026-04-29T02:00:00.000Z",
+    "location": "523 Broadway,, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/san-francisco-strategy-board-games-meetup-group/events/314191322/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "Join us for a fun and friendly bouldering session! Whether you've been wanting to try bouldering for a while or are casually working on your next project, come hang out and meet fellow climbers. Day passes are $30, with an additional $5 cost for shoes & chalk. **⚠️ Friendly Safety Reminder:** Your safety is important. Please remember that by attending this event, you acknowledge that you are solel",
+    "description": "Join us every Tuesday evening for Chinese Mahjong from 7:00–10:00 PM. at Paname SF, located at 523 Broadway St, San Francisco. The event is open to all skill levels and onsite Instructors. Hosted by: Three Dragon Society / SF Mah Jong Project 03/2/26 -SF MAHJONG PROJECT 03/10/26 - THREE DRAGON SOCIETY",
     "signature": {
-      "energy": "moderate",
+      "energy": "calm",
       "social_shape": "small_group",
-      "spontaneity": "drop-in",
+      "spontaneity": "planned",
       "vibe": [
+        "intellectual",
         "playful",
-        "adventurous",
         "chill"
       ],
-      "uniqueness": 0.4
+      "uniqueness": 0.6
     }
   },
   {
@@ -11978,24 +11873,23 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-glow-girl-social-club-events-314102547-",
-    "title": "Girls Afternoon Tea at the Rotunda 🍵✨",
-    "date": "2026-04-26T20:30:00.000Z",
-    "location": "150 Stockton St, San Franciso, CA, San Franciso",
-    "url": "https://www.meetup.com/glow-girl-social-club/events/314102547/",
+    "id": "meetup-https-www-meetup-com-learn-emotional-intelligence-events-314347067-",
+    "title": "Learn Emotional Intelligence: Communication",
+    "date": "2026-04-28T02:00:00.000Z",
+    "location": "San Francisco",
+    "url": "https://www.meetup.com/learn-emotional-intelligence/events/314347067/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "Tea, but make it a moment 🍵✨💅 We’re closing out the month at the Rotunda for afternoon tea. Come catch up, meet new girls, and settle into a slower, more intentional Sunday. The space is gorgeous, we’ve been looking forward to this one all month. **We’ll be seated at tables of 4. To join a table, head to the WhatsApp group (intro required)** [Glow Girl WhatsApp](https://chat.whatsapp.com/LSf5cS9",
+    "description": "Want to express yourself more clearly, connect with others, and feel confident in conversations? Our group is all about **practical communication skills**—whether it’s in everyday life, at work, or in new social situations. What You’ll Gain: ✅ Strategies for clear, confident, and empathetic communication ✅ Practical exercises to apply in real-life conversations ✅ Communicate your thoughts effectiv",
     "signature": {
-      "energy": "calm",
+      "energy": "moderate",
       "social_shape": "small_group",
       "spontaneity": "planned",
       "vibe": [
-        "chill",
-        "cozy",
-        "playful"
+        "intellectual",
+        "chill"
       ],
-      "uniqueness": 0.6
+      "uniqueness": 0.4
     }
   },
   {
@@ -12020,27 +11914,6 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-slowrunnerssf-events-313926655-",
-    "title": "Sunday Morning Run",
-    "date": "2026-04-26T17:00:00.000Z",
-    "location": ", San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/slowrunnerssf/events/313926655/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Welcome to the run club that actually goes your pace! 🐌 Join us for our weekly Sunday runs at 10am! Our usual routine is meeting at the Panhandle (corner of Baker & Oak) for a 5K run through Golden Gate Park! 🏃 All paces are welcome — recommended pace range is 10-15:00min/mile. Looking forward to seeing everyone! 🕙 SCHEDULE: Meet at 10am. Warm up at 10:10am. Head out at 10:15am sharp! Coffee ne",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "chill",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.3
-    }
-  },
-  {
     "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-313614039-",
     "title": "Early dinner at Salesforce Park",
     "date": "2026-04-30T00:30:00.000Z",
@@ -12059,46 +11932,6 @@
         "cozy"
       ],
       "uniqueness": 0.4
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-la-how-to-start-a-business-with-shopify-and-ai-events-31434",
-    "title": "How ChatGPT Built My Online Business - I’m Sharing the Full Blueprint LIVE",
-    "date": "2026-04-26T20:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/la-how-to-start-a-business-with-shopify-and-ai/events/314347963/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "**How to Use Amazon, Shopify & AI to Build a Profitable Online Business: A Practical Blueprint** Ever wondered how people actually generate income with Shopify and AI—not just set up a store? **Join Zahid—a Shopify & Amazon entrepreneur and e-commerce mentor—for this free 1-hour live workshop where we’ll explore proven strategies to grow and automate your online business.** **This is a hands-on, d",
-    "signature": {
-      "energy": "high",
-      "social_shape": "crowd",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "adventurous"
-      ],
-      "uniqueness": 0.4
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-san-francisco-ai-engineers-events-313345697-",
-    "title": "SF AI Engineers: May",
-    "date": "2026-05-14T01:00:00.000Z",
-    "location": "40 Boardman Pl, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/san-francisco-ai-engineers/events/313345697/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "***[RSVP here](https://luma.com/slikak8w)*** Join us for the May edition of the San Francisco AI Engineers Tech Talk, a gathering focused exclusively on AI engineering. Whether you’re a seasoned machine learning engineer or a fullstack dev curious about how to work with LLMs, this is your space to dive deep into real-world projects, technical challenges, and creative solutions. **What to Expect:**",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.65
     }
   },
   {
@@ -12123,23 +11956,107 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-bay-area-options-and-forex-swing-traders-events-314358873-",
-    "title": "How To Maximize Profits On Option Swing Trades While Reducing Losses",
-    "date": "2026-04-26T19:30:00.000Z",
+    "id": "meetup-https-www-meetup-com-womens-leadership-alliance-events-314290026-",
+    "title": "April 2026 - Self-Employed Weekly Check-In (Women Only, Cameras On)",
+    "date": "2026-04-27T19:00:00.000Z",
     "location": "San Francisco",
-    "url": "https://www.meetup.com/bay-area-options-and-forex-swing-traders/events/314358873/",
+    "url": "https://www.meetup.com/womens-leadership-alliance/events/314290026/",
     "source": "Meetup",
     "cost": "Check site",
-    "description": "If you are an option trader, then you have probably experienced call and put options expiring worthless, when you just needed a little more time for the trade to have actually made money. During this meetup, we will look at how we have minimized or eliminated losses due to options expiring, and how to really focus your trading for the best and most profitable opportunities. Back testing is great, ",
+    "description": "This is a weekly 45-minute virtual check-in *designed specifically for self-employed women* to connect and thrive. In April 2026, we will meet on Mondays at 12 pm Pacific. It's a *supportive drop-in space* where you can share wins, workshop business challenges, ask for advice on anything from client management to marketing, and find a community that truly understands the unique journey of entrepre",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "intellectual",
+        "cozy"
+      ],
+      "uniqueness": 0.65
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-san-francisco-ai-engineers-events-313345697-",
+    "title": "SF AI Engineers: May",
+    "date": "2026-05-14T01:00:00.000Z",
+    "location": "40 Boardman Pl, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/san-francisco-ai-engineers/events/313345697/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "***[RSVP here](https://luma.com/slikak8w)*** Join us for the May edition of the San Francisco AI Engineers Tech Talk, a gathering focused exclusively on AI engineering. Whether you’re a seasoned machine learning engineer or a fullstack dev curious about how to work with LLMs, this is your space to dive deep into real-world projects, technical challenges, and creative solutions. **What to Expect:**",
     "signature": {
       "energy": "moderate",
       "social_shape": "small_group",
       "spontaneity": "planned",
       "vibe": [
         "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.65
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-bay-area-millennials-and-gen-z-meetup-group-events-31383930",
+    "title": "Roller Disco @ Church of 8 Wheels, SF",
+    "date": "2026-05-09T01:45:00.000Z",
+    "location": "554 Fillmore St, Filmore & Fell, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/bay-area-millennials-and-gen-z-meetup-group/events/313839305/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Ready to get your spirits up? Join us at The Church of 8 Wheels, a unique roller disco in a former church in San Francisco, known for its fun, retro, spiritual atmosphere, disco lights, themed skate nights, and a focus on \"soul skate\". With events featuring DJs, live music, and a mix of skating styles in a setting with stained glass and murals, its \"fellowship of people\" celebrates skating, with a",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
         "adventurous"
       ],
-      "uniqueness": 0.6
+      "uniqueness": 0.85
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-how-to-take-control-events-314314982-",
+    "title": "Heal from Past Relationships & Avoid the Pitfalls Again without Stress & Sadness",
+    "date": "2026-04-30T00:00:00.000Z",
+    "location": "San Francisco",
+    "url": "https://www.meetup.com/how-to-take-control/events/314314982/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Has the loss of love created loneliness and despair and darkened your days? Has a betrayal by the one you loved left you distraught? Are you trying to move on and can’t find the way? Will you ever trust and find love again? You know that communication, interaction and passion are the basis of happiness in love, but will you ever get there? Yes, you can. There is an unknown source of unhappiness, s",
+    "signature": {
+      "energy": "calm",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "romantic",
+        "chill"
+      ],
+      "uniqueness": 0.72
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-baysocials-events-314235213-",
+    "title": "🚶‍♀️‍➡️Cannoli Hike @ Potrero hill, S.F",
+    "date": "2026-05-07T01:30:00.000Z",
+    "location": "1426 18th St, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/baysocials/events/314235213/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "**Always 100% free for everyone.** No early-bird tiers, no 'later-on' fees. We’ll be meeting **outside of this french grocery store** (location below). **Please be on time,** we will wait 10 minutes before starting our route. Unfortunately, once we are moving, it will be difficult to locate us; **we cannot accommodate latecomers** or provide real-time location updates, as we want to focus on the h",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "adventurous",
+        "chill",
+        "playful"
+      ],
+      "uniqueness": 0.7
     }
   }
 ]
