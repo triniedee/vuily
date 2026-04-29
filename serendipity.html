@@ -21,6 +21,8 @@
 
       * { box-sizing: border-box; margin: 0; padding: 0; }
 
+      html { overflow-x: hidden; }
+
       body {
         font-family: "Nunito", sans-serif;
         color: var(--text);
@@ -662,7 +664,7 @@
         .steps { grid-template-columns: 1fr; }
         .top-bar { margin-bottom: 2.5rem; }
         h1 { font-size: 2rem; }
-        .blob-a { width: 160px; height: 160px; top: auto; bottom: -40px; }
+        .blob-a { width: 160px; height: 160px; top: auto; bottom: 0; }
         .blob-b { width: 180px; height: 180px; top: 10%; }
         .blob-c { display: none; }
         .shell { padding-bottom: 3rem; }
