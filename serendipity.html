@@ -1117,7 +1117,7 @@
           const res = await fetch("/data/enriched-events.json", { cache: "no-store" });
           if (res.ok) {
             const all = await res.json();
-            enriched = all.filter(e => e && e.date && new Date(e.date) > now);
+            enriched = all.filter(e => e && e.date && new Date(e.date) > now && e.source !== "Luma");
             enrichedIds = new Set(enriched.map(e => e.id));
             console.log(`[serendipity] enriched events: ${enriched.length}`);
           }

@@ -28,7 +28,7 @@ if (!ANTHROPIC_API_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.ex
 const DATASETS = [
   { id: "cFEcLNFCjkaNd0Dci", type: "eventbrite" },
   { id: "rF4QswDVxXtzbuVPl", type: "eventbrite" },
-  { id: "z7sA6wzx3DF8w6Zhx", type: "luma" },
+
   { id: "5XkgHAs8QoMP4sUe6", type: "google" },
 ];
 
