@@ -263,7 +263,7 @@
         box-shadow: 0 16px 48px rgba(64, 53, 131, 0.12);
         opacity: 0;
         transform: translateY(16px) scale(0.98);
-        transition: opacity 0.35s ease, transform 0.35s ease;
+        transition: opacity var(--card-speed, 0.35s) ease, transform var(--card-speed, 0.35s) ease;
       }
 
       .result-card.visible {
@@ -649,6 +649,507 @@
       }
       .cs-skip:hover { color: var(--text); }
 
+      /* Mode tabs */
+      .mode-tabs {
+        display: flex;
+        gap: 0.4rem;
+        background: rgba(255,255,255,0.6);
+        border: 1.5px solid rgba(31,34,64,0.1);
+        border-radius: 999px;
+        padding: 4px;
+        margin-bottom: 2rem;
+      }
+
+      .mode-tab {
+        padding: 0.45rem 1.1rem;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 800;
+        color: var(--muted);
+        cursor: pointer;
+        transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+      }
+      .mode-tab.active {
+        background: #fff;
+        color: var(--text);
+        box-shadow: 0 2px 8px rgba(31,34,64,0.1);
+      }
+
+      /* Chat panel */
+      .chat-panel {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        max-width: 520px;
+        gap: 0;
+      }
+      .chat-panel.visible { display: flex; }
+
+      /* Branded header */
+      .chat-header {
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1.5px solid rgba(31,34,64,0.1);
+        border-bottom: none;
+        border-radius: 20px 20px 0 0;
+        padding: 0.8rem 1.1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        box-shadow: 0 8px 32px rgba(64,53,131,0.08);
+      }
+
+      .chat-header-avatar {
+        width: 34px;
+        height: 34px;
+        background: linear-gradient(135deg, var(--hot-pink), var(--sky));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.95rem;
+        color: #fff;
+        flex-shrink: 0;
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+      }
+
+      .chat-header-info { display: flex; flex-direction: column; gap: 0.05rem; flex: 1; }
+
+      .chat-header-name {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 0.95rem;
+        color: var(--text);
+        line-height: 1;
+      }
+
+      .chat-header-status {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+      .chat-status-dot {
+        width: 6px;
+        height: 6px;
+        background: var(--lime);
+        border-radius: 50%;
+        animation: pulse-dot 2s ease-in-out infinite;
+      }
+      @keyframes pulse-dot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.55; transform: scale(0.8); }
+      }
+
+      .chat-header-sf {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--muted);
+        background: rgba(31,34,64,0.05);
+        border-radius: 999px;
+        padding: 0.2rem 0.55rem;
+      }
+
+      .chat-window {
+        background: rgba(255,255,255,0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1.5px solid rgba(31,34,64,0.1);
+        border-top: none;
+        border-radius: 0;
+        padding: 1.1rem 1.2rem;
+        min-height: 260px;
+        max-height: 500px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+        scroll-behavior: smooth;
+      }
+
+      /* Quick-reply chips */
+      .chat-prompts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        padding-top: 0.1rem;
+        animation: fadeUp 0.3s ease forwards;
+      }
+
+      .chat-prompt-chip {
+        background: rgba(255,255,255,0.9);
+        border: 1.5px solid rgba(31,34,64,0.13);
+        border-radius: 999px;
+        padding: 0.35rem 0.8rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--muted);
+        cursor: pointer;
+        transition: border-color 0.15s, color 0.15s, background 0.15s;
+        white-space: nowrap;
+      }
+      .chat-prompt-chip:hover {
+        border-color: var(--hot-pink);
+        color: var(--hot-pink);
+        background: rgba(255,79,139,0.04);
+      }
+
+      .chat-msg {
+        display: flex;
+        flex-direction: column;
+        max-width: 82%;
+        animation: fadeUp 0.25s ease forwards;
+      }
+      .chat-msg.user { align-self: flex-end; align-items: flex-end; }
+      .chat-msg.agent { align-self: flex-start; align-items: flex-start; }
+
+      .chat-bubble {
+        padding: 0.65rem 0.95rem;
+        border-radius: 16px;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        font-weight: 600;
+      }
+      .chat-msg.user .chat-bubble {
+        background: linear-gradient(135deg, var(--hot-pink), var(--sky));
+        color: #fff;
+        border-bottom-right-radius: 4px;
+      }
+      .chat-msg.agent .chat-bubble {
+        background: linear-gradient(135deg, rgba(255,247,230,0.95) 0%, rgba(235,248,255,0.95) 100%);
+        border: 1.5px solid rgba(31,34,64,0.08);
+        color: var(--text);
+        border-bottom-left-radius: 4px;
+      }
+
+      .chat-who {
+        font-size: 0.68rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.28rem;
+        padding: 0 0.2rem;
+      }
+
+      /* Typing indicator */
+      .chat-typing {
+        display: none;
+        align-self: flex-start;
+        padding: 0.55rem 0.9rem;
+        background: rgba(31,34,64,0.05);
+        border: 1.5px solid rgba(31,34,64,0.09);
+        border-radius: 16px;
+        border-bottom-left-radius: 4px;
+        gap: 4px;
+        align-items: center;
+      }
+      .chat-typing.visible { display: flex; }
+      .chat-typing span {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--muted);
+        animation: bounce 0.6s ease-in-out infinite alternate;
+      }
+      .chat-typing span:nth-child(2) { animation-delay: 0.15s; }
+      .chat-typing span:nth-child(3) { animation-delay: 0.3s; }
+
+      /* Chat input row */
+      .chat-form {
+        display: flex;
+        gap: 0;
+        border: 1.5px solid rgba(31,34,64,0.1);
+        border-top: none;
+        border-radius: 0 0 20px 20px;
+        overflow: hidden;
+        background: rgba(255,255,255,0.95);
+        box-shadow: 0 8px 24px rgba(64,53,131,0.08);
+      }
+
+      .chat-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 0.8rem 1rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--text);
+        background: transparent;
+      }
+      .chat-input::placeholder { color: #aab0c8; font-weight: 500; }
+
+      .chat-send {
+        background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+        border: none;
+        padding: 0 1.2rem;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: opacity 0.18s;
+        white-space: nowrap;
+      }
+      .chat-send:hover { opacity: 0.88; }
+      .chat-send:disabled { opacity: 0.45; cursor: default; }
+
+      .chat-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.8rem;
+      }
+
+      .chat-reset {
+        background: none;
+        border: none;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--muted);
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .chat-reset:hover { color: var(--text); }
+
+      /* Tool-use card */
+      .chat-tool-card {
+        align-self: flex-start;
+        background: linear-gradient(135deg, rgba(77,141,255,0.07), rgba(14,184,168,0.07));
+        border: 1.5px solid rgba(77,141,255,0.2);
+        border-radius: 12px;
+        padding: 0.5rem 0.85rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--sky);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        animation: fadeUp 0.2s ease forwards, search-glow 1.6s ease-in-out infinite;
+        transition: opacity 0.4s;
+      }
+      @keyframes search-glow {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(77,141,255,0.15); }
+        50% { box-shadow: 0 0 0 5px rgba(77,141,255,0); }
+      }
+
+      .chat-tool-spinner {
+        width: 11px;
+        height: 11px;
+        border: 2px solid rgba(77,141,255,0.25);
+        border-top-color: var(--sky);
+        border-radius: 50%;
+        animation: spin 0.7s linear infinite;
+        flex-shrink: 0;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+
+      /* Inline event card */
+      .chat-event-card {
+        align-self: flex-start;
+        width: 100%;
+        background: rgba(255,255,255,0.96);
+        border: 1.5px solid rgba(31,34,64,0.1);
+        border-radius: 16px;
+        padding: 1.1rem 1.2rem 1rem;
+        box-shadow: 0 8px 24px rgba(64,53,131,0.1);
+        animation: fadeUp var(--card-anim, 0.35s) ease forwards;
+      }
+
+      /* Ambiguity: staggered reveal for weird/adventurous events */
+      .meta-stagger .meta-item {
+        opacity: 0;
+        animation: fadeUp 0.28s ease forwards;
+      }
+      .meta-stagger .meta-item:nth-child(1) { animation-delay: 0.2s; }
+      .meta-stagger .meta-item:nth-child(2) { animation-delay: 0.45s; }
+      .meta-stagger .meta-item:nth-child(3) { animation-delay: 0.7s; }
+
+      .chat-pick-eyebrow {
+        font-size: 0.67rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.35rem;
+      }
+
+      .chat-event-title {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 1.05rem;
+        color: var(--text);
+        line-height: 1.2;
+        margin-bottom: 0.45rem;
+      }
+      .chat-event-title a { color: inherit; text-decoration: none; }
+      .chat-event-title a:hover { text-decoration: underline; }
+
+      .chat-event-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.18rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--muted);
+        margin-bottom: 0.85rem;
+      }
+
+      .chat-event-cta {
+        display: inline-block;
+        background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+        color: #fff;
+        border-radius: 8px;
+        padding: 0.48rem 1rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 800;
+        text-decoration: none;
+        transition: opacity 0.18s, transform 0.14s;
+      }
+      .chat-event-cta:hover { opacity: 0.88; transform: translateY(-1px); }
+
+      /* Score-driven card themes */
+      .card-electric {
+        background: linear-gradient(160deg, #0d2816 0%, #0f3320 100%) !important;
+        border-color: transparent !important;
+        box-shadow: 0 16px 48px rgba(0,0,0,0.45) !important;
+        color: #fff !important;
+      }
+      .card-intimate {
+        background: linear-gradient(160deg, #1e1004 0%, #291508 100%) !important;
+        border-color: transparent !important;
+        box-shadow: 0 16px 48px rgba(0,0,0,0.45) !important;
+        color: #fff !important;
+      }
+      .card-formal {
+        background: linear-gradient(160deg, #0c1525 0%, #0f1e36 100%) !important;
+        border-color: transparent !important;
+        box-shadow: 0 16px 48px rgba(0,0,0,0.45) !important;
+        color: #fff !important;
+      }
+      .card-dark .chat-pick-eyebrow,
+      .card-dark .result-source { opacity: 0.45; }
+      .card-dark .chat-event-title a,
+      .card-dark .result-title a { color: #fff; }
+      .card-dark .chat-event-meta,
+      .card-dark .result-meta { color: rgba(255,255,255,0.45) !important; }
+      .card-dark .result-desc { color: rgba(255,255,255,0.65) !important; -webkit-line-clamp: 4; }
+      .card-dark .result-why { color: rgba(255,255,255,0.5) !important; }
+      .card-dark .axis-section { border-top-color: rgba(255,255,255,0.1); }
+      .card-dark .axis-section-label { color: rgba(255,255,255,0.35); }
+      .card-dark .axis-label { color: rgba(255,255,255,0.4); }
+      .card-dark .axis-track { background: rgba(255,255,255,0.1); }
+      .card-dark .axis-val { color: rgba(255,255,255,0.4); }
+      .card-dark .btn-next { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); }
+      .card-dark .btn-next:hover { background: rgba(255,255,255,0.16); }
+
+      /* Axis score pills */
+      .score-pills { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.65rem; }
+      .score-pill {
+        font-size: 0.68rem;
+        font-weight: 800;
+        padding: 0.22rem 0.62rem;
+        border-radius: 999px;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+      }
+
+      /* Lock / pressure friction */
+      .lock-reveal-btn {
+        width: 100%;
+        background: rgba(255,255,255,0.07);
+        border: 1px dashed rgba(255,255,255,0.22);
+        border-radius: 10px;
+        padding: 0.62rem 1rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: rgba(255,255,255,0.55);
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 0.85rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        transition: background 0.18s, border-color 0.18s, color 0.18s;
+      }
+      .lock-reveal-btn:hover { background: rgba(255,255,255,0.13); border-color: rgba(255,255,255,0.38); color: rgba(255,255,255,0.85); }
+
+      /* What to expect (result card) */
+      .what-to-expect { margin-bottom: 1rem; }
+      .what-to-expect-label {
+        font-size: 0.62rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+        opacity: 0.45;
+      }
+
+      /* Five-axis score bars */
+      .axis-section {
+        margin-bottom: 1rem;
+        padding-top: 0.7rem;
+        border-top: 1px solid rgba(31,34,64,0.07);
+      }
+      .axis-section-label {
+        font-size: 0.62rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        opacity: 0.65;
+        margin-bottom: 0.45rem;
+      }
+      .axis-bars { display: flex; flex-direction: column; gap: 0.26rem; }
+      .axis-row { display: flex; align-items: center; gap: 0.45rem; }
+      .axis-label {
+        font-size: 0.63rem;
+        font-weight: 700;
+        color: var(--muted);
+        width: 56px;
+        flex-shrink: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .axis-track {
+        flex: 1;
+        height: 3px;
+        background: rgba(31,34,64,0.08);
+        border-radius: 999px;
+        overflow: hidden;
+      }
+      .axis-fill {
+        height: 100%;
+        width: 0;
+        border-radius: 999px;
+        transition: width 0.7s ease;
+      }
+      .axis-val {
+        font-size: 0.62rem;
+        font-weight: 800;
+        color: var(--muted);
+        width: 14px;
+        text-align: right;
+        flex-shrink: 0;
+      }
+
       /* Footer */
       .footer {
         font-size: 0.78rem;
@@ -721,30 +1222,77 @@
         <p class="demo-label">Try it now</p>
         <p class="demo-question">What should I do in SF?</p>
 
-        <div class="moment-bar" id="momentBar"></div>
+        <!-- Mode toggle -->
+        <div class="mode-tabs">
+          <button class="mode-tab active" id="tabSurprise">🎲 Surprise me</button>
+          <button class="mode-tab" id="tabChat">💬 Ask Vuily</button>
+        </div>
 
-        <button class="surprise-btn" id="surpriseBtn">
-          <span class="btn-icon">🎲</span>
-          Surprise me
-        </button>
+        <!-- Surprise mode -->
+        <div id="surpriseMode">
+          <div class="moment-bar" id="momentBar"></div>
 
-        <button class="refine-btn" id="refineBtn">✦ Refine the vibe</button>
+          <button class="surprise-btn" id="surpriseBtn">
+            <span class="btn-icon">🎲</span>
+            Surprise me
+          </button>
 
-        <div class="result-area">
-          <div class="loading-dots" id="loadingDots">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="result-card" id="resultCard">
-            <p class="result-source" id="resultSource"></p>
-            <h2 class="result-title" id="resultTitle"></h2>
-            <div class="result-pills" id="resultPills"></div>
-            <div class="result-meta" id="resultMeta"></div>
-            <p class="result-desc" id="resultDesc"></p>
-            <p class="result-why" id="resultWhy"></p>
-            <div class="result-actions">
-              <a class="btn-attend" id="resultLink" href="#" target="_blank" rel="noopener noreferrer">See details</a>
-              <button class="btn-next" id="nextBtn">Try another</button>
+          <button class="refine-btn" id="refineBtn">✦ Refine the vibe</button>
+
+          <div class="result-area">
+            <div class="loading-dots" id="loadingDots">
+              <span></span><span></span><span></span>
             </div>
+            <div class="result-card" id="resultCard">
+              <p class="result-source" id="resultSource"></p>
+              <h2 class="result-title" id="resultTitle"></h2>
+              <div class="result-pills" id="resultPills"></div>
+              <div class="result-meta" id="resultMeta"></div>
+              <p class="result-desc" id="resultDesc"></p>
+              <p class="result-why" id="resultWhy"></p>
+              <div class="axis-section" id="resultAxesSection" style="display:none">
+                <p class="axis-section-label">✦ Experience profile</p>
+                <div class="axis-bars" id="resultAxes"></div>
+              </div>
+              <div class="result-actions">
+                <a class="btn-attend" id="resultLink" href="#" target="_blank" rel="noopener noreferrer">See details</a>
+                <button class="btn-next" id="nextBtn">Try another</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat mode -->
+        <div class="chat-panel" id="chatMode">
+          <div class="chat-header">
+            <div class="chat-header-avatar">✦</div>
+            <div class="chat-header-info">
+              <span class="chat-header-name">Vuily</span>
+              <span class="chat-header-status"><span class="chat-status-dot"></span>Finding your SF night</span>
+            </div>
+            <span class="chat-header-sf">📍 San Francisco</span>
+          </div>
+          <div class="chat-window" id="chatWindow">
+            <div class="chat-msg agent">
+              <span class="chat-who">Vuily</span>
+              <div class="chat-bubble">Hey! I'm your SF serendipity agent. What's your vibe tonight — are you flying solo, with someone special, or rounding up a crew?</div>
+            </div>
+            <div class="chat-prompts" id="chatPrompts">
+              <button class="chat-prompt-chip" data-msg="Flying solo tonight">Solo adventure</button>
+              <button class="chat-prompt-chip" data-msg="Date night with someone special">Date night</button>
+              <button class="chat-prompt-chip" data-msg="Going out with a small crew">Crew hangout</button>
+              <button class="chat-prompt-chip" data-msg="Something weird and unexpected, surprise me">Weird me out ✦</button>
+            </div>
+            <div class="chat-typing" id="chatTyping">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <form class="chat-form" id="chatForm">
+            <input class="chat-input" id="chatInput" type="text" placeholder="Tell me what you're feeling…" autocomplete="off" />
+            <button class="chat-send" id="chatSend" type="submit">Send →</button>
+          </form>
+          <div class="chat-footer">
+            <button class="chat-reset" id="chatReset">Start over</button>
           </div>
         </div>
       </div>
@@ -873,10 +1421,82 @@
         return cost || "Check site";
       }
 
+      // ─── Axis bar helpers ─────────────────────────────────────────────────────
+      const AXIS_DEFS = [
+        { key: "energy",    label: "Energy",    color: "var(--hot-pink)" },
+        { key: "intimacy",  label: "Intimacy",  color: "var(--sky)" },
+        { key: "ambiguity", label: "Ambiguity", color: "var(--teal)" },
+        { key: "pressure",  label: "Pressure",  color: "var(--sun)" },
+        { key: "formality", label: "Formal",    color: "var(--muted)" },
+      ];
+
+      function axisRowsHtml(axes) {
+        return AXIS_DEFS.map(({ key, label, color }) => {
+          const val = axes?.[key];
+          if (val === undefined || val === null) return "";
+          const pct = Math.min(100, Math.max(0, val * 10));
+          return `<div class="axis-row">
+            <span class="axis-label">${label}</span>
+            <div class="axis-track"><div class="axis-fill" style="background:${color}" data-pct="${pct}"></div></div>
+            <span class="axis-val">${Math.round(val)}</span>
+          </div>`;
+        }).join("");
+      }
+
+      function animateAxes(container) {
+        if (!container) return;
+        requestAnimationFrame(() => {
+          container.querySelectorAll(".axis-fill").forEach((fill, i) => {
+            setTimeout(() => { fill.style.width = fill.dataset.pct + "%"; }, 60 + i * 90);
+          });
+        });
+      }
+
+      function computeCardTheme(axes) {
+        if (!axes) return { cssClass: '', ctaText: "See details", lockBtn: false };
+        const energy = axes.energy ?? 5;
+        const intimacy = axes.intimacy ?? 5;
+        const formality = axes.formality ?? 5;
+        const pressure = axes.pressure ?? 5;
+        let theme;
+        if (energy >= 7 && formality <= 5)
+          theme = { cssClass: 'card-electric card-dark', ctaText: "I'm in — let's go" };
+        else if (intimacy >= 6 && energy <= 5)
+          theme = { cssClass: 'card-intimate card-dark', ctaText: "I'm interested" };
+        else if (formality >= 7)
+          theme = { cssClass: 'card-formal card-dark', ctaText: "See details" };
+        else
+          theme = { cssClass: '', ctaText: "Claim this night →" };
+        theme.lockBtn = pressure >= 7;
+        return theme;
+      }
+
+      function topAxisPills(axes) {
+        if (!axes) return '';
+        const defs = [
+          { key: 'energy',    label: 'Energy',    color: '#ff4f8b' },
+          { key: 'intimacy',  label: 'Intimacy',  color: '#4d8dff' },
+          { key: 'pressure',  label: 'Pressure',  color: '#ffb800' },
+          { key: 'ambiguity', label: 'Ambiguity', color: '#0eb8a8' },
+          { key: 'formality', label: 'Formal',    color: '#5f6388' },
+        ];
+        const pills = defs
+          .filter(d => axes[d.key] !== undefined)
+          .sort((a, b) => Math.abs((axes[b.key] ?? 5) - 5) - Math.abs((axes[a.key] ?? 5) - 5))
+          .slice(0, 3)
+          .map(d => `<span class="score-pill" style="background:${d.color}22;color:${d.color};border:1.5px solid ${d.color}44">${d.label} ${Math.round(axes[d.key])}</span>`)
+          .join('');
+        return pills ? `<div class="score-pills">${pills}</div>` : '';
+      }
+
       // ─── Render a result event card ───────────────────────────────────────────
       function renderEvent(event) {
         const card = document.getElementById("resultCard");
-        card.classList.remove("visible");
+        card.classList.remove("visible", "card-electric", "card-intimate", "card-formal", "card-dark");
+
+        // Energy → card reveal speed
+        const energy = event.signature?.energy || "moderate";
+        card.style.setProperty("--card-speed", energy === "high" ? "0.15s" : energy === "calm" ? "0.5s" : "0.35s");
 
         setTimeout(() => {
           document.getElementById("resultSource").textContent = event.source || "Vuily";
@@ -886,12 +1506,21 @@
             ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${event.title}</a>`
             : event.title;
 
+          const axes = event.signature?.axes;
+          const theme = computeCardTheme(axes);
+          if (theme.cssClass) card.classList.add(...theme.cssClass.split(' '));
+
+          // Pills: score pills when axes available, category+cost otherwise
           const pills = document.getElementById("resultPills");
-          const slug = catSlug(event.category);
-          pills.innerHTML = `
-            <span class="result-pill pill-category ${slug}">${event.category || "Experience"}</span>
-            <span class="result-pill pill-cost">${costLabel(event.cost)}</span>
-          `;
+          if (axes) {
+            pills.innerHTML = topAxisPills(axes);
+          } else {
+            const slug = catSlug(event.category);
+            pills.innerHTML = `
+              <span class="result-pill pill-category ${slug}">${event.category || "Experience"}</span>
+              <span class="result-pill pill-cost">${costLabel(event.cost)}</span>
+            `;
+          }
 
           const meta = document.getElementById("resultMeta");
           const when = typeof event.date === "string" && event.date.includes("-") ? formatWhen(event.date) : (event.date || "");
@@ -908,12 +1537,41 @@
           const reasons = event._reasons || [];
           whyEl.textContent = reasons.length ? `✦ ${reasons.join(" · ")}` : "";
 
+          // Five-axis score bars
+          const axesSection = document.getElementById("resultAxesSection");
+          const axesContainer = document.getElementById("resultAxes");
+          if (axes && axesSection && axesContainer) {
+            axesSection.style.display = "";
+            axesContainer.innerHTML = axisRowsHtml(axes);
+            animateAxes(axesContainer);
+          } else if (axesSection) {
+            axesSection.style.display = "none";
+          }
+
+          // CTA link (hidden initially when lock is active)
           const link = document.getElementById("resultLink");
           if (url) {
             link.href = url;
-            link.style.display = "inline-block";
+            link.textContent = theme.ctaText || "See details";
+            link.style.display = theme.lockBtn ? "none" : "inline-block";
           } else {
             link.style.display = "none";
+          }
+
+          // Lock button for high-pressure events
+          const actionsEl = card.querySelector(".result-actions");
+          const existingLock = document.getElementById("resultLockBtn");
+          if (existingLock) existingLock.remove();
+          if (theme.lockBtn && url && actionsEl) {
+            const lockBtn = document.createElement("button");
+            lockBtn.id = "resultLockBtn";
+            lockBtn.className = "lock-reveal-btn";
+            lockBtn.innerHTML = `🔒 Heads up — this one's a bit of a commitment. Tap to reveal.`;
+            lockBtn.addEventListener("click", () => {
+              lockBtn.remove();
+              link.style.display = "inline-block";
+            });
+            actionsEl.parentNode.insertBefore(lockBtn, actionsEl);
           }
 
           card.classList.add("visible");
@@ -1308,16 +1966,33 @@
         const reasons = [];
         const hasOverrides = Object.keys(profile.userOverrides).length > 0;
 
-        // Energy match
-        const energyMap = { calm: 0, moderate: 1, high: 2 };
+        // Energy match — use numeric axis (0-10) when available, else categorical
         const energyLabels = { calm: "chill vibe", moderate: "balanced energy", high: "high energy" };
-        const wantedEnergy = profile.userOverrides.energy || profile.energyHint || "moderate";
-        const eventEnergy = sig.energy || "moderate";
-        const energyDiff = Math.abs((energyMap[wantedEnergy] ?? 1) - (energyMap[eventEnergy] ?? 1));
-        const energyScore = (1 - energyDiff / 2) * 0.3;
+        const wantedEnergyCat = profile.userOverrides.energy || profile.energyHint || "moderate";
+        const catToNum = { calm: 2, moderate: 5, high: 8 };
+        const wantedEnergyNum = catToNum[wantedEnergyCat] ?? 5;
+        const eventEnergyNum = sig.axes?.energy ?? catToNum[sig.energy || "moderate"] ?? 5;
+        const energyDiff = Math.abs(wantedEnergyNum - eventEnergyNum) / 8;
+        const energyScore = (1 - energyDiff) * 0.3;
         resonance += energyScore;
-        if (energyDiff === 0 && (hasOverrides || energyScore > 0.25)) {
-          reasons.push(energyLabels[wantedEnergy] || wantedEnergy);
+        if (energyDiff < 0.25 && (hasOverrides || energyScore > 0.22)) {
+          reasons.push(energyLabels[wantedEnergyCat] || wantedEnergyCat);
+        }
+
+        // Intimacy — solo/duo benefit from high-intimacy events; crowd benefits from low
+        if (sig.axes?.intimacy !== undefined) {
+          const wantedSocial = profile.userOverrides.social;
+          if ((wantedSocial === "solo" || wantedSocial === "duo") && sig.axes.intimacy >= 6) {
+            resonance += 0.08;
+            reasons.push("intimate setting");
+          } else if (wantedSocial === "crowd" && sig.axes.intimacy <= 4) {
+            resonance += 0.05;
+          }
+        }
+
+        // Ambiguity — small bonus for serendipitous/open-ended events
+        if (sig.axes?.ambiguity !== undefined) {
+          resonance += (sig.axes.ambiguity / 10) * 0.05;
         }
 
         // Social shape match
@@ -1540,6 +2215,278 @@
 
       // Boot in background immediately
       boot();
+
+      // ─── Mode tabs ────────────────────────────────────────────────────────────
+      const tabSurprise = document.getElementById("tabSurprise");
+      const tabChat = document.getElementById("tabChat");
+      const surpriseMode = document.getElementById("surpriseMode");
+      const chatModeEl = document.getElementById("chatMode");
+
+      tabSurprise.addEventListener("click", () => {
+        tabSurprise.classList.add("active");
+        tabChat.classList.remove("active");
+        surpriseMode.style.display = "";
+        chatModeEl.classList.remove("visible");
+      });
+
+      tabChat.addEventListener("click", () => {
+        tabChat.classList.add("active");
+        tabSurprise.classList.remove("active");
+        surpriseMode.style.display = "none";
+        chatModeEl.classList.add("visible");
+        document.getElementById("chatInput").focus();
+      });
+
+      // ─── Conversational agent ─────────────────────────────────────────────────
+      const AGENT_GREETING = "Hey! I'm your SF serendipity agent. What's your vibe tonight — are you flying solo, with someone special, or rounding up a crew?";
+
+      let chatHistory = [{ role: "assistant", content: AGENT_GREETING }];
+
+      const chatWindow = document.getElementById("chatWindow");
+      const chatTyping = document.getElementById("chatTyping");
+      const chatForm = document.getElementById("chatForm");
+      const chatInput = document.getElementById("chatInput");
+      const chatSend = document.getElementById("chatSend");
+      const chatReset = document.getElementById("chatReset");
+
+      function appendChatMsg(role, text) {
+        const div = document.createElement("div");
+        div.className = `chat-msg ${role}`;
+        const who = document.createElement("span");
+        who.className = "chat-who";
+        who.textContent = role === "user" ? "You" : "Vuily";
+        const bubble = document.createElement("div");
+        bubble.className = "chat-bubble";
+        bubble.textContent = text;
+        div.appendChild(who);
+        div.appendChild(bubble);
+        chatWindow.insertBefore(div, chatTyping);
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+        return bubble;
+      }
+
+      function renderChatEventCard(pick) {
+        const card = document.createElement("div");
+        card.className = "chat-event-card";
+
+        // Energy → animation speed
+        const energy = pick.energy || "moderate";
+        card.style.setProperty("--card-anim", energy === "high" ? "0.12s" : energy === "calm" ? "0.5s" : "0.28s");
+
+        // Ambiguity → stagger meta details for weird/adventurous/electric events
+        const vibes = Array.isArray(pick.vibe) ? pick.vibe : [];
+        const isAmbiguous = vibes.some(v => ["weird", "adventurous", "electric"].includes(v));
+
+        const url = (() => {
+          try {
+            if (!pick.url) return "";
+            const u = new URL(pick.url);
+            return (u.protocol === "http:" || u.protocol === "https:") ? pick.url : "";
+          } catch { return ""; }
+        })();
+
+        const axes = pick.axes && typeof pick.axes === "object" ? pick.axes : null;
+        const theme = computeCardTheme(axes);
+        if (theme.cssClass) card.classList.add(...theme.cssClass.split(' '));
+
+        const titleHtml = url
+          ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${pick.title || "Event"}</a>`
+          : (pick.title || "Event");
+        const dateStr = pick.date ? formatWhen(pick.date) : "";
+        const pillsHtml = axes ? topAxisPills(axes) : '';
+        const axesSectionHtml = axes ? `
+          <div class="axis-section">
+            <p class="axis-section-label">✦ Experience profile</p>
+            <div class="axis-bars">${axisRowsHtml(axes)}</div>
+          </div>` : "";
+
+        const ctaHtml = url
+          ? theme.lockBtn
+            ? `<button class="lock-reveal-btn" onclick="this.nextElementSibling.style.display='inline-block';this.remove()">🔒 Heads up — this one's a bit of a commitment. Tap to reveal.</button>
+               <a class="chat-event-cta" href="${url}" target="_blank" rel="noopener noreferrer" style="display:none">${theme.ctaText}</a>`
+            : `<a class="chat-event-cta" href="${url}" target="_blank" rel="noopener noreferrer">${theme.ctaText || "Claim this night →"}</a>`
+          : "";
+
+        card.innerHTML = `
+          <div class="chat-pick-eyebrow">✦ Vuily's Pick</div>
+          ${pillsHtml}
+          <div class="chat-event-title">${titleHtml}</div>
+          <div class="chat-event-meta${isAmbiguous ? " meta-stagger" : ""}">
+            ${dateStr ? `<span class="meta-item">📅 ${dateStr}</span>` : ""}
+            ${pick.location ? `<span class="meta-item">📍 ${pick.location}</span>` : ""}
+            ${pick.cost ? `<span class="meta-item">💰 ${pick.cost}</span>` : ""}
+          </div>
+          ${axesSectionHtml}
+          ${ctaHtml}
+        `;
+        if (axes) animateAxes(card.querySelector(".axis-bars"));
+        chatWindow.insertBefore(card, chatTyping);
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+      }
+
+      async function sendChatMessage(userText) {
+        chatHistory.push({ role: "user", content: userText });
+        appendChatMsg("user", userText);
+        chatInput.value = "";
+        chatSend.disabled = true;
+        chatTyping.classList.add("visible");
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+
+        let agentBubble = null;
+        let fullText = "";
+        let toolCardEl = null;
+
+        try {
+          const res = await fetch("/api/agent", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ messages: chatHistory }),
+          });
+          if (!res.ok) throw new Error(`${res.status}`);
+
+          const reader = res.body.getReader();
+          const decoder = new TextDecoder();
+          let buffer = "";
+
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+
+            const parts = buffer.split("\n\n");
+            buffer = parts.pop();
+
+            for (const part of parts) {
+              let eventType = "";
+              let eventData = null;
+              for (const line of part.split("\n")) {
+                if (line.startsWith("event: ")) eventType = line.slice(7).trim();
+                if (line.startsWith("data: ")) {
+                  try { eventData = JSON.parse(line.slice(6)); } catch {}
+                }
+              }
+              if (!eventType || eventData === null) continue;
+
+              if (eventType === "token") {
+                fullText += eventData.text;
+                // Show text minus the trailing PICK line
+                const displayText = fullText.replace(/\nPICK:\{[\s\S]*$/, "").trimEnd();
+                if (!agentBubble) {
+                  chatTyping.classList.remove("visible");
+                  agentBubble = appendChatMsg("agent", displayText);
+                } else {
+                  agentBubble.textContent = displayText;
+                }
+                chatWindow.scrollTop = chatWindow.scrollHeight;
+              }
+
+              if (eventType === "tool_start") {
+                chatTyping.classList.remove("visible");
+                // Clear any intermediate agent text from a prior failed search
+                if (agentBubble) {
+                  agentBubble.closest(".chat-msg")?.remove();
+                  agentBubble = null;
+                  fullText = "";
+                }
+                // Replace previous tool card
+                if (toolCardEl) toolCardEl.remove();
+                toolCardEl = document.createElement("div");
+                toolCardEl.className = "chat-tool-card";
+                toolCardEl.innerHTML = `<div class="chat-tool-spinner"></div><span>Searching SF events…</span>`;
+                chatWindow.insertBefore(toolCardEl, chatTyping);
+                chatWindow.scrollTop = chatWindow.scrollHeight;
+              }
+
+              if (eventType === "tool_result") {
+                if (toolCardEl) {
+                  if (eventData.count > 0) {
+                    toolCardEl.innerHTML = `<span>✦ Found ${eventData.count} matches</span>`;
+                    setTimeout(() => { if (toolCardEl) toolCardEl.style.opacity = "0.45"; }, 2000);
+                  } else {
+                    toolCardEl.remove();
+                    toolCardEl = null;
+                  }
+                }
+                chatTyping.classList.add("visible");
+              }
+
+              if (eventType === "done") {
+                chatTyping.classList.remove("visible");
+                const pickMatch = fullText.match(/\nPICK:(\{[\s\S]*?\})\s*$/);
+                if (pickMatch) {
+                  try {
+                    const pick = JSON.parse(pickMatch[1]);
+                    if (agentBubble) agentBubble.textContent = fullText.replace(/\nPICK:[\s\S]*$/, "").trimEnd();
+                    renderChatEventCard(pick);
+                  } catch {}
+                }
+                const assistantText = fullText.replace(/\nPICK:[\s\S]*$/, "").trimEnd();
+                chatHistory.push({ role: "assistant", content: assistantText });
+              }
+
+              if (eventType === "error") {
+                chatTyping.classList.remove("visible");
+                appendChatMsg("agent", "Something went wrong on my end. Try again in a sec?");
+                console.error("[chat]", eventData.message);
+              }
+            }
+          }
+        } catch (err) {
+          chatTyping.classList.remove("visible");
+          appendChatMsg("agent", "Something went wrong on my end. Try again in a sec?");
+          console.error("[chat]", err);
+        } finally {
+          chatSend.disabled = false;
+          chatInput.focus();
+        }
+      }
+
+      // Quick-reply chips
+      const chatPrompts = document.getElementById("chatPrompts");
+
+      function hideChips() {
+        if (chatPrompts) chatPrompts.remove();
+      }
+
+      document.querySelectorAll(".chat-prompt-chip").forEach(chip => {
+        chip.addEventListener("click", () => {
+          const msg = chip.dataset.msg;
+          hideChips();
+          sendChatMessage(msg);
+        });
+      });
+
+      chatForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const text = chatInput.value.trim();
+        if (!text || chatSend.disabled) return;
+        hideChips();
+        sendChatMessage(text);
+      });
+
+      chatReset.addEventListener("click", () => {
+        chatHistory = [{ role: "assistant", content: AGENT_GREETING }];
+        [...chatWindow.querySelectorAll(".chat-msg, .chat-tool-card, .chat-event-card, .chat-prompts")].forEach(el => el.remove());
+        appendChatMsg("agent", AGENT_GREETING);
+        // Restore chips
+        const chips = document.createElement("div");
+        chips.className = "chat-prompts";
+        chips.id = "chatPrompts";
+        chips.innerHTML = `
+          <button class="chat-prompt-chip" data-msg="Flying solo tonight">Solo adventure</button>
+          <button class="chat-prompt-chip" data-msg="Date night with someone special">Date night</button>
+          <button class="chat-prompt-chip" data-msg="Going out with a small crew">Crew hangout</button>
+          <button class="chat-prompt-chip" data-msg="Something weird and unexpected, surprise me">Weird me out ✦</button>
+        `;
+        chips.querySelectorAll(".chat-prompt-chip").forEach(chip => {
+          chip.addEventListener("click", () => {
+            chip.closest(".chat-prompts").remove();
+            sendChatMessage(chip.dataset.msg);
+          });
+        });
+        chatWindow.insertBefore(chips, chatTyping);
+        chatInput.focus();
+      });
     </script>
   </body>
 </html>

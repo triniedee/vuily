@@ -10,6 +10,12 @@
  *   spontaneity:  planned | drop-in
  *   vibe:         up to 3 of [intellectual, playful, romantic, adventurous, chill, electric, weird, cozy]
  *   uniqueness:   0.0–1.0
+ *   axes:         five numeric scores (0–10)
+ *     formality   — how professional/formal the social norms feel
+ *     energy      — pace and stimulation of the setting
+ *     pressure    — how evaluated/observed attendees feel
+ *     ambiguity   — uncertainty about what to expect or do
+ *     intimacy    — depth of connection the space enables
  */
 
 import fs from "node:fs";
@@ -313,8 +319,22 @@ Return this exact JSON structure:
   "social_shape": "solo" | "duo" | "small_group" | "crowd",
   "spontaneity": "planned" | "drop-in",
   "vibe": [up to 3 from: "intellectual", "playful", "romantic", "adventurous", "chill", "electric", "weird", "cozy"],
-  "uniqueness": 0.0 to 1.0
-}`;
+  "uniqueness": 0.0 to 1.0,
+  "axes": {
+    "formality": 0-10,
+    "energy": 0-10,
+    "pressure": 0-10,
+    "ambiguity": 0-10,
+    "intimacy": 0-10
+  }
+}
+
+Axis guidance:
+- formality: 0=barefoot beach party, 10=black-tie gala
+- energy: 0=silent meditation, 10=front row at a loud concert
+- pressure: 0=anonymous in a crowd, 10=presenting at a job interview
+- ambiguity: 0=scripted tour with clear agenda, 10=no description, just show up
+- intimacy: 0=stadium crowd, 10=one-on-one conversation over wine`;
 
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -325,7 +345,7 @@ Return this exact JSON structure:
     },
     body: JSON.stringify({
       model: "claude-haiku-4-5-20251001",
-      max_tokens: 150,
+      max_tokens: 250,
       messages: [{ role: "user", content: prompt }],
     }),
   });
@@ -376,9 +396,9 @@ async function main() {
   const events = [...apifyEvents, ...newLive];
   console.log(`Fetched ${apifyEvents.length} Apify + ${newLive.length} live = ${events.length} total future events`);
 
-  // Enrich — skip events already cached
-  const toEnrich = events.filter((e) => !cache[e.id]);
-  console.log(`Enriching ${toEnrich.length} new events via Claude Haiku...`);
+  // Enrich — skip events already cached with full 5-axis scores
+  const toEnrich = events.filter((e) => !cache[e.id] || !cache[e.id].axes);
+  console.log(`Enriching ${toEnrich.length} events via Claude Haiku (${events.length - toEnrich.length} already cached)...`);
 
   let enriched = 0;
   let failed = 0;

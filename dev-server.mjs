@@ -157,6 +157,38 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
+  if (url.pathname === "/api/agent") {
+    if (req.method === "OPTIONS") {
+      return send(res, 204, { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "POST", "Access-Control-Allow-Headers": "Content-Type" }, "");
+    }
+    if (req.method !== "POST") {
+      return send(res, 405, { "Content-Type": "application/json" }, JSON.stringify({ error: "Method not allowed" }));
+    }
+    let body = "";
+    req.on("data", chunk => { body += chunk; });
+    req.on("end", async () => {
+      try {
+        const parsed = JSON.parse(body);
+        // Extend real res with Express-like methods so agent.mjs can stream directly
+        res.status = (code) => { res.statusCode = code; return res; };
+        res.json = (data) => {
+          res.setHeader("Content-Type", "application/json");
+          res.setHeader("Access-Control-Allow-Origin", "*");
+          res.end(JSON.stringify(data));
+        };
+        const mockReq = { method: "POST", body: parsed };
+        const { default: agentHandler } = await import(`./api/agent.mjs?t=${Date.now()}`);
+        await agentHandler(mockReq, res);
+      } catch (err) {
+        console.error("[/api/agent]", err);
+        if (!res.headersSent) {
+          send(res, 500, { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }, JSON.stringify({ error: err.message }));
+        }
+      }
+    });
+    return;
+  }
+
   if (url.pathname === "/proxy") {
     const target = url.searchParams.get("url");
     if (!target) {

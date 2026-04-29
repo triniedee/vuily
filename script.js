@@ -1340,57 +1340,124 @@ function renderDeck() {
     });
 }
 
+const CARD_AXIS_DEFS = [
+  { key: "energy",    label: "Energy",    color: "#ff4f8b" },
+  { key: "intimacy",  label: "Intimacy",  color: "#4d8dff" },
+  { key: "ambiguity", label: "Ambiguity", color: "#0eb8a8" },
+  { key: "pressure",  label: "Pressure",  color: "#ffb800" },
+  { key: "formality", label: "Formal",    color: "#5f6388" },
+];
+
+function computeCardTheme(axes) {
+  if (!axes) return { cssClass: "", ctaText: "Reserve" };
+  const energy = axes.energy ?? 5;
+  const intimacy = axes.intimacy ?? 5;
+  const formality = axes.formality ?? 5;
+  if (energy >= 7 && formality <= 5) return { cssClass: "card-electric card-dark", ctaText: "I'm in — let's go" };
+  if (intimacy >= 6 && energy <= 5)  return { cssClass: "card-intimate card-dark", ctaText: "I'm interested" };
+  if (formality >= 7)                return { cssClass: "card-formal card-dark",   ctaText: "See details" };
+  return { cssClass: "", ctaText: "Reserve" };
+}
+
+function topAxisPills(axes) {
+  if (!axes) return "";
+  const pills = CARD_AXIS_DEFS
+    .filter(d => axes[d.key] !== undefined)
+    .sort((a, b) => Math.abs((axes[b.key] ?? 5) - 5) - Math.abs((axes[a.key] ?? 5) - 5))
+    .slice(0, 3)
+    .map(d => `<span class="score-pill" style="background:${d.color}22;color:${d.color};border:1.5px solid ${d.color}44">${d.label} ${Math.round(axes[d.key])}</span>`)
+    .join("");
+  return pills ? `<div class="score-pills">${pills}</div>` : "";
+}
+
+function cardAxisBarsHtml(axes) {
+  if (!axes) return "";
+  const rows = CARD_AXIS_DEFS
+    .filter(d => axes[d.key] !== undefined)
+    .map(d => {
+      const pct = Math.min(100, Math.max(0, (axes[d.key] ?? 0) * 10));
+      return `<div class="card-axis-row">
+        <span class="card-axis-label">${d.label}</span>
+        <div class="card-axis-track"><div class="card-axis-fill" style="background:${d.color}" data-pct="${pct}"></div></div>
+        <span class="card-axis-val">${Math.round(axes[d.key])}</span>
+      </div>`;
+    }).join("");
+  return rows ? `<div class="card-axis-section">
+    <p class="card-axis-section-header">✦ Experience Profile</p>
+    <div class="card-axis-bars">${rows}</div>
+  </div>` : "";
+}
+
+function animateCardAxes(card) {
+  requestAnimationFrame(() => {
+    card.querySelectorAll(".card-axis-fill").forEach((fill, i) => {
+      setTimeout(() => { fill.style.width = fill.dataset.pct + "%"; }, 60 + i * 80);
+    });
+  });
+}
+
 function createCard(event, depth) {
   const card = document.createElement("article");
   const categorySlug = String(event.category || "Cultural")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-");
-  card.className = `event-card category-${categorySlug}`;
+  const axes = event.signature?.axes ?? null;
+  const theme = computeCardTheme(axes);
+  card.className = `event-card category-${categorySlug}${theme.cssClass ? " " + theme.cssClass : ""}`;
   card.dataset.id = event.id;
   card.style.transform = `translateY(${depth * 7}px) scale(${1 - depth * 0.03})`;
   card.style.zIndex = `${10 - depth}`;
 
+  const url = event.sourceUrl || event.inviteUrl || "#";
   const whenLabel = getEventWhenLabel(event, { includeWeekday: true });
+
+  const pillsHtml = axes
+    ? topAxisPills(axes)
+    : `<div class="event-meta">
+        <span class="pill category-pill category-${categorySlug}">
+          <span class="category-dot" aria-hidden="true"></span>
+          ${event.category}
+        </span>
+        <span class="pill cost-${event.cost}">${costLabel(event.cost)}</span>
+      </div>`;
+
+  const vibes = event.signature?.vibe;
+  const vibeLine = vibes?.length
+    ? `<p class="card-vibe-line">✦ ${vibes.join(" · ")}</p>`
+    : "";
 
   card.innerHTML = `
     <span class="swipe-tag pass">PASS</span>
     <span class="swipe-tag reserve">RESERVE</span>
-    <h3>
-      <a href="${event.sourceUrl || event.inviteUrl || "#"}" target="_blank" rel="noopener noreferrer">
-        ${event.title}
-      </a>
-    </h3>
-    <div class="event-meta">
-      <span class="pill category-pill category-${categorySlug}">
-        <span class="category-dot" aria-hidden="true"></span>
-        ${event.category}
-      </span>
-      <span class="pill cost-${event.cost}">${costLabel(event.cost)}</span>
+    <p class="card-source">${event.source || "Vuily"}</p>
+    <h3><a href="${url}" target="_blank" rel="noopener noreferrer">${event.title}</a></h3>
+    ${pillsHtml}
+    <div class="card-meta">
+      ${whenLabel ? `<span>📅 ${whenLabel}</span>` : ""}
+      ${event.location ? `<span>📍 ${event.location}</span>` : ""}
+      ${event.cost ? `<span>${costLabel(event.cost)}</span>` : ""}
     </div>
-    <p><strong>When:</strong> ${whenLabel}</p>
-    <p><strong>Where:</strong> ${event.location}</p>
-    ${
-      event.city || event["Urban Classification"] || event.County
-        ? `<p><strong>City:</strong> ${event.city || event.cityName || "N/A"}${
-            event["Urban Classification"]
-              ? ` • <strong>Urban Classification:</strong> ${event["Urban Classification"]}`
-              : ""
-          }${event.County ? ` • <strong>County:</strong> ${event.County}` : ""}</p>`
-        : ""
-    }
-    <p class="event-source">
-      <strong>Source:</strong>
-      <a href="${event.sourceUrl || event.inviteUrl || "#"}" target="_blank" rel="noopener noreferrer">
-        ${event.source || "Funcheap"}
-      </a>
-    </p>
-    <p class="event-desc">${event.description}</p>
+    ${vibeLine}
+    ${cardAxisBarsHtml(axes)}
+    <div class="card-inline-actions">
+      <button class="card-cta-btn" type="button">${theme.ctaText || "Reserve"}</button>
+      <button class="card-skip-btn" type="button">Try another</button>
+    </div>
   `;
 
+  if (axes) animateCardAxes(card);
+
+  card.querySelector(".card-cta-btn").addEventListener("click", e => {
+    e.stopPropagation();
+    swipeTopCard("right");
+  });
+  card.querySelector(".card-skip-btn").addEventListener("click", e => {
+    e.stopPropagation();
+    swipeTopCard("left");
+  });
+
   card.addEventListener("click", (e) => {
-    if (e.target instanceof Element && e.target.closest("a")) {
-      return;
-    }
+    if (e.target instanceof Element && e.target.closest("a, button")) return;
     openEventModal(event);
   });
 
@@ -3565,6 +3632,25 @@ async function loadEvents() {
     mapped = enrichEventsWithCityLookup(mapped);
 
     state.allEvents = dedupeEvents(mapped);
+
+    // Merge enriched signatures (axes + vibe) by normalized title
+    try {
+      const enrichedResp = await fetch("/data/enriched-events.json");
+      if (enrichedResp.ok) {
+        const enriched = await enrichedResp.json();
+        const normalize = t => String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+        const sigMap = new Map(enriched.map(e => [normalize(e.title), e.signature]));
+        for (const event of state.allEvents) {
+          const sig = sigMap.get(normalize(event.title));
+          if (sig) event.signature = sig;
+        }
+        const matched = state.allEvents.filter(e => e.signature?.axes).length;
+        console.warn(`[enrich] merged signatures: ${matched}/${state.allEvents.length} events have axes`);
+      }
+    } catch (enrichErr) {
+      console.warn("[enrich] failed to load signatures:", enrichErr.message);
+    }
+
     const debugTitle = "Drive-In Movie Night in Concord & San Jose";
     const debugEvent = state.allEvents.find((event) =>
       String(event.title || "").toLowerCase().includes(debugTitle.toLowerCase())
