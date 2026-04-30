@@ -41,7 +41,14 @@ const DATASETS = [
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function stripHtml(str) {
-  return String(str || "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
+  return String(str || "")
+    .replace(/<[^>]*>/g, "")
+    .replace(/&#(\d+);/g, (_, c) => String.fromCharCode(parseInt(c, 10)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, c) => String.fromCharCode(parseInt(c, 16)))
+    .replace(/&amp;/gi, "&").replace(/&quot;/gi, '"')
+    .replace(/&apos;|&#39;/gi, "'").replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">").replace(/&nbsp;/gi, " ")
+    .replace(/\s+/g, " ").trim();
 }
 
 async function fetchJson(url) {

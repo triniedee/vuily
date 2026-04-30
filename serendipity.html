@@ -1384,6 +1384,13 @@
         { title: "Salsa Dancing Under the Stars", category: "Social", cost: "Free", date: "Friday, 8 PM", location: "Dolores Park", source: "Vuily", url: "" },
       ];
 
+      function decodeHtmlEntities(str) {
+        const s = String(str || "");
+        if (!s) return "";
+        const doc = new DOMParser().parseFromString(s, "text/html");
+        return doc.documentElement.textContent || "";
+      }
+
       // ─── Category → CSS slug ─────────────────────────────────────────────────
       function catSlug(cat) {
         const c = String(cat || "").toLowerCase();
@@ -1530,7 +1537,7 @@
             ${where ? `<span><span class="meta-icon">📍</span> ${where}</span>` : ""}
           `;
 
-          document.getElementById("resultDesc").textContent = event.description || "";
+          document.getElementById("resultDesc").textContent = decodeHtmlEntities(event.description || "");
 
           // Why this event was picked
           const whyEl = document.getElementById("resultWhy");
@@ -1796,7 +1803,7 @@
                 const date = item.pubDate ? new Date(item.pubDate) : null;
                 if (!date || isNaN(date.getTime()) || date < now) continue;
                 const id = `funcheap-${(item.link || title).toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
-                liveEvents.push({ id, title, date: date.toISOString(), url: item.link || "", location: "San Francisco", source: "SF Funcheap", cost: "Free", description: item.description?.replace(/<[^>]*>/g, "").slice(0, 200) || "" });
+                liveEvents.push({ id, title, date: date.toISOString(), url: item.link || "", location: "San Francisco", source: "SF Funcheap", cost: "Free", description: decodeHtmlEntities((item.description || "").replace(/<[^>]*>/g, "")).slice(0, 200) });
               }
               console.log(`[serendipity] funcheap: ${items.length} items`);
             }).catch(e => console.warn("[serendipity] funcheap failed", e)),
