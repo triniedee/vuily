@@ -10751,34 +10751,6 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-real-talk-real-friends-events-314328695-",
-    "title": "Real Talk, Real Friends",
-    "date": "2026-04-29T23:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/real-talk-real-friends/events/314328695/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "An honest space to connect, share, and grow together. Life is full of ups and downs, and sometimes what we need most is a place to just be real—with ourselves and others. This event is all about creating genuine connections through open, supportive, and meaningful conversations. Whether you're going through a tough time, looking for authentic friendships, or simply want to talk about things that m",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "chill",
-        "intellectual",
-        "cozy"
-      ],
-      "uniqueness": 0.65,
-      "axes": {
-        "formality": 2,
-        "energy": 4,
-        "pressure": 5,
-        "ambiguity": 3,
-        "intimacy": 8
-      }
-    }
-  },
-  {
     "id": "meetup-https-www-meetup-com-gist-irl-events-314143262-",
     "title": "20s & 30s Meetup of Young Professionals & Downtown First Thursdays block party",
     "date": "2026-05-08T01:00:00.000Z",
@@ -10942,6 +10914,285 @@
         "pressure": 6,
         "ambiguity": 3,
         "intimacy": 8
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-bay-beats-concert-bandshell-sf-",
+    "title": "Bay Beats Concert at the Bandshell (SF)",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/bay-beats-concert-bandshell-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Spread your wings and fly away on tunes as Bay Beats takes over the Bandshell for their second annual showcase. Stop by and enjoy live music performances from local artists, dancing, food trucks, games and tabling by partners. Here&#8217;s the sweet lineup: 2:00 &#8211; Noelle &#38; ... The post Bay Beats Concert at the Bandshell (SF) appeared first on Funcheap.",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "chill"
+      ],
+      "uniqueness": 0.4,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-dance-1699-free-country-dancing-sf-",
+    "title": "Dance Like It&#8217;s 1699: Free Country Dancing (SF)",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/dance-1699-free-country-dancing-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Philharmonia Baroque Orchestra &#38; Chorale and Dance Through Time present Dance Like It&#8217;s 1699: Free Country Dancing with Live Music. The free 90-minute workshop takes place Saturday, May 2, 2026 at 2:00 PM on the stage of the Blue Shield of California Theater at Yerba ... The post Dance Like It&#8217;s 1699: Free Country Dancing (SF) appeared first on Funcheap.",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 6,
+        "energy": 5,
+        "pressure": 3,
+        "ambiguity": 2,
+        "intimacy": 5
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-free-acoustic-concerts-italian-60s70s-popjazz-sf-",
+    "title": "Free Acoustic Concerts: Italian 60s+70s Pop/Jazz (SF)",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/free-acoustic-concerts-italian-60s70s-popjazz-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Hayes Promenade presents The Mina Project Acoustic concert series, a curated sound if Italian 60&#8217;s &#38; 70&#8217;s pop / jazz with vocalist Anne-Marie Russo. A mix of vintage and modernist cool! Come celebrate Spring and the coming of Summer outside in Hayes Valley. Free! From ... The post Free Acoustic Concerts: Italian 60s+70s Pop/Jazz (SF) appeared first on Funcheap.",
+    "signature": {
+      "energy": "calm",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "romantic",
+        "intellectual"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 4,
+        "energy": 3,
+        "pressure": 1,
+        "ambiguity": 2,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-og-classic-mission-mural-walk-sf-international-arts-fest-",
+    "title": "&#8220;The O.G. Classic Mission Mural Walk&#8221; (SF International Arts Fest) - $20",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/og-classic-mission-mural-walk-sf-international-arts-fest/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Precita Eyes Muralists Association, Inc. presents &#8220;The O.G. Classic Mission Mural Walk&#8221; at the San Francisco International Arts Festival Precita Eyes tours are guided by working muralists who narrate the murals and answer questions about the process, different techniques, and the Mission neighborhood. Each tour is unique: ... The post &#8220;The O.G. Classic Mission Mural Walk&#8221; (",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "chill"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 3,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 2,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-magic-show-magic-dan-sf-",
+    "title": "Magic Show with Magic Dan (SF)",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/magic-show-magic-dan-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Enjoy a funny and engaging magic show with Magic Dan. Magic Dan is celebrating his 20th year as a professional magician! In that period, he has entertained thousands of children of all ages in libraries, pre-schools, elementary schools and parties. The post Magic Show with Magic Dan (SF) appeared first on Funcheap.",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "chill",
+        "electric"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 3,
+        "energy": 8,
+        "pressure": 2,
+        "ambiguity": 1,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-free-storytelling-strong-bamboo-3-marsh-sf-",
+    "title": "Free Storytelling: Strong Like Bamboo 3 at The Marsh (SF)",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/free-storytelling-strong-bamboo-3-marsh-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Eth-Noh-Tec presents &#8220;STRONG LIKE BAMBOO 3: Stories of Resilience from Across America&#8221; at the San Francisco International Arts Festival Laura Simms, weaving her personal story with an ancient Jewish folktale. Johnny Moses, bringing humor looking back at the challenges he faced as a Native American. Robert Kikuchi-Yngojo, starts ... The post Free Storytelling: Strong Like Bamboo 3 at Th",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill",
+        "cozy"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 6,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 2,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-strong-bamboo-free-storytelling-night-sf-",
+    "title": "&#8220;Strong Like Bamboo&#8221; Free Storytelling Night (SF)",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/strong-bamboo-free-storytelling-night-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Strong Like Bamboo brings together seven American storytellers of multiple ethnic and cultural origins. Their stories of racism, courage and wisdom will inspire, bring together and humanize audiences as we learn from each other and know that we are not alone. As allies, we know ... The post &#8220;Strong Like Bamboo&#8221; Free Storytelling Night (SF) appeared first on Funcheap.",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "cozy",
+        "chill"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 4,
+        "energy": 5,
+        "pressure": 3,
+        "ambiguity": 2,
+        "intimacy": 7
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-st-james-park-book-talk-john-doll-san-jose-",
+    "title": "St. James Park: A Book Talk with John Doll (San Jose) - $5",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/st-james-park-book-talk-john-doll-san-jose/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Set in the Great Depression, St. James Park is a fast-paced, cinematic novel rooted in San Jose history. Based on actual events of the 1933 Brooke Hart kidnapping, the novel is a portrait of San Jose’s labor unrest, government corruption and anti-immigrant racism. The book ... The post St. James Park: A Book Talk with John Doll (San Jose) appeared first on Funcheap.",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "cozy"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 6,
+        "energy": 4,
+        "pressure": 3,
+        "ambiguity": 2,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-2026-morgan-hill-plein-air-paint-live-painting-event-",
+    "title": "2026 Morgan Hill Plein Air Paint Out Live Painting Event",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/2026-morgan-hill-plein-air-paint-live-painting-event/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Watch a dozen professional artists painting live at Cottage Creek Vineyards, accompanied by live music! This event is free and open to the public, children over the age of 12 and well behaved pets are welcome. When painting outdoors, artists can capture an emotional quality ... The post 2026 Morgan Hill Plein Air Paint Out Live Painting Event appeared first on Funcheap.",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "intellectual",
+        "romantic"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 3,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "funcheap-https-sf-funcheap-com-saturday-morning-specialat-sf-international-arts-festival-",
+    "title": "&#8220;Saturday Morning Special&#8221;at SF International Arts Festival - $20",
+    "date": "2026-05-02T07:00:00.000Z",
+    "url": "https://sf.funcheap.com/saturday-morning-specialat-sf-international-arts-festival/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "Precita Eyes Muralists Association, Inc. presents &#8220;Saturday Morning Special&#8221; at the San Francisco International Arts Festival &#160; Precita Eyes tours are guided by working muralists who narrate the murals and answer questions about the process, different techniques, and the Mission neighborhood. For the Saturday Morning Special, Carmela ... The post &#8220;Saturday Morning Special&#8",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "chill"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 3,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 2,
+        "intimacy": 6
       }
     }
   }

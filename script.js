@@ -1376,21 +1376,21 @@ function cardAxisBarsHtml(axes) {
     .filter(d => axes[d.key] !== undefined)
     .map(d => {
       const pct = Math.min(100, Math.max(0, (axes[d.key] ?? 0) * 10));
-      return `<div class="card-axis-row">
-        <span class="card-axis-label">${d.label}</span>
-        <div class="card-axis-track"><div class="card-axis-fill" style="background:${d.color}" data-pct="${pct}"></div></div>
-        <span class="card-axis-val">${Math.round(axes[d.key])}</span>
+      return `<div class="axis-row">
+        <span class="axis-label">${d.label}</span>
+        <div class="axis-track"><div class="axis-fill" style="background:${d.color}" data-pct="${pct}"></div></div>
+        <span class="axis-val">${Math.round(axes[d.key])}</span>
       </div>`;
     }).join("");
-  return rows ? `<div class="card-axis-section">
-    <p class="card-axis-section-header">✦ Experience Profile</p>
-    <div class="card-axis-bars">${rows}</div>
+  return rows ? `<div class="axis-section">
+    <p class="axis-section-label">✦ Experience profile</p>
+    <div class="axis-bars">${rows}</div>
   </div>` : "";
 }
 
 function animateCardAxes(card) {
   requestAnimationFrame(() => {
-    card.querySelectorAll(".card-axis-fill").forEach((fill, i) => {
+    card.querySelectorAll(".axis-fill").forEach((fill, i) => {
       setTimeout(() => { fill.style.width = fill.dataset.pct + "%"; }, 60 + i * 80);
     });
   });
@@ -1398,12 +1398,9 @@ function animateCardAxes(card) {
 
 function createCard(event, depth) {
   const card = document.createElement("article");
-  const categorySlug = String(event.category || "Cultural")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-");
   const axes = event.signature?.axes ?? null;
   const theme = computeCardTheme(axes);
-  card.className = `event-card category-${categorySlug}${theme.cssClass ? " " + theme.cssClass : ""}`;
+  card.className = `event-card${theme.cssClass ? " " + theme.cssClass : ""}`;
   card.dataset.id = event.id;
   card.style.transform = `translateY(${depth * 7}px) scale(${1 - depth * 0.03})`;
   card.style.zIndex = `${10 - depth}`;
@@ -1413,51 +1410,36 @@ function createCard(event, depth) {
 
   const pillsHtml = axes
     ? topAxisPills(axes)
-    : `<div class="event-meta">
-        <span class="pill category-pill category-${categorySlug}">
-          <span class="category-dot" aria-hidden="true"></span>
-          ${event.category}
-        </span>
-        <span class="pill cost-${event.cost}">${costLabel(event.cost)}</span>
-      </div>`;
+    : `<span class="result-pill pill-category">${event.category || "Experience"}</span>
+       <span class="result-pill pill-cost">${costLabel(event.cost)}</span>`;
 
   const vibes = event.signature?.vibe;
-  const vibeLine = vibes?.length
-    ? `<p class="card-vibe-line">✦ ${vibes.join(" · ")}</p>`
-    : "";
+  const whyText = vibes?.length ? `✦ ${vibes.join(" · ")}` : "";
+
+  const axisHtml = cardAxisBarsHtml(axes);
 
   card.innerHTML = `
     <span class="swipe-tag pass">PASS</span>
     <span class="swipe-tag reserve">RESERVE</span>
-    <p class="card-source">${event.source || "Vuily"}</p>
-    <h3><a href="${url}" target="_blank" rel="noopener noreferrer">${event.title}</a></h3>
-    ${pillsHtml}
-    <div class="card-meta">
-      ${whenLabel ? `<span>📅 ${whenLabel}</span>` : ""}
-      ${event.location ? `<span>📍 ${event.location}</span>` : ""}
-      ${event.cost ? `<span>${costLabel(event.cost)}</span>` : ""}
+    <p class="result-source">${event.source || "Vuily"}</p>
+    <h2 class="result-title"><a href="${url}" target="_blank" rel="noopener noreferrer">${event.title}</a></h2>
+    <div class="result-pills">${pillsHtml}</div>
+    <div class="result-meta">
+      ${whenLabel ? `<span><span class="meta-icon">📅</span> ${whenLabel}</span>` : ""}
+      ${event.location ? `<span><span class="meta-icon">📍</span> ${event.location}</span>` : ""}
     </div>
-    ${vibeLine}
-    ${cardAxisBarsHtml(axes)}
-    <div class="card-inline-actions">
-      <button class="card-cta-btn" type="button">${theme.ctaText || "Reserve"}</button>
-      <button class="card-skip-btn" type="button">Try another</button>
+    <p class="result-desc">${event.description || ""}</p>
+    ${whyText ? `<p class="result-why">${whyText}</p>` : ""}
+    ${axisHtml}
+    <div class="result-actions">
+      <a class="btn-attend" href="${url}" target="_blank" rel="noopener noreferrer">${theme.ctaText || "See details"}</a>
     </div>
   `;
 
   if (axes) animateCardAxes(card);
 
-  card.querySelector(".card-cta-btn").addEventListener("click", e => {
-    e.stopPropagation();
-    swipeTopCard("right");
-  });
-  card.querySelector(".card-skip-btn").addEventListener("click", e => {
-    e.stopPropagation();
-    swipeTopCard("left");
-  });
-
   card.addEventListener("click", (e) => {
-    if (e.target instanceof Element && e.target.closest("a, button")) return;
+    if (e.target instanceof Element && e.target.closest("a")) return;
     openEventModal(event);
   });
 
@@ -3627,7 +3609,7 @@ async function loadEvents() {
       console.warn("[apify-google] error", err);
     }
 
-    let mapped = [...listingMapped, ...feedMapped, ...nineteenHzMapped, ...poshMapped, ...meetupMapped, ...eventbriteMapped, ...timeoutMapped, ...apifyEventbriteMapped, ...apifyMeetupMapped, ...apifyLumaMapped, ...apifyGoogleMapped];
+    let mapped = [...listingMapped, ...feedMapped, ...nineteenHzMapped, ...poshMapped, ...meetupMapped, ...eventbriteMapped, ...timeoutMapped, ...apifyEventbriteMapped, ...apifyMeetupMapped, ...apifyGoogleMapped];
     mapped = await enrichFuncheapDates(mapped);
     mapped = enrichEventsWithCityLookup(mapped);
 
@@ -3638,14 +3620,27 @@ async function loadEvents() {
       const enrichedResp = await fetch("/data/enriched-events.json");
       if (enrichedResp.ok) {
         const enriched = await enrichedResp.json();
-        const normalize = t => String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-        const sigMap = new Map(enriched.map(e => [normalize(e.title), e.signature]));
+        const normalizeTitle = t => {
+          let s = String(t || "");
+          s = s.replace(/&#(\d+);/g, (_, code) => String.fromCharCode(parseInt(code)));
+          s = s.replace(/&amp;/gi, "&").replace(/&quot;/gi, '"').replace(/&apos;|&#39;/gi, "'").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">");
+          return s.toLowerCase()
+            .replace(/^\d{1,2}\/\d{1,2}\/\d{2,4}:\s*/, "")
+            .replace(/\s*-\s*free\s*$/, "")
+            .replace(/[^a-z0-9]+/g, " ").trim();
+        };
+        const sigByUrl   = new Map(enriched.filter(e => e.url).map(e => [e.url.trim(), e.signature]));
+        const sigByTitle = new Map(enriched.map(e => [normalizeTitle(e.title), e.signature]));
         for (const event of state.allEvents) {
-          const sig = sigMap.get(normalize(event.title));
+          const url = (event.sourceUrl || event.inviteUrl || "").trim();
+          const sig = (url && sigByUrl.get(url)) || sigByTitle.get(normalizeTitle(event.title));
           if (sig) event.signature = sig;
         }
         const matched = state.allEvents.filter(e => e.signature?.axes).length;
+        const funcheapMatched = state.allEvents.filter(e => e.source === "SF Funcheap" && e.signature?.axes).length;
+        const funcheapTotal = state.allEvents.filter(e => e.source === "SF Funcheap").length;
         console.warn(`[enrich] merged signatures: ${matched}/${state.allEvents.length} events have axes`);
+        console.warn(`[enrich] funcheap: ${funcheapMatched}/${funcheapTotal} matched`);
       }
     } catch (enrichErr) {
       console.warn("[enrich] failed to load signatures:", enrichErr.message);

@@ -211,16 +211,25 @@ async function fetchLiveSources() {
   const BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 
   await Promise.allSettled([
-    // SF Funcheap RSS
-    fetch("https://sf.funcheap.com/feed/", { headers: { "User-Agent": BROWSER_UA } })
+    // SF Funcheap RSS (via Feedburner to avoid redirect issues)
+    fetch("https://feeds.feedburner.com/funcheapsf_recent_added_events/", { headers: { "User-Agent": BROWSER_UA } })
       .then(r => r.ok ? r.text() : "")
       .then(xml => {
         const items = parseRss(xml);
         let count = 0;
         for (const item of items) {
-          const title = stripHtml(item.title || "").trim();
-          if (!title) continue;
-          const date = item.pubDate ? new Date(item.pubDate) : null;
+          const rawTitle = stripHtml(item.title || "").trim();
+          if (!rawTitle) continue;
+          // Funcheap titles embed event date: "5/2/26: Event Name - FREE"
+          const dateMatch = rawTitle.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4}):/);
+          let date = null;
+          let title = rawTitle;
+          if (dateMatch) {
+            date = new Date(dateMatch[1]);
+            title = rawTitle.slice(dateMatch[0].length).trim().replace(/\s*-\s*FREE\s*$/i, "").trim();
+          } else {
+            date = item.pubDate ? new Date(item.pubDate) : null;
+          }
           if (!date || isNaN(date.getTime()) || date < now) continue;
           const id = `funcheap-${(item.link || title).toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 80)}`;
           events.push({ id, title, date: date.toISOString(), url: item.link || "", location: "San Francisco", source: "SF Funcheap", cost: "Free", description: stripHtml(item.description || "").slice(0, 400) });

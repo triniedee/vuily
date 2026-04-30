@@ -677,8 +677,8 @@ select {
 }
 
 .deck-wrap {
-  height: 520px;
-  min-height: 520px;
+  height: 560px;
+  min-height: 560px;
   overflow: hidden;
 }
 
@@ -693,10 +693,12 @@ select {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  padding: 1rem;
-  border: 1px solid var(--line);
-  background: linear-gradient(180deg, #ffffff 0%, #fef6ff 100%);
-  box-shadow: 0 14px 30px rgba(68, 72, 141, 0.18);
+  padding: 1.8rem 1.8rem 1.6rem;
+  border: 1.5px solid rgba(31,34,64,0.1);
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 16px 48px rgba(64,53,131,0.12);
   overflow-y: auto;
   overflow-x: hidden;
   touch-action: pan-y;
@@ -704,39 +706,111 @@ select {
   transition: transform 180ms ease, opacity 180ms ease;
 }
 
-.event-card.category-music {
-  background: linear-gradient(160deg, #fff1f6 0%, #ffe7f2 100%);
+/* Shared result-card styles (mirrors serendipity.html) */
+.result-source {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
 }
-
-.event-card.category-arts {
-  background: linear-gradient(160deg, #fff8e8 0%, #fff1d6 100%);
-}
-
-.event-card.category-outdoors {
-  background: linear-gradient(160deg, #f0fff4 0%, #e6ffe1 100%);
-}
-
-.event-card.category-cultural {
-  background: linear-gradient(160deg, #eff4ff 0%, #e8eeff 100%);
-}
-
-.event-card.category-networking {
-  background: linear-gradient(160deg, #f0f9ff 0%, #e6f4ff 100%);
-}
-
-.event-card h3 {
+.result-title {
   font-family: "Baloo 2", sans-serif;
-  margin: 0 0 0.3rem;
-  font-size: 1.4rem;
-  line-height: 1.1;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.3px;
 }
+.result-title a { color: inherit; text-decoration: none; }
+.result-title a:hover { text-decoration: underline; }
+.result-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+.result-pill { font-size: 0.75rem; font-weight: 800; padding: 0.28rem 0.7rem; border-radius: 999px; }
+.pill-category { background: #ffe0ee; color: var(--hot-pink); }
+.pill-cost { background: rgba(31,34,64,0.07); color: var(--muted); }
+.result-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.86rem;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.result-meta span { display: flex; align-items: baseline; gap: 0.4rem; }
+.result-meta .meta-icon { font-size: 0.9rem; }
+.result-why {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
+.result-desc {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.result-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: auto; padding-top: 1rem; }
+.btn-attend {
+  background: linear-gradient(90deg, var(--hot-pink), var(--sky));
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.18s, transform 0.14s;
+}
+.btn-attend:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn-next {
+  background: rgba(31,34,64,0.06);
+  color: var(--text);
+  border: 1.5px solid rgba(31,34,64,0.12);
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s;
+}
+.btn-next:hover { background: rgba(31,34,64,0.1); border-color: rgba(31,34,64,0.2); }
 
-.event-card h3 a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  pointer-events: auto;
-}
+/* Axis bars (shared with serendipity) */
+.axis-section { margin-bottom: 1rem; padding-top: 0.7rem; border-top: 1px solid rgba(31,34,64,0.07); }
+.axis-section-label { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); opacity: 0.65; margin-bottom: 0.45rem; }
+.axis-bars { display: flex; flex-direction: column; gap: 0.26rem; }
+.axis-row { display: flex; align-items: center; gap: 0.45rem; }
+.axis-label { font-size: 0.63rem; font-weight: 700; color: var(--muted); width: 56px; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.04em; }
+.axis-track { flex: 1; height: 3px; background: rgba(31,34,64,0.08); border-radius: 999px; overflow: hidden; }
+.axis-fill { height: 100%; width: 0; border-radius: 999px; transition: width 0.7s ease; }
+.axis-val { font-size: 0.62rem; font-weight: 800; color: var(--muted); width: 14px; text-align: right; flex-shrink: 0; }
+
+/* Dark theme overrides */
+.card-dark .result-source { opacity: 0.45; color: #fff; }
+.card-dark .result-title a { color: #fff; }
+.card-dark .result-meta { color: rgba(255,255,255,0.45) !important; }
+.card-dark .result-desc { color: rgba(255,255,255,0.65) !important; }
+.card-dark .result-why { color: rgba(255,255,255,0.4) !important; }
+.card-dark .axis-section { border-top-color: rgba(255,255,255,0.1); }
+.card-dark .axis-section-label { color: rgba(255,255,255,0.35); opacity: 1; }
+.card-dark .axis-label { color: rgba(255,255,255,0.4); }
+.card-dark .axis-track { background: rgba(255,255,255,0.1); }
+.card-dark .axis-val { color: rgba(255,255,255,0.4); }
+.card-dark .btn-next { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); }
+.card-dark .btn-next:hover { background: rgba(255,255,255,0.16); }
 
 .event-meta {
   display: flex;
@@ -804,29 +878,6 @@ select {
   background: #ffd9ea;
 }
 
-.event-card p {
-  color: var(--muted);
-  margin: 0.15rem 0;
-}
-
-.event-desc {
-  margin-top: 0.7rem;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
-.event-source {
-  margin-top: 2.2em;
-  font-size: 0.33em;
-  line-height: 1.2;
-}
-
-.event-source a {
-  color: inherit;
-  text-decoration: underline;
-}
 
 /* Score-driven card themes */
 .event-card.card-electric { background: linear-gradient(160deg, #0d2816 0%, #0f3320 100%) !important; border-color: transparent !important; box-shadow: 0 16px 48px rgba(0,0,0,0.45) !important; color: #fff !important; }
@@ -1424,7 +1475,7 @@ body.page-account-access .week-calendar-wrap {
   }
 
   .deck-wrap {
-    height: 480px;
-    min-height: 480px;
+    height: 520px;
+    min-height: 520px;
   }
 }
