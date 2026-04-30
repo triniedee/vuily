@@ -111,22 +111,22 @@
     }
   },
   {
-    "id": "19hz-https-www-instagram-com-p-dxcsbbumxro-img-index-1",
-    "title": "Shuffle & Flow Meetup w/Mikey Rocks",
-    "date": "2026-04-30T00:00:00.000Z",
-    "url": "https://www.instagram.com/p/DXCsBBUmXrO/?img_index=1",
-    "location": "The Ziggurat (Sacramento)multigenre EDM",
+    "id": "19hz-https-www-instagram-com-p-dxqldhqladg-",
+    "title": "House Night",
+    "date": "2026-04-29T00:00:00.000Z",
+    "url": "https://www.instagram.com/p/DXqldHQlADG/",
+    "location": "Question Mark Bar (San Francisco)tech house, afro house, open decks",
     "source": "19hz",
     "cost": "Check site",
-    "description": "free | All ages",
+    "description": "free | 21+",
     "signature": {
       "energy": "high",
       "social_shape": "crowd",
       "spontaneity": "drop-in",
       "vibe": [
         "electric",
-        "playful",
-        "adventurous"
+        "adventurous",
+        "playful"
       ],
       "uniqueness": 0.65,
       "axes": {
@@ -139,9 +139,65 @@
     }
   },
   {
+    "id": "19hz-https-ra-co-events-2407560",
+    "title": "Takeover Wednesdays: Industry Night v DJ Izzy Wise",
+    "date": "2026-04-29T00:00:00.000Z",
+    "url": "https://ra.co/events/2407560",
+    "location": "Cigar Bar & Grill (San Francisco)disco, funk",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "free | 21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "playful",
+        "adventurous"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 2,
+        "energy": 9,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "19hz-https-www-ticketmaster-com-event-1c006358c763a756",
+    "title": "Bob Moses, Cannons",
+    "date": "2026-04-29T00:00:00.000Z",
+    "url": "https://www.ticketmaster.com/event/1C006358C763A756",
+    "location": "Channel 24 (Sacramento)house",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "$71+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "electric",
+        "chill",
+        "adventurous"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 3,
+        "energy": 8,
+        "pressure": 2,
+        "ambiguity": 2,
+        "intimacy": 2
+      }
+    }
+  },
+  {
     "id": "19hz-https-www-sfballet-org-productions-mere-mortals-",
-    "title": "Floating Points Live: Mere Mortals w/San Francisco Ballet Orchestra, Brown Angel",
-    "date": "2026-04-30T00:00:00.000Z",
+    "title": "Floating Points Live: Mere Mortals w/San Francisco Ballet Orchestra, Mozhgan",
+    "date": "2026-04-29T00:00:00.000Z",
     "url": "https://www.sfballet.org/productions/mere-mortals/",
     "location": "War Memorial Opera House (San Francisco)classical, ambient",
     "source": "19hz",
@@ -163,6 +219,146 @@
         "pressure": 3,
         "ambiguity": 2,
         "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "19hz-https-www-facebook-com-events-1861833481172631-",
+    "title": "Playland w/Guest DJ: Daemon Chadeau",
+    "date": "2026-04-29T00:00:00.000Z",
+    "url": "https://www.facebook.com/events/1861833481172631/",
+    "location": "Cat Club (San Francisco)goth, industrial, EBM, dark electro",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "$10-20 | 21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "weird",
+        "playful"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 3,
+        "energy": 9,
+        "pressure": 2,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "19hz-https-theticketing-co-e-summitsessionsprepartysc-open-true",
+    "title": "Summit Sessions: Schmux, Flowta, Labrat, Path 2",
+    "date": "2026-04-29T00:00:00.000Z",
+    "url": "https://theticketing.co/e/summitsessionsprepartysc?open=true",
+    "location": "MOTIV (Santa Cruz)dubstep, bass music",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "$12.68-22.99 | 21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "electric",
+        "adventurous",
+        "weird"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 2,
+        "energy": 9,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "19hz-https-www-eventbrite-com-e-strut-sf-f8-present-mood-ii-swing-tickets-19842483301",
+    "title": "Mood II Swing",
+    "date": "2026-04-29T00:00:00.000Z",
+    "url": "https://www.eventbrite.com/e/strut-sf-f8-present-mood-ii-swing-tickets-1984248330170",
+    "location": "F8 1192 Folsom (San Francisco)deep house, garage house",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "free w/rsvp / $12.51 | 21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "electric",
+        "chill",
+        "playful"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 3,
+        "energy": 8,
+        "pressure": 2,
+        "ambiguity": 2,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "19hz-https-ra-co-events-2422165",
+    "title": "Calitalo Disco",
+    "date": "2026-04-29T00:00:00.000Z",
+    "url": "https://ra.co/events/2422165",
+    "location": "Make-Out Room (San Francisco)afro house, italo disco, nu-disco, funky house, tropical house",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "21+",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "playful",
+        "adventurous"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 2,
+        "energy": 9,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "19hz-https-www-instagram-com-p-dxcsbbumxro-img-index-1",
+    "title": "Shuffle & Flow Meetup w/Mikey Rocks",
+    "date": "2026-04-30T00:00:00.000Z",
+    "url": "https://www.instagram.com/p/DXCsBBUmXrO/?img_index=1",
+    "location": "The Ziggurat (Sacramento)multigenre EDM",
+    "source": "19hz",
+    "cost": "Check site",
+    "description": "free | All ages",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "playful",
+        "adventurous"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 2,
+        "energy": 9,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 2
       }
     }
   },
@@ -190,7 +386,7 @@
         "energy": 3,
         "pressure": 2,
         "ambiguity": 6,
-        "intimacy": 6
+        "intimacy": 5
       }
     }
   },
@@ -212,7 +408,7 @@
         "playful",
         "adventurous"
       ],
-      "uniqueness": 0.7,
+      "uniqueness": 0.72,
       "axes": {
         "formality": 2,
         "energy": 9,
@@ -240,7 +436,7 @@
         "adventurous",
         "playful"
       ],
-      "uniqueness": 0.65,
+      "uniqueness": 0.6,
       "axes": {
         "formality": 2,
         "energy": 9,
@@ -10667,34 +10863,6 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-313614039-",
-    "title": "Early dinner at Salesforce Park",
-    "date": "2026-04-30T00:30:00.000Z",
-    "location": "Salesforce Park 4th Level, 425 Mission St, San Francisco, CA 94105, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/313614039/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Join us for a relaxed weeknight dinner and drinks! We’ll be grabbing delicious pies from Joyride Pizza at Barebottle Beer Garden in Salesforce Park. 🍕 🍺 It’s a great chance to meet new people, share good food and drinks, and unwind in a scenic spot in the heart of the city. Hope to see you there! 628-236-9369",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "chill",
-        "playful",
-        "cozy"
-      ],
-      "uniqueness": 0.4,
-      "axes": {
-        "formality": 2,
-        "energy": 5,
-        "pressure": 2,
-        "ambiguity": 2,
-        "intimacy": 6
-      }
-    }
-  },
-  {
     "id": "meetup-https-www-meetup-com-gist-irl-events-314156143-",
     "title": "20s and 30s Social : Beer Garden + New Friends",
     "date": "2026-05-04T00:00:00.000Z",
@@ -10886,34 +11054,6 @@
         "pressure": 4,
         "ambiguity": 3,
         "intimacy": 5
-      }
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-how-to-take-control-events-314314982-",
-    "title": "Heal from Past Relationships & Avoid the Pitfalls Again without Stress & Sadness",
-    "date": "2026-04-30T00:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/how-to-take-control/events/314314982/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Has the loss of love created loneliness and despair and darkened your days? Has a betrayal by the one you loved left you distraught? Are you trying to move on and can’t find the way? Will you ever trust and find love again? You know that communication, interaction and passion are the basis of happiness in love, but will you ever get there? Yes, you can. There is an unknown source of unhappiness, s",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "cozy",
-        "romantic"
-      ],
-      "uniqueness": 0.7,
-      "axes": {
-        "formality": 5,
-        "energy": 4,
-        "pressure": 6,
-        "ambiguity": 3,
-        "intimacy": 8
       }
     }
   },

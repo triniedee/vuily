@@ -155,7 +155,10 @@ function parse19hz(html, now) {
     const ymdMatch = row.match(/(\d{4})[/-](\d{2})[/-](\d{2})/);
     if (!ymdMatch) continue;
     const date = new Date(`${ymdMatch[1]}-${ymdMatch[2]}-${ymdMatch[3]}`);
-    if (isNaN(date.getTime()) || date < now) continue;
+    if (isNaN(date.getTime())) continue;
+    const dateStr = `${ymdMatch[1]}-${ymdMatch[2]}-${ymdMatch[3]}`;
+    const todayStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+    if (dateStr < todayStr) continue;
     const hrefMatch = (cells[1] || "").match(/href=['"]([^'"]+)['"]/i);
     const url = hrefMatch ? hrefMatch[1] : "";
     const venueSplit = title.split(" @ ");
@@ -449,6 +452,7 @@ async function main() {
 
   console.log(`Enrichment complete: ${enriched} new, ${failed} failed, ${Object.keys(cache).length} total cached`);
 
+  saveProgress();
   console.log(`Wrote ${events.length} events to ${DATA_FILE}`);
 }
 
