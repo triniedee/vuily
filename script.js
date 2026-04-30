@@ -3607,7 +3607,7 @@ async function loadEvents() {
     }
 
     let mapped = [...listingMapped, ...feedMapped, ...nineteenHzMapped, ...poshMapped, ...meetupMapped, ...eventbriteMapped, ...timeoutMapped, ...apifyEventbriteMapped, ...apifyMeetupMapped, ...apifyGoogleMapped];
-    mapped = await enrichFuncheapDates(mapped);
+    mapped = await enrichFuncheapDates(mapped, 10);
     mapped = enrichEventsWithCityLookup(mapped);
 
     state.allEvents = dedupeEvents(mapped);

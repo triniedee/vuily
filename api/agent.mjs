@@ -4,7 +4,8 @@ import path from "node:path";
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-const SYSTEM = `You are Vuily's serendipity agent for San Francisco. Your job is to find one perfect unexpected event for someone tonight or this weekend.
+function buildSystem() {
+  return `You are Vuily's serendipity agent for San Francisco. Your job is to find one perfect unexpected event for someone tonight or this weekend.
 
 Ask 2-3 short, fun questions to understand what they're feeling, then use search_events to find matches and recommend ONE event.
 
@@ -19,6 +20,7 @@ Then on a new line at the very end, write exactly this (fill in real values — 
 PICK:{"title":"...","date":"...","location":"...","cost":"...","url":"...","energy":"calm|moderate|high","vibe":["..."],"axes":{"formality":N,"energy":N,"pressure":N,"ambiguity":N,"intimacy":N}}
 
 Current SF time: ${new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" })}.`;
+}
 
 const TOOLS = [
   {
@@ -78,9 +80,11 @@ export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-cache");
   res.setHeader("Connection", "keep-alive");
   res.setHeader("Access-Control-Allow-Origin", "*");
+  res.flushHeaders(); // establish SSE connection immediately so chunks stream to client
 
   function emit(event, data) {
     res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
+    if (typeof res.flush === "function") res.flush();
   }
 
   try {
@@ -90,7 +94,7 @@ export default async function handler(req, res) {
       const stream = client.messages.stream({
         model: "claude-haiku-4-5-20251001",
         max_tokens: 1024,
-        system: SYSTEM,
+        system: buildSystem(),
         tools: TOOLS,
         messages: currentMessages,
       });

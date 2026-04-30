@@ -30,6 +30,7 @@ export default async function handler(req, res) {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.5",
       },
+      signal: AbortSignal.timeout(9000),
     });
     const data = await response.text();
     res.setHeader("Content-Type", response.headers.get("content-type") || "application/xml; charset=utf-8");
