@@ -3625,14 +3625,16 @@ async function loadEvents() {
           s = s.replace(/&#(\d+);/g, (_, code) => String.fromCharCode(parseInt(code)));
           s = s.replace(/&amp;/gi, "&").replace(/&quot;/gi, '"').replace(/&apos;|&#39;/gi, "'").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">");
           return s.toLowerCase()
+            .replace(/\s+@\s+.+$/, "")
             .replace(/^\d{1,2}\/\d{1,2}\/\d{2,4}:\s*/, "")
             .replace(/\s*-\s*free\s*$/, "")
             .replace(/[^a-z0-9]+/g, " ").trim();
         };
-        const sigByUrl   = new Map(enriched.filter(e => e.url).map(e => [e.url.trim(), e.signature]));
+        const normalizeUrl = u => String(u || "").trim().replace(/\/$/, "");
+        const sigByUrl   = new Map(enriched.filter(e => e.url).map(e => [normalizeUrl(e.url), e.signature]));
         const sigByTitle = new Map(enriched.map(e => [normalizeTitle(e.title), e.signature]));
         for (const event of state.allEvents) {
-          const url = (event.sourceUrl || event.inviteUrl || "").trim();
+          const url = normalizeUrl(event.sourceUrl || event.inviteUrl || "");
           const sig = (url && sigByUrl.get(url)) || sigByTitle.get(normalizeTitle(event.title));
           if (sig) event.signature = sig;
         }
