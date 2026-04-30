@@ -3639,10 +3639,17 @@ async function loadEvents() {
           if (sig) event.signature = sig;
         }
         const matched = state.allEvents.filter(e => e.signature?.axes).length;
-        const funcheapMatched = state.allEvents.filter(e => e.source === "SF Funcheap" && e.signature?.axes).length;
-        const funcheapTotal = state.allEvents.filter(e => e.source === "SF Funcheap").length;
-        console.warn(`[enrich] merged signatures: ${matched}/${state.allEvents.length} events have axes`);
-        console.warn(`[enrich] funcheap: ${funcheapMatched}/${funcheapTotal} matched`);
+        const bySource = {};
+        state.allEvents.forEach(e => {
+          const src = e.source || "unknown";
+          if (!bySource[src]) bySource[src] = { total: 0, matched: 0 };
+          bySource[src].total++;
+          if (e.signature?.axes) bySource[src].matched++;
+        });
+        console.warn(`[enrich] merged signatures: ${matched}/${state.allEvents.length} have axes`);
+        Object.entries(bySource).forEach(([src, s]) => console.warn(`[enrich]  ${src}: ${s.matched}/${s.total}`));
+        const unmatched = state.allEvents.filter(e => !e.signature?.axes).slice(0, 5);
+        unmatched.forEach(e => console.warn(`[enrich] unmatched: "${e.title.slice(0,50)}" url="${(e.sourceUrl||"").slice(0,60)}"`));
       }
     } catch (enrichErr) {
       console.warn("[enrich] failed to load signatures:", enrichErr.message);

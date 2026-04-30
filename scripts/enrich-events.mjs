@@ -242,6 +242,34 @@ async function fetchLiveSources() {
       })
       .catch(e => console.warn("[funcheap] failed:", e.message)),
 
+    // SF Funcheap listing pages (covers events not in recent RSS feed)
+    ...[
+      "https://sf.funcheap.com/events/today/",
+      "https://sf.funcheap.com/events/tomorrow/",
+      "https://sf.funcheap.com/events/weekend/",
+    ].map(listingUrl =>
+      fetch(listingUrl, { headers: { "User-Agent": BROWSER_UA } })
+        .then(r => r.ok ? r.text() : "")
+        .then(html => {
+          // Extract event links + their heading text: <h2 class="entry-title"><a href="URL">Title</a></h2>
+          const seen = new Set(events.map(e => e.url));
+          let count = 0;
+          const pattern = /class=["'][^"']*entry-title[^"']*["'][^>]*>\s*<a[^>]+href=['"]([^'"]*sf\.funcheap\.com\/[^'"#]+\/)['"]\s*[^>]*>([^<]+)<\/a>/gi;
+          for (const m of html.matchAll(pattern)) {
+            const url = m[1].trim();
+            const title = m[2].trim().replace(/\s+/g, " ");
+            if (!url || !title || title.length < 5 || seen.has(url)) continue;
+            seen.add(url);
+            const slug = url.replace(/^https?:\/\/sf\.funcheap\.com\//, "").replace(/\/$/, "");
+            const id = `funcheap-listing-${slug.slice(0, 80)}`;
+            events.push({ id, title, date: now.toISOString(), url, location: "San Francisco", source: "SF Funcheap", cost: "Free", description: "" });
+            count++;
+          }
+          console.log(`[funcheap-listing] ${count} new from ${listingUrl}`);
+        })
+        .catch(e => console.warn("[funcheap-listing] failed:", listingUrl, e.message))
+    ),
+
     // 19hz Bay Area
     fetch("https://19hz.info/eventlisting_BayArea.php", { headers: { "User-Agent": BROWSER_UA } })
       .then(r => r.ok ? r.text() : "")

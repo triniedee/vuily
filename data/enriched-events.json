@@ -10835,229 +10835,6 @@
     }
   },
   {
-    "id": "meetup-https-www-meetup-com-skill-builders-seagulls-view-sf-automate-work-and-connect-e",
-    "title": "OpenClaw Agent Networking  Landing in SF — Join Us",
-    "date": "2026-05-01T02:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/skill-builders-seagulls-view-sf-automate-work-and-connect/events/314225195/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "**What We’re Exploring This Week** Please complete your member profile so we can connect you. **https://forms.gle/nKyfEsC5Ga6sgdfR8** Things people often bring to the conversation: • AI tools for researching ideas or markets • automating repetitive work with simple workflows • side hustles and experiments people are testing • using AI to analyze markets or opportunities • interesting tools discove",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill",
-        "adventurous"
-      ],
-      "uniqueness": 0.65,
-      "axes": {
-        "formality": 4,
-        "energy": 6,
-        "pressure": 5,
-        "ambiguity": 3,
-        "intimacy": 6
-      }
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-gist-irl-events-314156143-",
-    "title": "20s and 30s Social : Beer Garden + New Friends",
-    "date": "2026-05-04T00:00:00.000Z",
-    "location": "199 Valencia Street, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/gist-irl/events/314156143/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "**RSVP via:** https://app.gistirl.com/event-details/4ZivmTNVI8eeO1CoLkLY **Early Bird Discounts | More $ Later** May is here, the days are longer, and the city finally feels alive again—so let’s end the week the way it should be: outside, drink in hand, surrounded by new people who actually feel easy to talk to. This is a space where you show up solo and quickly find yourself laughing, connecting,",
-    "signature": {
-      "energy": "high",
-      "social_shape": "solo",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "chill",
-        "adventurous"
-      ],
-      "uniqueness": 0.4,
-      "axes": {
-        "formality": 2,
-        "energy": 7,
-        "pressure": 3,
-        "ambiguity": 4,
-        "intimacy": 6
-      }
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-bayhangouts-events-314166999-",
-    "title": "🌳 Picnic @ Alamo Square Park, S.F",
-    "date": "2026-05-09T20:30:00.000Z",
-    "location": ", San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/bayhangouts/events/314166999/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "**Always 100% free for everyone.** We’re sitting on the grass which may be wet, **so get your picnic blanket, mat, chair or something to sit on.** Feel free to bring your own food, or drinks if you like. We’ll be chilling under a big tree adjacent to the Lady Falcon Coffee truck in **Alamo Square** with a view of the **Painted Ladies**, as shown in the cover photo above. I’ll share our **live loca",
-    "signature": {
-      "energy": "calm",
-      "social_shape": "small_group",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "chill",
-        "playful",
-        "cozy"
-      ],
-      "uniqueness": 0.4,
-      "axes": {
-        "formality": 1,
-        "energy": 3,
-        "pressure": 1,
-        "ambiguity": 2,
-        "intimacy": 6
-      }
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-gist-irl-events-314143262-",
-    "title": "20s & 30s Meetup of Young Professionals & Downtown First Thursdays block party",
-    "date": "2026-05-08T01:00:00.000Z",
-    "location": "199 Fremont St, San Francisco, CA 94105, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/gist-irl/events/314143262/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "**RSVP via:** https://app.gistirl.com/event-details/ANB5KjhFi9P8zpBGxIMN **Early Bird Discounts | More $ Later** Spend an hour in genuine one-on-one conversations with other 20s and 30s you've never met! There is no awkward mingling or wondering who to approach next. Instead of exchanging social media handles but never actually finding each other in the street fair crowd, you pick your favorite pe",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "playful",
-        "chill",
-        "adventurous"
-      ],
-      "uniqueness": 0.7,
-      "axes": {
-        "formality": 3,
-        "energy": 6,
-        "pressure": 5,
-        "ambiguity": 2,
-        "intimacy": 8
-      }
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-bayhangouts-events-314235213-",
-    "title": "🚶‍♀️‍➡️Cannoli Hike @ Potrero hill, S.F",
-    "date": "2026-05-07T01:30:00.000Z",
-    "location": "1426 18th St, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/bayhangouts/events/314235213/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "**Always 100% free for everyone.** We’ll be meeting **outside of this french grocery store** (location below). **Please be on time,** we will wait 10 minutes before starting our route. Unfortunately, once we are moving, it will be difficult to locate us; **we cannot accommodate latecomers** or provide real-time location updates, as we want to focus on the hike. It’s a chill urban hike through a co",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "chill",
-        "adventurous",
-        "playful"
-      ],
-      "uniqueness": 0.6,
-      "axes": {
-        "formality": 2,
-        "energy": 5,
-        "pressure": 6,
-        "ambiguity": 3,
-        "intimacy": 5
-      }
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-san-francisco-ai-engineers-events-313345697-",
-    "title": "SF AI Engineers: May",
-    "date": "2026-05-14T01:00:00.000Z",
-    "location": "40 Boardman Pl, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/san-francisco-ai-engineers/events/313345697/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "***[RSVP here](https://luma.com/slikak8w)*** Join us for the May edition of the San Francisco AI Engineers Tech Talk, a gathering focused exclusively on AI engineering. Whether you’re a seasoned machine learning engineer or a fullstack dev curious about how to work with LLMs, this is your space to dive deep into real-world projects, technical challenges, and creative solutions. **What to Expect:**",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "electric"
-      ],
-      "uniqueness": 0.65,
-      "axes": {
-        "formality": 6,
-        "energy": 7,
-        "pressure": 5,
-        "ambiguity": 2,
-        "intimacy": 4
-      }
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-emotional-wellness-stress-relief-workshops-events-314359406",
-    "title": "Why Emotional Triggers Happen (Understanding the Mind)",
-    "date": "2026-04-30T01:00:00.000Z",
-    "location": "San Francisco",
-    "url": "https://www.meetup.com/emotional-wellness-stress-relief-workshops/events/314359406/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Sometimes emotions appear faster than we expect. A comment, situation, or memory can trigger stress, frustration, or anxiety almost instantly. This workshop explores how **past experiences may influence emotional reactions today.** In this free online workshop we’ll look at: • Why emotional triggers happen • How the mind stores experiences • Why reactions sometimes feel automatic • Simple tools fo",
-    "signature": {
-      "energy": "moderate",
-      "social_shape": "small_group",
-      "spontaneity": "planned",
-      "vibe": [
-        "intellectual",
-        "chill",
-        "cozy"
-      ],
-      "uniqueness": 0.65,
-      "axes": {
-        "formality": 6,
-        "energy": 4,
-        "pressure": 3,
-        "ambiguity": 2,
-        "intimacy": 6
-      }
-    }
-  },
-  {
-    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-314174952-",
-    "title": "Improv Jam Session | Beginner-Friendly Game Day",
-    "date": "2026-05-03T20:00:00.000Z",
-    "location": "William McKinley Monument, San Francisco, CA 94117, San Francisco, CA, San Francisco",
-    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/314174952/",
-    "source": "Meetup",
-    "cost": "Check site",
-    "description": "Join us for a fun day of improv games! This is a free, beginner-friendly jam session (not a formal class). It’s our second get-together game day led by the same host Talia - last time we had a blast! Nobody is forced to participate but highly encouraged to jump in and play. **What to expect:** * Improv - short for improvisational theater - is a form of live performance where characters, dialogue, ",
-    "signature": {
-      "energy": "high",
-      "social_shape": "small_group",
-      "spontaneity": "drop-in",
-      "vibe": [
-        "playful",
-        "electric",
-        "weird"
-      ],
-      "uniqueness": 0.72,
-      "axes": {
-        "formality": 2,
-        "energy": 8,
-        "pressure": 4,
-        "ambiguity": 3,
-        "intimacy": 5
-      }
-    }
-  },
-  {
     "id": "funcheap-https-sf-funcheap-com-bay-beats-concert-bandshell-sf-",
     "title": "Bay Beats Concert at the Bandshell (SF)",
     "date": "2026-05-02T07:00:00.000Z",
@@ -11333,6 +11110,1514 @@
         "pressure": 2,
         "ambiguity": 2,
         "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-bay-area-dance-week-2026-w-100-free-events-april-24-may-3-7",
+    "title": "Bay Area Dance Week 2026 w/ 100+ Free Events (April 24–May 3)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/bay-area-dance-week-2026-w-100-free-events-april-24-may-3-7/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-sfs-museum-forgotten-fun-april-20may-2",
+    "title": "SF&#8217;s Museum of Forgotten Fun (April 30-May 2)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/sfs-museum-forgotten-fun-april-20may-2/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "weird",
+        "intellectual"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 2,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 4,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-flight-club-adult-flight-night-for-ages-18-at-house-of-air-trampoline-park-sf-47",
+    "title": "Flight Club: Adult Flight Night for Ages 18+ at &#8220;House of Air&#8221; Trampoline Park (SF)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/flight-club-adult-flight-night-for-ages-18-at-house-of-air-trampoline-park-sf-47/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 4,
+        "ambiguity": 3,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-oaklands-free-poc-comedy-night-temescal-12",
+    "title": "Oakland&#8217;s Free POC Comedy Night (Temescal)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/oaklands-free-poc-comedy-night-temescal-12/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-free-hecklers-welcome-sfs-first-stand-up-comedy-show-that-invites-heckling-9",
+    "title": "FREE &#8220;Hecklers Welcome&#8221; SF&#8217;s First Stand-Up Comedy Show That Invites Heckling",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/free-hecklers-welcome-sfs-first-stand-up-comedy-show-that-invites-heckling-9/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.85,
+      "axes": {
+        "formality": 2,
+        "energy": 9,
+        "pressure": 7,
+        "ambiguity": 6,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-sfs-free-concerts-food-trucks-civic-center-soundtrack-every-tue-thu-5",
+    "title": "SF&#8217;s Free Concerts &#038; Food Trucks: &#8220;Civic Center Soundtrack&#8221; (Every Tue/Thu)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/sfs-free-concerts-food-trucks-civic-center-soundtrack-every-tue-thu-5/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "playful",
+        "electric"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 2,
+        "energy": 6,
+        "pressure": 1,
+        "ambiguity": 3,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-ai-governance-workshop-bridging-research-policy-uc-berkeley",
+    "title": "AI Governance Workshop: Bridging Research + Policy (UC Berkeley)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/ai-governance-workshop-bridging-research-policy-uc-berkeley/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 8,
+        "energy": 6,
+        "pressure": 7,
+        "ambiguity": 2,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-film-edge-others-battles-vision-audre-lorde",
+    "title": "Film: The Edge of Each Other&#8217;s Battles: The Vision of Audre Lorde",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/film-edge-others-battles-vision-audre-lorde/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 7,
+        "energy": 5,
+        "pressure": 3,
+        "ambiguity": 2,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-free-sf-politics-101-joel-engardio-mission",
+    "title": "Free SF Politics 101 w/ Joel Engardio (Mission)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/free-sf-politics-101-joel-engardio-mission/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.4,
+      "axes": {
+        "formality": 6,
+        "energy": 5,
+        "pressure": 4,
+        "ambiguity": 2,
+        "intimacy": 5
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-conjuring-movements-black-queer-activism-berlin-bay",
+    "title": "Conjuring Movements: Black Queer Activism Between Berlin and the Bay",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/conjuring-movements-black-queer-activism-berlin-bay/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.85,
+      "axes": {
+        "formality": 7,
+        "energy": 8,
+        "pressure": 6,
+        "ambiguity": 3,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-annie-leonard-andr-carothers-protest",
+    "title": "Annie Leonard and André Carothers: Protest",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/annie-leonard-andr-carothers-protest/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric",
+        "adventurous"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 3,
+        "energy": 8,
+        "pressure": 7,
+        "ambiguity": 6,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-trivia-thursday-inklings-coffee",
+    "title": "Trivia Thursday at Inklings Coffee",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/trivia-thursday-inklings-coffee/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "chill"
+      ],
+      "uniqueness": 0.3,
+      "axes": {
+        "formality": 3,
+        "energy": 5,
+        "pressure": 4,
+        "ambiguity": 2,
+        "intimacy": 5
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-live-music-shimmering-leaves-ensemble",
+    "title": "Live Music: Shimmering Leaves Ensemble",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/live-music-shimmering-leaves-ensemble/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "chill",
+        "intellectual",
+        "cozy"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 6,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-book-club-anna-hughes-sfs-yoga-flow-april-30may-28",
+    "title": "Book Club w/ Anna Hughes at SF&#8217;s Yoga Flow (April 30-May 28)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/book-club-anna-hughes-sfs-yoga-flow-april-30may-28/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "calm",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill",
+        "cozy"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 4,
+        "energy": 3,
+        "pressure": 2,
+        "ambiguity": 2,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-bob-marley-reggae-changed-world-sf-international-arts-fest-2",
+    "title": "Bob Marley: How Reggae Changed the World (SF International Arts Fest)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/bob-marley-reggae-changed-world-sf-international-arts-fest-2/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill",
+        "adventurous"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 6,
+        "energy": 6,
+        "pressure": 3,
+        "ambiguity": 2,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-event-series/90s-dj-thursday-party-1999-sf",
+    "title": "&#8220;Level Up Thursdays&#8221;: Free Video DJ Dance Party | SF",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/event-series/90s-dj-thursday-party-1999-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "electric",
+        "playful",
+        "chill"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 2,
+        "energy": 9,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-bay-area-dance-week-2026-w-100-free-events-april-24-may-3-6",
+    "title": "Bay Area Dance Week 2026 w/ 100+ Free Events (April 24–May 3)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/bay-area-dance-week-2026-w-100-free-events-april-24-may-3-6/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-1-wing-wednesdays-at-underdogs-cantina-soma-44",
+    "title": "$1 Wing Wednesdays at Underdogs Cantina (SoMa)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/1-wing-wednesdays-at-underdogs-cantina-soma-44/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "playful",
+        "cozy"
+      ],
+      "uniqueness": 0.3,
+      "axes": {
+        "formality": 2,
+        "energy": 6,
+        "pressure": 1,
+        "ambiguity": 2,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-oaklands-taste-temescal-2026",
+    "title": "Oakland’s “Taste of Temescal” (2026)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/oaklands-taste-temescal-2026/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "chill",
+        "adventurous"
+      ],
+      "uniqueness": 0.4,
+      "axes": {
+        "formality": 3,
+        "energy": 6,
+        "pressure": 2,
+        "ambiguity": 2,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-sfs-chat-room-money",
+    "title": "SF&#8217;s &#8220;Chat Room: Money&#8221; w/ Free-Flow Beer &#038; Wine (2026)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/sfs-chat-room-money/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill",
+        "playful"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 4,
+        "energy": 5,
+        "pressure": 3,
+        "ambiguity": 2,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-23rd-sf-international-arts-festival",
+    "title": "23rd SF International Arts Festival 2026 (April 29-May 10)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/23rd-sf-international-arts-festival/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "adventurous"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 6,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-sfs-international-arts-festival-opening-cirque-kikasse-2026-april-29may-1",
+    "title": "SF&#8217;s International Arts Festival Opening &#8220;Cirque Kikasse&#8221; 2026 (April 29-May 1)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/sfs-international-arts-festival-opening-cirque-kikasse-2026-april-29may-1/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 7,
+        "energy": 8,
+        "pressure": 4,
+        "ambiguity": 2,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-free-hook-up-horror-stories-tindervention-stand-up-comedy-show-sf-9",
+    "title": "FREE &#8220;Hook-Up Horror Stories&#8221; Tindervention Stand-Up Comedy Show (SF)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/free-hook-up-horror-stories-tindervention-stand-up-comedy-show-sf-9/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-free-admission-day-at-yerba-buena-center-for-the-arts-ybca-118",
+    "title": "Free Admission Day at Yerba Buena Center for the Arts (YBCA)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/free-admission-day-at-yerba-buena-center-for-the-arts-ybca-118/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "chill"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 4,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-free-admission-day-at-yerba-buena-center-for-the-arts-ybca-125",
+    "title": "Free Admission Day at Yerba Buena Center for the Arts (YBCA)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/free-admission-day-at-yerba-buena-center-for-the-arts-ybca-125/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "chill"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 4,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-twin-peaks-promenade-trails-overlooks-groundbreaking-ceremony-sf",
+    "title": "&#8220;Twin Peaks Promenade&#8221; New Trails + Overlooks Groundbreaking Ceremony (SF)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/twin-peaks-promenade-trails-overlooks-groundbreaking-ceremony-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "adventurous",
+        "intellectual",
+        "chill"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 7,
+        "energy": 5,
+        "pressure": 6,
+        "ambiguity": 2,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-free-art-workshop-portrait-cutout",
+    "title": "Free Art Workshop: Portrait Cut-out",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/free-art-workshop-portrait-cutout/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "chill",
+        "intellectual"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 3,
+        "energy": 5,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-midweek-melodies-free-happy-hour-concert-golden-gate-park-9",
+    "title": "&#8216;Midweek Melodies&#8217; Free Happy Hour Concert (Golden Gate Park)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/midweek-melodies-free-happy-hour-concert-golden-gate-park-9/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "playful",
+        "romantic"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 3,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-modern-queer-tarot-ybca",
+    "title": "Modern Queer Tarot (YBCA)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/modern-queer-tarot-ybca/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "weird",
+        "chill"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 4,
+        "energy": 5,
+        "pressure": 3,
+        "ambiguity": 6,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-free-jigsaw-puzzle-night-ace-makerspace-2",
+    "title": "Free Jigsaw Puzzle Night at Ace Makerspace",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/free-jigsaw-puzzle-night-ace-makerspace-2/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "calm",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "playful",
+        "cozy"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 2,
+        "energy": 3,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 5
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-wellcrafted-hanging-air-fresheners-saluhall",
+    "title": "Well-Crafted: Hanging Air Fresheners at Saluhall",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/wellcrafted-hanging-air-fresheners-saluhall/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "calm",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "chill",
+        "playful",
+        "cozy"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 3,
+        "energy": 3,
+        "pressure": 2,
+        "ambiguity": 4,
+        "intimacy": 5
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-bay-area-dance-week-2026-w-100-free-events-april-24-may-3-8",
+    "title": "Bay Area Dance Week 2026 w/ 100+ Free Events (April 24–May 3)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/bay-area-dance-week-2026-w-100-free-events-april-24-may-3-8/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "adventurous",
+        "electric"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-2026-free-high-season-programs-tjpas-salesforce-park-sf",
+    "title": "2026 Free High Season Programs at TJPA’s Salesforce Park (SF)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/2026-free-high-season-programs-tjpas-salesforce-park-sf/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "intellectual",
+        "chill",
+        "playful"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 3,
+        "energy": 5,
+        "pressure": 2,
+        "ambiguity": 4,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-sfs-museum-of-forgotten-fun-april-20-may-2",
+    "title": "SF&#8217;s Museum of Forgotten Fun (April 30-May 2)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/sfs-museum-of-forgotten-fun-april-20-may-2/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "weird",
+        "intellectual"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 2,
+        "energy": 5,
+        "pressure": 1,
+        "ambiguity": 3,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-free-aapi-comedy-month-crazy-funny-asians-fridays-2026",
+    "title": "FREE: AAPI Comedy Month &#8220;Crazy Funny Asians&#8221; Fridays (May 2026)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/free-aapi-comedy-month-crazy-funny-asians-fridays-2026/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 2,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-hellasecret-speakeasy-comedy-show-cocktail-night-oakland-59",
+    "title": "&#8220;HellaSecret&#8221; Speakeasy Comedy Show &#038; Cocktail Night (Oakland)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/hellasecret-speakeasy-comedy-show-cocktail-night-oakland-59/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 4,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 6,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-rush-hour-comedy-night-w-sfs-best-black-asian-comedians-the-function-115",
+    "title": "&#8220;Rush Hour Comedy Night&#8221; w/ SFs Best Black &#038; Asian Comedians (The Function)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/rush-hour-comedy-night-w-sfs-best-black-asian-comedians-the-function-115/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "electric",
+        "intellectual"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 3,
+        "energy": 8,
+        "pressure": 2,
+        "ambiguity": 2,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-sfs-hellasecret-crazy-funny-asians-friday-night-comedy-showcase-7p-9p-55",
+    "title": "SF’s HellaSecret “Crazy Funny Asians” Friday Night Comedy Showcase (7p + 9p)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/sfs-hellasecret-crazy-funny-asians-friday-night-comedy-showcase-7p-9p-55/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 3,
+        "energy": 9,
+        "pressure": 4,
+        "ambiguity": 2,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-golden-gate-comedy-night-sfs-most-intimate-comedy-club-4",
+    "title": "&#8220;Golden Gate Comedy Night&#8221; SF&#8217;s Most Intimate Comedy Club",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/golden-gate-comedy-night-sfs-most-intimate-comedy-club-4/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "cozy",
+        "electric"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 3,
+        "energy": 8,
+        "pressure": 4,
+        "ambiguity": 2,
+        "intimacy": 8
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-duane-forrest-tree-dreams-cinematic-theatre-sf-international-arts-festival-2026",
+    "title": "Duane Forrest “Tree of Dreams” Cinematic Theatre at SF International Arts Festival (May 1-3)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/duane-forrest-tree-dreams-cinematic-theatre-sf-international-arts-festival-2026/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "weird",
+        "romantic"
+      ],
+      "uniqueness": 0.85,
+      "axes": {
+        "formality": 7,
+        "energy": 6,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 3
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-5-off-the-confessional-sfs-wild-sins-secrets-improv-comedy-show-144",
+    "title": "$5 Off: &#8220;The Confessional&#8221; SF&#8217;s Wild &#8220;Sins &#038; Secrets&#8221; Improv Comedy Show",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/5-off-the-confessional-sfs-wild-sins-secrets-improv-comedy-show-144/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "weird",
+        "electric"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 4,
+        "ambiguity": 3,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-the-stoner-comedy-jam-friday-nights-sf-162",
+    "title": "&#8220;The Stoner Comedy Jam&#8221; Friday Nights (SF)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/the-stoner-comedy-jam-friday-nights-sf-162/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "weird",
+        "electric"
+      ],
+      "uniqueness": 0.75,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-5-off-your-fucked-up-relationship-live-in-sf-every-friday-saturday-142",
+    "title": "$5 Off: &#8220;Your Fucked Up Relationship&#8221; Live in SF (Every Friday &#038; Saturday)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/5-off-your-fucked-up-relationship-live-in-sf-every-friday-saturday-142/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "weird",
+        "electric"
+      ],
+      "uniqueness": 0.8,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 6,
+        "ambiguity": 7,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-sf-neo-futurists-the-infinite-wrench-30-plays-in-60-minutes-every-fri-sat-31",
+    "title": "SF Neo-Futurists “The Infinite Wrench” (30 Plays in 60 Minutes, every Fri &#038; Sat)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/sf-neo-futurists-the-infinite-wrench-30-plays-in-60-minutes-every-fri-sat-31/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "weird",
+        "intellectual"
+      ],
+      "uniqueness": 0.85,
+      "axes": {
+        "formality": 3,
+        "energy": 9,
+        "pressure": 4,
+        "ambiguity": 6,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-5-off-the-ritual-comedy-show-in-the-mission-sf-57",
+    "title": "$5 Off: “The Ritual” Comedy Show in The Mission (SF)",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/5-off-the-ritual-comedy-show-in-the-mission-sf-57/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "high",
+      "social_shape": "crowd",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 3,
+        "energy": 8,
+        "pressure": 2,
+        "ambiguity": 3,
+        "intimacy": 2
+      }
+    }
+  },
+  {
+    "id": "funcheap-listing-visual-audio-immersion-workshop",
+    "title": "Visual + Audio Immersion Workshop",
+    "date": "2026-04-30T00:55:31.500Z",
+    "url": "https://sf.funcheap.com/visual-audio-immersion-workshop/",
+    "location": "San Francisco",
+    "source": "SF Funcheap",
+    "cost": "Free",
+    "description": "",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "playful",
+        "electric"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 5,
+        "energy": 7,
+        "pressure": 4,
+        "ambiguity": 6,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-skill-builders-seagulls-view-sf-automate-work-and-connect-e",
+    "title": "OpenClaw Agent Networking  Landing in SF — Join Us",
+    "date": "2026-05-01T02:00:00.000Z",
+    "location": "San Francisco",
+    "url": "https://www.meetup.com/skill-builders-seagulls-view-sf-automate-work-and-connect/events/314225195/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "**What We’re Exploring This Week** Please complete your member profile so we can connect you. **https://forms.gle/nKyfEsC5Ga6sgdfR8** Things people often bring to the conversation: • AI tools for researching ideas or markets • automating repetitive work with simple workflows • side hustles and experiments people are testing • using AI to analyze markets or opportunities • interesting tools discove",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill",
+        "adventurous"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 4,
+        "energy": 6,
+        "pressure": 5,
+        "ambiguity": 3,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-gist-irl-events-314156143-",
+    "title": "20s and 30s Social : Beer Garden + New Friends",
+    "date": "2026-05-04T00:00:00.000Z",
+    "location": "199 Valencia Street, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/gist-irl/events/314156143/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "**RSVP via:** https://app.gistirl.com/event-details/4ZivmTNVI8eeO1CoLkLY **Early Bird Discounts | More $ Later** May is here, the days are longer, and the city finally feels alive again—so let’s end the week the way it should be: outside, drink in hand, surrounded by new people who actually feel easy to talk to. This is a space where you show up solo and quickly find yourself laughing, connecting,",
+    "signature": {
+      "energy": "high",
+      "social_shape": "solo",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "chill",
+        "adventurous"
+      ],
+      "uniqueness": 0.4,
+      "axes": {
+        "formality": 2,
+        "energy": 7,
+        "pressure": 3,
+        "ambiguity": 4,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-bayhangouts-events-314166999-",
+    "title": "🌳 Picnic @ Alamo Square Park, S.F",
+    "date": "2026-05-09T20:30:00.000Z",
+    "location": ", San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/bayhangouts/events/314166999/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "**Always 100% free for everyone.** We’re sitting on the grass which may be wet, **so get your picnic blanket, mat, chair or something to sit on.** Feel free to bring your own food, or drinks if you like. We’ll be chilling under a big tree adjacent to the Lady Falcon Coffee truck in **Alamo Square** with a view of the **Painted Ladies**, as shown in the cover photo above. I’ll share our **live loca",
+    "signature": {
+      "energy": "calm",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "chill",
+        "playful",
+        "cozy"
+      ],
+      "uniqueness": 0.4,
+      "axes": {
+        "formality": 1,
+        "energy": 3,
+        "pressure": 1,
+        "ambiguity": 2,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-gist-irl-events-314143262-",
+    "title": "20s & 30s Meetup of Young Professionals & Downtown First Thursdays block party",
+    "date": "2026-05-08T01:00:00.000Z",
+    "location": "199 Fremont St, San Francisco, CA 94105, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/gist-irl/events/314143262/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "**RSVP via:** https://app.gistirl.com/event-details/ANB5KjhFi9P8zpBGxIMN **Early Bird Discounts | More $ Later** Spend an hour in genuine one-on-one conversations with other 20s and 30s you've never met! There is no awkward mingling or wondering who to approach next. Instead of exchanging social media handles but never actually finding each other in the street fair crowd, you pick your favorite pe",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "playful",
+        "chill",
+        "adventurous"
+      ],
+      "uniqueness": 0.7,
+      "axes": {
+        "formality": 3,
+        "energy": 6,
+        "pressure": 5,
+        "ambiguity": 2,
+        "intimacy": 8
+      }
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-bayhangouts-events-314235213-",
+    "title": "🚶‍♀️‍➡️Cannoli Hike @ Potrero hill, S.F",
+    "date": "2026-05-07T01:30:00.000Z",
+    "location": "1426 18th St, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/bayhangouts/events/314235213/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "**Always 100% free for everyone.** We’ll be meeting **outside of this french grocery store** (location below). **Please be on time,** we will wait 10 minutes before starting our route. Unfortunately, once we are moving, it will be difficult to locate us; **we cannot accommodate latecomers** or provide real-time location updates, as we want to focus on the hike. It’s a chill urban hike through a co",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "chill",
+        "adventurous",
+        "playful"
+      ],
+      "uniqueness": 0.6,
+      "axes": {
+        "formality": 2,
+        "energy": 5,
+        "pressure": 6,
+        "ambiguity": 3,
+        "intimacy": 5
+      }
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-san-francisco-ai-engineers-events-313345697-",
+    "title": "SF AI Engineers: May",
+    "date": "2026-05-14T01:00:00.000Z",
+    "location": "40 Boardman Pl, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/san-francisco-ai-engineers/events/313345697/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "***[RSVP here](https://luma.com/slikak8w)*** Join us for the May edition of the San Francisco AI Engineers Tech Talk, a gathering focused exclusively on AI engineering. Whether you’re a seasoned machine learning engineer or a fullstack dev curious about how to work with LLMs, this is your space to dive deep into real-world projects, technical challenges, and creative solutions. **What to Expect:**",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "electric"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 6,
+        "energy": 7,
+        "pressure": 5,
+        "ambiguity": 2,
+        "intimacy": 4
+      }
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-emotional-wellness-stress-relief-workshops-events-314359406",
+    "title": "Why Emotional Triggers Happen (Understanding the Mind)",
+    "date": "2026-04-30T01:00:00.000Z",
+    "location": "San Francisco",
+    "url": "https://www.meetup.com/emotional-wellness-stress-relief-workshops/events/314359406/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Sometimes emotions appear faster than we expect. A comment, situation, or memory can trigger stress, frustration, or anxiety almost instantly. This workshop explores how **past experiences may influence emotional reactions today.** In this free online workshop we’ll look at: • Why emotional triggers happen • How the mind stores experiences • Why reactions sometimes feel automatic • Simple tools fo",
+    "signature": {
+      "energy": "moderate",
+      "social_shape": "small_group",
+      "spontaneity": "planned",
+      "vibe": [
+        "intellectual",
+        "chill",
+        "cozy"
+      ],
+      "uniqueness": 0.65,
+      "axes": {
+        "formality": 6,
+        "energy": 4,
+        "pressure": 3,
+        "ambiguity": 2,
+        "intimacy": 6
+      }
+    }
+  },
+  {
+    "id": "meetup-https-www-meetup-com-have-fun-make-friends-sf-events-314174952-",
+    "title": "Improv Jam Session | Beginner-Friendly Game Day",
+    "date": "2026-05-03T20:00:00.000Z",
+    "location": "William McKinley Monument, San Francisco, CA 94117, San Francisco, CA, San Francisco",
+    "url": "https://www.meetup.com/have-fun-make-friends-sf/events/314174952/",
+    "source": "Meetup",
+    "cost": "Check site",
+    "description": "Join us for a fun day of improv games! This is a free, beginner-friendly jam session (not a formal class). It’s our second get-together game day led by the same host Talia - last time we had a blast! Nobody is forced to participate but highly encouraged to jump in and play. **What to expect:** * Improv - short for improvisational theater - is a form of live performance where characters, dialogue, ",
+    "signature": {
+      "energy": "high",
+      "social_shape": "small_group",
+      "spontaneity": "drop-in",
+      "vibe": [
+        "playful",
+        "electric",
+        "weird"
+      ],
+      "uniqueness": 0.72,
+      "axes": {
+        "formality": 2,
+        "energy": 8,
+        "pressure": 4,
+        "ambiguity": 3,
+        "intimacy": 5
       }
     }
   }
