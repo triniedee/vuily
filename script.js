@@ -1431,9 +1431,6 @@ function createCard(event, depth) {
     <p class="result-desc">${event.description || ""}</p>
     ${whyText ? `<p class="result-why">${whyText}</p>` : ""}
     ${axisHtml}
-    <div class="result-actions">
-      <a class="btn-attend" href="${url}" target="_blank" rel="noopener noreferrer">${theme.ctaText || "See details"}</a>
-    </div>
   `;
 
   if (axes) animateCardAxes(card);
