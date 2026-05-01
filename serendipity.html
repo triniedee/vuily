@@ -2433,6 +2433,7 @@
 
               if (eventType === "error") {
                 chatTyping.classList.remove("visible");
+                chatHistory.pop(); // remove the orphaned user message so next send doesn't break alternation
                 appendChatMsg("agent", "Something went wrong on my end. Try again in a sec?");
                 console.error("[chat]", eventData.message);
               }
@@ -2440,6 +2441,7 @@
           }
         } catch (err) {
           chatTyping.classList.remove("visible");
+          chatHistory.pop(); // remove the orphaned user message so next send doesn't break alternation
           appendChatMsg("agent", "Something went wrong on my end. Try again in a sec?");
           console.error("[chat]", err);
         } finally {
